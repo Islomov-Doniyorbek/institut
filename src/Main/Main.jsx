@@ -1,4 +1,6 @@
 import { IoIosArrowForward } from 'react-icons/io';
+
+
 function Main() {
   return (
     <div className='main_box'>

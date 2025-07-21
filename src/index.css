@@ -26,13 +26,17 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 36px;
-  background: var(--clrBgDark);
+  background: var(--clrBg);
+  align-items: center;
 }
 .topBar p {
-  color: var(--clrTxtLight);
+  color: var(--clrTxtDark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .topBar span {
-  color: var(--clrSecondTxt);
+  color: var(--clrHover);
 }
 nav.nav {
   position: relative;
@@ -41,7 +45,7 @@ nav.nav {
   padding: 10px 18px;
   justify-content: space-between;
   align-items: center;
-  background: blue;
+  background: var(--clrBgDark);
   /* height: 80px; */
 }
 nav.nav .logo img {
@@ -56,13 +60,24 @@ nav.nav .logo img {
   position: relative;
   cursor: pointer;
 }
+.navLinks li strong {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+.navLinks li strong:hover {
+  box-shadow: 0 0 4px 1px cyan;
+  border-radius: 10px;
+  color: cyan;
+}
 ul {
   color: #F9F9F9;
 }
 .navLinks li ul  {
   position: absolute;
-  width: 150px;
-  font-size: 14px;
+  width: 200px;
+  font-size: 16px;
+  padding: 10px;
   left: 0;
   background-color: var(--clrBgDark);
   display: flex;
@@ -71,21 +86,31 @@ ul {
   visibility: hidden;
   top: 90px;
   transition: top 0.4s ease;
+  opacity: 0;
 }
 .navLinks li:hover > ul {
   visibility: visible;
-  top: 40px;
+  top: 35px;
+  opacity: 1;
 }
 .navLinks ul li {
-  border-bottom: 1px solid silver;
-  padding: 10px 0;
+  padding: 14px 8px;
 }
 .navLinks li ul li ul {
   position: absolute;
-  transform: translateX(150px);
+  transform: translate(190px, -45px);
   top: 0;
   z-index: 6;
   /* visibility: hidden; */
+}
+.navLinks li ul li:hover {
+  background: rgba(0,0,0,.3);
+  color: cyan;
+}
+.navLinks li ul li ul li:hover {
+  background: rgba(0,0,0,.3);
+  color: cyan;
+  
 }
 /* .navLinks ul .nesting:hover > ul {
   visibility: visible;

@@ -29,61 +29,61 @@ const Layout = ({ children }) => {
                 "Botir Zokirov hayoti va ijodi"]
             ]
         },
-        // {
-        //     id: 2,
-        //     linkName: "Ta'lim",
-        //     linkList: [
-        //         ["Bakalavr",
-        //         "Magistratura",
-        //         "Dars jadvali ",
-        //         "Bitiruvchilar"]
-        //     ]
-        // },
-        // {
-        //     id: 3,
-        //     linkName: "Ilmiy faoliyat",
-        //     linkList: [
-        //         ["Ilmiy tadqiqot faoliyati",
-        //         "Ilmiy kengashlar",
-        //         "Ilmiy jurnallar ",
-        //         "Ilmiy loyihalar"]
-        //     ]
-        // },
-        // {
-        //     id: 4,
-        //     linkName: "Axborot xizmati",
-        //     linkList: [
-        //         ["Yangiliklar",
-        //         "Tadbirlar",
-        //         "Media galereyalar",
-        //         "Bog'lanish",
-        //         "Qabul 2025-natijalari"
-        //         ]
-        //     ]
-        // },
-        // {
-        //     id: 5,
-        //     linkName: "Qabul-2025",
-        //     linkList: [
-        //         ["Qabul \"Call Centre\"",
-        //         "Qabul kvotalari (BA & MA)",
-        //         "Xorijiy fuqarolar uchun qabul",
-        //         "Qabul dasturlari",
-        //         "Kasbiy(Ijodiy) imtihonlar translatsiyasi"
-        //         ]
-        //     ]
-        // },
-        // {
-        //     id: 6,
-        //     linkName: "Talabalar",
-        //     linkList: [
-        //         ["Ekofaol talabalar",
-        //         "Grant uchun ariza",
-        //         "Talaba yutuqlarini jo'natish",
-        //         "Grant uchun test"
-        //         ]
-        //     ]
-        // },
+        {
+            id: 2,
+            linkName: "Ta'lim",
+            linkList: [
+                ["Bakalavr",
+                "Magistratura",
+                "Dars jadvali ",
+                "Bitiruvchilar"]
+            ]
+        },
+        {
+            id: 3,
+            linkName: "Ilmiy faoliyat",
+            linkList: [
+                ["Ilmiy tadqiqot faoliyati",
+                "Ilmiy kengashlar",
+                "Ilmiy jurnallar ",
+                "Ilmiy loyihalar"]
+            ]
+        },
+        {
+            id: 4,
+            linkName: "Axborot xizmati",
+            linkList: [
+                ["Yangiliklar",
+                "Tadbirlar",
+                "Media galereyalar",
+                "Bog'lanish",
+                "Qabul 2025-natijalari"
+                ]
+            ]
+        },
+        {
+            id: 5,
+            linkName: "Qabul-2025",
+            linkList: [
+                ["Qabul \"Call Centre\"",
+                "Qabul kvotalari (BA & MA)",
+                "Xorijiy fuqarolar uchun qabul",
+                "Qabul dasturlari",
+                "Kasbiy(Ijodiy) imtihonlar translatsiyasi"
+                ]
+            ]
+        },
+        {
+            id: 6,
+            linkName: "Talabalar",
+            linkList: [
+                ["Ekofaol talabalar",
+                "Grant uchun ariza",
+                "Talaba yutuqlarini jo'natish",
+                "Grant uchun test"
+                ]
+            ]
+        },
     ]
 
     console.log(navLinks[1].linkList[0].nestedLinks);
