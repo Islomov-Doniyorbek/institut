@@ -176,13 +176,12 @@ text-align: center;
   }
   .links_col h2{color: #1a5950; font-size: 25px; font-family:'Montserrat'; margin-bottom: 15px;}
   .links_col b{color: rgb(37, 37, 37)!important; font-size: 18px; font-family:'Open Sans';}
-  .links_col:hover .link_inner {background-color: #024c96; color: white;}
-  .links_col:hover .link_icon{background-color: green;}
+
 
 
 
 .usinfo{padding: 80px;}
-.useinfo_box{ border-radius: 20px; padding: 50px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; background: linear-gradient(220.68deg, #5d77f7 23.11%, #F279F4 147.67%);
+.useinfo_box{ border-radius: 20px; padding: 50px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; background: linear-gradient(to right, #002e5b, #1a5950);
 }
 .useinfo_row{display: flex; width: 100%; justify-content: space-between;}
 .useinfo_box h1{color: black; font-family:'Montserrat'; font-size: 40px; color: 	#FFFFFF;} 
