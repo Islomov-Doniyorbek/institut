@@ -67,7 +67,7 @@
   outline: none !important;
 }
 .main_box{width: auto; height: 85vh; }
-.main_box_img{width: auto; height: 85vh; background-image: url("../Images/botirzaripov.jpg"); background-repeat: no-repeat;
+.main_box_img{width: auto; height: 85vh; background-image: url("../src/Images/botirzaripov.jpg"); background-repeat: no-repeat;
   background-size: cover; padding: 40px; background-repeat: no-repeat; display: flex; justify-content: flex-start; align-items: center;}
 .main_text h1{font-family:'Montserrat';
   font-size: 30px;
@@ -145,6 +145,8 @@
 .links_col:hover {
   transform: scale(1.1);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
 }
 .link_texts{width: calc(100% - 100px);}
 
@@ -180,14 +182,15 @@ text-align: center;
 
 
 .usinfo{padding: 80px;}
-.useinfo_box{ border-radius: 20px; padding: 50px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;}
+.useinfo_box{ border-radius: 20px; padding: 50px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; background: linear-gradient(220.68deg, #5d77f7 23.11%, #F279F4 147.67%);
+}
 .useinfo_row{display: flex; width: 100%; justify-content: space-between;}
-.useinfo_box h1{color: black; font-family:'Montserrat'; font-size: 40px;}
-.useinfo_box h1 b{color: #014080; font-family:'Montserrat'; font-size: 40px;}
+.useinfo_box h1{color: black; font-family:'Montserrat'; font-size: 40px; color: 	#FFFFFF;} 
+.useinfo_box h1 b{color: #ffeb3b; font-family:'Montserrat'; font-size: 40px;}
 .info_text{display: flex; margin-bottom: 30px;}
-.info_text span{color: #014080; font-size: 35px; margin-right: 10px; margin-top: 5px;}
-.useinfo_card h2{color: black; font-family:'Montserrat'; font-size: 40px;}
-.useinfo_card p{color: black; font-size: 18px; margin-top: 10px; color: rgb(49, 49, 49); font-family:'Montserrat';}
+.info_text span{color: #ffeb3b; font-size: 35px; margin-right: 10px; margin-top: 5px;}
+.useinfo_card h2{color: white; font-family:'Montserrat'; font-size: 40px; }
+.useinfo_card p{color: rgb(202, 202, 202); font-size: 18px; margin-top: 10px; ; font-family:'Montserrat';}
 
 
 
@@ -221,7 +224,7 @@ text-align: center;
 
 
 
-.about{width: auto;  padding: 20px; height: 60vh; border-radius: 100px 0px 100px 0px; background-repeat: no-repeat; background-size: cover; background-image: url('../Images/photo_2025-07-20_21-19-52.jpg');;}
+.about{width: auto;  padding: 20px; height: 60vh; border-radius: 100px 0px 100px 0px; background-repeat: no-repeat; background-size: cover; background-image: url('../src/Images/photo_2025-07-20_21-19-52.jpg');;}
 .about_text{width: 50%; border-radius: 100px 0px 100px 0px; height: 100%; background-color: white; padding:80px ;}
 .about_text h1{font-size: 19px; font-family: "Open Sans"; color: #474747;}
 .about_text p{font-size: 18px;
@@ -237,9 +240,54 @@ margin-top: 50px;
 
 
 
-.forstudent{width: auto; height: auto; padding: 100px; margin: 20px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
+.forstudent{width: auto; height: auto; padding: 100px; margin: 50px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
 .forstudent_row{width: 100%; display: flex;}
-.forstudent_col{width: 33%; margin: 0px 15px; border-radius: 20px;  position: relative; height: 260px; background-repeat: no-repeat; background-size: cover; background-image: url('../Images/group-students-throwing-books-air.jpg');}
-.forstudent_card{position: absolute; bottom: 0px; padding: 30px; display: flex; width: 100%;background-color: rgba(26, 89, 80, 0.6);}
-.forstudent_card_icon span{font-size: 45px; color: #002e5b; margin-right: 20px;}
+.forstudent_box{width:33%; padding: 10px; margin: 0px 10px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; border-radius: 20px;}
+.forstudent_box h1{font-size: 20px; color: #002e5b; margin: 20px 0px 10px 20px; display: flex; align-items: center;}
+.forstudent_box h1 span{font-size: 23px; margin-left: 5px; margin-top: 5px;}
+.forstudent_col{ border-radius: 20px;  position: relative; height: 280px; background-repeat: no-repeat; background-size: cover; background-image: url('../src/Images/group-students-throwing-books-air.jpg');  transition: all 0.3s ease;
+overflow: hidden;
+}
+.forstudent_box:hover{  transform: translateY(-10px);;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
+.forstudent_card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(26, 89, 80, 0.85);
+  border-radius: 20px;
+  transform: translateY(100%); 
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 2;
+}
+.forstudent_col:hover .forstudent_card {
+  transform: translateY(0);
+  opacity: 1;
+}
+.forstudent_card_icon span {
+  font-size: 45px;
+  color: yellow;
+  margin-right: 20px;
+}
+.forstudent_card_text p{color: #FFFFFF; font-size: 20px;  font-family:'Montserrat'; margin-bottom: 10px;}
+.forstudent_card_text b{color: #FFFFFF; font-size: 17px;  font-family:'Open Sans'; margin-bottom: 10px;}
+.footer{display: flex;}
+.footer_text{display: flex; flex-direction: column;padding: 20px;}
+.footer_text h1{color: #FFFFFF99; font-size: 14px;  font-family:'Open Sans'; margin-bottom: 20px;}
+.footer_text p{color: #FFFFFF99; font-size: 14px;  font-family:'Open Sans'; }
+.footer_icon{display: flex; justify-content: flex-end; width: 100%; padding: 20px 60px 0px 20px; }
+.footer_icon p{width: 40px; height: 40px; border-radius: 50%; font-size: 20px; margin: 0px 10px; background-color: white; display: flex; justify-content: center; color: #002e5b; align-items: center;} 
+.fo_instagram:hover{background-color: rgb(235, 68, 46); color: white;}
+.fo_facebook:hover{background-color: rgb(28, 28, 255); color: white;}
+.fo_youtube:hover{background-color: red; color: white;}
+.fo_telegram:hover{background-color: rgb(76, 76, 255); color: white;}
+
+
+
 

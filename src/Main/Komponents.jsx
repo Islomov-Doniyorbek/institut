@@ -7,10 +7,10 @@ import UnInfo from './UnInfo'
 import Events from './Events'
 import About from './About'
 import ForStudents from './ForStudents'
-
-export default function Komponents() {
+import UniMap from './UniMap'
+const Komponents = () => {
   return (
-    <div><Navbar/>
+        <div className='main'><Navbar/>
     <Main/>
     <News/>
     <Links/>
@@ -18,6 +18,9 @@ export default function Komponents() {
     <Events/>
     <About/>
     <ForStudents/>
+    <UniMap/>
     </div>
   )
 }
+
+export default Komponents

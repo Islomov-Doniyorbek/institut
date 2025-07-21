@@ -6,9 +6,9 @@ import { LuBookOpenText } from 'react-icons/lu'
 import { MdOutlineMail, MdPerson } from 'react-icons/md'
 import { PiTableFill } from 'react-icons/pi'
 
-export default function Links() {
+const Links = () => {
   return (
-    <div className='link'> 
+   <div className='link'> 
 <h1>Tezkor havolalar</h1>
 <div className='links_row'>
 <div className='links_col '>
@@ -84,3 +84,5 @@ export default function Links() {
     </div>
   )
 }
+
+export default Links

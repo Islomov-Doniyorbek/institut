@@ -4,9 +4,9 @@ import { IoLocationOutline } from 'react-icons/io5'
 import main_img from '../Images/main_img.jpg'
 import person from '../Images/main_img_2.jpg'
 import { IoMdArrowDropdown } from 'react-icons/io'
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <div className='navbar'>
+     <div className='navbar'>
         <div className='navbar_top'>
 <p className='mar_rig'><span><IoLocationOutline /></span> Toshkent 100027, Botir Zokirov ko'chasi 1 uy</p>
 <p><span><AiOutlinePrinter /></span> Toshkent 100027, Botir Zokirov ko'chasi 1 uy</p>
@@ -117,3 +117,6 @@ export default function Navbar() {
     </div>
   )
 }
+
+export default Navbar
+

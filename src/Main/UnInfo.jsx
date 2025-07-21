@@ -1,9 +1,8 @@
 import React from 'react'
 import { FaUniversity } from 'react-icons/fa'
-
-export default function UnInfo() {
+const UnInfo = () => {
   return (
-    <div className='usinfo'>
+       <div className='usinfo'>
         <div className='useinfo_box'>
 <div className='info_text'>
 <span><FaUniversity /></span>
@@ -39,3 +38,5 @@ export default function UnInfo() {
     </div>
   )
 }
+
+export default UnInfo

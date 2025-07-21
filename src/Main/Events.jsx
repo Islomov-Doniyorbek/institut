@@ -2,9 +2,9 @@ import React from 'react'
 import event from '../../src/Images/events.jpg'
 import { FaRegCalendarAlt, FaRegClock } from 'react-icons/fa'
 import { SlLocationPin } from 'react-icons/sl'
-export default function Events() {
+const Events = () => {
   return (
-    <div className='event'>
+ <div className='event'>
 <h1>Tadbirlar</h1>
 <div className='event_line'>
 <p></p>
@@ -57,3 +57,5 @@ export default function Events() {
     </div>
   )
 }
+
+export default Events

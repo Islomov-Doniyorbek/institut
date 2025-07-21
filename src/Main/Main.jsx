@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'antd';
 import { IoIosArrowForward } from 'react-icons/io';
-export default function Main() {
+function Main() {
   return (
     <div className='main_box'>
         <div className='main_box_img'>
@@ -18,3 +18,6 @@ export default function Main() {
     </div>
   )
 }
+
+export default Main
+

@@ -44,7 +44,7 @@ main {
 
 
 footer {
-  min-height: 300px;
+  min-height: 100px;
   background-color: var(--clrBgDark);
   color: var(--clrTxtLight);
 }

@@ -1,4 +1,5 @@
 import { MdLocationOn, MdPhone } from 'react-icons/md';
+import Footer from './Main/Footer';
 
 const Layout = ({ children }) => {
   return (
@@ -16,8 +17,7 @@ const Layout = ({ children }) => {
       </header>
       <main>{children}</main>
       <footer>
-        
-        Footer
+        <Footer/>
       </footer>
     </div>
   );
