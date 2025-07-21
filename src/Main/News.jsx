@@ -2,7 +2,7 @@ import React from 'react'
 import { FaRegClock } from 'react-icons/fa'
 import { MdKeyboardArrowRight, MdNewspaper } from 'react-icons/md'
 import photos from '../Images/photo_2025-07-20_14-03-41.jpg'
-export default function News() {
+function News() {
   return (
     <div className='news'>
       <h1>Yangiliklar va e'lonlar</h1>
@@ -72,3 +72,6 @@ export default function News() {
     </div>
   )
 }
+
+
+export default News

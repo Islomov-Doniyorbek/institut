@@ -1,12 +1,12 @@
 import React from 'react'
 import { FaBook, FaRegIdCard } from 'react-icons/fa'
-import { FaTableList } from 'react-icons/fa6'
+// import { FaTableList } from 'react-icons/fa6'
 import { LiaUniversitySolid } from 'react-icons/lia'
 import { LuBookOpenText } from 'react-icons/lu'
 import { MdOutlineMail, MdPerson } from 'react-icons/md'
 import { PiTableFill } from 'react-icons/pi'
 
-export default function Links() {
+function Links() {
   return (
     <div className='link'> 
 <h1>Tezkor havolalar</h1>
@@ -84,3 +84,6 @@ export default function Links() {
     </div>
   )
 }
+
+
+export default Links

@@ -1,8 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import { PiStudentBold } from 'react-icons/pi'
-
-export default function ForStudents() {
+function ForStudents() {
   return (
     <div className='forstudent'>
         <div className='forstudent_row'>
@@ -52,3 +51,7 @@ export default function ForStudents() {
     </div>
   )
 }
+
+
+
+export default ForStudents

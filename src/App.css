@@ -67,7 +67,7 @@
   outline: none !important;
 }
 .main_box{width: auto; height: 85vh; }
-.main_box_img{width: auto; height: 85vh; background-image: url("../Images/botirzaripov.jpg"); background-repeat: no-repeat;
+.main_box_img{width: auto; height: 85vh; background-image: url('./Images/botirzaripov.jpg'); background-repeat: no-repeat;
   background-size: cover; padding: 40px; background-repeat: no-repeat; display: flex; justify-content: flex-start; align-items: center;}
 .main_text h1{font-family:'Montserrat';
   font-size: 30px;
