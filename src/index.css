@@ -72,7 +72,7 @@ nav.nav .logo img {
   display: flex;
   gap: 10px;
 }
-.navLinks strong, .navLinks .linkBlock {
+.navLinks strong, .navLinks.rwdNav .linkBlock {
   display: flex;
   align-items: center;
 }
@@ -143,7 +143,6 @@ ul {
   
   .menuBar {
     position: relative;
-    display: flex;
     align-items: center;
   }
   .menuBar .sideBarMenu {
@@ -194,13 +193,12 @@ ul {
     left: -400px;
   }
   .sideBarMenu.scr {
-    left: -8px;
+    left: -18px;
   }
   .menuBar .menuIcon {
     font-size: 20px;
     color: var(--clrTxtLight);
     cursor: pointer;
-    display: none;
     align-items: center;
     
   }
@@ -238,10 +236,22 @@ footer {
   nav {
     grid-template-columns: 0.4fr 1fr;
   }
+  .menuBar {
+    display: none;
+  }
+  .menuBar .menuIcon {
+    display: none;
+  }
 }
 @media (max-width: 1336px){
   nav {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .menuBar {
+    display: flex;
+  }
+  .menuBar .menuIcon {
+    display: none;
   }
 }
 @media (max-width: 1024px){

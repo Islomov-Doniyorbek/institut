@@ -1,8 +1,7 @@
 // import { MdLocationOn, MdPhone } from 'react-icons/md';
-import Logo from './assets/imgs/logo-estrada-uz-d.png'
 import Footer from './Main/Footer';
 import { MdArrowCircleDown, MdArrowDropDown, MdClose, MdLocationOn, MdMenu, MdPhone } from 'react-icons/md';
-// import Logo from './assets/imgs/logo-estrada.png'
+import Logo from './assets/imgs/logo-estrada.png'
 import { useState } from 'react';
 // import { useState } from 'react';
 
@@ -108,7 +107,7 @@ const Layout = ({ children }) => {
           <p><span><MdPhone /></span> +998 77 200 00 00</p>
         </div>
         <nav className="nav">
-            <div class="col">
+            <div className="col">
                 <div className="logo">
                     <img src={Logo} alt="" />
                     <h2>O'zbekiston Davlat KOnservatoriyasi huzuridagi <br/>
@@ -117,12 +116,12 @@ const Layout = ({ children }) => {
                     </h2>
                 </div>
             </div>
-            <div class="col">
-                <div class="menuBar">
+            <div className="col">
+                <div className="menuBar">
                    <span className='menuIcon' onClick={() => menubar(false)}>
                     <MdMenu />
                     </span>
-                    <div class={`sideBarMenu ${menu ? "hide" : "scr"}`}>
+                    <div className={`sideBarMenu ${menu ? "hide" : "scr"}`}>
                             <span className='close' onClick={() => menubar(true)}>
                                 <MdClose />
                             </span>
@@ -149,11 +148,9 @@ const Layout = ({ children }) => {
                                                             );
                                                         } else if (Array.isArray(itm)) {
                                                             return (
-                                                                <>
-                                                                    {itm.map((link, idx) => (
+                                                                    itm.map((link, idx) => (
                                                                         <li key={idx}>{link}</li>
-                                                                    ))}
-                                                                </>
+                                                                    ))
                                                             );
                                                         } else {
                                                             return null;
@@ -191,12 +188,9 @@ const Layout = ({ children }) => {
                                                             </li>
                                                         );
                                                     } else if (Array.isArray(itm)) {
-                                                        return (
-                                                            <>
-                                                                {itm.map((link, idx) => (
+                                                        return (itm.map((link, idx) => (
                                                                     <li key={idx}>{link}</li>
-                                                                ))}
-                                                            </>
+                                                                ))
                                                         );
                                                     } else {
                                                         return null;
@@ -210,7 +204,7 @@ const Layout = ({ children }) => {
                         ))
                     }
                 </ul>
-                <div className="navDetails">
+                <div className="menuDetails">
                     detal
                 </div>
             </div>
