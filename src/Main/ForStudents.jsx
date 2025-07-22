@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 import { MdEmojiEvents } from 'react-icons/md'
 import { PiStudentBold } from 'react-icons/pi'
 import { RiMoneyDollarCircleLine } from 'react-icons/ri'
-const ForStudents = () => {
+function ForStudents() {
   return (
    <div className='forstudent'>
         <div className='forstudent_row'>
@@ -61,5 +61,7 @@ const ForStudents = () => {
     </div>
   )
 }
+
+
 
 export default ForStudents

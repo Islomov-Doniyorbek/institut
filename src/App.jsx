@@ -1,14 +1,14 @@
 import './App.css'
 import Layout from './layout'
 import Komponents from './Main/Komponents'
-import './App.css'
-import '../src/Main/'
+import './Main.css'
 function App() {
   return (
-    
+    // children bizda Layoutni ichidagi Komponents
     <Layout>
-      <Komponents/>
-</Layout>
+      <Komponents />
+
+    </Layout>
   )
 }
 

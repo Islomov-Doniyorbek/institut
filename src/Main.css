@@ -1,0 +1,548 @@
+.main{width: auto; height: auto;}
+.navbar{width: auto; height: auto;}
+.navbar_top{width: auto; display: flex; justify-content: end; align-items: center; background-color:  #1a5950; padding: 15px 80px 15px 0px; }
+.navbar_top p{display: flex; align-items: center;  font-size: 15px; color: white;}
+.navbar_top p span{font-size: 20px;
+  color: #fde428; margin: 7px 12px 0px 0px;}
+.mar_rig{margin-right: 35px;}
+.navbar_center{display: flex; align-items: center;  padding: 20px 0px 20px 100px; display: flex; justify-content: space-between;}
+.main_img{width: 410px; height: 110px;}
+.person{width: 50px;}
+.navbar_bottom{width: 100%; height: auto; background-color: #002e5b; height: 65px;}
+.navbar_bottom ul{display: flex; justify-content: center; align-items: center; height: 100%;}
+.navbar_bottom ul li{    padding-right: 28px; display: flex; align-items: center; justify-content: center;} 
+.navbar_bottom ul li a{display: block; font-family: 'Montserrat';
+   color: white;
+  text-decoration: none;
+  transition: all .3s ease; 
+  font-weight:600;
+  font-size:18px;
+  font-style: normal;
+}
+.navbar_bottom ul li a:hover{color: #6c91e1 !important;}
+.navbar_bottom ul li span:hover{color: #6c91e1 !important;}
+.navbar_bottom ul li span{   font-size: 20px;
+ margin: 4px 0px 0px 8px; color: #ffffff80; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+.dropdown_container{
+  padding-top: 65px !important; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: white;
+ width: 230px !important;
+  z-index: 1;
+  padding: 15px 0px;
+}
+.dropdown-content_2{width: 260px !important;}
+.dropdown-content_2 p{padding: 10px 25px !important;}
+.dropdown-content_3{width: 260px !important;}
+.dropdown-content_3 p{padding: 10px 25px !important;}
+.dropdown-content p{ padding: 10px 25px;
+  font-size: 16px; font-weight: 500; color:#333; font-family:'Montserrat' ; cursor: pointer;
+}
+.dropdown-content p:hover{background-color:#002e5b !important ; color: white;}
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}
+.search input{padding: 10px; border: none; border-radius: 10px; width: 220px; font-size: 17px;}
+
+.search input:hover {
+  border: none !important;
+  outline: none !important;
+}
+.main_box{width: auto; height: 85vh; }
+.main_box_img{width: auto; height: 85vh; background-image: url('./Images/botirzaripov.jpg'); background-repeat: no-repeat;
+  background-size: cover; padding: 40px; background-repeat: no-repeat; display: flex; justify-content: flex-start; align-items: center;}
+.main_text h1{font-family:'Montserrat';
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-transform: none;
+  text-decoration: none;
+}
+
+.main_text p{font-family:'Montserrat';
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-transform: none;
+  text-decoration: none;
+}
+.main_text button{font-family:'Montserrat'; padding: 15px 25px; display: flex; align-items: center; color: white;
+   background-color: #024180; border-radius: 10px; border: none; font-size: 20px; margin-top: 40px;}
+   .main_text button:hover{ background-color: #396cd8 !important;}
+   .main_text button span{margin-left: 10px; font-size:23px; margin-top: 5px;}
+.main_box_bottom{display: flex; align-items: center; justify-content: space-between; padding: 15px 70px;
+   background-color: #024180;}
+.main_box_bottom h1{font-size: 20px; font-family:'Montserrat'; 
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.918);}
+  .main_box_bottom button{font-family:'Montserrat';  padding: 12px 25px; display: flex; align-items: center; color: white;
+    background-color: #2651ad; border-radius: 10px; border: none; font-size: 18px;}
+      .main_box_bottom button:hover{background-color: #396cd8 !important;}
+    .main_box_bottom span{margin-left: 10px; font-size:23px; margin-top: 5px;}
+
+    .news{width: auto; height: auto; padding: 120px 100px;}
+    .news h1{display: flex; justify-content: center; line-height: 60px; font-family: "Montserrat"; color: #002e5b;
+    font-weight: 700;      font-size: 45px; margin-bottom: 30px;}
+    .news_row{display: flex; align-items: center; width: 100%; flex-wrap: nowrap; overflow: hidden;}
+    .news_card{width: 25%; border-radius: 10px; height: auto; padding: 10px;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; margin: 10px 10px;}
+  .news_text {
+  height: 130px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 20px 10px;
+  }
+  
+  .news_text::-webkit-scrollbar {
+  display: none; 
+  }
+  .news_text h2{font-size: 18px; color: #002e5b; font-family: "Montserrat"; font-weight: 600;}
+  .news_icons{padding: 0px 10px 0px 10px;}
+  .news_icons p{margin: 10px 0px; display: flex; align-items: center;     font-size: 15px;
+    line-height: 20px;
+    font-weight: 500; color: #7B7A7A;}
+  
+  .news_icons p span{color: #014080; margin-right: 5px; font-size: 17px; margin-top: 5px;}
+  .news_button{width: 100%; display: flex; justify-content: center;}
+  
+  .news_button button{ background-color: #014080;
+  padding:13px 20px ; margin-top: 40px; border: none; border-radius: 10px;
+  font-size: 17px; color: #FFFFFF;font-family: "Montserrat";
+  } 
+  
+  .news_button button:hover{background-color: #024c96;}
+  .news_img{width: 100%; }
+  .news_img img{width: 100%; height: 180px; border-radius: 10px;}
+  
+    
+
+
+.link{width: auto; height: auto; margin-top: 0px; padding: 80px 0px 100px 60px;  background-color: #F2F2F2F2;}
+.link h1{display: flex; justify-content: center; align-items: center; color: #1a5950;     font-size: 45px;
+  line-height: 60px;
+  font-weight: 700; margin-bottom: 40px;}
+.links_row{display: flex; width: 100%; flex-wrap: wrap; }
+.links_col{display: flex; width: 30%; align-items: center; justify-content: flex-start; padding: 20px 0px ;
+   border-radius: 20px; transition: transform 0.3s ease;
+   transform-origin: center; margin: 15px; padding: 20px 0px 20px 50px;}
+.links_col:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
+}
+.link_texts{width: calc(100% - 100px);}
+
+.link_icon{ width: 80px; display: flex; justify-content: center; align-items: center;
+  height: 70px; margin-right: 20px; color: #1a5950;
+background-color: #1a5950;
+  padding: 3px;
+  font-size: 50px;
+text-align: center;
+  line-height: 55px;
+  clip-path: polygon(
+    25% 0%,
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    25% 100%,
+    0% 50%
+  );}
+  .link_inner{  width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: inherit; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+  }
+  .links_col h2{color: #1a5950; font-size: 25px; font-family:'Montserrat'; margin-bottom: 15px;}
+  .links_col b{color: rgb(37, 37, 37)!important; font-size: 18px; font-family:'Open Sans';}
+
+
+
+
+.usinfo{padding: 80px;}
+.useinfo_box{ border-radius: 20px; padding: 50px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; background-image: url('../src/Images/volumetric-musical-background-with-treble-clef-notes-generative-ai\ \(1\).jpg');
+background-position: center; background-repeat: no-repeat; background-size: cover; }
+.useinfo_row{display: flex; width: 100%; justify-content: space-between;}
+.useinfo_box h1{color: black; font-family:'Montserrat'; font-size: 40px; color: 	#FFFFFF;} 
+.useinfo_box h1 b{color: #ffeb3b; font-family:'Montserrat'; font-size: 40px;}
+.info_text{display: flex; margin-bottom: 30px;}
+.info_text span{color: #ffeb3b; font-size: 35px; margin-right: 10px; margin-top: 5px;}
+.useinfo_card h2{color: white; font-family:'Montserrat'; font-size: 40px; }
+.useinfo_card p{color: rgb(202, 202, 202); font-size: 18px; margin-top: 10px; ; font-family:'Montserrat';}
+
+
+
+
+.event{width: auto; height: auto; padding: 50px 80px ;}
+.event h1{    font-size: 50px;  font-family:'Montserrat'; margin-bottom: 50px; 
+    text-align: center;
+    line-height: 60px;
+    font-weight: 700; color: #1a5950;}
+    .event_line{display: flex; justify-content: center; align-items: center;}
+    .event_line p{ width: 60px; height: 8px; background-color: #002e5b;}
+.event_card img{width: 100%; height: 220px; border-radius: 10px;}
+.event_row{margin-top: 40px; display: flex; width: 100%;} 
+.event_card{width: 32%; margin: 0px 15px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; padding: 10px; border-radius: 10px;}
+.event_text{padding: 20px; height: 120px; overflow: hidden; overflow-y: auto;}
+.event_text h2{    color: #1a5950; font-size: 18px;  font-family:'Montserrat'; margin-bottom: 30px;}
+  
+.event_text::-webkit-scrollbar {
+    display: none; 
+    }
+.event_icons{margin-top: 30px; padding: 0px 20px;}
+.event_icons p {margin: 5px 0px; font-size: 16px; color: #646464; font-family:'Montserrat'; display: flex; align-items: center;}
+.event_icons p span{font-size: 18px; color: #002e5b; margin-right: 5px; }
+
+
+
+
+
+
+
+
+
+
+.about{width: auto;  padding: 20px; height: 60vh; border-radius: 100px 0px 100px 0px; background-repeat: no-repeat; background-size: cover; background-image: url('../src/Images/photo_2025-07-20_21-19-52.jpg');;}
+.about_text{width: 50%; border-radius: 100px 0px 100px 0px; height: 100%; background-color: white; padding:80px ;}
+.about_text h1{font-size: 19px; font-family: "Open Sans"; color: #474747;}
+.about_text p{font-size: 18px;
+    font-weight: 700; font-family: "Open Sans";
+    line-height: 30px;
+margin-top: 50px;
+    color:#002e5b;
+}
+.about_text span{ font-size: 16px;
+    font-weight: 500; font-family: "Open Sans"; color: #717171;}
+    .about_text span b{font-size: 20px; margin-left: 6px;}
+
+
+
+
+.forstudent{width: auto; height: auto; padding: 100px; margin: 50px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
+.forstudent_row{width: 100%; display: flex;}
+.forstudent_box{width:33%; padding: 10px; margin: 0px 10px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; border-radius: 20px;}
+.forstudent_box h1{font-size: 20px; color: #002e5b; margin: 20px 0px 10px 20px; display: flex; align-items: center;}
+.forstudent_box h1 span{font-size: 23px; margin-left: 5px; margin-top: 5px;}
+.forstudent_col{ border-radius: 20px;  position: relative; height: 280px; background-repeat: no-repeat; background-size: cover; background-image: url('../src/Images/group-students-throwing-books-air.jpg');  transition: all 0.3s ease;
+overflow: hidden;
+}
+.forstudent_box:hover{  transform: translateY(-10px);;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
+.forstudent_card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(26, 89, 80, 0.85);
+  border-radius: 20px;
+  transform: translateY(100%); 
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 2;
+}
+.forstudent_col:hover .forstudent_card {
+  transform: translateY(0);
+  opacity: 1;
+}
+.forstudent_card_icon span {
+  font-size: 45px;
+  color: yellow;
+  margin-right: 20px;
+}
+.forstudent_card_text p{color: #FFFFFF; font-size: 20px;  font-family:'Montserrat'; margin-bottom: 10px;}
+.forstudent_card_text b{color: #FFFFFF; font-size: 17px;  font-family:'Open Sans'; margin-bottom: 10px;}
+.footer{display: flex;}
+.footer_text{display: flex; padding: 20px;}
+.footer_text h1{color: #FFFFFF99; font-size: 14px;  font-family:'Open Sans'; margin-bottom: 20px;}
+.footer_text p{color: #FFFFFF99; font-size: 14px;  font-family:'Open Sans'; }
+.footer_icon{display: flex; justify-content: flex-end; width: 100%; padding: 20px 60px 0px 20px; }
+.footer_icon p{width: 40px; height: 40px; border-radius: 50%; font-size: 20px; margin: 0px 10px; background-color: white; display: flex; justify-content: center; color: #002e5b; align-items: center;} 
+.fo_instagram:hover{background-color: rgb(235, 68, 46); color: white;}
+.fo_facebook:hover{background-color: rgb(28, 28, 255); color: white;}
+.fo_youtube:hover{background-color: red; color: white;}
+.fo_telegram:hover{background-color: rgb(76, 76, 255); color: white;}
+
+
+
+
+
+
+
+@media (max-width:1024px){
+
+.navDetails{display: none !important;}
+.main_box_img{    width: 100% !important; position: relative;
+    height: 800px;
+    display: block;
+    margin: 0 auto;  } 
+        .main_text{position: absolute; top:60%}
+    .main_text button {padding: 15px 25px; font-size: 20px; margin-top: 20px}
+        .main_box_bottom{padding: 15px 20px !important; display: flex; }
+    .main_box_bottom h1{font-size: 14px;}
+        .main_box_bottom button{ padding: 8px; font-size: 15px; }
+    .main_box_bottom span{font-size: 20px; margin: 1px 0px 0px 2px;}
+    .news{margin-top: -100px; padding: 0px 30px;}
+.news_row{ display: flex; flex-wrap: wrap;}
+.news_card{width: 47%; margin: 10px; }
+  .news_button{margin-bottom: 30px;}
+.link{padding: 50px 0px 50px;}
+  .link h1{font-size: 35px;}
+  .links_row{display: flex; flex-wrap: wrap;}
+  .links_col{width: 50%; margin: 0px;}
+  .links_col:hover {
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.usinfo{padding: 60px 20px;}
+.useinfo_row{display: flex; flex-wrap: wrap; justify-content: center;}
+.useinfo_card{width:33%; display: flex; flex-direction: column; align-items: center;  margin: 10px 0px;}
+.useinfo_box {
+  position: relative;
+  border-radius: 20px;
+  padding: 50px 20px;
+  overflow: hidden;
+  z-index: 1;
+  background: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+/* Blur va qoraroq effekt uchun */
+.useinfo_box::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/Images/volumetric-musical-background-with-treble-clef-notes-generative-ai%20(1).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px) brightness(50%);
+  z-index: -1;
+}
+
+.useinfo_box h1 b{color: #ffd700;}
+.info_text span{color: #ffd700;}
+.useinfo_card p{color: #f0f0f0; }
+.event{padding: 20px 20px; }
+.event_row{display: flex; justify-content: center; flex-wrap: wrap;}
+.event_card{width: 47%; margin: 10px;}
+
+.about { border-radius: 20px !important;
+  position: relative;
+  width: auto !important;
+  height: 500px !important;
+  border-radius: 0;
+  padding: 0;
+  background: none !important; /* asosiy fonni olib tashlaymiz */
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* blur + qoraroq effekt */
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/Images/prezident2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px) brightness(60%);
+  z-index: -1;
+}
+.about_text{width: 100%; padding: 0px; border-radius: 0px; background-color: transparent; padding: 20px 40px; display: flex; flex-direction: column; justify-content: center;} 
+.about_text h1{color:  #ffffff;; font-size: 20px;}
+.about_text p{font-size: 20px; color: #0374e4;}
+ .about_text span{font-size: 18px; color: rgb(223, 223, 223);}
+ .about_text span b {font-size: 20px;}
+
+ .forstudent{margin: 20px; padding: 30px;}
+.forstudent_row{width: 100%; flex-wrap: wrap; display: flex; justify-content: center;}
+.forstudent_box{width: 48%; margin: 5px;}
+  .forstudent_col {
+    background-size: contain;   /* kichik ekranda kesilmasdan ko‘rinadi */
+background-position: center;
+height: 150px;
+  }
+.forstudent_box h1 {font-size: 17px;}
+.forstudent_card_text p{ font-size: 20px;}
+.forstudent_card_text b{ font-size: 17px; }
+.forstudent_box h1 span{font-size: 25px;}
+  .footer_text h1{font-size: 10px;}
+  .forstudent_col{height: 200px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+    .footer_icon p {width: 30px; height: 30px; font-size: 18px;}
+
+
+.news_img img{height: 220px;}
+.news_text{height: 120px;}
+
+
+}
+
+
+@media (max-width:767px){
+    .topBar {padding: 10px 16px;}
+    .topBar p{font-size: 9px;}
+.main_box_img{    width: 100% !important; position: relative;
+    height: 400px;
+    display: block;
+    margin: 0 auto;  } 
+    .main_text h1 {font-size: 17px !important; }
+    .main_text p {font-size: 15px;}
+    .main_text button {padding: 8px 10px; font-size: 12px; margin-top: 20px}
+
+        .main_text button span{font-size: 12px; margin: 3px 0px 0px 0px;}
+        .main_text{position: absolute; bottom: 20px; left: 20px;}
+        .main_box_bottom{padding: 10px 20px !important; display: flex; flex-direction: column; text-align: center; }
+        .main_box_bottom h1{font-size: 15px;}
+        .main_box_bottom button{ padding: 8px; font-size: 13px; margin-top: 10px;}
+        .main_box_bottom span{font-size: 17px; margin: 2px 0px 0px 3px;}
+        .news{padding: 0px 20px !important; }
+        .news h1{font-size: 30px;}
+.news_row{display: flex; flex-direction: column; padding: 8px;}
+.news_card{width: 100%; margin: 5px 0px;}
+.news_button{margin-bottom:20px ;}
+.news_img img{height: 200px;}
+.event_text{height: 130px;}
+.news_icons p{font-size: 13px;}
+.news_icons p span{font-size: 15px;}
+
+
+
+
+
+.link{padding: 20px 10px 100px 10px; background-color: #dddddd;}
+.link h1{font-size: 30px; }
+.links_row{display: flex; flex-direction: column; padding: 0px 15px;}
+.links_col{width: 100%; padding: 15px 10px;  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; margin: 10px 0px;}
+.links_col:hover {
+  transform: scale(0.8);
+  box-shadow:none;
+}
+.usinfo{padding: 40px 10px;}
+.useinfo_row{display: flex; flex-direction: column; text-align: center; align-items: center;}
+.useinfo_card h2{ color: #ffd700;}
+.useinfo_box {
+  position: relative;
+  border-radius: 20px;
+  padding: 50px 20px;
+  overflow: hidden;
+  z-index: 1;
+  background: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+/* Blur va qoraroq effekt uchun */
+.useinfo_box::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/Images/volumetric-musical-background-with-treble-clef-notes-generative-ai%20(1).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px) brightness(50%);
+  z-index: -1;
+}
+.useinfo_box h1{font-size: 30px;}
+.useinfo_box h1 b{color: #ffd700; font-size: 30px;}
+.info_text span{color: #ffd700; margin: 0px 5px 0px 0px;}
+.useinfo_card p{color: #f0f0f0; }
+.event{padding: 30px 20px ;}
+.event h1{font-size: 35px; margin-bottom: 10px !important;}
+.event_line p {width: 40px; height: 5px;}
+.event_row{display: flex; flex-direction: column; }
+.event_card{width: 100%; margin: 10px 0px;}
+.event_icons p{font-size: 13px;}
+.event_icons p span{
+  font-size: 14px; margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+.about { border-radius: 20px !important;
+  position: relative;
+  width: auto !important;
+  height: 500px !important;
+  border-radius: 0;
+  padding: 0;
+  background: none !important; /* asosiy fonni olib tashlaymiz */
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* blur + qoraroq effekt */
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/Images/photo_2025-07-22_11-05-24.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px) brightness(60%);
+  z-index: -1;
+}
+.about_text{width: 100%; padding: 0px; border-radius: 0px; background-color: transparent; padding: 20px; display: flex; flex-direction: column; justify-content: center;} 
+.about_text h1{color:  #ffffff;; font-size: 15px;}
+.about_text p{font-size: 15px; color: #036ad1;}
+ .about_text span{font-size: 12px; color: rgb(223, 223, 223);}
+ .about_text span b {font-size: 17px;}
+ 
+ 
+ 
+ 
+ 
+ .forstudent{padding: 10px; margin: 20px;}
+ .forstudent_row{display: flex; flex-direction: column;}
+ .forstudent_box{width: 100%; margin: 10px 0px;}
+ .forstudent_box h1{font-size: 18px;}
+  .forstudent_col {
+    background-size: contain;   /* kichik ekranda kesilmasdan ko‘rinadi */
+background-position: center;
+height: 150px;
+  }
+  .forstudent_card_text p{font-size: 18px; }
+  .forstudent_card_text b{font-size: 15px;}
+  .footer{display: flex; flex-direction: column;}
+  .footer_icon{display: flex; justify-content: flex-start; padding: 0px 0px 20px 15px; }
+    .footer_text{display: flex !important; flex-direction: none !important;}
+  .footer_text h1{font-size: 8px;}
+  .footer_icon p {width: 20px; height: 20px; font-size: 10px;}
+  .text_line{height: 20px; width: 8px; background-color: rgb(19, 168, 253); margin-right: 10px; margin-top: 3px;}
+  .footer_icon span{width: 5px; margin-left: 5px; margin-top: 0px;}
+
+}
