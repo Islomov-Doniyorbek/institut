@@ -41,29 +41,53 @@ header {
 nav.nav {
   position: relative;
   width: 100%;
-  display: flex;
   padding: 10px 18px;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
   background: var(--clrBgDark);
-  /* height: 80px; */
+}
+nav .col {
+  display: flex;
+  align-items: center;
+}
+nav .col:first-child {
+  justify-content: center;
+}
+nav .logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.logo h2 {
+  font-size: 10px;
+  color: var(--clrTxtLight);
+  text-transform: uppercase;
 }
 nav.nav .logo img {
-  width: 200px;
+  width: 40px;
+  height: 40px;
   position: relative;
 }
 .navLinks {
   display: flex;
   gap: 10px;
 }
+.navLinks strong, .navLinks .linkBlock {
+  display: flex;
+  align-items: center;
+}
 .navLinks li {
   position: relative;
   cursor: pointer;
+}
+.navLinks > li {
+  padding: 12px 0;
 }
 .navLinks li strong {
   position: relative;
   cursor: pointer;
   padding: 10px;
+  font-size: 14px;
 }
 .navLinks li strong:hover {
   box-shadow: 0 0 4px 1px cyan;
@@ -76,10 +100,10 @@ ul {
 .navLinks li ul  {
   position: absolute;
   width: 200px;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 14px;
+  padding: 2px 10px;
   left: 0;
-  background-color: var(--clrBgDark);
+  background-color: rgba(22, 78, 232, 0.5);
   display: flex;
   flex-direction: column;
   z-index: 6;
@@ -87,23 +111,23 @@ ul {
   top: 90px;
   transition: top 0.4s ease;
   opacity: 0;
+  backdrop-filter: blur(4px);
 }
 .navLinks li:hover > ul {
   visibility: visible;
-  top: 35px;
+  top: 45px;
   opacity: 1;
 }
 .navLinks ul li {
-  padding: 14px 8px;
+  padding: 8px 6px;
 }
 .navLinks li ul li ul {
   position: absolute;
   transform: translate(190px, -45px);
   top: 0;
   z-index: 6;
-  /* visibility: hidden; */
 }
-.navLinks li ul li:hover {
+.navLinks li ul li:not(.nesting):hover {
   background: rgba(0,0,0,.3);
   color: cyan;
 }
@@ -112,12 +136,80 @@ ul {
   color: cyan;
   
 }
+
 /* .navLinks ul .nesting:hover > ul {
   visibility: visible;
-} */
-
-
-
+  } */
+  
+  .menuBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .menuBar .sideBarMenu {
+    min-width: 320px;
+    max-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    z-index: 6;
+    left: -8px;
+    top: 0;
+    background-color: var(--clrBgDark);
+  }
+  .sideBarMenu .navLinks {
+    display: block;
+    background-color: transparent;
+  }
+  .sideBarMenu .navLinks li ul {
+    display: none;
+    visibility: hidden;
+    opacity: 1;
+    position: absolute;
+    background-color: transparent;
+    top: 10px;
+  }
+  .sideBarMenu .navLinks li ul li:not(.nesting):hover {
+    background: var(--clrBg);
+    color: var(--clrTxtDark);
+  }
+  .sideBarMenu .navLinks li ul li ul li:hover {
+    background: var(--clrBg);
+    color: var(--clrTxtDark);
+  }
+  .sideBarMenu .navLinks li ul li ul {
+    display: none;
+    visibility: hidden;
+    opacity: 1;
+    transform: translate(0,0);
+    position: relative;
+    background-color: transparent;
+  }
+  .sideBarMenu .navLinks li:hover > ul {
+    display: block;
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+  }
+  .sideBarMenu.hide {
+    left: -400px;
+  }
+  .sideBarMenu.scr {
+    left: -8px;
+  }
+  .menuBar .menuIcon {
+    font-size: 20px;
+    color: var(--clrTxtLight);
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    
+  }
+  .sideBarMenu .close {
+    font-size: 20px;
+    color: var(--clrTxtLight);
+    cursor: pointer;
+  }
+  
 
 main {
   position: relative;
@@ -131,4 +223,49 @@ footer {
   min-height: 100px;
   background-color: var(--clrBgDark);
   color: var(--clrTxtLight);
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1336px){
+  nav {
+    grid-template-columns: 0.4fr 1fr;
+  }
+}
+@media (max-width: 1336px){
+  nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1024px){
+  nav {
+    grid-template-columns: 0.12fr 1fr;
+  }
+  nav .col:first-child {
+    order: 4;
+  }
+  nav .col {
+    justify-content: space-between;
+  }
+  .menuBar .menuIcon {
+    display: flex;
+  }
+  .rwdNav {
+    display: none;
+  }
+}
+@media (max-width: 664px){
+  .topBar {
+    padding: 5px 18px;
+  }
+  .topBar p {
+    font-size: 14px;
+  }
 }

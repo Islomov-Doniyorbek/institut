@@ -1,6 +1,9 @@
-import { MdLocationOn, MdPhone } from 'react-icons/md';
+// import { MdLocationOn, MdPhone } from 'react-icons/md';
 import Logo from './assets/imgs/logo-estrada-uz-d.png'
 import Footer from './Main/Footer';
+import { MdArrowCircleDown, MdArrowDropDown, MdClose, MdLocationOn, MdMenu, MdPhone } from 'react-icons/md';
+// import Logo from './assets/imgs/logo-estrada.png'
+import { useState } from 'react';
 // import { useState } from 'react';
 
 const Layout = ({ children }) => {
@@ -89,6 +92,12 @@ const Layout = ({ children }) => {
 
     console.log(navLinks[1].linkList[0].nestedLinks);
     
+    const [menu, setMenu] = useState(true)
+
+    const menubar = bool => {
+        setMenu(bool)
+    }
+
   return (
     <div className='container'>
       <header>
@@ -99,52 +108,111 @@ const Layout = ({ children }) => {
           <p><span><MdPhone /></span> +998 77 200 00 00</p>
         </div>
         <nav className="nav">
-            <div className="logo">
-                <img src={Logo} alt="" />
+            <div class="col">
+                <div className="logo">
+                    <img src={Logo} alt="" />
+                    <h2>O'zbekiston Davlat KOnservatoriyasi huzuridagi <br/>
+                        Botir Zokirov nomidagi <br/>
+                        Milliy Estrada san'ati instituti
+                    </h2>
+                </div>
             </div>
-            <ul className="navLinks">
-                {
-                    navLinks.map(item => (
-                        <li key={item.id} className='linkBlock'>
-                            <strong>{item.linkName}</strong>
-                            {
-                                item.linkList ? (
-                                    <ul className='links'>
-                                        {
-                                            item.linkList.map((itm, i) => {
-                                                if (typeof itm === 'object' && !Array.isArray(itm)) {
-                                                    return (
-                                                        <li className='nesting' key={i}>
-                                                           {itm.nestedLinkName}
-                                                            <ul className='dropdown'>
-                                                                    {itm.nestedLinks.map((link, idx) => (
+            <div class="col">
+                <div class="menuBar">
+                   <span className='menuIcon' onClick={() => menubar(false)}>
+                    <MdMenu />
+                    </span>
+                    <div class={`sideBarMenu ${menu ? "hide" : "scr"}`}>
+                            <span className='close' onClick={() => menubar(true)}>
+                                <MdClose />
+                            </span>
+                            <ul className="navLinks">
+                        {
+                            navLinks.map(item => (
+                                <li key={item.id} className='linkBlock'>
+                                    <strong>{item.linkName} <MdArrowDropDown/> </strong>
+                                    {
+                                        item.linkList ? (
+                                            <ul className='links'>
+                                                {
+                                                    item.linkList.map((itm, i) => {
+                                                        if (typeof itm === 'object' && !Array.isArray(itm)) {
+                                                            return (
+                                                                <li className='nesting' key={i}>
+                                                                {itm.nestedLinkName} <MdArrowDropDown/>
+                                                                    <ul className='dropdown'>
+                                                                            {itm.nestedLinks.map((link, idx) => (
+                                                                                <li key={idx}>{link}</li>
+                                                                            ))}
+                                                                    </ul>
+                                                                </li>
+                                                            );
+                                                        } else if (Array.isArray(itm)) {
+                                                            return (
+                                                                <>
+                                                                    {itm.map((link, idx) => (
                                                                         <li key={idx}>{link}</li>
                                                                     ))}
-                                                            </ul>
-                                                        </li>
-                                                    );
-                                                } else if (Array.isArray(itm)) {
-                                                    return (
-                                                        <>
-                                                            {itm.map((link, idx) => (
-                                                                <li key={idx}>{link}</li>
-                                                            ))}
-                                                        </>
-                                                    );
-                                                } else {
-                                                    return null;
+                                                                </>
+                                                            );
+                                                        } else {
+                                                            return null;
+                                                        }
+                                                    })
                                                 }
-                                            })
-                                        }
-                                    </ul>
-                                ) : null
-                            }
-                        </li>
-                    ))
-                }
-            </ul>
-            <div className="navDetails">
-                detal
+                                            </ul>
+                                        ) : null
+                                    }
+                                </li>
+                            ))
+                        }
+                    </ul>
+                    </div>
+                </div>
+                <ul className="navLinks rwdNav">
+                    {
+                        navLinks.map(item => (
+                            <li key={item.id} className='linkBlock'>
+                                <strong>{item.linkName} <MdArrowDropDown/></strong>
+                                {
+                                    item.linkList ? (
+                                        <ul className='links'>
+                                            {
+                                                item.linkList.map((itm, i) => {
+                                                    if (typeof itm === 'object' && !Array.isArray(itm)) {
+                                                        return (
+                                                            <li className='nesting' key={i}>
+                                                            {itm.nestedLinkName} <MdArrowDropDown/>
+                                                                <ul className='dropdown'>
+                                                                        {itm.nestedLinks.map((link, idx) => (
+                                                                            <li key={idx}>{link}</li>
+                                                                        ))}
+                                                                </ul>
+                                                            </li>
+                                                        );
+                                                    } else if (Array.isArray(itm)) {
+                                                        return (
+                                                            <>
+                                                                {itm.map((link, idx) => (
+                                                                    <li key={idx}>{link}</li>
+                                                                ))}
+                                                            </>
+                                                        );
+                                                    } else {
+                                                        return null;
+                                                    }
+                                                })
+                                            }
+                                        </ul>
+                                    ) : null
+                                }
+                            </li>
+                        ))
+                    }
+                </ul>
+                <div className="navDetails">
+                    detal
+                </div>
             </div>
         </nav>
       </header>
