@@ -301,12 +301,12 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8p
     .main_box_bottom h1{font-size: 14px;}
         .main_box_bottom button{ padding: 8px; font-size: 15px; }
     .main_box_bottom span{font-size: 20px; margin: 1px 0px 0px 2px;}
-    .news{margin-top: -100px; padding: 0px 30px;}
+    .news{ padding: 0px 30px;}
 .news_row{ display: flex; flex-wrap: wrap;}
 .news_card{width: 47%; margin: 10px; }
   .news_button{margin-bottom: 30px;}
 .link{padding: 50px 0px 50px;}
-  .link h1{font-size: 35px;}
+  .link h1{font-size: 35px;} 
   .links_row{display: flex; flex-wrap: wrap;}
   .links_col{width: 50%; margin: 0px;}
   .links_col:hover {
@@ -326,7 +326,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8p
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-/* Blur va qoraroq effekt uchun */
+
 .useinfo_box::before {
   content: "";
   position: absolute;
