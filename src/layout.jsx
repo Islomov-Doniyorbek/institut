@@ -21,7 +21,7 @@ const Layout = () => {
                 {
                     nestedLinkName: "Tuzilma",
                     nestedLinks: [
-                        {link:"Institut tuzilmasi", path: '/Institut/Tuzlama'},
+                        {link:"Institut tuzilmasi", path: '/InstitutMenu/institut-tuzilmasi'},
                         {link:"Tarkibiy tuzilma", path: '/Activity/Activity'},
                         {link:"Fakultetlar va kafedralar", path: '/Activity/Activity'}, 
                     ]
