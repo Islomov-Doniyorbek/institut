@@ -21,7 +21,7 @@ const Layout = () => {
                 {
                     nestedLinkName: "Tuzilma",
                     nestedLinks: [
-                        {link:"Institut tuzilmasi", path: '/Activity/Activity'},
+                        {link:"Institut tuzilmasi", path: '/Institut/institut-tuzilmasi'},
                         {link:"Tarkibiy tuzilma", path: '/Activity/Activity'},
                         {link:"Fakultetlar va kafedralar", path: '/Activity/Activity'}, 
                     ]
@@ -98,6 +98,11 @@ const Layout = () => {
                     {link:"Kasbiy(Ijodiy) imtihonlar translatsiyasi", path: '/Activity/Activity'},
                 ]
             ]
+        },
+        {
+            id: 7,
+            linkName: "Syurpriz",
+            linkList: null
         },
     ]
 

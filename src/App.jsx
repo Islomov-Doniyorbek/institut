@@ -7,6 +7,7 @@ import Article from './Pages/Activity/Article'
 import Projects from './Pages/Activity/Projects'
 import './App.css'
 import './Main.css'
+import Tuzilma from './pages/Institut/institut-tuzilmasi'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="Activity/ActiveCouncil" element={<ActiveCouncil />} />
           <Route path="Activity/Article" element={<Article />} />
           <Route path="Activity/Projects" element={<Projects />} />
+          <Route path="Institut/institut-tuzilmasi" element={<Tuzilma />} />
         </Route>
       </Routes>
   )
