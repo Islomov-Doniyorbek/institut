@@ -1,19 +1,24 @@
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './layout'
 import Komponents from './Main/Komponents'
-import './Main.css'
 import Activity from './Pages/Activity/Activity'
-import { Route, Routes } from 'react-router-dom'
 import ActiveCouncil from './Pages/Activity/ActiveCouncil'
 import Article from './Pages/Activity/Article'
 import Projects from './Pages/Activity/Projects'
+import './App.css'
+import './Main.css'
+
 function App() {
   return (
-    // children bizda Layoutni ichidagi Komponents
-    <Layout>
-<Article/>
-
-    </Layout>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Komponents />} />
+          <Route path="Activity/Activity" element={<Activity />} />
+          <Route path="Activity/ActiveCouncil" element={<ActiveCouncil />} />
+          <Route path="Activity/Article" element={<Article />} />
+          <Route path="Activity/Projects" element={<Projects />} />
+        </Route>
+      </Routes>
   )
 }
 

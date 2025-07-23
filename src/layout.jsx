@@ -3,13 +3,15 @@ import Footer from './Main/Footer';
 import { MdArrowCircleDown, MdArrowDropDown, MdClose, MdLocationOn, MdMenu, MdPhone } from 'react-icons/md';
 import Logo from './assets/imgs/logo-estrada.png'
 import { useState } from 'react';
-// import { useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
+import LiComponent from './components/LiComponent';
 
-const Layout = ({ children }) => {
+
+const Layout = () => {
     const navLinks = [
         {
             id: 0,
-            linkName: "Bosh sahifa",
+            linkName: {link:"Bosh sahifa", path: '/'},
             linkList: null
         },
         {
@@ -19,60 +21,68 @@ const Layout = ({ children }) => {
                 {
                     nestedLinkName: "Tuzilma",
                     nestedLinks: [
-                        "Institut tuzilmasi",
-                        "Tarkibiy tuzilma",
-                        "Fakultetlar va kafedralar"
+                        {link:"Institut tuzilmasi", path: '/Activity/Activity'},
+                        {link:"Tarkibiy tuzilma", path: '/Activity/Activity'},
+                        {link:"Fakultetlar va kafedralar", path: '/Activity/Activity'}, 
                     ]
                 },
-                ["Rahbariyat",
-                "Institut tarixi",
-                "Me'yoriy-huquqiy hujjatlar",
-                "Xalqaro hamkorlik",
-                "Foydali havolalar",
-                "Botir Zokirov hayoti va ijodi"]
+                [
+                {link:"Rahbariyat", path: '/Activity/Activity'},
+                {link:"Institut tarixi", path: '/Activity/Activity'},
+                {link:"Me'yoriy-huquqiy hujjatlar", path: '/Activity/Activity'},
+                {link:"Xalqaro hamkorlik", path: '/Activity/Activity'},
+                {link:"Foydali havolalar", path: '/Activity/Activity'},
+                {link:"Botir Zokirov hayoti va ijodi", path: '/Activity/Activity'},
+                ]
             ]
         },
         {
             id: 2,
             linkName: "Ta'lim",
             linkList: [
-                ["Bakalavr",
-                "Magistratura",
-                "Dars jadvali ",
-                "Bitiruvchilar"]
+                [
+                {link:"Bakalavr", path: '/Activity/Activity'},
+                {link:"Magistratura", path: '/Activity/Activity'},
+                {link:"Dars jadvali", path: '/Activity/Activity'},
+                {link:"Bitiruvchilar", path: '/Activity/Activity'},
             ]
-        },
-        {
-            id: 3,
-            linkName: "Ilmiy faoliyat",
-            linkList: [
-                ["Ilmiy tadqiqot faoliyati",
-                "Ilmiy kengashlar",
-                "Ilmiy jurnallar ",
-                "Ilmiy loyihalar"]
+        ]
+    },
+    {
+        id: 3,
+        linkName: "Ilmiy faoliyat",
+        linkList: [
+            [
+                {link:"Ilmiy tadqiqot faoliyati", path: '/Activity/Activity'},
+                {link:"Ilmiy kengashlar", path: '/Activity/Activity'},
+                {link:"Ilmiy jurnallar", path: '/Activity/Activity'},
+                {link:"Ilmiy loyihalar", path: '/Activity/Activity'},
+            ]
             ]
         },
         {
             id: 4,
             linkName: "Axborot xizmati",
             linkList: [
-                ["Yangiliklar",
-                "Tadbirlar",
-                "Media galereyalar",
-                "Bog'lanish",
-                "Qabul 2025-natijalari"
-                ]
+                [
+                {link:"Yangiliklar", path: '/Activity/Activity'},
+                {link:"Tadbirlar", path: '/Activity/Activity'},
+                {link:"Media galereyalar", path: '/Activity/Activity'},
+                {link:"Bog'lanish", path: '/Activity/Activity'},
+                {link:"Qabul 2025-natijalari", path: '/Activity/Activity'},
+            ]
             ]
         },
         {
             id: 5,
             linkName: "Qabul-2025",
             linkList: [
-                ["Qabul \"Call Centre\"",
-                "Qabul kvotalari (BA & MA)",
-                "Xorijiy fuqarolar uchun qabul",
-                "Qabul dasturlari",
-                "Kasbiy(Ijodiy) imtihonlar translatsiyasi"
+                [
+                    {link:"Qabul \"Call Centre\"", path: '/Activity/Activity'},
+                    {link:"Qabul kvotalari (BA & MA)", path: '/Activity/Activity'},
+                    {link:"Xorijiy fuqarolar uchun qabul", path: '/Activity/Activity'},
+                    {link:"Qabul dasturlari", path: '/Activity/Activity'},
+                    {link:"Kasbiy(Ijodiy) imtihonlar translatsiyasi", path: '/Activity/Activity'},
                 ]
             ]
         },
@@ -80,10 +90,12 @@ const Layout = ({ children }) => {
             id: 6,
             linkName: "Talabalar",
             linkList: [
-                ["Ekofaol talabalar",
-                "Grant uchun ariza",
-                "Talaba yutuqlarini jo'natish",
-                "Grant uchun test"
+                [
+                    {link:"Ekofaol talabalar", path: '/Activity/Activity'},
+                    {link:"Grant uchun ariza", path: '/Activity/Activity'},
+                    {link:"Talaba yutuqlarini jo'natish", path: '/Activity/Activity'},
+                    {link:"Grant uchun test", path: '/Activity/Activity'},
+                    {link:"Kasbiy(Ijodiy) imtihonlar translatsiyasi", path: '/Activity/Activity'},
                 ]
             ]
         },
@@ -127,9 +139,13 @@ const Layout = ({ children }) => {
                             </span>
                             <ul className="navLinks">
                         {
-                            navLinks.map(item => (
-                                <li key={item.id} className='linkBlock'>
-                                    <strong>{item.linkName} <MdArrowDropDown/> </strong>
+                             navLinks.map(item => {
+                               return (
+                                 <li key={item.id} className='linkBlock'>
+                                    {typeof item.linkName === 'object' ? 
+                                        <strong><Link to={item.linkName.path}>{item.linkName.link}</Link> <MdArrowDropDown/> </strong> :
+                                        <strong>{item.linkName} <MdArrowDropDown/> </strong>   
+                                    }
                                     {
                                         item.linkList ? (
                                             <ul className='links'>
@@ -138,71 +154,84 @@ const Layout = ({ children }) => {
                                                         if (typeof itm === 'object' && !Array.isArray(itm)) {
                                                             return (
                                                                 <li className='nesting' key={i}>
-                                                                {itm.nestedLinkName} <MdArrowDropDown/>
+                                                                    {itm.nestedLinkName} <MdArrowDropDown/>
                                                                     <ul className='dropdown'>
-                                                                            {itm.nestedLinks.map((link, idx) => (
-                                                                                <li key={idx}>{link}</li>
-                                                                            ))}
+                                                                        {itm.nestedLinks.map((lnk, idx) => (
+                                                                            <li key={idx}>
+                                                                                <Link to={lnk.path}>{lnk.link}</Link>
+                                                                            </li>
+                                                                        ))}
                                                                     </ul>
                                                                 </li>
                                                             );
                                                         } else if (Array.isArray(itm)) {
-                                                            return (
-                                                                    itm.map((link, idx) => (
-                                                                        <li key={idx}>{link}</li>
-                                                                    ))
-                                                            );
+                                                            return itm.map((lnk, idx) => (
+                                                                <li key={idx}>
+                                                                    <Link to={lnk.path}>{lnk.link}</Link>
+                                                                </li>
+                                                            ));
                                                         } else {
-                                                            return null;
-                                                        }
-                                                    })
+                                                                return null;
+                                                            }
+                                                        })
+
                                                 }
                                             </ul>
                                         ) : null
                                     }
                                 </li>
-                            ))
+                               )
+                            })
                         }
                     </ul>
                     </div>
                 </div>
                 <ul className="navLinks rwdNav">
                     {
-                        navLinks.map(item => (
-                            <li key={item.id} className='linkBlock'>
-                                <strong>{item.linkName} <MdArrowDropDown/></strong>
-                                {
-                                    item.linkList ? (
-                                        <ul className='links'>
-                                            {
-                                                item.linkList.map((itm, i) => {
-                                                    if (typeof itm === 'object' && !Array.isArray(itm)) {
-                                                        return (
-                                                            <li className='nesting' key={i}>
-                                                            {itm.nestedLinkName} <MdArrowDropDown/>
-                                                                <ul className='dropdown'>
-                                                                        {itm.nestedLinks.map((link, idx) => (
-                                                                            <li key={idx}>{link}</li>
+                            navLinks.map(item => {
+                               return (
+                                 <li key={item.id} className='linkBlock'>
+                                    {typeof item.linkName === 'object' ? 
+                                        <strong><Link to={item.linkName.path}>{item.linkName.link}</Link> <MdArrowDropDown/> </strong> :
+                                        <strong>{item.linkName} <MdArrowDropDown/> </strong>   
+                                    }
+                                    {
+                                        item.linkList ? (
+                                            <ul className='links'>
+                                                {
+                                                    item.linkList.map((itm, i) => {
+                                                        if (typeof itm === 'object' && !Array.isArray(itm)) {
+                                                            return (
+                                                                <li className='nesting' key={i}>
+                                                                    {itm.nestedLinkName} <MdArrowDropDown/>
+                                                                    <ul className='dropdown'>
+                                                                        {itm.nestedLinks.map((lnk, idx) => (
+                                                                            <li key={idx}>
+                                                                                <Link to={lnk.path}>{lnk.link}</Link>
+                                                                            </li>
                                                                         ))}
-                                                                </ul>
-                                                            </li>
-                                                        );
-                                                    } else if (Array.isArray(itm)) {
-                                                        return (itm.map((link, idx) => (
-                                                                    <li key={idx}>{link}</li>
-                                                                ))
-                                                        );
-                                                    } else {
-                                                        return null;
-                                                    }
-                                                })
-                                            }
-                                        </ul>
-                                    ) : null
-                                }
-                            </li>
-                        ))
-                    }
+                                                                    </ul>
+                                                                </li>
+                                                            );
+                                                        } else if (Array.isArray(itm)) {
+                                                            return itm.map((lnk, idx) => (
+                                                                <li key={idx}>
+                                                                    <Link to={lnk.path}>{lnk.link}</Link>
+                                                                </li>
+                                                            ));
+                                                        } else {
+                                                                return null;
+                                                            }
+                                                        })
+
+                                                }
+                                            </ul>
+                                        ) : null
+                                    }
+                                </li>
+                               )
+                            })
+                        }
                 </ul>
                 <div className="menuDetails">
                     detal
@@ -210,7 +239,9 @@ const Layout = ({ children }) => {
             </div>
         </nav>
       </header>
-      <main>{children}</main>
+      <main>
+        <Outlet />
+      </main>
       {/* shu childrenga Komponents keladi, avtomatik layout o'zgarmay tururadi. */}
       <footer>
         <Footer/>

@@ -16,6 +16,7 @@
   --clrTxtLight: #FFFFFF;
 
 }
+
 header {
   width: 100%;
   position: relative;
@@ -45,6 +46,12 @@ nav.nav {
   display: grid;
   align-items: center;
   background: var(--clrBgDark);
+}
+nav * a {
+  color: #F9F9F9;
+}
+nav * a:hover {
+  color: #FFD700;
 }
 nav .col {
   display: flex;
