@@ -54,9 +54,9 @@ const Layout = () => {
         linkList: [
             [
                 {link:"Ilmiy tadqiqot faoliyati", path: '/Activity/Activity'},
-                {link:"Ilmiy kengashlar", path: '/Activity/Activity'},
-                {link:"Ilmiy jurnallar", path: '/Activity/Activity'},
-                {link:"Ilmiy loyihalar", path: '/Activity/Activity'},
+                {link:"Ilmiy kengashlar", path: '/Activity/ActiveCouncil'},
+                {link:"Ilmiy jurnallar", path: '/Activity/Article'},
+                {link:"Ilmiy loyihalar", path: '/Activity/Projects'},
             ]
             ]
         },
