@@ -176,9 +176,15 @@ text-align: center;
 
 
 .usinfo{padding: 80px;}
-.useinfo_box{ border-radius: 20px; padding: 50px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; background-image: url('../src/Images/volumetric-musical-background-with-treble-clef-notes-generative-ai\ \(1\).jpg');
-background-position: center; background-repeat: no-repeat; background-size: cover; }
-.useinfo_row{display: flex; width: 100%; justify-content: space-between;}
+.useinfo_box{ 
+  border-radius: 20px; padding: 50px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; 
+  background-image: url('../src/Images/volumetric-musical-background-with-treble-clef-notes-generative-ai\ \(1\).jpg');
+background-position: center; background-repeat: no-repeat; background-size: cover;
+min-height: 500px; 
+/* display: flex;
+flex-direction: column; */
+}
+.useinfo_row{display: flex; width: 100%; justify-content: space-between; }
 .useinfo_box h1{color: black; font-family:'Montserrat'; font-size: 40px; color: 	#FFFFFF;} 
 .useinfo_box h1 b{color: #ffeb3b; font-family:'Montserrat'; font-size: 40px;}
 .info_text{display: flex; margin-bottom: 30px;}
@@ -218,7 +224,7 @@ background-position: center; background-repeat: no-repeat; background-size: cove
 
 
 
-.about{width: auto;  padding: 20px; height: 60vh; border-radius: 100px 0px 100px 0px; background-repeat: no-repeat; background-size: cover; background-image: url('../src/Images/photo_2025-07-20_21-19-52.jpg');;}
+.about{width: auto;  padding: 20px; min-height: 60vh; border-radius: 100px 0px 100px 0px; background-repeat: no-repeat; background-size: cover; background-image: url('../src/Images/photo_2025-07-20_21-19-52.jpg');;}
 .about_text{width: 50%; border-radius: 100px 0px 100px 0px; height: 100%; background-color: white; padding:80px ;}
 .about_text h1{font-size: 19px; font-family: "Open Sans"; color: #474747;}
 .about_text p{font-size: 18px;
