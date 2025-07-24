@@ -7,7 +7,7 @@ import Article from './Pages/Activity/Article'
 import Projects from './Pages/Activity/Projects'
 import './App.css'
 import './Main.css'
-import Tuzilma from './pages/tarkib/Tuzilma'
+import Tuzilma from './pages/Tuzilma'
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="Activity/ActiveCouncil" element={<ActiveCouncil />} />
           <Route path="Activity/Article" element={<Article />} />
           <Route path="Activity/Projects" element={<Projects />} />
-          <Route path="tarkib/Tuzilma" element={<Tuzilma />} />
+          <Route path="/Tuzilma" element={<Tuzilma />} />
         </Route>
       </Routes>
   )
