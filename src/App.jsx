@@ -4,7 +4,7 @@ import Komponents from './Main/Komponents'
 import Activity from './Pages/Activity/Activity'
 import ActiveCouncil from './Pages/Activity/ActiveCouncil'
 import Article from './Pages/Activity/Article'
-import InstitutTuzilmasi from './pages/Tarkib/institutTuzilmasi'
+import InstitutTuzilmasi from './pages/Activity/institutTuzilmasi'
 import Projects from './Pages/Activity/Projects'
 import './App.css'
 import './Main.css'
@@ -18,7 +18,7 @@ function App() {
           <Route path="Activity/ActiveCouncil" element={<ActiveCouncil />} />
           <Route path="Activity/Article" element={<Article />} />
           <Route path="Activity/Projects" element={<Projects />} />
-          <Route path="Tarkib/institutTuzilmasi" element={<InstitutTuzilmasi />} />
+          <Route path="Activity/institutTuzilmasi" element={<InstitutTuzilmasi />} />
         </Route>
       </Routes>
   )
