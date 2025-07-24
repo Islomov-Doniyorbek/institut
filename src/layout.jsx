@@ -4,7 +4,7 @@ import { MdArrowCircleDown, MdArrowDropDown, MdClose, MdLocationOn, MdMenu, MdPh
 import Logo from './assets/imgs/logo-estrada.png'
 import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import LiComponent from './components/LiComponent';
+import Nav from './components/Nav';
 
 
 const Layout = () => {
@@ -21,7 +21,7 @@ const Layout = () => {
                 {
                     nestedLinkName: "Tuzilma",
                     nestedLinks: [
-                        {link:"Institut tuzilmasi", path: 'Activity/Activity'},
+                        {link:"Institut tuzilmasi", path: 'Tarkib/institutTuzilmasi'},
                         {link:"Tarkibiy tuzilma", path: '/Activity/Activity'},
                         {link:"Fakultetlar va kafedralar", path: '/Activity/Activity'}, 
                     ]
@@ -143,100 +143,12 @@ const Layout = () => {
                                 <MdClose />
                             </span>
                             <ul className="navLinks">
-                        {
-                             navLinks.map(item => {
-                               return (
-                                 <li key={item.id} className='linkBlock'>
-                                    {typeof item.linkName === 'object' ? 
-                                        <strong><Link to={item.linkName.path}>{item.linkName.link}</Link> <MdArrowDropDown/> </strong> :
-                                        <strong>{item.linkName} <MdArrowDropDown/> </strong>   
-                                    }
-                                    {
-                                        item.linkList ? (
-                                            <ul className='links'>
-                                                {
-                                                    item.linkList.map((itm, i) => {
-                                                        if (typeof itm === 'object' && !Array.isArray(itm)) {
-                                                            return (
-                                                                <li className='nesting' key={i}>
-                                                                    {itm.nestedLinkName} <MdArrowDropDown/>
-                                                                    <ul className='dropdown'>
-                                                                        {itm.nestedLinks.map((lnk, idx) => (
-                                                                            <li key={idx}>
-                                                                                <Link to={lnk.path}>{lnk.link}</Link>
-                                                                            </li>
-                                                                        ))}
-                                                                    </ul>
-                                                                </li>
-                                                            );
-                                                        } else if (Array.isArray(itm)) {
-                                                            return itm.map((lnk, idx) => (
-                                                                <li key={idx}>
-                                                                    <Link to={lnk.path}>{lnk.link}</Link>
-                                                                </li>
-                                                            ));
-                                                        } else {
-                                                                return null;
-                                                            }
-                                                        })
-
-                                                }
-                                            </ul>
-                                        ) : null
-                                    }
-                                </li>
-                               )
-                            })
-                        }
-                    </ul>
+                                <Nav arr={navLinks} />
+                            </ul>
                     </div>
                 </div>
                 <ul className="navLinks rwdNav">
-                    {
-                            navLinks.map(item => {
-                               return (
-                                 <li key={item.id} className='linkBlock'>
-                                    {typeof item.linkName === 'object' ? 
-                                        <strong><Link to={item.linkName.path}>{item.linkName.link}</Link> <MdArrowDropDown/> </strong> :
-                                        <strong>{item.linkName} <MdArrowDropDown/> </strong>   
-                                    }
-                                    {
-                                        item.linkList ? (
-                                            <ul className='links'>
-                                                {
-                                                    item.linkList.map((itm, i) => {
-                                                        if (typeof itm === 'object' && !Array.isArray(itm)) {
-                                                            return (
-                                                                <li className='nesting' key={i}>
-                                                                    {itm.nestedLinkName} <MdArrowDropDown/>
-                                                                    <ul className='dropdown'>
-                                                                        {itm.nestedLinks.map((lnk, idx) => (
-                                                                            <li key={idx}>
-                                                                                <Link to={lnk.path}>{lnk.link}</Link>
-                                                                            </li>
-                                                                        ))}
-                                                                    </ul>
-                                                                </li>
-                                                            );
-                                                        } else if (Array.isArray(itm)) {
-                                                            return itm.map((lnk, idx) => (
-                                                                <li key={idx}>
-                                                                    <Link to={lnk.path}>{lnk.link}</Link>
-                                                                </li>
-                                                            ));
-                                                        } else {
-                                                                return null;
-                                                            }
-                                                        })
-
-                                                }
-                                            </ul>
-                                        ) : null
-                                    }
-                                </li>
-                               )
-                            })
-                        }
+                    <Nav arr={navLinks} />                    
                 </ul>
                 <div className="menuDetails">
                     detal
