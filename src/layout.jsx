@@ -65,11 +65,11 @@ const Layout = () => {
             linkName: "Axborot xizmati",
             linkList: [
                 [
-                {link:"Yangiliklar", path: '/Activity/Activity'},
-                {link:"Tadbirlar", path: '/Activity/Activity'},
-                {link:"Media galereyalar", path: '/Activity/Activity'},
-                {link:"Bog'lanish", path: '/Activity/Activity'},
-                {link:"Qabul 2025-natijalari", path: '/Activity/Activity'},
+                {link:"Yangiliklar", path: '/News/Allnews'},
+                {link:"Tadbirlar", path: '/News/Events'},
+                {link:"Media galereyalar", path: '/News/Galery'},
+                {link:"Bog'lanish", path: '/News/Connect'},
+                {link:"Qabul 2025-natijalari", path: '/News/Documents'},
             ]
             ]
         },
