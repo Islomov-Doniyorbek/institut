@@ -4,18 +4,8 @@
 .active_box{display: flex; width: 100%;}
 .active_img{ height: 410px; width: 90%; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
 .active_img img{height: 410px; width: 100%; }
-.active_text{ width: 40%; margin-left: 30px;}
-.active_top {
-  width: 100%;
-  height: 150px;
-background: linear-gradient(to bottom right, #1A5950, #003d7a);
-padding: 40px 0px 40px 70px;
-} 
-.active_top h1{font-size: 36px; color: #ffffff; 
-    line-height: 45px;
-    font-weight: 700;
-    font-style: normal; font-family: 'Montserrat'; margin-bottom: 20px;}
-    .active_top p{font-size: 13px; color: #888888;}
+.active_text{ width: 90%; margin-left: 30px;}
+
 .active_text button{padding: 15px; width: 100%;  font-weight: 700; display: flex; justify-content: center;  transition: 0.3s;
   background: linear-gradient(to bottom right, #1A5950 0%, #003d7a 40%); border: none; border-radius: 10px; font-size: 16px; color: #FFFFFF; font-family: 'Montserrat';}
   .active_text button:hover{background: rgb(236, 236, 236) !important; color: #003d7a;}

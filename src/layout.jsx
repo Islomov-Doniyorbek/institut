@@ -17,13 +17,14 @@ const Layout = () => {
         {
             id: 1,
             linkName: "Institut",
+            
             linkList: [
                 {
                     nestedLinkName: "Tuzilma",
                     nestedLinks: [
-                        {link:"Institut tuzilmasi", path: '/Tuzilma/Tuzilma'},
-                        {link:"Tarkibiy tuzilma", path: '/Activity/Activity'},
-                        {link:"Fakultetlar va kafedralar", path: '/Activity/Activity'}, 
+                        {link:"Institut tuzilmasi", path: '/Tuzilma/Tuzilma', slug: "Institut tuzilmasi"},
+                        {link:"Tarkibiy tuzilma", path: '/Activity/Activity', slug: "Institut tuzilmasi"},
+                        {link:"Fakultetlar va kafedralar", path: '/Tuzilma/fakultet'}, 
                     ]
                 },
                 [

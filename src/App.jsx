@@ -8,6 +8,10 @@ import Projects from './Pages/Activity/Projects'
 import Tuzilma from './Pages/Tuzilma/Tuzilma'
 import './App.css'
 import './Main.css'
+import FakultetKafedra from './Pages/Tuzilma/fakultet'
+import Container from './components/Container'
+import FakultetInfo from './Pages/Tuzilma/fakultetInfo'
+
 
 function App() {
   return (
@@ -18,7 +22,8 @@ function App() {
           <Route path="Activity/ActiveCouncil" element={<ActiveCouncil />} />
           <Route path="Activity/Article" element={<Article />} />
           <Route path="Activity/Projects" element={<Projects />} />
-          <Route path="/Tuzilma/Tuzilma" element={<Tuzilma />} />
+          <Route path="/Tuzilma/fakultet" element={<FakultetKafedra />} />
+          <Route path="/Tuzilma/fakultetInfo/:fakultet" element={<FakultetInfo />} />
         </Route>
       </Routes>
   )
