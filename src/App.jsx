@@ -8,7 +8,6 @@ import Projects from './Pages/Activity/Projects'
 import Tuzilma from './Pages/Tuzilma/Tuzilma'
 import './App.css'
 import './Main.css'
-import FakultetKafedra from './Pages/Tuzilma/fakultet'
 import Container from './components/Container'
 import FakultetInfo from './Pages/Tuzilma/fakultetInfo'
 import Allnews from './Pages/InfoCenter/Allnews'
@@ -19,6 +18,7 @@ import OtherNews from './Pages/InfoCenter/Othernews'
 import Layout from './layout'
 import Connect from './Pages/InfoCenter/Connect'
 import Documents from './Pages/InfoCenter/Documents'
+import FakultetKafedra from './Pages/Tuzilma/fakultet'
 
 function App() {
   return (

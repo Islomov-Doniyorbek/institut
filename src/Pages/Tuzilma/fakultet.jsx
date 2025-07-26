@@ -1,3 +1,4 @@
+import './Sastav.css'
 import React from 'react'
 import ContactComp from '../../components/contactComp'
 import Container from '../../components/Container'
@@ -5,7 +6,6 @@ import { GiMusicalNotes } from "react-icons/gi";
 import { BsMusicNote, BsMusicNoteBeamed } from "react-icons/bs";
 
 
-import './sastav.css'
 import ActiveTopPage from '../../components/activeTopPage';
 import { Link } from 'react-router-dom';
 
