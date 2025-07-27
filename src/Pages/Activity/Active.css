@@ -23,12 +23,12 @@
 .active_bottom_text{display: flex; flex-direction: column;}
 .active_bottom_text span{margin-bottom: 20px; font-size: 17px; color: #888888;  font-family: 'Montserrat'; }
 
-.active_bottom_box{display: flex; width: 100%; margin-top: 50px;} 
-.active_col{width: 60%; display: flex; padding-right: 20px;}
+.active_bottom_box{display: flex; width: 100% !important; margin-top: 50px;} 
+.active_col{width: 100% !important; display: flex; padding-right: 20px;}
 .active_text_col{ margin-left: 40px;}
 .active_text_col h2{font-size: 20px; }
 .active_text_col b{font-size: 13px; font-weight: 400; color: rgb(196, 196, 196) !important; }
-.active_col_icon{margin-right: -20px; width: 90px; height: 80px; }
+.active_col_icon{margin-right: -20px; width: 100px !important; height: 80px !important; }
 .active_connect{width: 100%; background: linear-gradient(to bottom right, #1A5950, #003d7a); height: 80px; padding: 0px 70px; display: flex; justify-content: space-between; align-items: center;}
 .active_connect h1{color: #ffffff;font-family: 'Montserrat'; font-size: 20px; font-weight: 500;}
 .active_connect button{padding: 10px 15px;display: flex;  justify-content: center; color: #FFFFFF; background-color: #0058af; border: none; border-radius: 10px; font-family: 'Montserrat'; font-size: 18px; font-weight: 500;}

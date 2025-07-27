@@ -5,6 +5,7 @@ import { FiPhoneCall } from 'react-icons/fi';
 import news from '../../Images/photo_2025-07-20_14-03-41.jpg';
 import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { IoMenu } from 'react-icons/io5';
 
 const allNews = Array.from({ length: 10 }, (_, i) => ({
   id: i + 1,
@@ -32,6 +33,9 @@ const getVisiblePages = (currentPage, totalPages) => {
 };
 
 const Allnews = () => {
+  const [showRightSidebar, setShowRightSidebar] = useState(false);
+
+
   const navigate = useNavigate();
 
   const itemsPerPage = 9;
@@ -70,12 +74,17 @@ const Allnews = () => {
   return (
     <div className='allnews'>
       <div className='allnews_top'>
+        <div className='allnews_top_text'>
         <h1>Yangiliklar</h1>
         <p>Bosh sahifa - Yangiliklar</p>
+        </div>
+        <div className='allnews_top_menu'>
+<span onClick={() => setShowRightSidebar(!showRightSidebar)}><IoMenu /></span>
+        </div>
       </div>
 
       <div className='all_news_row'>
-     <div className='allnews_center'>
+     <div className='allnews_center'  style={{ display: isSmallScreen && showRightSidebar ? 'none' : 'block' }}>
 <div className='allnews_card'>
           {currentNews.map((item) => (
             <div className='allnews_col' key={item.id}>
@@ -122,7 +131,9 @@ const Allnews = () => {
 
 
 
-        <div className='allnews_right'>
+        <div className='allnews_right'  style={{
+      display: isSmallScreen ? (showRightSidebar ? 'block' : 'none') : 'block',
+    }}>
           <div className='section'>
             <h1>Bo‘limlar</h1>
             <div className='section_row'>
