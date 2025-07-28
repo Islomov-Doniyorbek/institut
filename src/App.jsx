@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 import Komponents from "./Main/Komponents";
 import Activity from "./Pages/Activity/Activity";
 import ActiveCouncil from "./Pages/Activity/ActiveCouncil";
@@ -21,6 +22,12 @@ import Documents from "./Pages/InfoCenter/Documents";
 import FakultetKafedra from "./Pages/Tuzilma/fakultet";
 import Bakalavr from "./Pages/Talim/Bakalavr";
 import Kafedra from "./Pages/Tuzilma/kafedra";
+import Ecostudent from './Pages/Students/Ecostudent'
+import Achievements from './Pages/Students/Achievements'
+import Test from './Pages/Students/Test'
+import Grand from './Pages/Students/Grand'
+import OthernewsIner from "./Pages/InfoCenter/OthernewsIner";
+import EventInner from "./Pages/InfoCenter/EventInner";
 
 function App() {
   return (
@@ -46,9 +53,22 @@ function App() {
         <Route path="/News/Galery" element={<Galery />} />
         <Route path="/News/Connect" element={<Connect />} />
         <Route path="/News/Documents" element={<Documents />} />
-        <Route path="/News/Allnews/Innernews" element={<AllnewsInner />} />
-        <Route path="/News/Allnews/Othernews" element={<OtherNews />} />
+        <Route path="/News/Allnews" element={<Allnews />} />
+          <Route path="/News/Events" element={<Event />} />
+          <Route path="/News/Galery" element={<Galery />} />
+          <Route path="/News/Connect" element={<Connect />} />
+                    <Route path="/News/Documents" element={<Documents />} />
+          <Route path="/News/Allnews/Innernews" element={<AllnewsInner/>} />
+      <Route path="/News/Allnews/Othernews" element={<OtherNews/>} />
+   <Route path="/News/Allnews/OthernewsInner" element={<OthernewsIner/>} />
+      <Route path="/News/Allnews/EventInner" element={<EventInner/>} />
+
+            <Route path="/Students/Ekostudents" element={<Ecostudent />} />
+               <Route path="/Students/Grand" element={<Grand/>} />
+             <Route path="/Students/Yutuqlar" element={<Achievements />} />
+                  <Route path="/Students/Test" element={<Test/>} />
         <Route path="/Talim/Bakalavr" element={<Bakalavr />} />
+        
       </Route>
     </Routes>
   );

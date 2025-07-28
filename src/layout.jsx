@@ -104,22 +104,19 @@ const Layout = () => {
         ],
       ],
     },
-    {
-      id: 6,
-      linkName: "Talabalar",
-      linkList: [
-        [
-          { link: "Ekofaol talabalar", path: "/Activity/Activity" },
-          { link: "Grant uchun ariza", path: "/Activity/Activity" },
-          { link: "Talaba yutuqlarini jo'natish", path: "/Activity/Activity" },
-          { link: "Grant uchun test", path: "/Activity/Activity" },
-          {
-            link: "Kasbiy(Ijodiy) imtihonlar translatsiyasi",
-            path: "/Activity/Activity",
-          },
-        ],
-      ],
-    },
+     {
+            id: 6,
+            linkName: "Talabalar",
+            linkList: [
+                [
+                    {link:"Ekofaol talabalar", path: '/Students/Ekostudents'},
+                    {link:"Grant uchun ariza", path: '/Students/Grand'},
+                    {link:"Talaba yutuqlarini jo'natish", path: '/Students/Yutuqlar'},
+                    {link:"Grant uchun test", path: '/Students/Test'},
+                    {link:"Kasbiy(Ijodiy) imtihonlar translatsiyasi", path: '/Activity/Activity'},
+                ]
+            ]
+        },
     {
       id: 7,
       linkName: "Syurpriz",

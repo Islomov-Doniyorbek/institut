@@ -7,7 +7,7 @@ import { GrLanguage } from 'react-icons/gr'
 const Documents = () => {
   return (
     <div>
-  <div className='allnews_top'>
+  <div className='allnews_top accept_top'>
         <h1>Qabul 2025-yil natijalari</h1>
         <p>Bosh sahifa - Axborot xizmati - Qabul 2025-yil natijalari</p>
       </div>
