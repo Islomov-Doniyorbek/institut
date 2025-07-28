@@ -32,7 +32,7 @@ const getVisiblePages = (currentPage, totalPages) => {
   return visible;
 };
 
-const Allnews = () => {
+const Allnews = ({pageTitle}) => {
   const [showRightSidebar, setShowRightSidebar] = useState(false);
 
 
@@ -76,7 +76,7 @@ const Allnews = () => {
       <div className='allnews_top'>
         <div className='allnews_top_text'>
         <h1>Yangiliklar</h1>
-        <p>Bosh sahifa - Yangiliklar</p>
+        <p>Bosh sahifa - {pageTitle}</p>
         </div>
         <div className='allnews_top_menu'>
 <span onClick={() => setShowRightSidebar(!showRightSidebar)}><IoMenu /></span>

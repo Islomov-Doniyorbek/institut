@@ -12,8 +12,13 @@ import Logo from "./assets/imgs/logo-estrada.png";
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Nav from "./components/Nav";
+import Loader from "./Loader";
 
 const Layout = () => {
+
+
+
+
   const navLinks = [
     {
       id: 0,

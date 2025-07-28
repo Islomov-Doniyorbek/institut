@@ -4,10 +4,12 @@ import document from '../../Images/main_doc.jpg'
 import document2 from '../../Images/documnt1.jpg'
 import { MdOutlineLibraryMusic } from 'react-icons/md'
 import { GrLanguage } from 'react-icons/gr'
+
 const Documents = () => {
+
   return (
     <div>
-  <div className='allnews_top accept_top'>
+  <div className='allnews_top accept_top document_top'>
         <h1>Qabul 2025-yil natijalari</h1>
         <p>Bosh sahifa - Axborot xizmati - Qabul 2025-yil natijalari</p>
       </div>

@@ -8,8 +8,10 @@ import UnInfo from './UnInfo';
 import About from './About';
 import News from './News';
 import UniMap from './UniMap';
+import Loader from '../Loader';
 
 export default function Komponents() {
+
   return (
     <>
       <Main />

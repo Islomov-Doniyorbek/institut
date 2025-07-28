@@ -12,7 +12,10 @@ const navigate = useNavigate()
 const handleChange=()=>{
   navigate('/News/Allnews/OthernewsInner')
 }
-
+       
+    const handleNext = () => {
+      navigate('/News/Allnews/Othernews');
+    };
 
 
   return (
@@ -44,7 +47,7 @@ const handleChange=()=>{
               <h1>Bo‘limlar</h1>
               <div className='section_row'>
                 <p>Yangiliklar</p>
-                <p>E'lonlar</p>
+                <p onClick={handleNext}>E'lonlar</p>
               </div>
             </div>
   

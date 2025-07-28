@@ -3,6 +3,7 @@ import { FaRegClock } from 'react-icons/fa'
 import { FiPhoneCall } from 'react-icons/fi'
 import news from '../../Images/news7.jpg'
 import news2 from '../../Images/news8.jpg'
+import { useNavigate } from 'react-router-dom'
 const AllnewsInner = () => {
 const text = `Konferensiyada Botir Zokirov nomidagi Milliy estrada san’ati instituti, O’zbekiston davlat konservatoriyasi, Yunus Rajabiy nomidagi O’zbek milliy musiqa san’ati instituti, O’zbekiston Respublikasi fanlar akademiyasi, O’zbekiston davlat san’at va madaniyat instituti, Buxoro ixtisoslashtirilgan san’at maktabi, Farg’ona ixtisoslashtirilgan san’at maktabi, Farg’ona davlat universitetlaridan professor-o’qituvchilar, doktorant va mustaqil izlanuvchilar hamda ilmga izlanuvchan talaba-yoshlar ishtirok etishdi.
 
@@ -11,7 +12,10 @@ Konferensiya davomida musiqiy estrada san’atining kelib chiqishi va rivojlanis
 
 
 const paragraphs = text.split(/\.\s+/); 
-
+  const navigate = useNavigate();
+  const handleNext = () => {
+    navigate('/News/Allnews/Othernews');
+  };
 
   return (
     <div className='news_inner'>
@@ -48,7 +52,7 @@ const paragraphs = text.split(/\.\s+/);
               <h1>Bo‘limlar</h1>
               <div className='section_row'>
                 <p>Yangiliklar</p>
-                <p>E'lonlar</p>
+                <p onClick={handleNext}>E'lonlar</p>
               </div>
             </div>
   

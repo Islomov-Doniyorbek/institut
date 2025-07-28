@@ -186,7 +186,7 @@ color: #00c2ff; border-radius: 10px; }
 
 
 
-
+.connect_top{display: flex; flex-direction: column; justify-content: flex-start; align-items: start;}
 .connect_line{padding: 0px 0px 100px 0px; }
 .connect_box{padding: 100px 40px;}
 .connect_box h1{font-size: 30px; font-family: 'Montserrat'; color: #001f3d ; margin-bottom: 40px;}
@@ -234,7 +234,7 @@ color: #00c2ff; border-radius: 10px; }
 
 
 
-
+.document_top{display: flex; flex-direction: column; justify-content: flex-start; align-items: start;}
 .document_box{padding: 0px 80px 80px ;}
 .document_box_top{width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; 
 padding: 40px 0px;   background-color: #1A5950; border-radius: 0px 0px 20px 20px;}

@@ -3,12 +3,14 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { MdLocalPhone, MdOutlineMarkEmailRead } from 'react-icons/md'
 import { TbDeviceLandlinePhone } from 'react-icons/tb'
 
-export default function Connect() {
+
+export default function Connect({pageTitle}) {
+
   return (
     <div className='connect_line'>
-        <div className='allnews_top'>
+        <div className='allnews_top connect_top'>
         <h1>Bog‘lanish</h1>
-        <p>Bosh sahifa - Axborot xizmati - Bog'lanish</p>
+        <p>Bosh sahifa - {pageTitle}</p>
       </div>
       <div className='connect_box'>
 <h1>Bog‘lanish ma’lumotlari</h1>

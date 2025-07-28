@@ -6,7 +6,14 @@ import photos from '../../Images/events.jpg'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { CiLocationOn } from 'react-icons/ci'
 import { Button, Modal } from 'antd'
+import { useNavigate } from 'react-router-dom'
 const EventInner = () => {
+
+        const navigate = useNavigate();
+    const handleNext = () => {
+      navigate('/News/Allnews/Othernews');
+    };
+
 const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -62,7 +69,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               <h1>Bo‘limlar</h1>
               <div className='section_row'>
                 <p>Yangiliklar</p>
-                <p>E'lonlar</p>
+                <p onClick={handleNext}>E'lonlar</p>
               </div>
             </div>
   

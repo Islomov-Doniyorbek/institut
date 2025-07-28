@@ -5,7 +5,7 @@ import { FaRegClock } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 import { FiPhoneCall } from 'react-icons/fi'
 import { useNavigate } from 'react-router-dom'
-const Event = () => {
+const Event = ({pageTitle}) => {
 const navigate = useNavigate();
 
 const handleClick = () => {
@@ -16,7 +16,7 @@ const handleClick = () => {
     <div className='eventss'>
           <div className='active_top eventt_top'>
     <h1>Tadbirlar</h1>
-    <p>Bosh sahifa - Axborot xizmati - Tadbirlar</p>
+    <p>Bosh sahifa - {pageTitle}</p>
     </div>
     <div className='eventss_row'>
      <div className='news_card eventss_card ' onClick={handleClick} style={{ cursor: 'pointer' }}> 
