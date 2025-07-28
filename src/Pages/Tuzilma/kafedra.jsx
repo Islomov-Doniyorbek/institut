@@ -27,13 +27,9 @@ const Kafedra = () => {
                     return <p key={idx}>{item}</p>;
                   } else if (Array.isArray(item)) {
                     return (
-                      <ul className='lists' style={
-                        {
-                            listStyle: "disc"
-                        }
-                      } key={idx}>
+                      <ul key={idx}>
                         {item.map((it, i) => (
-                          <li className='li' key={i}>{it}</li>
+                          <li className='li' key={i}> - {it}</li>
                         ))}
                       </ul>
                     );
