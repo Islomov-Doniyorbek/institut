@@ -21,62 +21,8 @@ const Layout = () => {
       linkList: null,
     },
     {
-        id: 3,
-        linkName: "Ilmiy faoliyat",
-        linkList: [
-            [
-                {link:"Ilmiy tadqiqot faoliyati", path: '/Activity/Activity'},
-                {link:"Ilmiy kengashlar", path: '/Activity/ActiveCouncil'},
-                {link:"Ilmiy jurnallar", path: '/Activity/Article'},
-                {link:"Ilmiy loyihalar", path: '/Activity/Projects'},
-            ]
-            ]
-        },
-        {
-            id: 4,
-            linkName: "Axborot xizmati",
-            linkList: [
-                [
-                {link:"Yangiliklar", path: '/News/Allnews'},
-                {link:"Tadbirlar", path: '/News/Events'},
-                {link:"Media galereyalar", path: '/News/Galery'},
-                {link:"Bog'lanish", path: '/News/Connect'},
-                {link:"Qabul 2025-natijalari", path: '/News/Documents'},
-            ]
-            ]
-        },
-        {
-            id: 5,
-            linkName: "Qabul-2025",
-            linkList: [
-                [
-                    {link:"Qabul \"Call Centre\"", path: '/Activity/Activity'},
-                    {link:"Qabul kvotalari (BA & MA)", path: '/Activity/Activity'},
-                    {link:"Xorijiy fuqarolar uchun qabul", path: '/Activity/Activity'},
-                    {link:"Qabul dasturlari", path: '/Activity/Activity'},
-                    {link:"Kasbiy(Ijodiy) imtihonlar translatsiyasi", path: '/Activity/Activity'},
-                ]
-            ]
-        },
-        {
-            id: 6,
-            linkName: "Talabalar",
-            linkList: [
-                [
-                    {link:"Ekofaol talabalar", path: '/Students/Ekostudents'},
-                    {link:"Grant uchun ariza", path: '/Students/Grand'},
-                    {link:"Talaba yutuqlarini jo'natish", path: '/Students/Yutuqlar'},
-                    {link:"Grant uchun test", path: '/Students/Test'},
-                    {link:"Kasbiy(Ijodiy) imtihonlar translatsiyasi", path: '/Activity/Activity'},
-                ]
-            ]
-        },
-        {
-            id: 7,
-            linkName: "Syurpriz",
-            linkList: null
-        },
-    ]
+      id: 1,
+      linkName: "Institut",
 
       linkList: [
         {
@@ -158,22 +104,19 @@ const Layout = () => {
         ],
       ],
     },
-    {
-      id: 6,
-      linkName: "Talabalar",
-      linkList: [
-        [
-          { link: "Ekofaol talabalar", path: "/Activity/Activity" },
-          { link: "Grant uchun ariza", path: "/Activity/Activity" },
-          { link: "Talaba yutuqlarini jo'natish", path: "/Activity/Activity" },
-          { link: "Grant uchun test", path: "/Activity/Activity" },
-          {
-            link: "Kasbiy(Ijodiy) imtihonlar translatsiyasi",
-            path: "/Activity/Activity",
-          },
-        ],
-      ],
-    },
+     {
+            id: 6,
+            linkName: "Talabalar",
+            linkList: [
+                [
+                    {link:"Ekofaol talabalar", path: '/Students/Ekostudents'},
+                    {link:"Grant uchun ariza", path: '/Students/Grand'},
+                    {link:"Talaba yutuqlarini jo'natish", path: '/Students/Yutuqlar'},
+                    {link:"Grant uchun test", path: '/Students/Test'},
+                    {link:"Kasbiy(Ijodiy) imtihonlar translatsiyasi", path: '/Activity/Activity'},
+                ]
+            ]
+        },
     {
       id: 7,
       linkName: "Syurpriz",
