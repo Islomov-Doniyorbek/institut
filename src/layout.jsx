@@ -47,7 +47,7 @@ const Layout = () => {
           ],
         },
         [
-          { link: "Rahbariyat", path: "/Activity/Activity" },
+          { link: "Rahbariyat", path: "/Institut/Rahbariyat" },
           { link: "Institut tarixi", path: "/Activity/Activity" },
           { link: "Me'yoriy-huquqiy hujjatlar", path: "/Activity/Activity" },
           { link: "Xalqaro hamkorlik", path: "/Activity/Activity" },

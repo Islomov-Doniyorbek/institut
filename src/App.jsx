@@ -6,11 +6,11 @@ import Activity from "./Pages/Activity/Activity";
 import ActiveCouncil from "./Pages/Activity/ActiveCouncil";
 import Article from "./Pages/Activity/Article";
 import Projects from "./Pages/Activity/Projects";
-import Tuzilma from "./Pages/Tuzilma/Tuzilma";
+import Tuzilma from "./Pages/Institut/Tuzilma";
 import "./App.css";
 import "./Main.css";
 import Container from "./components/Container";
-import FakultetInfo from "./Pages/Tuzilma/fakultetInfo";
+import FakultetInfo from "./Pages/Institut/fakultetInfo";
 import Allnews from "./Pages/InfoCenter/Allnews";
 import AllnewsInner from "./Pages/InfoCenter/AllnewsInner";
 import Event from "./Pages/InfoCenter/Event";
@@ -19,15 +19,16 @@ import OtherNews from "./Pages/InfoCenter/Othernews";
 import Layout from "./layout";
 import Connect from "./Pages/InfoCenter/Connect";
 import Documents from "./Pages/InfoCenter/Documents";
-import FakultetKafedra from "./Pages/Tuzilma/fakultet";
+import FakultetKafedra from "./Pages/Institut/fakultet";
 import Bakalavr from "./Pages/Talim/Bakalavr";
-import Kafedra from "./Pages/Tuzilma/kafedra";
+import Kafedra from "./Pages/Institut/kafedra";
 import Ecostudent from './Pages/Students/Ecostudent'
 import Achievements from './Pages/Students/Achievements'
 import Test from './Pages/Students/Test'
 import Grand from './Pages/Students/Grand'
 import OthernewsIner from "./Pages/InfoCenter/OthernewsIner";
 import EventInner from "./Pages/InfoCenter/EventInner";
+import Rahbariyat from "./Pages/Institut/rahbariyat";
 
 function App() {
   return (
@@ -38,16 +39,17 @@ function App() {
         <Route path="Activity/ActiveCouncil" element={<ActiveCouncil />} />
         <Route path="Activity/Article" element={<Article />} />
         <Route path="Activity/Projects" element={<Projects />} />
-        <Route path="/Tuzilma/fakultet" element={<FakultetKafedra />} />
+        <Route path="/Institut/fakultet" element={<FakultetKafedra />} />
         <Route
-          path="/Tuzilma/fakultetInfo/:fakultet"
+          path="/Institut/fakultetInfo/:fakultet"
           element={<FakultetInfo />}
         />
         <Route
-          path="/Tuzilma/kafedra/:kafedra"
+          path="/Institut/kafedra/:kafedra"
           element={<Kafedra />}
         />
-        <Route path="/Tuzilma/Tuzilma" element={<Tuzilma />} />
+        <Route path="/Institut/Tuzilma" element={<Tuzilma />} />
+        <Route path="/Institut/rahbariyat" element={<Rahbariyat />} />
         <Route path="/News/Allnews" element={<Allnews />} />
         <Route path="/News/Events" element={<Event />} />
         <Route path="/News/Galery" element={<Galery />} />
