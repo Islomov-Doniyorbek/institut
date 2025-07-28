@@ -362,6 +362,47 @@ padding: 40px 0px;   background-color: #1A5950; border-radius: 0px 0px 20px 20px
 .audio_item{width: 100%;}
 
 .galery_videos{padding: 20px 10px;}
+
+
+
+
+
+
+
+.connect_box{padding: 40px 20px;}
+.connect_box h1{font-size: 20px;}
+.connect_box h2{font-size: 12px;}
+.connect_row{margin-top: 20px;}
+.connect_col{margin: 0px 10px;}
+.connect_col_icon span{padding: 10px 13px; font-size: 20px;}
+.connect_col_text p {font-size: 16px; margin-bottom: 5px;}
+.connect_col_text h1{font-size: 15px !important; }
+.connect_connect{display: flex; flex-direction: column;}
+.connect_send_card{margin: 10px;}
+.connect_send_box h2{font-size: 15px;}
+.connect_send_card input{font-size: 14px !important;}
+.connect_send_textarea textarea{font-size: 14px !important;}
+.connect_send_send button{padding: 10px 20px;     font-size: 14px;}
+.connect_send_box{width: 90%;}
+
+
+.accept_top{display: flex; align-items: center ; text-align: center; flex-direction: column;}
+.accept_top h1{font-size: 21px !important;}
+.accept_top p{font-size: 10px !important;}
+.document_box_top{padding: 15px 10px; }
+.document_box{padding: 0px 10px 20px;}
+.document_box_top h1{font-size: 15px;}
+.document_box_top p{font-size: 11px;}
+
+.document_center_top h2{font-size: 14px;}
+.document_center_top img{width: 60px;}
+.document_center_center{padding: 10px;}
+.document_center_center h3{font-size: 15px;}
+.document_center_center h3 p{font-size: 13px;}
+.document_center_center h3 span{font-size: 13px; margin-top: 3px}
+.document_img{width: 100%; height: auto;}
+.document_img img{width: 100%; height: auto;}
+.document_box_center{padding: 40px 0px;}
 }
 
 

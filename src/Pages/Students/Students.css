@@ -1,0 +1,59 @@
+.students_list{width: 100%; display: flex; padding: 40px 100px; flex-direction: column; justify-content: center; text-align: center; align-items: center;}
+.students_list h1{
+    font-size: 36px; 
+    line-height: 45px;
+    font-weight: 700;
+    font-style: normal; font-family: 'Montserrat'; color: #003d7a; margin-bottom: 30px;
+}
+.student_table{width: 100%; height: auto;}
+
+
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
+    background-color: #003d7a; color: white;  font-family: 'Montserrat'; font-size: 18px;
+}
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
+     font-family: 'Montserrat'; font-size: 16px; font-weight: 500;
+}
+
+
+.achiv{width: auto; height: auto;}
+.achiv_img{width: 100%; display: flex; justify-content: center; height: 75vh; background-color: white;}
+.achiv_img img{width: 750px; height: 100%;}
+
+
+
+
+    @media (max-width:1024px){
+.students_list{padding: 20px ;}
+        :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
+            font-size: 15px;
+        }
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
+    font-size: 14px;
+}
+.allnews_top h1{font-size: 30px;}
+
+.achiv_img{ height: 70vh; display: flex; justify-content: center; align-items: center;}
+.achiv_img img{width: 600px; height: 50vh;}
+
+
+} @media (max-width:767px){
+.students_list h1{font-size: 20px;}
+.students_list{padding: 10px;}
+  :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
+            font-size: 10px;
+        }
+        :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
+    font-size: 8px; font-weight: 600;
+}
+
+:where(.css-dev-only-do-not-override-7t2xvq) a{
+   font-size: 10px; 
+}
+    }
+
+
+
+
+
+

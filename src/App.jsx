@@ -16,6 +16,11 @@ import OtherNews from './Pages/InfoCenter/OtherNews'
 import Layout from './layout'
 import Connect from './Pages/InfoCenter/Connect'
 import Documents from './Pages/InfoCenter/Documents'
+import Ecostudent from './Pages/Students/Ecostudent'
+import Achievements from './Pages/Students/Achievements'
+import Test from './Pages/Students/Test'
+import Grand from './Pages/Students/Grand'
+
 
 function App() {
   return (
@@ -34,6 +39,12 @@ function App() {
                     <Route path="/News/Documents" element={<Documents />} />
           <Route path="/News/Allnews/Innernews" element={<AllnewsInner/>} />
       <Route path="/News/Allnews/Othernews" element={<OtherNews/>} />
+
+
+            <Route path="/Students/Ekostudents" element={<Ecostudent />} />
+               <Route path="/Students/Grand" element={<Grand/>} />
+             <Route path="/Students/Yutuqlar" element={<Achievements />} />
+                  <Route path="/Students/Test" element={<Test/>} />
         </Route>
       </Routes>
   )
