@@ -28,6 +28,10 @@ import Test from './Pages/Students/Test'
 import Grand from './Pages/Students/Grand'
 import OthernewsIner from "./Pages/InfoCenter/OthernewsIner";
 import EventInner from "./Pages/InfoCenter/EventInner";
+import Callcenter from "./Pages/Accept/Callcenter";
+import Place from "./Pages/Accept/Place";
+import Program from "./Pages/Accept/Program";
+import Follow from "./Pages/Accept/Follow";
 
 function App() {
   return (
@@ -67,6 +71,11 @@ function App() {
                <Route path="/Students/Grand" element={<Grand/>} />
              <Route path="/Students/Yutuqlar" element={<Achievements />} />
                   <Route path="/Students/Test" element={<Test/>} />
+
+             <Route path="/Qabul/Callcenter" element={<Callcenter/>} />
+       <Route path="/Qabul/Qabulkvotalari" element={<Place/>} />
+              <Route path="/Qabul/QabulDasturlari" element={<Program/>} />
+                        <Route path="/Qabul/Kuzatuv" element={<Follow/>} />
         <Route path="/Talim/Bakalavr" element={<Bakalavr />} />
         
       </Route>

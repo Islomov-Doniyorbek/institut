@@ -98,13 +98,13 @@ const Layout = () => {
       linkName: "Qabul-2025",
       linkList: [
         [
-          { link: 'Qabul "Call Centre"', path: "/Activity/Activity" },
-          { link: "Qabul kvotalari (BA & MA)", path: "/Activity/Activity" },
+          { link: 'Qabul "Call Centre"', path: "/Qabul/Callcenter" },
+          { link: "Qabul kvotalari (BA & MA)", path: "/Qabul/Qabulkvotalari" },
           { link: "Xorijiy fuqarolar uchun qabul", path: "/Activity/Activity" },
-          { link: "Qabul dasturlari", path: "/Activity/Activity" },
+          { link: "Qabul dasturlari", path: "/Qabul/QabulDasturlari" },
           {
             link: "Kasbiy(Ijodiy) imtihonlar translatsiyasi",
-            path: "/Activity/Activity",
+            path: "/Qabul/Kuzatuv",
           },
         ],
       ],
