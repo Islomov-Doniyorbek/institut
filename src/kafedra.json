@@ -571,5 +571,139 @@
 
             
         }
+    },
+    {
+        "id": 6,
+        "kafedra": "Musiqiy ovoz rejissorligi",
+        "kafedraInfo": {
+            "kafedraData" : [
+                {
+                    "title":"Kafedra haqida ma'lumot"
+                },
+                "2002-yilda O‘zbekiston Respublikasi birinchi Prezidenti I.Karimov qaroriga binoan Toshkent davlat konservatoriyasi yangi zamonaviy binoga ko‘chdi va unga O‘zbekiston davlat konservatoriyasi qomusi berildi. Ushbu qarorga binoan yangi konservatoriyada yangi fakultet – “Estrada san’ati” fakulteti tashkil etildi va unda uchta yangi ta’lim yo‘nalishi: “Estrada xonandaligi”, “Estrada cholg‘u ijrochiligi” hamda “Ovoz rejissyorligi” yo‘nalishlari ochildi. Shu yili “Estrada san’ati” fakulteti negizida “Musiqiy ovoz rejiissyorligi va informatika” kafedrasi tashkil etilgan.",
+                "O‘zbekiston Davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutida “Musiqiy ovoz rejissorligi” kafedrasi 2022-yildan “Estrada xonandaligi” fakulteti tarkibida faoliyat ko‘rsatib kelmoqda. Musiqiy ovoz rejissorligi kafedrasi – mamlakatimizning audio texnologiyalar va ovoz yozish sohasidagi yetakchi ta’lim platformasi hisoblanadi. U konsert va ovoz yozuv studiyalarida, shuningdek radio, televideniye va kino ishlab chiqarish sohasida ishlashga qodir mutaxassislarni tayyorlab kelmoqda. Kafedra o‘quv dasturlari chuqur nazariy bilimlarni amaliyot va ilmiy-tadqiqot ishlari bilan birlashtiradi.",
+                "Musiqiy ovoz rejissorligi kafedrasining tarixiga nazar tashlaydigan bo‘lsak, dastlab O‘zbekiston televideniyesining bosh ovoz rejissori, O‘zbekistonda xizmat ko‘rsatgan madaniyat xodimi R.S.Umarxo‘jayevning tashabbusi bilan Toshkent davlat konservatoriyasida “Musiqiy ovoz rejissorligi” yo‘nalishi bo‘yicha 1991-1992 o‘quv yilidan boshlab ta’lim ishlari yo‘lga qo‘yilgan. O‘sha yillarda ustozlarimiz, ovoz rejissorlari R.S.Umarxo‘jayev, A.Tojiyev va V.N.Gushinlar o‘zbek musiqasi rivojiga ulkan hissa qo‘shish bilan birgalikda (ular magnit tasmalariga yozib olgan minglab asarlar hozirda ham O‘zbekiston Milliy teleradiokompaniyasining “oltin fondi”da saqlanadi) yosh mutaxassislarni tarbiyalash ishlariga ham bosh-qosh bo‘lishgan.",
+                {
+                    "title": "Kafedraning asosiy vazifalari"
+                },
+                [
+                    "Talabalarni zamonaviy audio uskunalar va dasturiy ta’minot bilan ishlashga o‘rgatish;",
+                    "Turliaudio muhitlarda ishlashgaqodirmutaxassislarnitayyorlash:studiya ovozyozuvlari,konsertlarniovozlashtirish,kino ishlab chiqarish va televizioneshittirishlar;",
+                    "Ovozvaakustikasohasidailmiytadqiqotlar olib borish vainnovatsiyalarnijoriy etish."            
+                ],
+               
+                {
+                    "title": "Musiqiy ovoz rejissorligi kafedrasining o‘quv rejasi ko‘p qirrali tayyorgarlikni ta’minlaydigan turli fanlarni o‘z ichiga oladi"
+                },
+                [
+                    "Ovoz rejissorligi san’ati: birinchi ovoz yozuvining kelib chiqishi va rivojlanish bosqichlari, analog va raqamli ovoz yozuvi, ovoz rejissorligi kasbining kelib chiqishi va uning yo‘nalishlari.",
+                    "Ovoz rejissorligi akustikasi asoslari: akustikaning barcha yo‘nalishlari – fizik, fiziologik, arxitektura, psixoakustika, elektroakustika, musiqiy akustikaga bog‘liq bo‘lgan bilimlarni o‘rganish va ularni ovoz yozuvi jarayonida to‘g‘ri qo‘llash.",
+                    "Tinglab tahlil qilish: ovoz yozuvi sifatini baholash, uning xususiyatlarini aniqlash, musiqiy va texnik tarkibni tushunish uchun audio yozuvlarni (fonogrammalarni) o‘rganish va tahlil",
+                    "Elektron va kompyuter musiqasi: professional dasturlar bilan ishlashni o‘rganish (Pro Tools, Logic Pro, Cubase va boshqalar)",
+                    "Radio, televideniye va tomosha tadbirlarini ovozlashtirish texnikasi. Ovoz yozish studiyasi jihozlari va ovoz yozish tizimi",
+                    "Musiqiy ovoz rejissyorligi fanini o‘qitish uslubiyoti",
+                    "Musiqiy informatika va kompyuter grafikasi",
+                    "Radio va televideniye ovoz rejissyorligi",
+                    "Ovoz kuchaytirish apparaturasi va xavfsizlik texnikasi",
+                    "Zamonaviy musiqiy audio dasturlar",
+                    "Fizika va elektronika asoslari"
+                ],
+                "Kafedra talabalarga zamonaviy ovoz yozish studiyalari va jihozlaridan foydalanish imkoniyatini beradi. Ular musiqiy guruhlarni yozib olish, jonli konsertlarni ovozlashtirish kabi haqiqiy loyihalarda qatnashadilar. Hozirgi kunda “Musiqiy ovoz rejissorligi” kafedrasida zamonaviy kompyuter texnologiyalari bilan jihozlangan 3 ta ovoz yozish o‘quv studiyalari mavjud bo‘lib, ularning bittasi 2005-yilda Yaponiya hukumatining beg‘araz granti asosida qayta jihozlangan. Bundan tashqari talabalarimiz O‘zMTRKning turli ovoz yozish studiyalari hamda telekanallarida o‘z amaliy mashg‘ulotlarini o‘tkazishlari uchun barcha sharoitlar yaratilgan va ta’lim jarayoniga O‘zMTRKda faoliyat yuritayotgan yetuk mutaxassislar jalb etilganlligi – talabalarga amaliy ko‘nikmalarni rivojlantirish va bilimlarni amalda qo‘llash imkonini beradi.",
+                {
+                    "title": "Kafedra bitiruvchilari turli sohalarda talabga ega bo ‘ladilar"
+                },
+                [
+                    "Ovoz yozish studiyalari va musiqa ishlab chiqarish markazlari;",
+                    "Televideniye, kino va dublyaj;",
+                    "Konsert zallari,teatrlar,madaniy va ta’lim"
+                ],
+                "Musiqiy ovoz rejissorligi kafedrasi o‘z talabalariga nafaqat nazariy bilim va amaliy ko‘nikmalarni, balki ijodiy o‘sish va kasbiy rivojlanish imkoniyatlarini ham taklif etadi.",
+                "Hozirgi kunda kafedrada 16 nafar professor-o‘qituvchilar  ulardan 1 nafari professor, 2 nafari dotsent, 7 nafari katta o‘qituvchi faoliyat yuritib kelmoqda. Bugungi kunga qadar kafedra professor-o‘qituvchilari tomonidan 10 dan ortiq o‘quv uslubiy hamda o‘quv qo‘llanmalar nashr etilgan.",
+                "Kafedrada o‘tiladigan fanlar bo‘yicha o‘quv uslubiy majmualar tayyorlangan. Ijodiy ishlar sifatida esa 10 dan ortiq audio SD lar tayyorlandi.",
+                
+                "Professor Yu.Turaev, professor F.Zokirov, professor M.Tashmatov, professor R.Islamova, katta o‘qituvchilar D.Boybabaev, K.Djalilova, A.Meldebekov, O.Matveeva, N.Fazel, o‘qituvchi T.Tadjievlar Respublikamizda o‘tkazilayotgan estrada xonandalari yo‘nalishi bo‘yicha barcha tanlovlar hay’at raisi va a’zosi sifatida faol ish olib bormoqdalar. ",
+                "Aytish joizki, kafedra professor o‘qituvchilarini Mustaqillik davri san’atimiz ravnaqiga salmoqli hissa qo‘shayotganligini e’tiborga olib, hukumatimiz qator mukofotlar va fahriy unvonlar bilan taqdirladi:",
+                
+                {
+                    "title": "“Musiqiy ovoz rejissorligi” kafedrasi xodimlari"
+                }
+
+            ],
+            "teachers": [
+                {
+                    "teacher": "",
+                    "bio" : ""
+                }
+                
+            ]
+
+            
+        }
+    },
+    {
+        "id": 7,
+        "kafedra": "Musiqiy nazariy va tarixiy fanlar",
+        "kafedraInfo": {
+            "kafedraData" : [
+                {
+                    "title":"Kafedra haqida ma'lumot"
+                },
+                "O‘zbekiston Respublikasi Prezidentining 2021-yil 16-oktabrdagi PQ-5261-son qaroriga muvofiq O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada instituti tashkil etilishi munosabati bilan 2022-2023 o‘quv yilidan boshlab musiqashunoslik ta’lim yo‘nalishi “Estrada xonandaligi” fakulteti tarkibida “Musiqiy nazariy va tarixiy fanlar” kafedrasi sifatida o‘z faoliyatini boshladi. Aynan estrada musiqa san’atining o‘ziga xos xususiyatidan kelib chiqib musiqashunoslik ta’lim yo‘nalishida estrada janridagi musiqiy asarlarni vujudga kelishi, rivojlanishining o‘ziga xos xususiyatlarini e’tiborga olgan holda mazkur ta’lim yo‘nalishining asosiy fanlari hisoblangan “Jaz musiqasi tarixi”, “Jaz garmoniya”, “Jaz solfedjio”, “Jahon musiqa tarixi”, “O‘zbek musiqa tarixi”, “Musiqashunoslik asoslari”, “Polifoniya”, “Musiqiy asarlar taxlili”, “Musiqiy tanqid metodologiyasi” kabi fanlar ham kiritilgan.",
+                "2023-yilning mazkur kafedraga San’atshunoslik fanlari boʻyicha falsafa  doktori (RhD) Hamdamova Nargiza Tursunbaevna rahbarlik qilmoqda.",
+                "Bugungi kunda kafedrada ustozlik qilayotgan professor- o‘qituvchilari – San’atshunoslik fanlari boʻyicha falsafa  doktori (Phd), dotsent Amanova Nodira Allaberganovna, San’atshunoslik fanlari boʻyicha falsafa doktori (Phd) Hamdamova Nargiza Tursunbayevna, katta o‘qituvchi  Bekmuratova Gulzada Tlemuratovna, Artikbayeva Durdona Alisherovna, Mamaziyayev Xurshid A’zamjonovich “Jaz musiqasi tarixi”, “Jaz garmoniya”, “Jaz solfedjio”, “Jahon musiqa tarixi”, “O‘zbek musiqa tarixi”, “Musiqashunoslik asoslari”, “Polifoniya”, “Musiqiy asarlar tahlili”, “Musiqiy tanqid metodologiyasi” fanlaridan dars berib kelmoqdalar.",
+                "Estrada musiqasi bu kichik shakldagi kuchli mafkuraviy quroldir. U yengil ko‘rinishdagi, ommaning ongiga tez singadigan, istalgan g‘oyani targ‘ib etish  qudratiga ega bo‘lgan kuchdir.  Bu kuchdan milliy qadriyatlarni saqlashda, jahon shou-biznes bozorida o‘zbek musiqa san’atining o‘z qiyofasini yo‘qatmasligida, kelajak avlodninng ma’naviy,  tarbiyaviy va estetik qarashlarini yo‘naltirishda unumli foydalanish zarur. Shu bois, estrada musiqasining tarixiy va nazariy jihatlarini o‘rganish, yangi shakl va tamoyillarini yaratish, istiqbollarini aniqlashda  musiqashunoslik sohasi ilmiy qalqon kabi, ulkan ahamiyatga egadir.",
+                "Kafedra talabalarga zamonaviy ovoz yozish studiyalari va jihozlaridan foydalanish imkoniyatini beradi. Ular musiqiy guruhlarni yozib olish, jonli konsertlarni ovozlashtirish kabi haqiqiy loyihalarda qatnashadilar. Hozirgi kunda “Musiqiy ovoz rejissorligi” kafedrasida zamonaviy kompyuter texnologiyalari bilan jihozlangan 3 ta ovoz yozish o‘quv studiyalari mavjud bo‘lib, ularning bittasi 2005-yilda Yaponiya hukumatining beg‘araz granti asosida qayta jihozlangan. Bundan tashqari talabalarimiz O‘zMTRKning turli ovoz yozish studiyalari hamda telekanallarida o‘z amaliy mashg‘ulotlarini o‘tkazishlari uchun barcha sharoitlar yaratilgan va ta’lim jarayoniga O‘zMTRKda faoliyat yuritayotgan yetuk mutaxassislar jalb etilganlligi – talabalarga amaliy ko‘nikmalarni rivojlantirish va bilimlarni amalda qo‘llash imkonini beradi.",
+                
+                {
+                    "title": "“Musiqiy nazariy va tarixiy fanlar” kafedrasi xodimlari"
+                }
+
+            ],
+            "teachers": [
+                {
+                    "teacher": "",
+                    "bio" : ""
+                }
+                
+            ]
+
+            
+        }
+    },
+    {
+        "id": 8,
+        "kafedra": "Oʻzbek tili, sport va ijtimoiy fanlar",
+        "kafedraInfo": {
+            "kafedraData" : [
+                {
+                    "title":"Kafedra haqida ma'lumot"
+                },
+                "Milliy estrada ijrochilik maktablarini yaratish, yuqori malakali mutaxassislar tayyorlash, ilmiy salohiyatdan samarali foydalangan holda milliy estrada san’atini jadal rivojlantirish maqsadida, shuningdek, O‘zbekiston Respublikasi Prezidentining 16.10.2021-yildagi PQ-5261-son qarori bilan, O‘zbekiston davlat konservatoriyasi huzurida Botir Zokirov nomidagi Milliy estrada san’ati instituti tashkil etildi. Institutda “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakultetlari o‘z faoliyatini boshladi. “Estrada xonandaligi” fakultetida “O‘zbek tili, sport va ijtimoiy fanlar” kafedrasi ham tashkil etilib, unda talabalar mutaxassislik fanlari bilan bir qatorda muhim bo‘lgan (O‘zbek tili, Rus tili, Ingliz tili, Dinshunoslik, O‘ְzbekistoning eng yangi tarixi, Estetika, Falsafa, Jismoniy tarbiya, Nutq madaniyati) kabi fanlarni o‘rganadilar.",
+                "Kafedra mudiri, katta o‘qituvchi N.A.Talipova Botir Zokirov nomidagi Milliy estrada san’ati institutida tahsil olayotgan bakalavr bosqichi talabalari uchun mo‘ljallangan “English for pop and jazz musicians”-o‘quv qo‘llanmasini nashrdan chiqardi hamda Monographiya “Technology of using songs to develop students’ speaking competence”, o‘quv uslubiy qo‘llanmalari, ko‘plab maqolalari bilan, kafedra professor-o‘qituvchilari: dotsent M.O.Dexqonova o‘quv qo‘llanmasi va o‘quv uslubiy qo‘llanmalari, o‘qituvchi G.T.Jangirova bir qator respublika va xorijiy jurnallarda, konferensiyalarda nashr etilgan maqolalari bilan institut ilmiy salohiyati o‘sishida hissa qo‘shib kelmoqdalar.",
+                "“O‘zbek tili va ijtimoiy fanlar” kafedrasi 2022-yil 18-fevral kuni tashkil topgan, 30.08.2023-yil Botir Zokirov nomidagi Milliy estrada san’ati instituti kengashining 1-sonli majlisida “Oʻzbek tili va ijtimoiy fanlar” kafedrasi nomlanishi 2023-yil 4-sentabr kunidan “Oʻzbek tili, sport va ijtimoiy fanlar” kafedrasi nomiga oʻzgartirilishi haqidagi qaror barcha kengash a’zolari tomonidan bir ovozdan tasdiqlandi. “O‘zbek tili, sport va ijtimoiy fanlar” kafedrasida asosiy shtat ichki va tashqi o‘rindoshlik asosida 1 nafar dotsent, 1 nafar katta o‘qituvchi, 1 nafar o‘qituvchi va 7 nafar professor-o‘qituvchilardan iborat.",
+                
+                {
+                    "title": "“Oʻzbek tili, sport va ijtimoiy fanlar” kafedrasi xodimlari"
+                }
+
+            ],
+            "teachers": [
+                {
+                    "teacher": "Talipova Nilufar Abduvasikovna",
+                    "bio" : "kafedra mudiri, katta o‘qituvchi;"
+                },
+                {
+                    "teacher": "Dehqonova Mahmuda Ortiqovna",
+                    "bio" : "dotsent;"
+                },
+                {
+                    "teacher": "Djangirova Gulzira Taxirovna",
+                    "bio" : "o'qituvchi;"
+                }
+                
+            ]
+
+            
+        }
     }
 ]
