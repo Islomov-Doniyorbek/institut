@@ -35,7 +35,6 @@ const FakultetKafedra = () => {
       ]
     },
   ]
-  console.log(kafedra[0].kafedralar);
   
 
   return (
@@ -63,7 +62,7 @@ const FakultetKafedra = () => {
                         {item.kafedralar.map((kaf, i)=>{
                           return(
                             <li key={i}>
-                              <BsMusicNoteBeamed/> {kaf}
+                              <Link to={`/Tuzilma/kafedra/${kaf}`}><BsMusicNoteBeamed/> {kaf}</Link>
                             </li>
                           )
                         })}

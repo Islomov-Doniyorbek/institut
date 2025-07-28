@@ -2,7 +2,6 @@
     {
         "id": 0,
         "kafedra": "Estrada cholg‘ularida ijrochilik",
-        "slug": "Estrada cholg‘ularida ijrochilik kafedrasi",
         "kafedraInfo": {
             "kafedraData" : [
                 {
@@ -21,12 +20,12 @@
             "Estrada cholg‘u ijrochiligi kafedrasini tamomlagan talabalarni nafaqat yurtimizda, balki dunyoning turli nuqtalarida ham uchratish mumkin. Misol uchun Arsen va Javad Atabekovlar Birlashgan Arab Amirligida, Haydarov Arslan va Malika Haydarova Amerika Qo‘shma Shtatlarida, Asqar Hayotov Amerika Qo‘shma Shtatlarida, Abdurashid Alovutdinov Kazan shaxrida, Soy Yura va Jumayev Eldor Koreya respublikasida, Sultonov Otabek Amerika Qo‘shma Shtatlarida, MuhammadAmir Belgiya shahrida, Nikolay Dubinin Rossiya federatsiyasida o‘z o‘qish va ish faoliyatlarini davom ettirmoqdalar.",
             "Mazkur ta’lim yo‘nalishida tahsil olayotgan talabalar uchun oʻquv xonalar barcha shart-sharoitlar bilan ta’minlangan.",
                 {
-                    "title":"Metodik ishlari:"
+                    "title":"Metodik ishlari"
                 },
                 "Karim Zaripov nomidagi Respublika Estrada sirk kolleji, V.Uspenskiy nomidagi Respublika ixtisoslashtirilgan musiqa maktabi, Milliy gvardiya tasarrufidagi damli va zarbli cholg‘ularga ixtisoslashtirilgan musiqa akademik litseyi va R. Glier nomidagi Respublika ixtisoslashtirilgan musiqa maktabi metodik seminarlarida ishtirok etish, pedagoglarining bitiruv malaka ishlarini boshqarish va taqriz yozish, davlat imtihon komissiyasi faoliyatida ishtirok etish jarayonlarida ham bizning kafedramiz doimo faol qatnashib kelmoqda.",
                 "Kafedraning talabalari turli ko’rik tanlov va festivallarda muntazam ishtirok etib kelmoqda. Yurtimizda o’tkaziladigan Jaz festivalida talabalar big bend orkestri ham muntazam ishtirok etib kelmoqda.",
                 {
-                    "title":"Kafedraning hamkorlik shartnomalari:"
+                    "title":"Kafedraning hamkorlik shartnomalari"
                 },
                 [
                     "Uspenskiy nomidagi RIMM;",
@@ -36,7 +35,7 @@
                 ],
                 "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutining “Estrada cholg‘ularida ijrochilik” kafedrasini aksariyat ustozlaru shogirdlari elu yurt nazariga tushgan mohir sozandalar deb ta’rif berish mumkin. Kafedramizning zahmatkash professor-o‘qituvchilari, kelajakka intilgan navqiron shogirdlarimiz bundan keyin ham yurtimiz va madaniyatimiz ravnaqi uchun sitqidildan mehnat qilaveradilar. Qisqa fursat ichida kafedra oliy ta’lim o‘chog‘i ekanligini namoyon etdi. Muxtasar qilib aytganda, keyingi 10 yil mobaynida “Estrada cholg‘ularida ijrochilik” kafedrasidagi faoliyat yuksak pog‘onaga chiqdi. Bu yutug‘lar va ko‘rinish-istiqlol yaratgan imkoniyatlar tufayli ro‘yobga chiqdi deb, baralla aytishimiz mumkin.",
                 {
-                    "title": "“Estrada cholg‘ularida ijrochilik” kafedrasi xodimlari:"
+                    "title": "“Estrada cholg‘ularida ijrochilik” kafedrasi xodimlari"
                 }
 
             ],
@@ -113,6 +112,461 @@
                     "teacher": "Daliyev Doston Boxodir og‘li",
                     "bio" : "“Estrada cholg‘ularida ijrochilik” kafedrasi o‘qituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Estrada cholg‘ularida ijrochilik”, “Ansambl sinfi”, “Jo‘rnavozlik mahorati”, “Bitiruv Malaka ishi rahbarlik” fanlarini olib boradi."
                 }
+            ]
+
+            
+        }
+    },
+    {
+        "id": 1,
+        "kafedra": "Estrada ijrochiligi pedagoglari tayyorlash",
+        "kafedraInfo": {
+            "kafedraData" : [
+                {
+                    "title":"Kafedra haqida ma'lumot"
+                },
+                "Kafedraning asosiy maqsad va vazifalaridan biri – musiqiy ta’lim-tarbiya nazariyasi va amaliyotini chuqur o‘rganish va metodologik masalalarni tadqiq etish bo‘lib, bu Botir Zokirov nomidagi Milliy estrada san’ati instituti musiqa pedagogikasi sohadagi fundamental bazasining asosini tashkil etadi.",
+            "Kafedra faoliyatining va asosiy unsurlaridan biri – Botir Zokirov nomidagi Milliy estrada san’ati instituti bitiruvchilarini pedagogik faoliyatga tayyorlash, ularda pedagogik bilim va ko‘nikma hamda malakalarni shakllantirishdan iborat.",
+            "Bu yo‘nalishning asosiy maqsadi – Botir Zokirov nomidagi Milliy estrada san’ati instituti maxsus musiqa bazasida pedagogika va bolalar musiqa ta’limi hamda tarbiyasining yuqori malakali mutaxassislarini tayyorlashdan iborat. Kafedra pedagoglarining sa’y-harakati bilan Davlat ta’limi standartining yangi talabi asosida o‘quv-uslubiy qo‘llanmalar, fanlar bo‘yicha darsliklar chop etildi. Jumladan, S.Abdusattorova,  M.Dilmurotov, N.Fazel, J.Ishaliyev, B.Ibragimovlar tomonidan pedagogik fanlar bo‘yicha yangi o‘quv qo‘llanmalar va uslubiy ishlar chop ettirildi.",
+            "Mazkur yildan kafedrada 2 nafar dotsent, 4 nafar katta o‘qituvchi va 6 nafar o‘qituvchi va 3 nafar joʻrnavoz va 1 nafar kabinet mudiri faoliyat ko‘rsatmoqda. «Estrada ijrochiligi pedagoglari tayorlash» kafedrasi barcha ta’lim yo‘nalishlari bo‘yicha “Musiqiy pedagogika va psixologiya”, “Kasbiy pedagogika”, “Tarbiyaviy ishlar metodikasi”, “Yosh davrlar psixologiyasi” kabi fanlarni o‘qitish bo‘yicha tayanch kafedra hisoblanadi.",
+            "Vokal san’ati (estrada xonandaligi) va cholg‘u ijrochiligi (estrda cholgʻulari) ta’lim yo‘nalishlarida amaliy va yakka fanlardan “Vokal ijrochiligi (estrada xonandaligi)”, “Vokal ansambli”, “Maktab repertuarini o‘rganish”, “Xonandalikdan dars berish uslubiyoti”, “Jamoa ijrochiligi uslubiyoti”, “Maktab repertuarini innovatsion tizimlash”, “Cholg‘u ijrochiligi (estrda cholgʻulari)”, “Ansambl” va “Oiladosh cholg‘ularni o‘rganish” kabi fanlar o‘qiladi.",
+            "«Estrada ijrochiligi pedagoglari tayorlash» kafedrasi “Professional ta’lim (turlari bo‘yicha)” ta’lim yo‘nalishi o‘quv rejasida fanlar (ansambl sinfi) guruhli (kichik guruhli), mutaxassislik fanlari esa asosan yakka mashg‘ulot turi sifatida olib boriladi. Dars mashg‘ulotlarida axborot-kommunikatsiya, innovatsion hamda zamonaviy pedagogik texnologiyalardan foydalanib kelinmoqda",
+            "Mazkur ta’lim yo‘nalishida tahsil olayotgan talabalar uchun xonalarda barcha shart-sharoitlar bilan ta’minlangan.",
+                {
+                    "title":"Qo‘shimcha ma’lumotlar:"
+                },
+                "Kafedra yosh tadqiqotchi kadrlarni tayyorlashda faol ish olib bormoqda. Doktorlik dissertatsiyasi (PhD) himoyasi uchun doktorantlar ilmiy  tadqiqot ishlarini olib bormoqdalar. Xususan, B.Ibragimov “Kompyuter dasturlari vositasida bo‘lajak musiqa o‘qituvchilarining kasbiy malakalarini takomillashtirish metodikasi” mavzusida, G.Xidoyatullayeva “Ixtisoslashtirilgan maktab oʻquvchilarining fortepiano cholgʻusida ijrochilik malakalarini takomillashtirish metodikasi” mavzusida PhD dissertatsiyasi  ustida tadqiqot ishlarini bajarmoqdalar.",
+                "Kafedra professor-o‘qituvchilari tomonidan 5 ta oʻquv qoʻllanmalar yaratildi:",
+                "B.Ibragimov “Notalashtirish” (2023)",
+                "M.Dilmurotov “Maktab repertuarini innovatsion tizimlash” (2023)",
+                "J.Ishaliyev “Estrada cholgʻu ijrochiligi” (2024)",
+                "S.Abdusattorova “Jamoa ijrochiligi oʻqitish uslubiyoti” (2024).",
+                "N.Fazel “Вoкaлнoе испoлнителствo” (2024)"
+                ,
+                {
+                    "title":"Kafedra professor-o‘qituvchilarining malaka oshirishi"
+                },
+                "2023 yilda 3 nafar: S.Abdusattorova, N.Fazel, J.Abduxalilov “O‘zbekiston davlat san’at va madaniyat instituti”da  o‘z malakasini oshirib kelgan.",
+                "2024 yilda 3 nafar: J.Ishaliyev, G.Xidoyatullayeva, I.Dashkinova “O‘zbekiston davlat san’at va madaniyat instituti”da  o‘z malakasini oshirib kelgan.",
+                {
+                    "title":"Metodik ishlari"
+                },
+                "Uspenskiy nomidagi Respublika ixtisoslashtirilgan musiqa maktabi va R. Glier nomidagi Respublika ixtisoslashtirilgan musiqa maktabi metodik seminarlarida ishtirok etish, pedagoglarining bitiruv malaka ishlarini boshqarish va taqriz yozish, davlat imtihon komissiyasi faoliyatida ishtirok etish.",
+                "«Estrada ijrochiligi pedagoglari tayorlash» kafedrasi Botir Zokirov nomidagi Milliy estrada san’ati institutining “Cholgʻu ijrochiligi” fakulteti tarkibiga kiradi.",
+                {
+                    "title": "“Estrada ijrochiligi pedagoglari tayorlash” kafedrasi xodimlari"
+                }
+
+            ],
+            "teachers": [
+                {
+                    "teacher": "Abdusattorova Sayyora Akmalovna",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi mudiri, katta oʻqituvchi. Bakalavriat ta’lim yо‘nalishlarida “Cholgʻu ijochiligi”, “Jamoa ijrochiligi oʻqitish uslubiyoti”, “Cholgʻu ijochiligi oʻqitish uslubiyoti” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Kayumov Kazim Abidovich",
+                    "bio" : "О‘zbekistonda xizmat kо‘rsatgan artisti faxriy unvoni (1995), “Dо‘stlik” Ordeni (2020). “Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi dotsenti.  Bakalavriat ta’lim yо‘nalishlarida “Vokal ijrochiligi”, “Xonandalikdan dars berish uslubiyoti” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Dilmurotov Mirzobek Oʻtkirovich",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi dotsenti. Bakalavriat ta’lim yо‘nalishlarida “Maktab repertuarini innovatsion tizimlash” fanini olib boradi."
+                },
+                {
+                    "teacher": "Fazel Noxida Xisrov qizi",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi dotsenti. Bakalavriat ta’lim yо‘nalishlarida “Vokal ijrochiligi” fanini olib boradi."
+                },
+                {
+                    "teacher": "Abduhalilov Jamshid Xurramovich",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi katta oʻqituvchisi. Bakalavriatta’lim yо‘nalishlarida “Vokal ijrochiligi” fanini olib boradi."
+                },
+                {
+                    "teacher": "Ishaliyev Javohir Erkin oʻgʻli",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi katta oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Cholgʻu ijochiligi”, “Ansambl” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Dashkinova Iroda Muradjon qizi",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Vokal ijrochiligi” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Samatov Timur Alisher oʻgʻli",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Cholgʻu ijochiligi”, “Oiladosh cholgʻularni oʻrganish” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Pak Anatoliy Vadimovich",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Cholgʻu ijochiligi”, “Oiladosh cholgʻularni oʻrganish” , “Ansambl” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Jalilova Kamola Shuxratjon qizi",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Vokal ansambli” fanini olib boradi."
+                },
+                {
+                    "teacher": "Roʻzmetova Sevinchoy Baxtiyarovna",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Vokal ijrochiligi” fanini olib boradi."
+                }
+            ]
+
+            
+        }
+    },
+    {
+        "id": 2,
+        "kafedra": "Kompozitorlik va aranjirovka",
+        "kafedraInfo": {
+            "kafedraData" : [
+                {
+                    "title":"Kafedra haqida ma'lumot"
+                },
+                "Kafedraning asosiy maqsad va vazifalaridan biri – musiqiy ta’lim-tarbiya nazariyasi va amaliyotini chuqur o‘rganish va metodologik masalalarni tadqiq etish bo‘lib, bu Botir Zokirov nomidagi Milliy estrada san’ati instituti musiqa pedagogikasi sohadagi fundamental bazasining asosini tashkil etadi.",
+            "Kafedra faoliyatining va asosiy unsurlaridan biri – Botir Zokirov nomidagi Milliy estrada san’ati instituti bitiruvchilarini pedagogik faoliyatga tayyorlash, ularda pedagogik bilim va ko‘nikma hamda malakalarni shakllantirishdan iborat.",
+            "Bu yo‘nalishning asosiy maqsadi – Botir Zokirov nomidagi Milliy estrada san’ati instituti maxsus musiqa bazasida pedagogika va bolalar musiqa ta’limi hamda tarbiyasining yuqori malakali mutaxassislarini tayyorlashdan iborat. Kafedra pedagoglarining sa’y-harakati bilan Davlat ta’limi standartining yangi talabi asosida o‘quv-uslubiy qo‘llanmalar, fanlar bo‘yicha darsliklar chop etildi. Jumladan, S.Abdusattorova,  M.Dilmurotov, N.Fazel, J.Ishaliyev, B.Ibragimovlar tomonidan pedagogik fanlar bo‘yicha yangi o‘quv qo‘llanmalar va uslubiy ishlar chop ettirildi.",
+            "Mazkur yildan kafedrada 2 nafar dotsent, 4 nafar katta o‘qituvchi va 6 nafar o‘qituvchi va 3 nafar joʻrnavoz va 1 nafar kabinet mudiri faoliyat ko‘rsatmoqda. «Estrada ijrochiligi pedagoglari tayorlash» kafedrasi barcha ta’lim yo‘nalishlari bo‘yicha “Musiqiy pedagogika va psixologiya”, “Kasbiy pedagogika”, “Tarbiyaviy ishlar metodikasi”, “Yosh davrlar psixologiyasi” kabi fanlarni o‘qitish bo‘yicha tayanch kafedra hisoblanadi.",
+            "Vokal san’ati (estrada xonandaligi) va cholg‘u ijrochiligi (estrda cholgʻulari) ta’lim yo‘nalishlarida amaliy va yakka fanlardan “Vokal ijrochiligi (estrada xonandaligi)”, “Vokal ansambli”, “Maktab repertuarini o‘rganish”, “Xonandalikdan dars berish uslubiyoti”, “Jamoa ijrochiligi uslubiyoti”, “Maktab repertuarini innovatsion tizimlash”, “Cholg‘u ijrochiligi (estrda cholgʻulari)”, “Ansambl” va “Oiladosh cholg‘ularni o‘rganish” kabi fanlar o‘qiladi.",
+            "«Estrada ijrochiligi pedagoglari tayorlash» kafedrasi “Professional ta’lim (turlari bo‘yicha)” ta’lim yo‘nalishi o‘quv rejasida fanlar (ansambl sinfi) guruhli (kichik guruhli), mutaxassislik fanlari esa asosan yakka mashg‘ulot turi sifatida olib boriladi. Dars mashg‘ulotlarida axborot-kommunikatsiya, innovatsion hamda zamonaviy pedagogik texnologiyalardan foydalanib kelinmoqda",
+            "Mazkur ta’lim yo‘nalishida tahsil olayotgan talabalar uchun xonalarda barcha shart-sharoitlar bilan ta’minlangan.",
+                {
+                    "title":"Qo‘shimcha ma’lumotlar:"
+                },
+                "Kafedra yosh tadqiqotchi kadrlarni tayyorlashda faol ish olib bormoqda. Doktorlik dissertatsiyasi (PhD) himoyasi uchun doktorantlar ilmiy  tadqiqot ishlarini olib bormoqdalar. Xususan, B.Ibragimov “Kompyuter dasturlari vositasida bo‘lajak musiqa o‘qituvchilarining kasbiy malakalarini takomillashtirish metodikasi” mavzusida, G.Xidoyatullayeva “Ixtisoslashtirilgan maktab oʻquvchilarining fortepiano cholgʻusida ijrochilik malakalarini takomillashtirish metodikasi” mavzusida PhD dissertatsiyasi  ustida tadqiqot ishlarini bajarmoqdalar.",
+                "Kafedra professor-o‘qituvchilari tomonidan 5 ta oʻquv qoʻllanmalar yaratildi:",
+                "B.Ibragimov “Notalashtirish” (2023)",
+                "M.Dilmurotov “Maktab repertuarini innovatsion tizimlash” (2023)",
+                "J.Ishaliyev “Estrada cholgʻu ijrochiligi” (2024)",
+                "S.Abdusattorova “Jamoa ijrochiligi oʻqitish uslubiyoti” (2024).",
+                "N.Fazel “Вoкaлнoе испoлнителствo” (2024)"
+                ,
+                {
+                    "title":"Kafedra professor-o‘qituvchilarining malaka oshirishi"
+                },
+                "2023 yilda 3 nafar: S.Abdusattorova, N.Fazel, J.Abduxalilov “O‘zbekiston davlat san’at va madaniyat instituti”da  o‘z malakasini oshirib kelgan.",
+                "2024 yilda 3 nafar: J.Ishaliyev, G.Xidoyatullayeva, I.Dashkinova “O‘zbekiston davlat san’at va madaniyat instituti”da  o‘z malakasini oshirib kelgan.",
+                {
+                    "title":"Metodik ishlari"
+                },
+                "Uspenskiy nomidagi Respublika ixtisoslashtirilgan musiqa maktabi va R. Glier nomidagi Respublika ixtisoslashtirilgan musiqa maktabi metodik seminarlarida ishtirok etish, pedagoglarining bitiruv malaka ishlarini boshqarish va taqriz yozish, davlat imtihon komissiyasi faoliyatida ishtirok etish.",
+                "«Estrada ijrochiligi pedagoglari tayorlash» kafedrasi Botir Zokirov nomidagi Milliy estrada san’ati institutining “Cholgʻu ijrochiligi” fakulteti tarkibiga kiradi.",
+                {
+                    "title": "“Estrada ijrochiligi pedagoglari tayorlash” kafedrasi xodimlari"
+                }
+
+            ],
+            "teachers": [
+                {
+                    "teacher": "Abdusattorova Sayyora Akmalovna",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi mudiri, katta oʻqituvchi. Bakalavriat ta’lim yо‘nalishlarida “Cholgʻu ijochiligi”, “Jamoa ijrochiligi oʻqitish uslubiyoti”, “Cholgʻu ijochiligi oʻqitish uslubiyoti” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Kayumov Kazim Abidovich",
+                    "bio" : "О‘zbekistonda xizmat kо‘rsatgan artisti faxriy unvoni (1995), “Dо‘stlik” Ordeni (2020). “Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi dotsenti.  Bakalavriat ta’lim yо‘nalishlarida “Vokal ijrochiligi”, “Xonandalikdan dars berish uslubiyoti” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Dilmurotov Mirzobek Oʻtkirovich",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi dotsenti. Bakalavriat ta’lim yо‘nalishlarida “Maktab repertuarini innovatsion tizimlash” fanini olib boradi."
+                },
+                {
+                    "teacher": "Fazel Noxida Xisrov qizi",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi dotsenti. Bakalavriat ta’lim yо‘nalishlarida “Vokal ijrochiligi” fanini olib boradi."
+                },
+                {
+                    "teacher": "Abduhalilov Jamshid Xurramovich",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi katta oʻqituvchisi. Bakalavriatta’lim yо‘nalishlarida “Vokal ijrochiligi” fanini olib boradi."
+                },
+                {
+                    "teacher": "Ishaliyev Javohir Erkin oʻgʻli",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi katta oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Cholgʻu ijochiligi”, “Ansambl” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Dashkinova Iroda Muradjon qizi",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Vokal ijrochiligi” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Samatov Timur Alisher oʻgʻli",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Cholgʻu ijochiligi”, “Oiladosh cholgʻularni oʻrganish” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Pak Anatoliy Vadimovich",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Cholgʻu ijochiligi”, “Oiladosh cholgʻularni oʻrganish” , “Ansambl” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Jalilova Kamola Shuxratjon qizi",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Vokal ansambli” fanini olib boradi."
+                },
+                {
+                    "teacher": "Roʻzmetova Sevinchoy Baxtiyarovna",
+                    "bio" : "“Estrada ijrochiligi pedagoglari tayyorlash” kafedrasi oʻqituvchisi. Bakalavriat ta’lim yо‘nalishlarida “Vokal ijrochiligi” fanini olib boradi."
+                }
+            ]
+
+            
+        }
+    },
+    {
+        "id": 3,
+        "kafedra": "Orkestr dirijyorligi",
+        "kafedraInfo": {
+            "kafedraData" : [
+                {
+                    "title":"Kafedra haqida ma'lumot"
+                },
+                "1996 – yilda O‘zbekiston davlat konservatoriyasida “Estrada ijrochiligi” fakulteti tashkil etilgan bo‘lsa, Dirijyorlik (estrada orkestri dirijyorligi) yo‘nalishi “Cholg‘u ijrochiligi” kafedrasi tarkibida bo‘lgan. 2020 yilga qadar ikkinchi mutaxassis (estrada orkestri dirijyori) sifatida 40 nafardan oshiq talabalar bitirgan.",
+            "B.Zokirov nomidagi MESIda 2023-2024 o‘quv yilidan “Estrada orkestri dirijyorligi” kafedrasi tashkil etildi va bugungi kunda ushbu mutuxassislikda 6 nafar talaba ta’lim olmoqda. 2024 yilda 3-kurs talabasi Jo‘raeva Malika Rossida o‘tkazilgan Xalqaro yosh dirijyorlar tanlovida ishtirok etib 1-o‘rinni qo‘lga kiritdi.",
+            "Dirijyor talabalar klassik, romantizm yo‘nalishlaridagi asarlarga dirijyorlik qilishlari bilan birga, jaz ijrochiligining turli uslublariga mansub asarlarning dirijyorlik sirlari bilan tanishmoqdalar va dirijyorlik harakatlarini o‘zlashtirmoqdalar. Ular orkestrga dirijyorlik qilib, turli konsertlarda dirijyor sifatida ishtirok kelmoqdalar.  Talabalar nafaqat dirijyorlik mahorati, balki, dirijyorlar uchun muhim bo‘lgan boshqa fanlar bilan ham chuqur saboq olmoqdalar.",
+            "Shunigdek kafedrada “Cholg‘u ijrochiligi” va “Bastakorlik” yo‘nalishidagi talabalar uchun “Dirijyorlik” fani ham o‘tiladi va ushbu talabalarga dirijyorlik asoslaridan ba’zaviy harakatlar o‘rgatiladi.",
+            "Hozirgi kunda kafedrada 5 nafar professor-o‘qituvchi ishlab kelmoqda.",
+               
+                {
+                    "title": "“Orkestr dirijyorligi kafedrasi” kafedrasi xodimlari"
+                }
+
+            ],
+            "teachers": [
+                {
+                    "teacher": "Umarov Sherzod Akbarovich",
+                    "bio" : "kafedra mudiri, dotsent. “Dirijyorlik san’ati”, “Dirijyorlik”, “Orkestr bilan ishlash uslubiyoti”, “Orkestr bilan ishlash. Musiqiy sahna asarlari ustida ishlash”, “Orkestr repertuari”, “Orkestr cholg‘ularini o‘rganish” kabi fanlardan saboq berib kelmoqda. Sh.Umarov shu kunga qadar dirijyorlik mutaxassisligiga oid 2 ta darslik, 3 ta o‘quv qo‘llanma va BMSM uchun 1 ta “Orkestr sinfi” elektron o‘quv qo‘llanmasi, shuningdek Xalqaro va respublika ilmiy nashrlarida 20 ga yaqin ilmiy maqolalari nashr etgan."
+                },
+                {
+                    "teacher": "Medyulyanov Viktor Leonidovich",
+                    "bio" : "dotsent. “Dirijyorlik” fanidan talabalarga saboq berib kelmoqda. V.L.Medyulyanov shu kunga qadar dirijyorlik mutaxassisligiga oid 1 ta o‘quv qo‘llanma,  Xalqaro va respublika ilmiy nashrlarida 10 yaqin ilmiy-uslubiy maqolalari nashr etgan."
+                },
+                {
+                    "teacher": "Budyukov Igor Olegovich",
+                    "bio" : "o‘qituvchi. Hozirgi kunda “Orkestr sinfi”, “Estrada orkestri dirijyorligi san’ati”, “Dirijyorlik san’ati”, “Dirijyorlik”, “Amaliyot”, “Ansambl sinfi” kabi fanlardan dars berib kelmoqda. Bugungi kunda uning dirijyorlikga oid ikkita maqolasi Xalqaro jurnallarda nashr etilgan. "
+                },
+                {
+                    "teacher": "Abduraxmanova Farangiz Naimjon qizi ",
+                    "bio" : "o‘qituvchi. Hozirgi kunda “Dirijyorlik”, “Amaliyot”, “Ansambl sinfi” kabi fnlardan dars berib kelmoqda."
+                },
+                {
+                    "teacher": "Olimov Mo‘minjon Ne’matjon o‘g‘li ",
+                    "bio" : "o‘qituvchi. Hozirgi kunda “Orkestr sinfi”,  “Amaliyot”, “Ansambl sinfi” kabi fanlardan dars berib kelmoqda."
+                }
+                
+            ]
+
+            
+        }
+    },
+    {
+        "id": 4,
+        "kafedra": "Fakultetlararo fortepiano ijrochiligi",
+        "kafedraInfo": {
+            "kafedraData" : [
+                {
+                    "title":"Kafedra haqida ma'lumot"
+                },
+                "Milliy estrada ijrochilik maktablarini yaratish, yuqori malakali mutaxassislar tayyorlash, ilmiy salohiyatdan samarali foydalangan holda milliy estrada san’atini jadal rivojlantirish maqsadida, shuningdek, O‘zbekiston Respublikasi Prezidentining 16.10.2021-yildagi PQ-5261-son qarori bilan, O‘zbekiston davlat konservatoriyasi huzurida Botir Zokirov nomidagi Milliy estrada san’ati instituti tashkil etildi.",
+            "Institutda “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakultetlari o‘z faoliyatini boshladi. “Estrada cholg‘u ijrochiligi” fakulteti tarkibida “Fakultetlararo fortepiano ijrochiligi” kafedrasi ham tashkil etilib, unda talabalar mutaxassislik fanlari bilan bir qatorda muhim bo‘lgan fortepiano sozini chalishni o‘rganadilar.",
+            "Kafedra mudiri, dotsent Sadikova Z.S. o‘zining estrada ijrochiligi yo‘nalishida tahsil olayotgan bakalavr bosqichi talabalari uchun mo‘ljallangan “Ansambl sinfi (estrada ijrochiligi)” o‘quv qo‘llanmasi hamda ko‘plab maqolalari bilan, kafedra professor-o‘qituvchilari esa musiqa san’ati va ijrochilik masalalariga oid dolzarb muammolarni qamrab olgan bir qator respublika va xorijiy jurnallarda, konferensiyalarda nashr etilgan maqolalari bilan institut ilmiy salohiyati o‘sishida hissa qo‘shib kelmoqdalar. Shuningdek, o‘qituvchi Abdurazzoqova Zilola Abdufattoh qizining “Fortepiano” o‘quv qo‘llanmasi nashrga tayyorlanmoqda.",
+            "Kafedra a’zolari Respublika miqyosida ixtisoslashtirilgan san’at maktablari va bolalar musiqa va san’at maktablariga mahorat darslari va konsert dasturlari bilan tashrif buyurib estrada va jaz musiqasi targ‘iboti bilan shug‘ullanib kelmoqdalar. Xususan, Sadikova Zuxra Sotvoldiyevnaning ijodiy rahbarligida Qashqadaryo viloyati, Buxoro viloyati, Toshkent viloyati va Toshkent shahridagi bir qator bolalar musiqa maktablari hamda ixtisoslashtirilgan musiqa maktablarida mahorat darslari va konsert dasturlari bilan tashriflar uyushtirildi.",
+            "Kafedra professor-o‘qituvchilari tomonidan har eng yaxshi asar ijrochisi ko‘rik-tanlovi, hisobot konsertlari tashkil etilib kelinmoqda.",
+            "Kafedra o‘qituvchilari hali yosh bo‘lishlariga qaramay, oldilariga ulkan maqsadlar qo‘yib o‘z ustilarida ishlab tinimsiz izlanishlar olib bormoqdalar.",
+               
+                {
+                    "title": "“Orkestr dirijyorligi kafedrasi” kafedrasi xodimlari"
+                }
+
+            ],
+            "teachers": [
+                {
+                    "teacher": "Sadikova Zuxra Sotvoldiyevna",
+                    "bio" : "“Fakultetlararo fortepiano ijrochiligi” kafedrasi mudiri, dotsent. Ansambl sinfi (Estrada cholg‘ulari) o‘quv qo‘llanmasi muallifi. Bakalavriat “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakulteti talabalariga “Fortepiano” fanini olib boradi."
+                },
+                {
+                    "teacher": "Ilyasova Dilorom Daniyevna",
+                    "bio" : "“Fakultetlararo fortepiano ijrochiligi” kafedrasi katta o‘qituvchisi. Magistr. 2004-2006 yy. Bakalavriat “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakulteti talabalariga “Fortepiano” fanini olib boradi."
+                },
+                {
+                    "teacher": "Karimova Dilnur Shuxratdjon qizi",
+                    "bio" : "“Fakultetlararo fortepiano ijrochiligi” kafedrasi o‘qituvchisi. Magistr. 2020-2022 yy. Bakalavriat “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakulteti talabalariga “Fortepiano” fanini olib boradi."
+                },
+                {
+                    "teacher": "Abdurazzoqova Zilola Abdufattoh qizi",
+                    "bio" : "“Fakultetlararo fortepiano ijrochiligi” kafedrasi o‘qituvchisi. Magistr. 2012-2014 yy. Bakalavriat “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakulteti talabalariga “Fortepiano” fanini olib boradi."
+                },
+                {
+                    "teacher": "Zikriyayev Mardon Mahamatjon o‘g‘li ",
+                    "bio" : "“Fakultetlararo fortepiano ijrochiligi” kafedrasi o‘qituvchisi. Magistr. 2021-2023 yy. Bakalavriat “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakulteti talabalariga “Fortepiano” fanini olib boradi."
+                },
+                {
+                    "teacher": "Xidoyatullayeva Gulsora Zoirovna",
+                    "bio" : "“Fakultetlararo fortepiano ijrochiligi” kafedrasi o‘qituvchisi. Magistr. 2020-2022 yy. Bakalavriat “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakulteti talabalariga “Fortepiano” fanini olib boradi."
+                },
+                {
+                    "teacher": "Saydaxmedova Umida Muxammadamin qizi",
+                    "bio" : "Milliy estrada san’ati instituti “Estrada cholg‘u ijrochiligi” fakulteti “Bastakorlik” yo‘nalishi magistr 1-kurs talabasi va “Fakultetlararo fortepiano ijrochiligi” kafedrasi o‘qituvchisi."
+                },
+                {
+                    "teacher": "Fattoxov Qaxxor G‘ofur o‘g‘li ",
+                    "bio" : " “Fakultetlararo fortepiano ijrochiligi” kafedrasi o‘qituvchisi. Magistr. 2021-2023 yy. Bakalavriat “Estrada xonandaligi” va “Estrada cholg‘u ijrochiligi” fakulteti talabalariga “Fortepiano” fanini olib boradi."
+                }
+                
+            ]
+
+            
+        }
+    },
+    {
+        "id": 5,
+        "kafedra": "Estrada xonandaligi",
+        "kafedraInfo": {
+            "kafedraData" : [
+                {
+                    "title":"Kafedra haqida ma'lumot"
+                },
+                "Bugungi kunda milliy estrada san’ati taraqqiyoti yo‘lida, estrada qo‘shiqchiligi sohasida professional kadrlar tayyorlash masalasi davlatimiz siyosatining ustuvor yo‘nalishlaridan biriga aylangan. Shu o‘rinda milliy musiqiy estrada xonanda va ijrochiligini professional darajaga ko‘tarish, jumladan, estrada xonandaligi milliy maktabini yaratish va rivojlantirish yo‘lida ijobiy xarakatlar qilinmoqda.",
+            "Aytish joizki, konservatoriyaning eski binosida 1996-2002-yillarda “Orkestr cholg‘ulari” fakulteti qoshida “Estrada ijrochiligi bo‘limi” faoliyat ko‘rsatgan va bo‘limga O‘zbekiston san’at arbobi, kompozitor Enmark Salixov (1996-1998 yy.), professor Nadim Norxo‘jaev (1999-2002 yy.) rahbarlik qilganlar.",
+            "2002-yilda O‘zbekiston Respublikasi Birinchi Prezidenti I.Karimov qaroriga binoan Toshkent davlat konservatoriyasi yangi zamonaviy binoga ko‘chdi va unga O‘zbekiston davlat konservatoriyasi qomusi berildi. Ushbu qarorga binoan yangi konservatoriyada yangi fakultet – “Estrada san’ati” fakulteti tashkil etildi va unda uchta yangi ta’lim yo‘nalishi: “Estrada xonandaligi”, “Estrada cholg‘u ijrochiligi” va “Ovoz rejissyorligi” yo‘nalishlari ochildi.",
+            "2002-2016 yillarda kafedraga taniqli kompozitor, O‘zbekiston Respulikasi san’at arbobi, professor Dilorom Amanullaeva rahbarlik qildi. O‘tgan o‘quv yillari mobaynida “Estrada xonandaligi” kafedrasida kadrlar tayyorlash maktabi uslubiy jihatdan kasbiy asosga qo‘yildi.  D.Amanullaeva “Estrada xonandaligi” ixtisosligi bo‘yicha san’at va madaniyat oliy ta’lim muassasalari uchun tizimga solingan o‘qitish uslubiyotini yaratdi. Uning pedagogik uslubiyoti mustaqil mualliflik xususiyatiga ega, estrada vokal sohasidagi amaliy tajribasi zamon sinovidan o‘tib, e’tirof etildi.",
+            "2016-yilning 1-iyulidan mazkur kafedraga dotsent Ruslana Islamova rahbarlik qilmoqda. 2016-2022-yillarda dotsent Ruslana Islamova rahbarlik qildi. 2022-yilning 5-sentabrdan kafedraga taniqli kompozitor, O‘zbekiston Respulikasi san’at arbobi, professor Dilorom Amanullaeva rahbarlik qilmoqda. Kafedrada 2002-2023 yillar mobaynida taniqli estrada san’atkorlari ishga jalb qilinib faoliyat ko‘rsatganlar: O‘zbekiston xalq artistlari Farrux Zokirov, Mansur Toshmatov, O‘zbekistonda xizmat ko‘rsatgan artist Doni Ilyosov, Ma’mura Qurbonova,  katta o‘qituvchi Pavel Borisov, O‘zbekistonda xizmat ko‘rsatgan artistlar Kozim Qayumov, Zoya Soy.",
+            "Bugungi kunda kafedrada ustozlik qilayotgan professor- o‘qituvchilarning ham nomlari ulug‘.",
+            "Ular – O‘zbekistonda xizmat ko‘rsatgan artist, professor Yunus To‘raev, Farrux Zokirov, Mansur Toshmatov, katta o‘qituvchilar Dilmurod Boybabaev, Kamilla Djalilova, Akjol Meldebekov, Olga Matveeva, Naxida Fazel, yosh o‘qituvchilar Sabina Xamdamova, To‘lqin Tadjiev, Lola Turaeva, Rasuljon Abdullaev, Laziza Usmanovalar “Estrada yakka xonandaligi” fanidan dars beradilar;",
+            "O‘zbekiston san’at arbobi, professor Alisher Ikromov “Improvizatsiya” va “Orkestr jo‘rligida kuylash” fanlarini, O‘zbekiston xalq artisti Gavhar Zokirova “Sahna mahorati” fanidan, professor Ruslana Islamova “Xonandaligi ansambli san’ati”, “Estrada yakka xonandaligi” va “Shou-biznes asoslari” fanlarini, o‘qituvchilar Shavkat Jumaev va Elmurod Tadjiev “Estrada xonandaligi ansambli” fani, o‘qituvchi Susanna Useinova “Raqs” fanlarini olib bormoqdalar;",
+            "Professor Dilorom Amanullaeva bakalavriat va magistraturada “Estrada yakka xonandaligi”, “Estrada xonandalik mahorati”, “Pedagogik repertuarni o‘rganish”, “Malakaviy amaliyot”, “Mutaxassislik fanlarni o‘qitish metodikasi”, “Improvizatsiya mahorati” fanlarini olib bormoqda.",
+            "2007-yildan beri kafedrada yosh mutaxassislar- magistratura bitiruvchilarimiz  muvaffaqiyatli ishlab kelmoqdalar.",
+            "Aytish lozimki, kafedra professor-o‘qituvchilari tomonidan yangi ilmiy uslubiy ishlar, o‘quv qo‘llanmalar, darsliklar yaratildi va yana yangi o‘quv qo‘llanmalar nashrga tayyorlanmoqda.",
+            {
+                "title": "Quyidagi o‘quv adabiyotlari nashr yuzini ko‘rdi va o‘quv jarayoniga joriy etildi:"
+            },
+            [
+               " Amanullaeva “Estrada xonandaligi” OTM uchun o‘quv qo‘llanma, 14 b.t.,T.,2007;",
+                "Amanullaeva “Estrada va jaz vokalizlari” OTM uchun o‘quv qo‘llanma, T., 20 b.t.“Musiqa” 2014;",
+                "Amanullaeva “Estrada xonandaligi” magistratura uchun o‘quv qo‘llanma, 29 b.t., T., “Musiqa” 2015;",
+                "Amanullaeva “Estrada xonandaligi” magistratura uchun  darslik  38 b.t.,T., “Musiqa” 2016.;",
+                "Amanullaeva, N.Amanova “История джаза и эстрадной музыки” – o‘quv qo‘llanma, 6,0 b.t., T., 2010;",
+                "Turaev, D.Amanullaeva “Konservatoriyada estrada xonandaligidan dars berish uslubiyati” – o‘quv-uslubiy qo‘llanma, 4,0 b.t., T.,”Musiqa” 2008",
+                "Orinbaeva “Естрадное пение” o‘quv-uslubiy qo‘llanma, D.Amanullaeva estrada asarlari asosida, 4 b.t.,T.,2007;",
+                "Orinbaeva “Estrada qo‘shiqlari” o‘quv uslubiy qo‘llanma, Rossiya estradasi asosida, ikkita tom, 31 b.t., T.,2010;",
+                "Zokirova “Eng gullagan yoshlik chog‘imda”, I. Akbarov qo‘shiqlari asosida o‘quv qo‘llanma, 12 b.t.,T., 2012;",
+                "Saidova “Myuzikllar va ansambllar” – o‘quv qo‘llanma, 14 b.t.,T., 2011;",
+                "Islamova “Вокалный ансамбл” – o‘quv qo‘llanma, 16,5 b.t., “Musiqa”, T., 2008;",
+                "Islamova “Основы шоу-бизнеса” – o‘quv qo‘llanma, 15 b.t., “San’at”, T., 2012;",
+                "Islamova “Применение итерактивных методов и новых информатсионных и педагогических технологий в диссиплине «Вокалный ансамбл»” – o‘quv qo‘llanma, 3 b.t., “San’at”, T., 2012;",
+                "Islamova “О расширении области исползования интерактивных методов и инновационных образователных технологий в диссиплине «Искусство вокалного ансамбля» Magistratura 1-2 курсы” – magistratura uchun o‘quv qo‘llanma, 3 b.t., “San’at”, T., 2012;",
+                "Islamova “Основы шоу-бизнесa” – o‘quv qo‘llanma (ikkinchi nashr), 12 b.t., “Musiqa”, T., 2016;",
+                "Dosmetova va N.Abraykulova “Raqs” bakalavriat uchun darslik 10 b.t., T., “Barkamol fayz media” 2018;",
+                "Islamova “Естрадный вокалный ансамбл” bakalavriat uchun darslik 38 b.t., T., “Musiqa” 2018;",
+                "Turaev “XX asr o‘zek estrada qo‘shiqlari ” – o‘quv qo‘llanma, 58,5 b.t., T., 2015;",
+                "Amanova “Jaz va estrada musiqasi tarixi” OTM uchun o‘quv qo‘llanma, 12,75 b.t., T., “Fan ziyosi” 2021;",
+                "Orinbaeva “Estrada xonandaligiga o‘qitish uslubiyoti”- OTM uchun o‘quv qo‘llanma, 10 b.t., T., “Fan ziyosi” 2021;",
+                "Turaev “Estrada xonandaligi” 2-bosqich OTM uchun darslik T., 2021;",
+                "Islamova “Искусство вокалного ансамбля” 1 qism – bakalavriat va magistratura uchun o‘quv qo‘llanma, 35 b.t., T., “Fan ziyosi” 2022."            
+                ],
+               
+                {
+                    "title": "Quyidagi o‘quv adabiyotlari nashrga tayyorlanmoqda"
+                },
+                [
+                    "Amanullaeva “Pedagogik repertuarni o‘rganish” – OTM uchun darslik;"
+                ],
+                "Har yili kafedra professor – o‘qituvchilari Respublikamizda va tashqari davlatlarda Mahorat darslari (Master-klasslar) o‘tkazib kelmoqdalar. Jumladan :",
+                {
+                    "title": "Professor. D.Amanullaeva"
+                },
+                [
+                    "Anqara (Turkiya) davlat universiteti qoshidagi konservatoriyada Master klass (2009 ),",
+                    "Istanbul (Turkiya) texnika universiteti qoshidagi konservatoriyada ijodiy uchrashuv (2011 y.),",
+                    "“Iste’dod” nomli Xalqaro tanlovida (Toshkent 2015) o‘qituvchilar va qatnashchilar uchun Master klass;",
+                    "“Nihol” davlat mukofoti tanlovining shaxar va tuman bosqichlarida ishtirokchilar va ularning rahbarlari uchun Mahorat darslari (Navoiy, Buxoro, Samarqand viloyatlarida 6 ta maxorat darslari);",
+                    "Respublika yosh ijrochilari tanlovida Mahorat darsi (Qarshi san’at kolleji 2011 yil);",
+                    "Samarqand, Buxoro, Andijon san’at kollejlarida Master klasslar 2007-2015 yillar"
+                ],
+                "Professor Yu.Turaev, professor R.Islamova, katta o‘qituvchilar D.Boybabaev, K.Djalilova, A.Meldebekov, O.Matveevalar respublikamiz bo‘ylab san’at kollejlari va musiqa maktablarida Mahorat darslarida o‘zlarining pedagogik uslublarini namoyish qilmoqdalar.",
+                "Kafedrada nafaqat o‘quv, ilmiy-uslubiy, ma’naviy-tarbiyaviy ishlar olib boriladi. Kafedrada xar yili talabalar orasidagi bellashuv va tanlovlar juda qiziqarli o‘tadi, jumladan:",
+                [
+                    "“O‘zbek kompozitorlari estrada qo‘shiqlarining eng yaxshi ijrosi”;",
+                    "“Estrada va djaz vokalizlari ijrosi”;",
+                    "“G‘arbiy Yevropa va AQSh estrada yulduzlari dasturidagi estrada-djaz qo‘shiqlar”;",
+                    "“Rossiya estrada qo‘shiqlari”;",
+                    "“Vokal ansambllarning eng yaxshi ijrosi”."
+                ],
+                "Ushbu tanlovlar talabalarning sahnaviy ijro amaliyotida katta foyda ko‘rsatmoqda.",
+                "O‘quv jarayonida kafedra o‘qituvchilari va talabalari ijrosida ko‘plab konsertlar tayyorlanib o‘tkazildi. Masalan “Ustoz – shogird” ruknida professor D.Amanullaeva, professor Yu.Turaev, professor R.Islamova, katta o‘qituvchilar D.Boybabaev, K.Djalilova, O.Matveeva, N.Fazellar konsertlari qiziqarli o‘tkazilgan.",
+                "Professor D.Amanullaevaning “Estrada va jaz vokalizlari” o‘quv qo‘llanmasining taqdimoti (2014 y.), O‘zR san’at arbobi Alisher Ikromov raxbarligidagi milliy estrada simfonik orkestri jo‘rligidagi konservatoriyaning Katta zalida o‘tkazilgan kafedra o‘qituvchilari ijrosidagi konsertlar (2008, 2010), talabalar ijrosidagi hisobot gala-konsertlari (2011, 2014, 2017, 2019, 2021), Xalqaro jaz festivali doirasida o‘tkazilgan kafedra talabalari ijrosidagi konsertlar (2015, 2016) katta qiziqish bilan o‘tkazilib, tinglovchilarda yaxshi taasurotlar qoldirmoqda va kafedraning malakaviy o‘sishini ko‘rsatmoqda.",
+                "Bitiruvchilarning mutaxassislik fanidagi bitiruv dasturlariga 2006-yildan beri O‘zR san’at arbobi, professor v.b. Alisher Ikromov rahbarligidagi milliy estrada simfonik orkestri jo‘r bo‘lib kelmoqda. Bitiruv davlat attestatsiyalari O‘zDKning Katta zalida konsert sifatida tomoshabinlar bilan to‘la zalda o‘tadi.",
+                "Respublika matbuotida va teleradio dasturlarida ham kafedra professor-o‘qituvchilari o‘z shogirdlari bilan chiqish qilib, kafedra hayotini va o‘zbek estrada xonandaligi maktabini targ‘ib qilmoqda.",
+                "Kafedra professor-o‘qituvchilari o‘z xizmat vazifasini jamoatchilik ishi bilan chambarchas qo‘shib olib bormoqdalar: Xususan,",
+                {
+                    "title": "Professor D.Amanullaeva"
+                },
+                [
+                    "– O‘zbekiston Bastakorlar uyushmasi kengashi a’zosi;",
+                    "O‘zteleradiokompaniyasi Badiiy Kengashi a’zosi (1992-2000 yy.);",
+                    "“O‘zbeknavo” Estrada birlashmasi Kengashi a’zosi;",
+                    "«Nihol» davlat mukofoti tanlovining xay’at a’zosi;",
+                    "«Sharq taronalari» xalqaro musiqa festivali xay’ati a’zosi va kotibasi (1997-2005 yy.);",
+                    "«Mustaqillik», «Navro‘z» davlat bayramlari dasturini tayyorlash bo‘yicha Davlat komissiyasi a’zosi (1998-2008yy.);",
+                    "Respublikada har yili bo‘lib o‘tadigan “Yagonasan muqaddas Vatan” qo‘shiqlar tanlovlarida xay’at raisi va a’zosi."
+                ],
+                {
+                    "title": "Professor A.Ikromov"
+                },
+                [
+                    "O‘zbekiston Bastakorlar uyushmasi kengashining a’zosi;",
+                    "O‘zteleradiokompaniyasi Badiiy Kengashi a’zosi (1990-2000 yy.);",
+                    "«Mustaqillik», «Navro‘z» davlat bayramlari dasturini tayyorlash bo‘yicha Davlat komissiyasi a’zosi."
+                ],
+                "Professor Yu.Turaev, professor F.Zokirov, professor M.Tashmatov, professor R.Islamova, katta o‘qituvchilar D.Boybabaev, K.Djalilova, A.Meldebekov, O.Matveeva, N.Fazel, o‘qituvchi T.Tadjievlar Respublikamizda o‘tkazilayotgan estrada xonandalari yo‘nalishi bo‘yicha barcha tanlovlar hay’at raisi va a’zosi sifatida faol ish olib bormoqdalar. ",
+                "Aytish joizki, kafedra professor o‘qituvchilarini Mustaqillik davri san’atimiz ravnaqiga salmoqli hissa qo‘shayotganligini e’tiborga olib, hukumatimiz qator mukofotlar va fahriy unvonlar bilan taqdirladi:",
+                [
+                    "Alisher Ikromov – “O‘zbekiston Respublikasi san’at arbobi” unvoni (2005-yil);",
+                    "Dilorom Amanullaeva – “O‘zbekiston Respublikasi san’at arbobi” unvoni (2006-yil);",
+                    "Zoya Soy – “O‘zbekistonda xizmat ko‘rsatgan artist” unvoni (2010-yil);",
+                    "Pavel Borisov – “Do‘stlik ordeni” (2004-yil);",
+                    "Akjol Meldebekov – “Kelajak bunyodkori” medali (2021-yil), “Do‘stlik ordeni” (2023-yil);",
+                    "Yunus Turaev – “Do‘stlik ordeni” (2022-yil);",
+                    "Sabina Xamdamova – “Kelajak bunyodkori” medali (2022-yil)."
+                ],
+                "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutining “Estrada xonandaligi” kafedrasini “Yulduzlar” chamaniga qiyoslash mumkin, chunki aksariyat ustozlaru shogirdlar elu yurt nazariga tushgan. Ko‘cha kuyda ko‘pchilik taniydigan chehralar gulshanidir, deb ta’rif berish mumkin. Kafedramiz zahmatkash professor-o‘qituvchilarimiz, kelajakka intilgan navqiron shogirdlarimiz bundan keyin ham yurtimiz va madaniyatimiz ravnaqi uchun sitqidildan mehnat qilaveradilar. Qisqa fursat ichida kafedra oliy ta’lim o‘chog‘i ekanligini namoyon etdi. Muxtasar qilib aytganda, keyingi 10 yil mobaynida “Estrada xonandaligi” kafedrasidagi faoliyat yuksak pog‘onaga chiqdi. Bu yutug‘lar va ko‘rinish – istiqlol yaratgan imkoniyatlar tufayli ro‘yobga chiqdi deb, baralla aytishimiz mumkin.",
+                {
+                    "title": "“Estrada xonandaligi” kafedrasi xodimlari"
+                }
+
+            ],
+            "teachers": [
+                {
+                    "teacher": "Amanullayeva Dilorom Darvinovna",
+                    "bio" : "Oʻzbekiston Respublikasi san’at arbobi faxriy unvoni (2006 yil), О‘zbekiston Respublikasida xizmat kо‘rsatgan madaniyat xodimi faxriy unvoni (1996 yil), “Dо‘stlik” ordeni (1998 yil), kompozitor. “Estrada xonandaligi” kafedrasi mudiri, professor. Bakalavriat va Magistratura ta’lim yо‘nalishlarida “Estrada yakka xonandaligi”, “Pedagogik repertuarni о‘rganish”, “Malakaviy amaliyot”, “Estrada xonandalik mahorati”, “Improvizatsiya mahorati”, “Mutaxassislik fanlarni о‘qitish metodikasi” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Turayev Yunus Sharipovich",
+                    "bio" : "О‘zbekistonda xizmat kо‘rsatgan artisti faxriy unvoni (1964 yil), “Dо‘stlik” ordeni (2022 yil). “Estrada xonandaligi” kafedrasi professori. Bakalavriat va Magistratura ta’lim yо‘nalishlarida “Estrada yakka xonandaligi”, “Estrada xonandalik mahorati” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Islamova Ruslana Ruslanovna",
+                    "bio" : "“Estrada xonandaligi” kafedrasi professori. Magistr. 2016-2022 yy. “Estrada xonandaligi” kafedrasi mudiri lavozimida ish olib borgan. Bakalavriat va Magistratura ta’lim yо‘nalishlarida “Estrada yakka xonandaligi”, “Shou-biznes asoslari”, “Xonandalik ansambli san’ati” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Boybabayev Dilmurod Mamirjonovich",
+                    "bio" : "“Estrada xonandaligi” kafedrasi katta о‘qituvchisi. Magistr. Bakalavriat ta’lim yо‘nalishida “Estrada yakka xonandaligi”, “Malakaviy amaliyot”, BMI ilmiy rahbari (Bitiruv malakaviy ish) fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Djalilova Kamilla Islamovna ",
+                    "bio" : "“Estrada xonandaligi” kafedrasi katta о‘qituvchisi. Magistr. Bakalavriat ta’lim yо‘nalishida “Estrada yakka xonandaligi”, “Malakaviy amaliyot”, BMI ilmiy rahbari (Bitiruv malakaviy ish) fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Meldebekov Akjol Meldebekovich",
+                    "bio" : "“Kelajak bunyodkori” medali (2021 yil), “Dо‘stlik” ordeni (2023 yil). “Estrada xonandaligi” kafedrasi katta о‘qituvchisi. Magistr. Bakalavriat ta’lim yо‘nalishida “Estrada yakka xonandaligi”, BMI ilmiy rahbari (Bitiruv malakaviy ish) fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Matveyeva Olga Mixaylovna",
+                    "bio" : "“Estrada xonandaligi” kafedrasi katta о‘qituvchisi. Magistr. Bakalavriat ta’lim yо‘nalishida “Estrada yakka xonandaligi”, BMI ilmiy rahbari (Bitiruv malakaviy ish) fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Tadjiyev Elmurod Bekchanovich",
+                    "bio" : "“Estrada xonandaligi” kafedrasi о‘qituvchisi. Magistr. Bakalavriat ta’lim yо‘nalishida “Estrada xonandaligi ansambli”, “Malakaviy amaliyot” fanlarini olib boradi."
+                },
+                {
+                    "teacher": "Jumayev Shavkat Normuratovich",
+                    "bio" : "“Estrada xonandaligi” kafedrasi о‘qituvchisi. Magistr. Bakalavriat ta’lim yо‘nalishida “Estrada xonandaligi ansambli” fanini olib boradi."
+                },
+                {
+                    "teacher": "Xamdamova Sabina Utkurovna",
+                    "bio" : "“Kelajak bunyodkori” medali (2022 yil). “Estrada xonandaligi” kafedrasi о‘qituvchisi. Magistr. Bakalavriat ta’lim yо‘nalishida “Estrada yakka xonandaligi” fanini olib boradi."
+                },
+                {
+                    "teacher": "Tadjiyev Tulqin Berdiyarovich",
+                    "bio" : "“Estrada xonandaligi” kafedrasi о‘qituvchisi. Magistr. Bakalavriat ta’lim yо‘nalishida “Estrada yakka xonandaligi” fanini olib boradi."
+                }
+                
             ]
 
             

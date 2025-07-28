@@ -237,7 +237,7 @@ footer {
 .active_top {
   position: relative;
   width: 100%;
-  height: 180px;
+  min-height: 180px;
   background: linear-gradient(to bottom right, #1A5950, #003d7a);
   padding: 40px 10px 40px 70px;
 } 

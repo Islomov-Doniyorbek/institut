@@ -58,6 +58,13 @@
     flex-direction: column;
     gap: 20px;
 }
+.wrapper p {
+    font-size: 14px;
+}
+.wrapper .teacher {
+    padding: 10px 0;
+    border-bottom: 1px solid silver;
+}
 
 .mamuriyat {
     position: relative;
@@ -113,7 +120,24 @@
     background: var(--clrBgDark);
     filter: drop-shadow(0 0 4px blue);
 }
-
+.wrapper .lists {
+    list-style: disc;
+}
+.wrapper .li {
+    position: relative;
+    margin-left: 20px;
+}
+.wrapper .li::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    left: -14px;
+    top: 4px;
+    border-radius: 50%;
+    background: var(--clrBgDark);
+    filter: drop-shadow(0 0 4px blue);
+}
 
 
 

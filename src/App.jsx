@@ -20,6 +20,7 @@ import Connect from "./Pages/InfoCenter/Connect";
 import Documents from "./Pages/InfoCenter/Documents";
 import FakultetKafedra from "./Pages/Tuzilma/fakultet";
 import Bakalavr from "./Pages/Talim/Bakalavr";
+import Kafedra from "./Pages/Tuzilma/kafedra";
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
         <Route
           path="/Tuzilma/fakultetInfo/:fakultet"
           element={<FakultetInfo />}
+        />
+        <Route
+          path="/Tuzilma/kafedra/:kafedra"
+          element={<Kafedra />}
         />
         <Route path="/Tuzilma/Tuzilma" element={<Tuzilma />} />
         <Route path="/News/Allnews" element={<Allnews />} />

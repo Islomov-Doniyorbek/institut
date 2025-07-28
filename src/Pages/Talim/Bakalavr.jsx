@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Container from "../../components/Container";
 import { MdDownload } from "react-icons/md";
+import ActiveTopPage from "../../components/activeTopPage";
 
 const yoNalishlar = [
   {
@@ -241,6 +242,7 @@ const Bakalavr = () => {
 
   return (
     <Container>
+      <ActiveTopPage pageTitle={"Bakalavr"}/>
       <div
         className="bakalavr-wrapper"
         style={{ maxWidth: 1000, margin: "0 auto", padding: "2rem 0" }}
