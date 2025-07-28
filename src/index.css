@@ -6,7 +6,9 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: all .9s ease;
 }
-
+* button {
+  cursor: pointer;
+}
 :root {
   --clrBgDark: #002D62;   
   --clrSecondTxt: #FFD700; 
@@ -97,7 +99,7 @@ nav.nav .logo img {
   font-size: 14px;
 }
 .navLinks li strong:hover {
-  box-shadow: 0 0 4px 1px cyan;
+  /* box-shadow: 0 0 4px 1px cyan; */
   border-radius: 10px;
   color: cyan;
 }
@@ -231,6 +233,36 @@ footer {
 }
 
 
+/* topbar */
+.active_top {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to bottom right, #1A5950, #003d7a);
+  padding: 40px 10px 40px 70px;
+} 
+.active_top h1{
+  font-size: 36px; color: #ffffff; 
+  line-height: 45px;
+  font-weight: 700;
+  font-style: normal; 
+  font-family: 'Montserrat'; 
+  margin: 20px 0;
+  position: relative;
+}
+.active_top h1::before {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 7px;
+  background: var(--clrSecondTxt);
+  bottom: -20px;
+  animation: a1 2s ease-out forwards;
+}
+.active_top p{
+  font-size: 13px; 
+  color: #ccc;
+}
 
 
 
@@ -284,5 +316,42 @@ footer {
   }
   .topBar p {
     font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animations */
+
+@keyframes a1 {
+  from{
+    width: 0;
+  }to{
+    width: 60px;
   }
 }

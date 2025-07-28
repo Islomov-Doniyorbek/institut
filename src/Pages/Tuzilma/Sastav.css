@@ -1,0 +1,160 @@
+
+:root {
+  --clrBgDark: #002D62;   
+  --clrSecondTxt: #FFD700; 
+  --clrHover: #D90429;    
+  --clrBg: #F9F9F9;
+  --clrTxtDark: #1C1C1C;
+  --clrTxtLight: #FFFFFF;
+
+}
+
+.fakultet {
+    position: relative;
+    
+}
+.fakultet .title {
+    position: relative;
+    color: var(--clrBgDark);
+    
+    margin-bottom: 40px;
+}
+.fakultet .title::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 7px;
+    background-color: var(--clrBgDark);
+    bottom: -20px;
+    animation: b1 2s ease-out forwards;
+}
+.fakultet .grdBox {
+    position: relative;
+    display: grid;
+}
+.grdBox a {
+    color: var(--clrBgDark);
+}
+.fakultet .innerWrapper {
+    position: relative;
+}
+
+
+.fakultet ul li {
+    color: var(--clrTxtDark);
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.grdBox .fakultetKaf p {
+    color: gray;
+    margin: 10px 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mamuriyat {
+    position: relative;
+}
+.mamuriyat .row {
+    margin: 15px 0;
+}
+.mamuriyat .row:hover p {
+    padding: 10px 8px;
+}
+.row .top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.row img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.row .top p {
+    padding-left: 8px;
+    border-left: 4px solid gold;
+}
+.row .xodim p{
+    margin: 10px 0;
+}
+.malumot {
+    position: relative;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    padding: 10px;
+    color: var(--clrTxtDark);
+    font-size: 14px;
+}
+.malumot p {
+    margin: 10px 0;
+}
+.malumot ul {
+    padding-left: 10px;
+}
+.malumot ul li {
+    position: relative;
+}
+.malumot ul li::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    left: -14px;
+    border-radius: 50%;
+    background: var(--clrBgDark);
+    filter: drop-shadow(0 0 4px blue);
+}
+
+
+
+
+
+@keyframes b1 {
+    from{
+        width: 0;
+    }
+    to{
+        width: 60px;
+    }
+}
+
+@media (min-width: 1024px){
+    .grdBox{
+        grid-template-columns: 1.2fr 0.8fr;
+        padding: 40px 26px;
+    }
+    .fakultet .col {
+        padding: 40px 46px;
+    }
+    .grdBox .row {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        flex-direction: row;  
+        width: 100%;      
+    }
+    .row .mamuriyat {
+        align-items: center;
+    }
+}
+@media (max-width: 1023px){
+    .grdBox{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px 7px;
+    }
+    .fakultet .col {
+        padding: 20px 10px;
+    }
+    .grdBox .row {
+        display: flex;
+        flex-direction: column;        
+    }
+}
