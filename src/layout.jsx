@@ -100,7 +100,7 @@ const Layout = () => {
         [
           { link: 'Qabul "Call Centre"', path: "/Qabul/Callcenter" },
           { link: "Qabul kvotalari (BA & MA)", path: "/Qabul/Qabulkvotalari" },
-          { link: "Xorijiy fuqarolar uchun qabul", path: "/Activity/Activity" },
+          { link: "Xorijiy fuqarolar uchun qabul", path: "/Qabul/XorijiyStudentlar" },
           { link: "Qabul dasturlari", path: "/Qabul/QabulDasturlari" },
           {
             link: "Kasbiy(Ijodiy) imtihonlar translatsiyasi",

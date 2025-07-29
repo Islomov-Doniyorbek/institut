@@ -32,6 +32,7 @@ import Callcenter from "./Pages/Accept/Callcenter";
 import Place from "./Pages/Accept/Place";
 import Program from "./Pages/Accept/Program";
 import Follow from "./Pages/Accept/Follow";
+import Forigns from "./Pages/Accept/Forigns";
 
 function App() {
   return (
@@ -52,7 +53,7 @@ function App() {
           element={<Kafedra />}
         />
         <Route path="/Institut/Tuzilma" element={<Tuzilma />} />
-        <Route path="/Institut/rahbariyat" element={<Rahbariyat />} />
+ 
         <Route path="/News/Allnews" element={<Allnews />} />
         <Route path="/News/Events" element={<Event />} />
         <Route path="/News/Galery" element={<Galery />} />
@@ -77,6 +78,7 @@ function App() {
        <Route path="/Qabul/Qabulkvotalari" element={<Place/>} />
               <Route path="/Qabul/QabulDasturlari" element={<Program/>} />
                         <Route path="/Qabul/Kuzatuv" element={<Follow/>} />
+                           <Route path="/Qabul/XorijiyStudentlar" element={<Forigns/>} />
         <Route path="/Talim/Bakalavr" element={<Bakalavr />} />
         
       </Route>
