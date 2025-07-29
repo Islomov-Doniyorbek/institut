@@ -62,9 +62,9 @@ const Layout = () => {
       linkList: [
         [
           { link: "Bakalavr", path: "/Talim/Bakalavr" },
-          { link: "Magistratura", path: "/Activity/Activity" },
-          { link: "Dars jadvali", path: "/Activity/Activity" },
-          { link: "Bitiruvchilar", path: "/Activity/Activity" },
+          { link: "Magistratura", path: "/Talim/Magister" },
+          { link: "Dars jadvali", path: "/Talim/DarsJadvali" },
+          { link: "Bitiruvchilar", path: "/Talim/Bitiruvchilar" },
         ],
       ],
     },

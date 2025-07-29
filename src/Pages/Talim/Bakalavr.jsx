@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Container from "../../components/Container";
 import { MdDownload } from "react-icons/md";
 import ActiveTopPage from "../../components/activeTopPage";
-
+import './Training.css'
 const yoNalishlar = [
   {
     title: "Estrada cholg'u ijrochiligi kafedrasi",
@@ -242,7 +242,10 @@ const Bakalavr = () => {
 
   return (
     <Container>
-      <ActiveTopPage pageTitle={"Bakalavr"}/>
+       <div className='callcenter_top_text magister_top'>
+        <h1>Qabul dasturlari</h1>
+        <p>Bosh sahifa - Qabul dasturlari</p>
+        </div>
       <div
         className="bakalavr-wrapper"
         style={{ maxWidth: 1000, margin: "0 auto", padding: "2rem 0" }}
@@ -256,12 +259,14 @@ const Bakalavr = () => {
             borderBottom: "3px solid #FFD600",
             display: "inline-block",
           }}
+
+         className="title-heading"
         >
           Bakalavriyat ta'lim yo'nalishlari uchun o'quv dasturlari
         </h1>
         <div style={{ marginTop: 24 }}>
           {yoNalishlar.map((item, idx) => (
-            <div
+            <div 
               key={item.title}
               style={{
                 marginBottom: 16,
@@ -270,7 +275,7 @@ const Bakalavr = () => {
                 boxShadow: "0 2px 8px #0001",
               }}
             >
-              <button
+              <button className="header-button"
                 onClick={() => handleToggle(idx)}
                 style={{
                   width: "100%",
@@ -326,7 +331,7 @@ const Bakalavr = () => {
                     }}
                   >
                     {item.pdfs.map((pdf) => (
-                      <a
+                      <a className="header_a"
                         key={pdf.file}
                         href={"/pdfs/" + pdf.file}
                         download
@@ -354,7 +359,7 @@ const Bakalavr = () => {
                           e.currentTarget.style.color = "#fff";
                         }}
                       >
-                        <MdDownload style={{ fontSize: 22 }} /> {pdf.name}
+                        <MdDownload style={{ fontSize: 22 }} className="header_icon"/> {pdf.name}
                       </a>
                     ))}
                   </div>

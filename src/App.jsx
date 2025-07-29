@@ -33,6 +33,9 @@ import Place from "./Pages/Accept/Place";
 import Program from "./Pages/Accept/Program";
 import Follow from "./Pages/Accept/Follow";
 import Forigns from "./Pages/Accept/Forigns";
+import Magister from "./Pages/Talim/Magister";
+import LessonTable from "./Pages/Talim/LessonTable";
+import Laststudents from "./Pages/Talim/Laststudents";
 
 function App() {
   return (
@@ -80,7 +83,9 @@ function App() {
                         <Route path="/Qabul/Kuzatuv" element={<Follow/>} />
                            <Route path="/Qabul/XorijiyStudentlar" element={<Forigns/>} />
         <Route path="/Talim/Bakalavr" element={<Bakalavr />} />
-        
+         <Route path="/Talim/Magister" element={<Magister />} />
+          <Route path="/Talim/DarsJadvali" element={<LessonTable/>} />
+          <Route path="/Talim/Bitiruvchilar" element={<Laststudents/>} />
       </Route>
     </Routes>
   );
