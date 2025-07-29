@@ -1,0 +1,382 @@
+.callcenter_top_text{width: 100%; padding: 30px 50px; background: linear-gradient(to bottom right, #1A5950, #003d7a); color: white; }
+.callcenter_top_text h1{font-size: 36px; color: #FFFFFF; 
+    line-height: 45px;
+    font-weight: 700;
+    font-style: normal; font-family: 'Montserrat';}
+.callcenter_top_text p{font-size: 13px; margin-top: 15px; color: #868686; }
+.callcenter_box{padding: 40px 80px;}
+
+
+.callcenter_text{padding: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; display: flex; flex-direction: column;
+align-items: center; justify-content: center; border-radius: 20px; margin-bottom: 20px;  margin: 20px 40px;}
+
+.callcenter_text h1{font-size: 30px; color: #003d7a;  margin-bottom: 15px;
+    line-height: 45px;
+    font-weight: 700;
+    font-style: normal; font-family: 'Montserrat';}
+.callcenter_text p{font-size: 16px; color: 	#5388b1;  margin-bottom: 15px;
+    line-height: 45px;
+    font-weight: 700;
+    font-style: normal; font-family: 'Montserrat';}
+
+.callcenter_row{width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+
+.callcenter_card{width: 30%;  height: 360px; padding: 30px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 20px; margin:  20px;}
+.callcenter_card:hover{transform: scale(1.1);}
+.callcenter_card h2{font-size: 20px; color: #003d7a;  margin-bottom:10px;
+    line-height: 45px;
+    font-weight: 700;
+    font-style: normal; font-family: 'Montserrat';}
+
+.callcenter_card p{font-size: 20px; color: rgb(71, 71, 71);  margin-bottom:10px; height: 190px;
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal; font-family: 'Montserrat';border-bottom: 1px solid #aaaaaa; padding-bottom: 25px;}
+
+    .callcenter_phone{display: flex; margin-top: 30px !important;}
+.callcenter_card h3{font-size: 17px; color: #1A5950; }
+.callcenter_phone span{font-size: 25px; color: #003d7a;}
+
+.places_box{ padding: 0px 100px; margin: 100px 0px;
+    display: flex; width: 100%;
+}
+
+.places_row{width: 70%; margin-right: 50px;}
+.places_text{width: 30%; margin: 0px; height: 260px; margin-top: 30px;}
+
+.places_card{padding: 30px 0px; border-top: 1px solid black;  border-bottom: 1px solid black; margin: 30px 0px;}
+.places_card h1{   font-size: 23px ; color: #004b96;
+    line-height: 20px;
+    font-weight: 700;
+ font-family: 'Montserrat';}
+
+.places_card p{ font-size: 19px ;font-family: 'Montserrat'; font-weight: 600; margin-top: 30px;}
+.places_card p span{margin-right: 10px;}
+.places_card:hover p{ color: #006bd6;}
+
+
+.program_box{padding: 60px 60px; width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.program_card{padding: 40px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; width: 60%; display: flex;
+     flex-direction: column; align-items: center; justify-content: center; text-align: center;}
+.program_card{padding: 40px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; width: 60%; display: flex;}
+.program_card h1{font-size: 22px ;font-family: 'Montserrat'; color: #004b96; margin-bottom: 15px;}
+.program_card  p{font-size: 18px ; font-family: 'Montserrat'; margin: 10px ; color: #525252; font-weight: 600;}
+
+.program_download{width: 100%; margin-top: 20px;}
+.program_download p{padding: 15px 30px;   transition: transform 0.3s ease; display: flex; justify-content: flex-start; align-items: flex-start;  background-color: #004b96; color: white; border-radius: 10px;}
+.program_download p span{margin-right: 10px; color: rgb(252, 249, 65);}
+
+.program_download p:hover {
+  transform: translateY(-5px); color: rgb(252, 249, 65);
+}
+.follow_box{padding: 60px; display: flex; justify-content: center; text-align: center;}
+.follow_text{width: 60%;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  padding: 40px ; border-radius: 15px;}
+ .follow_text h2{font-size: 22px ;font-family: 'Montserrat'; margin-bottom: 15px; color: #003d7a;}
+ .follow_text p{font-size: 18px ;font-family: 'Montserrat'; font-weight: 600; color: #5f5f5f;}
+
+
+
+
+.follow_table{margin-top: 20px;}
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
+    background-color: #003d7a; color: white;  font-family: 'Montserrat'; font-size: 15px;
+}
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
+     font-family: 'Montserrat'; font-size: 16px; font-weight: 500;
+}
+
+
+
+
+.forign_container{padding: 0px 80px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.forign_top{width: 100%; background-color: #004080; padding: 40px; border-radius: 0px 0px 20px 20px; display: flex;
+flex-direction: column; align-items: center; justify-content: center;}
+.forign_top h1{  font-family: 'Montserrat'; font-size: 30px; font-weight: 700; color: #FFFFFF; margin-bottom: 20px;}
+.forign_top p{  font-family: 'Montserrat'; font-size: 20px; font-weight: 500; color: #c9c9c9; }
+
+
+.forign_box{width: 60%; margin: 50px 0px; padding: 50px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+.forign_box h2{ font-family: 'Montserrat'; font-size: 35px; font-weight: 700; color: #004b96; margin-bottom: 40px; display: flex; flex-direction: column;
+justify-content: center; align-items: center;}
+.forign_inputs_card{margin: 40px 0px;}
+.forign_inputs_card h3{font-family: 'Montserrat'; font-size: 16px; font-weight: 500; color: rgb(58, 58, 58);}
+.forign_inputs_card input{padding: 15px ; font-family: 'Montserrat'; font-size: 15px; width: 100%; border: none; border-radius: 10px; margin-top: 10px ; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;} 
+
+.forign_inputs_card input:active{border: none !important;}
+
+
+.edu-container h3{font-family: 'Montserrat'; font-size: 16px; font-weight: 500; color: rgb(58, 58, 58);}
+.edu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.edu-option {  font-family: 'Montserrat' !important; font-size: 16px !important; font-weight: 600 !important; color: rgb(58, 58, 58);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 32px;
+}
+
+.edu-option input {
+  display: none;
+}
+
+.custom-radio {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  box-sizing: border-box;  
+}
+
+.edu-option input:checked + .custom-radio {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.custom-radio::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  display: none;
+}
+
+.edu-option input:checked + .custom-radio::after {
+  display: block;
+}
+
+
+.forign_select {
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Bu muhim: ro‘yxat shu elementga nisbatan joylashadi */
+}
+.forign_select h3{margin-bottom: 10px;}
+
+
+
+.forign-select-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.forign-select-box h1 {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.forign-select-box span {
+  font-size: 15px;
+}
+
+.forign_select_list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 5px;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.forign_select_list p{
+     font-family: 'Montserrat' !important; font-size: 16px !important; font-weight: 500 !important; padding: 10px;
+}
+.forign_select_list p:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+
+
+
+.forign_photo {
+  width: 100%; 
+}
+
+
+.forign_photo_box {
+  width: 30%;
+  height: 200px; 
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+              rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(99, 99, 99);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+
+.forign_photo h3{ display: flex;
+    font-family: 'Montserrat'; margin-top: 50px; font-size: 16px; font-weight: 500; color: rgb(58, 58, 58); margin-bottom: 10px;
+}
+.forign_photo h3 span{margin-right: 5px; font-size: 20px; color: #004b96;}
+.forign_photo h4{
+    font-family: 'Montserrat'; font-size: 14px; font-weight: 500; color: rgb(58, 58, 58); margin-bottom: 10px;
+}
+
+.forign_button{width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 50px;}
+.forign_button button{padding: 15px 40px; font-family: 'Montserrat';   font-size: 17px; border: none; border-radius: 10px; background-color: #004b96; color: whitesmoke;}
+.forign_button button:hover{background-color: #007bff; }
+
+
+
+
+    @media (max-width:1024px){
+.callcenter_box{padding: 20px 10px; display: flex; flex-direction: column; align-items: center; text-align: center;}
+.callcenter_text h1{font-size: 20px;}
+.callcenter_text p{font-size: 14px; line-height: 20px;}
+.callcenter_card{width: 100%; height: 240px; padding: 10px;}
+.places_card h1{font-size: 20px; line-height: 30px;}
+.callcenter_card h2{font-size: 15px;}
+.callcenter_card p{font-size: 14px; height: 120px;}
+.callcenter_row{padding: 0px 100px;}
+.callcenter_phone{margin-top: 15px !important;}
+.callcenter_top_text h1{font-size: 30px;}
+.places_card p{font-size: 16px;}
+.places_text{width: 70%;}
+.places_text h1{font-size: 18px;}
+.places_text p{font-size: 15px;}
+.places_box{display: flex; margin: 40px 0px; flex-direction: column; display: flex; align-items: center; justify-content: center;}
+.places_box{padding: 0px 40px;}
+.places_row{width: 100% !important; margin-right: 0px;}
+.places_text button{font-size: 13px;}
+
+
+
+.forign_container{padding: 0px 20px;}
+.forign_top{display: flex; flex-direction: column; text-align: center;}
+.forign_top h1{font-size: 20px;}
+.forign_top p{font-size: 16px;}
+.forign_box{width: 100%;}
+.forign_box h2{font-size: 25px;}
+.forign_button button{font-size: 15px; padding: 12px 20px;}
+
+
+
+
+.program_card{width: 100%;}
+.program_card h1{font-size: 20px;}
+.program_card p{font-size: 14px;}
+
+
+.follow_box{padding: 40px 20px; height: 70vh; overflow: hidden; overflow-y: auto;}
+.follow_text{width: 100%; padding: 15px;}
+.follow_text h2{font-size: 18px;}
+.follow_text p{font-size: 16px;}
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
+    font-size: 12px;
+}
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
+    font-size: 9px;
+}
+
+    }@media (max-width:767px){
+.callcenter_top_text h1{font-size: 15px;}
+.callcenter_top_text{padding: 20px;}
+.callcenter_top_text p{font-size: 10px; margin-top: 8px}
+.callcenter_box{padding: 10px;}
+.callcenter_text{width: 100%; padding: 20px 8px;}
+.callcenter_text h1{font-size: 14px !important; line-height: 20px !important;} 
+.callcenter_text p{font-size: 10px;}
+.callcenter_card{width: 100% !important;}
+.callcenter_row{padding: 0px 10px;}
+.callcenter_card h2{font-size: 13px; margin-bottom: 0px;}
+.callcenter_card p{font-size: 12px; line-height: 15px;}
+
+.callcenter_card h3{font-size: 13px;}
+.callcenter_phone span{font-size: 18px;}
+
+.callcenter_card{height: 200px;}
+.callcenter_card p{height: 100px;}
+.places_box{padding: 0px 10px; margin: 20px 0px;}
+.places_card{display: flex; flex-direction: column; text-align: center;}
+.places_card h1{font-size: 14px; line-height: 22px;}
+.places_card p{font-size: 13px;}
+
+.places_text{width: 100%; padding: 15px; height: 210px;}
+
+.places_text h1{font-size: 14px;}
+.places_text p{font-size: 12px;}
+.places_text button{font-size: 10px;}
+ 
+
+.forign_container{padding: 0px 10px;}
+.forign_top{padding: 20px;}
+.forign_top h1{font-size: 15px;}
+.forign_top p{font-size: 10px;}
+.forign_box{margin-top: 20px; padding: 15px 10px;}
+.forign_box h2{font-size: 20px;}
+.forign_inputs_card h3{font-size: 12px;}
+.edu-container h3{font-size: 12px;}
+.forign_photo h3{font-size: 12px;}
+.edu-option{font-size: 15px !important; padding-left: 20px;}
+.custom-radio{width: 16px; height: 16px;}
+.forign-select-box h1{font-size: 12px;}
+.forign-select-box{padding: 10px 15px;}
+.forign_select_list p{font-size: 12px !important;}
+.forign_photo h4{font-size: 13px;}
+.forign_photo_box{width: 100%;}
+
+.forign_button button{font-size: 12px;}
+.forign_inputs_card input{padding: 12px ; font-size: 12px;}
+
+.custom-radio::after {
+  top: 4px;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+}
+
+.program_box{padding: 20px;}
+.program_card{padding: 15px 10px;}
+.program_card h1{font-size: 13px;}
+.program_card p{font-size: 10px;}
+.follow_box{padding: 30px 10px;}
+.follow_text h2{font-size: 13px;}
+.follow_text p{font-size: 10px;}
+.follow_text{font-size: 10px 0px !;}
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
+    font-size: 8px;
+}
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
+    font-size: 8px; padding: 10px 4px;
+}
+
+    }
+

@@ -5,6 +5,7 @@ import { FiPhoneCall } from 'react-icons/fi'
 import announcement2 from '../../Images/active2.jpg'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
+import Newsrep from './Newsrep'
 const OtherNews = () => {
 const navigate = useNavigate()
 
@@ -60,20 +61,7 @@ const handleChange=()=>{
               <button><span><FiPhoneCall /></span>Bog'lanish</button>
             </div>
   
-            <div className='archive'>
-              <h2>Arxiv</h2>
-              <p>Sentabr <span>Yangiliklar: 2</span></p>
-              <p>Oktabr <span>Yangiliklar: 5</span></p>
-              <p>Noyabr <span>Yangiliklar: 8</span></p>
-            </div>
-  
-            <div className='new_article'>
-              <h1>Yangi maqolalar</h1>
-              <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.</h2>
-              <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.</h2>
-              <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.</h2>
-              <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.</h2>
-            </div>
+            <Newsrep/>
           </div>
     </div>
   )

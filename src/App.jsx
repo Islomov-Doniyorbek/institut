@@ -34,6 +34,14 @@ import Document from "./Pages/Institut/document";
 import Hamkorlik from "./Pages/Institut/hamkorlik";
 import Anchors from "./Pages/Institut/anchors";
 import Biography from "./Pages/Institut/biography";
+import Callcenter from "./Pages/Accept/Callcenter";
+import Place from "./Pages/Accept/Place";
+import Program from "./Pages/Accept/Program";
+import Follow from "./Pages/Accept/Follow";
+import Forigns from "./Pages/Accept/Forigns";
+import Magister from "./Pages/Talim/Magister";
+import LessonTable from "./Pages/Talim/LessonTable";
+import Laststudents from "./Pages/Talim/Laststudents";
 
 function App() {
   return (
@@ -60,6 +68,7 @@ function App() {
         <Route path="/Institut/Xalqaro hamkorlik" element={<Hamkorlik />} />
         <Route path="/Institut/Foydali havolalar" element={<Anchors />} />
         <Route path="/Institut/Botir Zokirov hayoti va ijodi" element={<Biography />} />
+
         <Route path="/News/Allnews" element={<Allnews />} />
         <Route path="/News/Events" element={<Event />} />
         <Route path="/News/Galery" element={<Galery />} />
@@ -79,8 +88,16 @@ function App() {
                <Route path="/Students/Grand" element={<Grand/>} />
              <Route path="/Students/Yutuqlar" element={<Achievements />} />
                   <Route path="/Students/Test" element={<Test/>} />
+
+             <Route path="/Qabul/Callcenter" element={<Callcenter/>} />
+       <Route path="/Qabul/Qabulkvotalari" element={<Place/>} />
+              <Route path="/Qabul/QabulDasturlari" element={<Program/>} />
+                        <Route path="/Qabul/Kuzatuv" element={<Follow/>} />
+                           <Route path="/Qabul/XorijiyStudentlar" element={<Forigns/>} />
         <Route path="/Talim/Bakalavr" element={<Bakalavr />} />
-        
+         <Route path="/Talim/Magister" element={<Magister />} />
+          <Route path="/Talim/DarsJadvali" element={<LessonTable/>} />
+          <Route path="/Talim/Bitiruvchilar" element={<Laststudents/>} />
       </Route>
     </Routes>
   );

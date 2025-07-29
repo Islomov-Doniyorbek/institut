@@ -4,6 +4,7 @@ import { FiPhoneCall } from 'react-icons/fi'
 import news from '../../Images/news7.jpg'
 import news2 from '../../Images/news8.jpg'
 import { useNavigate } from 'react-router-dom'
+import Newsrep from './Newsrep'
 const AllnewsInner = () => {
 const text = `Konferensiyada Botir Zokirov nomidagi Milliy estrada san’ati instituti, O’zbekiston davlat konservatoriyasi, Yunus Rajabiy nomidagi O’zbek milliy musiqa san’ati instituti, O’zbekiston Respublikasi fanlar akademiyasi, O’zbekiston davlat san’at va madaniyat instituti, Buxoro ixtisoslashtirilgan san’at maktabi, Farg’ona ixtisoslashtirilgan san’at maktabi, Farg’ona davlat universitetlaridan professor-o’qituvchilar, doktorant va mustaqil izlanuvchilar hamda ilmga izlanuvchan talaba-yoshlar ishtirok etishdi.
 
@@ -65,20 +66,7 @@ const paragraphs = text.split(/\.\s+/);
               <button><span><FiPhoneCall /></span>Bog'lanish</button>
             </div>
   
-            <div className='archive'>
-              <h2>Arxiv</h2>
-              <p>Sentabr <span>Yangiliklar: 2</span></p>
-              <p>Oktabr <span>Yangiliklar: 5</span></p>
-              <p>Noyabr <span>Yangiliklar: 8</span></p>
-            </div>
-  
-            <div className='new_article'>
-              <h1>Yangi maqolalar</h1>
-              <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.</h2>
-              <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.</h2>
-              <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.</h2>
-              <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.</h2>
-            </div>
+          <Newsrep/>
           </div>
     </div>
   )

@@ -60,9 +60,9 @@ const Layout = () => {
       linkList: [
         [
           { link: "Bakalavr", path: "/Talim/Bakalavr" },
-          { link: "Magistratura", path: "/Activity/Activity" },
-          { link: "Dars jadvali", path: "/Activity/Activity" },
-          { link: "Bitiruvchilar", path: "/Activity/Activity" },
+          { link: "Magistratura", path: "/Talim/Magister" },
+          { link: "Dars jadvali", path: "/Talim/DarsJadvali" },
+          { link: "Bitiruvchilar", path: "/Talim/Bitiruvchilar" },
         ],
       ],
     },
@@ -96,13 +96,13 @@ const Layout = () => {
       linkName: "Qabul-2025",
       linkList: [
         [
-          { link: 'Qabul "Call Centre"', path: "/Activity/Activity" },
-          { link: "Qabul kvotalari (BA & MA)", path: "/Activity/Activity" },
-          { link: "Xorijiy fuqarolar uchun qabul", path: "/Activity/Activity" },
-          { link: "Qabul dasturlari", path: "/Activity/Activity" },
+          { link: 'Qabul "Call Centre"', path: "/Qabul/Callcenter" },
+          { link: "Qabul kvotalari (BA & MA)", path: "/Qabul/Qabulkvotalari" },
+          { link: "Xorijiy fuqarolar uchun qabul", path: "/Qabul/XorijiyStudentlar" },
+          { link: "Qabul dasturlari", path: "/Qabul/QabulDasturlari" },
           {
             link: "Kasbiy(Ijodiy) imtihonlar translatsiyasi",
-            path: "/Activity/Activity",
+            path: "/Qabul/Kuzatuv",
           },
         ],
       ],
