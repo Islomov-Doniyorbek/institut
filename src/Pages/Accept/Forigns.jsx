@@ -254,8 +254,8 @@ const Forigns = ({pageTitle}) => {
 
   {/* Diplom rasm */}
       <div className='forign_photo'>
-        <h3> <span><GiDiploma /></span>PASSPORTINGIZNI OLD TOMON RASMINI YUKLANG:</h3>
-          <h4>Passportingizni old tomon rasmini yuklang iltimos!!!</h4>
+        <h3> <span><GiDiploma /></span>O'QISHNI TUGATGANLIK HAQIDA DIPLOM:</h3>
+          <h4>O'qishni tugatkanlik haqidagi diplomingizni rasmini yuklang iltimos!!!</h4>
         <input
           type="file"
           id="imageUpload4"
