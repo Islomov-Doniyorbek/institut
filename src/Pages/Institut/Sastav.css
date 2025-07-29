@@ -123,25 +123,255 @@
 .wrapper .lists {
     list-style: disc;
 }
-/* .wrapper .li {
+
+
+.rahbars li {
+    display: grid;
     position: relative;
-    margin-left: 20px;
 }
-.wrapper .li::after {
+.rahbars .imgBx img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border-radius: 4px;
+}
+.rahbars .logoBx img {
+    width: 200px;
+    position: relative;
+    border-radius: 4px;
+}
+.rahbars li .bio {
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+.bio.anchor {
+    justify-content: center !important;
+}
+.rahbars .bio h3:hover {
+    color: teal;
+}
+
+
+
+.history {
+    position: relative;
+    width: 100%;
+}
+.tarix {
+    position: relative;
+    display: grid;
+    width: 100%;
+}
+.tarix .img {
+    position: relative;
+    width: 300px;
+}
+.tarix .img img {
+    width: 100%;
+    position: relative;
+}
+.tarix .col {
+    padding: 16px;
+}
+.tarix .col p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.nutq {
+    padding: 15px 0 0 16px;
+    background: #fff;
+    border-left: 4px solid var(--clrBgDark);
+}
+.nutq p {
+    margin: 8px 0;
+    font-style: italic;
+}
+.nutq b {
+    margin-top: 16px;
+}
+
+.istoriya h2 {
+    font-size: 36px;
+    position: relative;
+    margin: 18px 0;
+}
+.istoriya h2::before {
     position: absolute;
     content: '';
-    width: 4px;
-    height: 4px;
-    left: -14px;
-    top: 4px;
-    border-radius: 50%;
+    width: 60px;
+    height: 5px;
+    bottom: -15px;
+    left: 0;
+    background-color: #002D62;
+    animation: b1 1.3s ease forwards;
+}
+.istoriya .rowBtn {
+    position: relative;
+    width: 100%;
+    border: 3px inset var(--clrBgDark);
+    padding: 10px;
+    margin-top: 30px;
+}
+.rowBtn .bannerRow {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    cursor: pointer;
+    
+}
+
+.bannerRow .anime {
+    position: relative;
+}
+
+.anime .real {
+    position: absolute;
+    left: -30px;
+}
+.rowBtn .data {
+    min-height: 60px;
+    position: relative;
+    border: 4px solid orange;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--clrTxtDark);
+    overflow: hidden;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition-delay: 0.6s;
+    transition: opacity 1s ease;
+}
+.data::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 120%;
+    background: #f6f6f611;
+    top: -5px;
+    left: -60px;
+    transform: skew(-30deg);
+    animation: b2 10s linear infinite;
+}
+.rowBtn.true .anime .real {
+    animation: nota 1.6s ease-out forwards;
+}
+.rowBtn.true .data{
+    display: block;
+    animation: data 1s ease-out forwards;
+    animation-delay: 1.6s;
+}
+.data .close {
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+}
+
+
+
+.docs {
+    position: relative;
+
+}
+.docs li {
+    display: flex;
+    position: relative;
+    margin-top: 18px 0;
+}
+.docs li .doc {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 0;
+}
+.doc p {
+    font-size: 18px;
+}
+.doc p:last-child{ 
+    color: gray;
+}
+.docs button {
+    position: relative;
+    padding: 12px 16px;
     background: var(--clrBgDark);
-    filter: drop-shadow(0 0 4px blue);
-} */
+    font-size: 18px;
+    color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid transparent;
+    outline: none;
+}
+.docs button:hover {
+    border-color: #002D62;
+    color: #002D62;
+    background: transparent;
+}
+
+.gridBox {
+    display: grid;
+}
+.gridBox .col img {
+    width: 500px;
+    position: relative;
+}
+.gridBox .col .bioImg {
+    margin: 10px 0;
+}
 
 
 
 
+
+
+
+
+@keyframes nota {
+    0% {
+        left: -30px;
+    }
+    80% {
+        left: 0;
+        filter: none;
+    }
+    81% {
+        filter: drop-shadow(0 0 10px gold) drop-shadow(0 0 12px gold)drop-shadow(0 0 14px orangered);
+        color: orange;
+    }
+    100%{
+        filter: drop-shadow(0 0 10px gold) drop-shadow(0 0 12px gold)drop-shadow(0 0 14px orangered);
+        color: orange;
+        left: 0;
+    }
+}
+@keyframes data {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes b2 {
+    from{
+        left: -70px;
+    }
+    to{
+        left: 110%;
+    }
+}
 @keyframes b1 {
     from{
         width: 0;
@@ -151,10 +381,24 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1024px){
     .grdBox{
         grid-template-columns: 1.2fr 0.8fr;
         padding: 40px 26px;
+    }
+    .gridBox{
+        grid-template-columns: repeat(2, 1fr);
+        /* padding: 40px 26px; */
     }
     .fakultet .col {
         padding: 40px 46px;
@@ -168,11 +412,35 @@
     .row .mamuriyat {
         align-items: center;
     }
+    .rahbars li {
+        grid-template-columns: 0.4fr 1fr;  
+        /* padding: 40px 46px;   */
+    }
+    .istoriya {
+        padding: 40px 46px;
+    }
+    .tarix {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bannerRow p {
+        font-size: 20px;
+    }
+    .anime span {
+        font-size: 26px;
+    }
+    .docs li {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 @media (max-width: 1023px){
     .grdBox{
         grid-template-columns: repeat(1, 1fr);
         padding: 20px 7px;
+    }
+    .gridBox{
+        grid-template-columns: repeat(2, 1fr);
+        /* padding: 40px 26px; */
     }
     .fakultet .col {
         padding: 20px 10px;
@@ -180,5 +448,58 @@
     .grdBox .row {
         display: flex;
         flex-direction: column;        
+    }
+    .rahbars li {
+        grid-template-columns: 0.4fr 1fr;   
+    }
+    .istoriya {
+        padding: 40px 46px;
+    }
+    .tarix {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 40px 46px;  
+    }
+    .bannerRow p {
+        font-size: 20px;
+    }
+    .anime span {
+        font-size: 26px;
+    }
+    .docs li {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 664px){
+    .rahbars li {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .gridBox{
+        grid-template-columns: repeat(1, 1fr);
+        /* padding: 40px 26px; */
+    }
+    .rahbars li .imgBx {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .istoriya {
+        padding: 10px 13px;
+    }
+    .tarix {
+        grid-template-columns: repeat(1, 1fr); 
+        padding: 20px 10px;  
+    }
+    .bannerRow p {
+        font-size: 16px;
+    }
+    .anime span {
+        font-size: 16px;
+    }
+    .docs li {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline !important;
     }
 }

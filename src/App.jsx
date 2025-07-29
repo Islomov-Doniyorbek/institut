@@ -29,6 +29,11 @@ import Grand from './Pages/Students/Grand'
 import OthernewsIner from "./Pages/InfoCenter/OthernewsIner";
 import EventInner from "./Pages/InfoCenter/EventInner";
 import Rahbariyat from "./Pages/Institut/rahbariyat";
+import Tarix from "./Pages/Institut/tarix";
+import Document from "./Pages/Institut/document";
+import Hamkorlik from "./Pages/Institut/hamkorlik";
+import Anchors from "./Pages/Institut/anchors";
+import Biography from "./Pages/Institut/biography";
 
 function App() {
   return (
@@ -50,6 +55,11 @@ function App() {
         />
         <Route path="/Institut/Tuzilma" element={<Tuzilma />} />
         <Route path="/Institut/rahbariyat" element={<Rahbariyat />} />
+        <Route path="/Institut/tarix" element={<Tarix />} />
+        <Route path="/Institut/Meyoriy Huquqiy Hujjatlar" element={<Document />} />
+        <Route path="/Institut/Xalqaro hamkorlik" element={<Hamkorlik />} />
+        <Route path="/Institut/Foydali havolalar" element={<Anchors />} />
+        <Route path="/Institut/Botir Zokirov hayoti va ijodi" element={<Biography />} />
         <Route path="/News/Allnews" element={<Allnews />} />
         <Route path="/News/Events" element={<Event />} />
         <Route path="/News/Galery" element={<Galery />} />
