@@ -1,11 +1,21 @@
 .activ{width: auto; height: auto;  }
-.active_padd{padding: 50px 140px 40px;}
+.active_padd{padding: 50px 300px 100px ;}
 
 .active_box{display: flex; width: 100%;}
-.active_img{ height: 410px; width: 90%; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+.active_img{ height: 410px; width: 60%; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
 .active_img img{height: 410px; width: 100%; }
-.active_text{ width: 90%; margin-left: 30px;}
-
+.active_text{ width: 40%; margin-left: 30px;}
+.active_top {
+  width: 100%;
+  height: 150px;
+background: linear-gradient(to bottom right, #1A5950, #003d7a);
+padding: 40px 0px 40px 70px;
+} 
+.active_top h1{font-size: 36px; color: #ffffff; 
+    line-height: 45px;
+    font-weight: 700;
+    font-style: normal; font-family: 'Montserrat'; margin-bottom: 20px;}
+    .active_top p{font-size: 13px; color: #888888;}
 .active_text button{padding: 15px; width: 100%;  font-weight: 700; display: flex; justify-content: center;  transition: 0.3s;
   background: linear-gradient(to bottom right, #1A5950 0%, #003d7a 40%); border: none; border-radius: 10px; font-size: 16px; color: #FFFFFF; font-family: 'Montserrat';}
   .active_text button:hover{background: rgb(236, 236, 236) !important; color: #003d7a;}
@@ -24,11 +34,11 @@
 .active_bottom_text span{margin-bottom: 20px; font-size: 17px; color: #888888;  font-family: 'Montserrat'; }
 
 .active_bottom_box{display: flex; width: 100% !important; margin-top: 50px;} 
-.active_col{width: 100% !important; display: flex; padding-right: 20px;}
+.active_col{width: 50% !important; display: flex; padding-right: 20px;}
 .active_text_col{ margin-left: 40px;}
 .active_text_col h2{font-size: 20px; }
 .active_text_col b{font-size: 13px; font-weight: 400; color: rgb(196, 196, 196) !important; }
-.active_col_icon{margin-right: -20px; width: 100px !important; height: 80px !important; }
+.active_col_icon{margin-right: -20px; width: 90px; height: 80px; }
 .active_connect{width: 100%; background: linear-gradient(to bottom right, #1A5950, #003d7a); height: 80px; padding: 0px 70px; display: flex; justify-content: space-between; align-items: center;}
 .active_connect h1{color: #ffffff;font-family: 'Montserrat'; font-size: 20px; font-weight: 500;}
 .active_connect button{padding: 10px 15px;display: flex;  justify-content: center; color: #FFFFFF; background-color: #0058af; border: none; border-radius: 10px; font-family: 'Montserrat'; font-size: 18px; font-weight: 500;}
@@ -72,10 +82,13 @@ border-radius: 10px; color: white;}
     }
 
 
-@media (max-width:1024px){
+
+
+
+    @media (max-width:1024px){
 
 .active_padd{padding: 30px 40px 70px 40px;}
-.active_top{padding: 20px 0px 20px 70px;}
+.active_top{padding: 20px 0px 20px 70px; height: auto !important;}
 .active_top h1{font-size: 30px;}
 .active_box{display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;}
 .active_img{width: 100%; height: 350px !important;}
@@ -101,9 +114,9 @@ border-radius: 10px; color: white;}
 }
 
 @media (max-width:767px){
-    .active_top{padding: 15px 10px;}
-    .active_top h1{font-size: 20px; margin-bottom: 0px;}
-    .active_top p{font-size: 12px;}
+    .active_top{padding: 15px 10px; height: auto;}
+    .active_top h1{font-size: 20px !important; margin-bottom: 0px;}
+    .active_top p{font-size: 8px;}
     .active_padd{padding: 20px 10px;}
     .active_img{height: 200px !important;}
     .active_img img{height: 100%;}
@@ -113,16 +126,19 @@ border-radius: 10px; color: white;}
       .active_text_box h1{font-size: 15px;}
       .active_text_box p{font-size: 13px;}
       .active_bottom h1{font-size: 23px;}
-      .active_bottom_text span {font-size: 14px;}
-     .active_bottom_box {padding: 0px ;}
-     .active_col_icon span { font-size: 20px;}
+      .active_bottom_text span {font-size: 14px !important;}
+     .active_bottom_box {padding: 0px  !important;}
+     .active_col{width: 100% !important;}
+          .active_col .link_icon{width: 55px !important; height: 50px !important; margin-right: 0px;}
+     .active_col_icon span { font-size: 20px !important;}
      .active_col_icon{width: 70px; height: 60px;}
-     .links_col h2{font-size: 13px; margin-bottom: 5px;}
-     .active_text_col b {font-size: 8px;}
+     .links_col h2{font-size: 13px !important; margin-bottom: 5px;}
+     .active_text_col b {font-size: 8px !important;}
      .active_col:hover{
       transform: scale(0.9);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+.active_text_col{margin-left: 20px;}
 .active_connect{padding: 0px 5px;}
 .active_connect h1 {font-size: 10px;}
     .active_connect button{font-size: 10px; padding: 8px 10px;}
@@ -135,5 +151,7 @@ border-radius: 10px; color: white;}
 .download h3{font-size: 9px;}
 .download span{font-size: 9px;}
 .download button{font-size: 9px;}
+
+
 
 }
