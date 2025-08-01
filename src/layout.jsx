@@ -10,12 +10,12 @@ import {
 } from "react-icons/md";
 import Logo from "./assets/imgs/logo-estrada.png";
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import Nav from "./components/Nav";
 import Loader from "./Loader";
 
 const Layout = () => {
-
+const navigate = useNavigate()
 
 
 
@@ -180,7 +180,7 @@ const Layout = () => {
             <ul className="navLinks rwdNav">
               <Nav arr={navLinks} />
             </ul>
-            <div className="menuDetails">detal</div>
+            <div className="menuDetails"><button onClick={()=>{navigate('/admin')}}>Admin</button></div>
           </div>
         </nav>
       </header>
@@ -188,7 +188,7 @@ const Layout = () => {
         <Outlet />
       </main>
       {/* shu childrenga Komponents keladi, avtomatik layout o'zgarmay tururadi. */}
-      <footer>
+      <footer className="fotter">
         <Footer />
       </footer>
     </div>

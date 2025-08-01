@@ -3,7 +3,7 @@ import error from '../../Images/2104.i301.004.S.m004.c13.404 error isometric com
 const Achievements = () => {
   return (
     <div className='achiv'>
-           <div className='allnews_top accept_top'>
+           <div className='allnews_top accept_top eco_top'>
         <h1>Talabalar Yutuqlari Jo’natish</h1>
         <p>Bosh sahifa - Talabalar Yutuqlari Jo’natish</p>
       </div>

@@ -1,9 +1,14 @@
 import { Table } from 'antd';
-import React from 'react';
-import './Students.css';
+import React from 'react'
+import { FaTrashAlt } from 'react-icons/fa';
 
-const Ecostudent = () => {
-  const dataSource = [
+const UserOwnStudent = () => {
+const handleDelete = (key) => {
+  console.log('O‘chirilayotgan element:', key);
+};
+
+
+    const dataSource = [
     {
       key: '1',
       name: 'Abdusamatov Azamat',
@@ -32,6 +37,13 @@ const Ecostudent = () => {
       faculty: 'Professional ta’lim: vokal, 4-kurs talabasi',
       phone: '90 674 83 53',
     },
+
+    {
+      key: '5',
+      name: 'Abdusamatov Azamat',
+      faculty: 'Professional ta’lim: vokal, 4-kurs talabasi',
+      phone: '90 674 83 53',
+    },
     
   ];
 
@@ -55,22 +67,26 @@ const Ecostudent = () => {
       title: 'Telefon raqami',
       dataIndex: 'phone',
       key: 'phone',
-    },
+    },    {
+    title: "O'chirish",
+    key: 'delete',
+    render: (_, record) => (
+        <p className='own-delete-box'>
+      <FaTrashAlt
+        style={{ color: 'red', cursor: 'pointer',}}
+        onClick={() => handleDelete(record.key)}
+        className='own-student-delete'
+      />
+      </p>
+    ),
+  },
   ];
-
   return (
-    <div className='students'>
-      <div className='allnews_top accept_top eco_top'>
-        <h1>Ekofaol talabalar</h1>
-        <p>Bosh sahifa - Ekofaol talabalar</p>
-      </div>
-
-      <div className='students_list'>
-        <h1>Ekofaol talabalar ro'yxati</h1>
+    <div className='own-student'>
+        <h1>Eko Talabalar</h1>
         <Table className='student_table' dataSource={dataSource} columns={columns} />
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Ecostudent;
+export default UserOwnStudent

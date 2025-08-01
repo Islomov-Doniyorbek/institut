@@ -7,9 +7,9 @@
 .active_text{ width: 40%; margin-left: 30px;}
 .active_top {
   width: 100%;
-  height: 150px;
+
 background: linear-gradient(to bottom right, #1A5950, #003d7a);
-padding: 40px 0px 40px 70px;
+padding: 40px 0px 40px 70px !important;
 } 
 .active_top h1{font-size: 36px; color: #ffffff; 
     line-height: 45px;
@@ -151,7 +151,6 @@ border-radius: 10px; color: white;}
 .download h3{font-size: 9px;}
 .download span{font-size: 9px;}
 .download button{font-size: 9px;}
-
 
 
 }

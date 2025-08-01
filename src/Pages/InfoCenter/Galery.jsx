@@ -48,7 +48,7 @@ export default function Galery() {
           </div>
    <div className="audio_item">
     <p>Botir Zokirov - Ra'no</p>
-    <audio controls>
+    <audio controls >
    <source src={RanoMp3} type="audio/mpeg" />
       Sizning brauzeringiz audio elementni qo‘llab-quvvatlamaydi.
     </audio>

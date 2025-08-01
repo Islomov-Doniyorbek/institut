@@ -20,7 +20,7 @@
 .achiv_img{width: 100%; display: flex; justify-content: center; height: 75vh; background-color: white;}
 .achiv_img img{width: 750px; height: 100%;}
 
-
+.eco_top{display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
 
 
     @media (max-width:1024px){
@@ -40,10 +40,10 @@
 } @media (max-width:767px){
 .students_list h1{font-size: 20px;}
 .students_list{padding: 10px;}
-  :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
             font-size: 10px;
         }
-        :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
+:where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
     font-size: 8px; font-weight: 600;
 }
 

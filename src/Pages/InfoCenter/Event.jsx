@@ -1,5 +1,5 @@
 import React from 'react'
-import photos from '../../Images/events.jpg'
+
 import { MdNewspaper } from 'react-icons/md'
 import { FaRegClock } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
@@ -21,7 +21,7 @@ const handleClick = () => {
     <div className='eventss_row'>
      <div className='news_card eventss_card ' onClick={handleClick} style={{ cursor: 'pointer' }}> 
 <div className='news_img'>
-    <img src={photos}/>
+ 
 </div>
 <div className='news_text eventss_text'>
 <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. 
@@ -37,7 +37,7 @@ const handleClick = () => {
 
        <div className='news_card eventss_card '> 
 <div className='news_img'>
-    <img src={photos}/>
+ 
 </div>
 <div className='news_text eventss_text'>
 <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. 
@@ -53,7 +53,7 @@ const handleClick = () => {
 
        <div className='news_card eventss_card '> 
 <div className='news_img'>
-    <img src={photos}/>
+ 
 </div>
 <div className='news_text eventss_text'>
 <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. 
