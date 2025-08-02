@@ -5,6 +5,7 @@ import news from '../../Images/news7.jpg'
 import news2 from '../../Images/news8.jpg'
 import { useNavigate } from 'react-router-dom'
 import Newsrep from './Newsrep'
+import ContactComp from '../../components/contactComp'
 const AllnewsInner = () => {
 const text = `Konferensiyada Botir Zokirov nomidagi Milliy estrada san’ati instituti, O’zbekiston davlat konservatoriyasi, Yunus Rajabiy nomidagi O’zbek milliy musiqa san’ati instituti, O’zbekiston Respublikasi fanlar akademiyasi, O’zbekiston davlat san’at va madaniyat instituti, Buxoro ixtisoslashtirilgan san’at maktabi, Farg’ona ixtisoslashtirilgan san’at maktabi, Farg’ona davlat universitetlaridan professor-o’qituvchilar, doktorant va mustaqil izlanuvchilar hamda ilmga izlanuvchan talaba-yoshlar ishtirok etishdi.
 
@@ -57,14 +58,7 @@ const paragraphs = text.split(/\.\s+/);
               </div>
             </div>
   
-            <div className='active_text_box allnews_right_text'>
-              <h1>Hurmatli foydalanuvchi!</h1>
-              <p>
-                Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga
-                xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.
-              </p>
-              <button><span><FiPhoneCall /></span>Bog'lanish</button>
-            </div>
+            <ContactComp/>
   
           <Newsrep/>
           </div>

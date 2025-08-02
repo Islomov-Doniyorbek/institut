@@ -8,6 +8,7 @@ import { CiLocationOn } from 'react-icons/ci'
 import { Button, Modal } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import Newsrep from './Newsrep'
+import ContactComp from '../../components/contactComp'
 const EventInner = () => {
 
         const navigate = useNavigate();
@@ -74,14 +75,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               </div>
             </div>
   
-            <div className='active_text_box allnews_right_text'>
-              <h1>Hurmatli foydalanuvchi!</h1>
-              <p>
-                Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga
-                xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.
-              </p>
-              <button><span><FiPhoneCall /></span>Bog'lanish</button>
-            </div>
+            <ContactComp/>
   
      <Newsrep/>
           </div>

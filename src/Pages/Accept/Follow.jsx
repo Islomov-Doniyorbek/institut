@@ -1,7 +1,8 @@
 import { Table } from 'antd'
 import React from 'react'
+import ActiveTopPage from '../../components/activeTopPage';
 
-const Follow = ({pageTitle}) => {
+const Follow = () => {
  const dataSource = [
     {
       direction: ' Cholg’u ijrochiligi: estrada cholg’ulari',
@@ -51,10 +52,7 @@ const Follow = ({pageTitle}) => {
 
   return (
     <div className='follow'>
-       <div className='callcenter_top_text'>
-        <h1>Qabul “Call centre”</h1>
-        <p>Bosh sahifa - {pageTitle}</p>
-        </div>
+       <ActiveTopPage pageTitle={"Qabul-Call Centr"} />
 <div className='follow_box'>
         <div className='follow_text'>
 <h2>Oʻzbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutida kasbiy (ijodiy) imtihonlar</h2>

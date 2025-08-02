@@ -37,8 +37,8 @@ align-items: center; justify-content: center; border-radius: 20px; margin-bottom
 .callcenter_card h3{font-size: 17px; color: #1A5950; }
 .callcenter_phone span{font-size: 25px; color: #003d7a;}
 
-.places_box{ padding: 0px 100px; margin: 100px 0px;
-    display: flex; width: 100%;
+.places_box{ padding: 0px 60px; margin: 100px 0px;
+    display: grid; grid-template-columns: 1fr 0.5fr; gap: 14px;  width: 100%;
 }
 
 .places_row{width: 70%; margin-right: 50px;}
@@ -272,8 +272,8 @@ justify-content: center; align-items: center;}
 .places_text{width: 70%;}
 .places_text h1{font-size: 18px;}
 .places_text p{font-size: 15px;}
-.places_box{display: flex; margin: 40px 0px; flex-direction: column; display: flex; align-items: center; justify-content: center;}
-.places_box{padding: 0px 40px;}
+.places_box{display: grid; margin: 40px 0px; grid-template-columns: 1fr 0.5fr; gap: 14px;}
+.places_box{padding: 0px 30px;}
 .places_row{width: 100% !important; margin-right: 0px;}
 .places_text button{font-size: 13px;}
 
@@ -324,7 +324,7 @@ justify-content: center; align-items: center;}
 
 .callcenter_card{height: 200px;}
 .callcenter_card p{height: 100px;}
-.places_box{padding: 0px 10px; margin: 20px 0px;}
+.places_box{padding: 0px 10px; margin: 20px 0px; grid-template-columns: repeat(1, 1fr); gap: 14px;}
 .places_card{display: flex; flex-direction: column; text-align: center;}
 .places_card h1{font-size: 14px; line-height: 22px;}
 .places_card p{font-size: 13px;}

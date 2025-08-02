@@ -5,7 +5,8 @@ import { FaRegClock } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 import { FiPhoneCall } from 'react-icons/fi'
 import { useNavigate } from 'react-router-dom'
-const Event = ({pageTitle}) => {
+import ActiveTopPage from '../../components/activeTopPage'
+const Event = () => {
 const navigate = useNavigate();
 
 const handleClick = () => {
@@ -14,10 +15,7 @@ const handleClick = () => {
 
   return (
     <div className='eventss'>
-          <div className='active_top eventt_top'>
-    <h1>Tadbirlar</h1>
-    <p>Bosh sahifa - {pageTitle}</p>
-    </div>
+          <ActiveTopPage pageTitle={"Tadbirlar"} />
     <div className='eventss_row'>
      <div className='news_card eventss_card ' onClick={handleClick} style={{ cursor: 'pointer' }}> 
 <div className='news_img'>

@@ -4,7 +4,7 @@
 .active_box{display: flex; width: 100%;}
 .active_img{ height: 410px; width: 90%; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
 .active_img img{height: 410px; width: 100%; }
-.active_text{ width: 90%; margin-left: 30px;}
+.active_text{ width: 100%; margin: 10px 0; }
 
 .active_text button{padding: 15px; width: 100%;  font-weight: 700; display: flex; justify-content: center;  transition: 0.3s;
   background: linear-gradient(to bottom right, #1A5950 0%, #003d7a 40%); border: none; border-radius: 10px; font-size: 16px; color: #FFFFFF; font-family: 'Montserrat';}

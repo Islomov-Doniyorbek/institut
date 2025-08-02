@@ -3,14 +3,12 @@ import { FaRegFilePdf } from 'react-icons/fa'
 import { FiPhoneCall } from 'react-icons/fi'
 import { HiDownload } from 'react-icons/hi'
 import ContactComp from '../../components/contactComp'
+import ActiveTopPage from '../../components/activeTopPage'
 
 const Article = () => {
   return (
     <div className='activ'>
-         <div className='active_top'>
-       <h1>Ilmiy jurnallar</h1>
-       <p>Bosh sahifa - Ilmiy jurnallar</p>
-       </div>
+         <ActiveTopPage pageTitle={"Ilmiy jurnallar"} />
        <div className='active_padd'>
        <div className='active_box'>
    <div className='active_img council_img'>

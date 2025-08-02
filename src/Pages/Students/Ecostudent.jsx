@@ -1,6 +1,7 @@
 import { Table } from 'antd';
 import React from 'react';
 import './Students.css';
+import ActiveTopPage from '../../components/activeTopPage';
 
 const Ecostudent = () => {
   const dataSource = [
@@ -60,10 +61,7 @@ const Ecostudent = () => {
 
   return (
     <div className='students'>
-      <div className='allnews_top accept_top'>
-        <h1>Ekofaol talabalar</h1>
-        <p>Bosh sahifa - Ekofaol talabalar</p>
-      </div>
+      <ActiveTopPage pageTitle={"Ekofaol talabalar"} />
 
       <div className='students_list'>
         <h1>Ekofaol talabalar ro'yxati</h1>

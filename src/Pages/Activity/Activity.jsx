@@ -9,13 +9,11 @@ import { MdOutlineMail } from 'react-icons/md'
 import { LuMusic4 } from 'react-icons/lu'
 import { HiMusicNote } from 'react-icons/hi'
 import ContactComp from '../../components/contactComp'
+import ActiveTopPage from '../../components/activeTopPage'
 const Activity = () => {
   return (
     <div className='activ'>
-      <div className='active_top'>
-    <h1>Ilmiy-tadqiqot faoliyati</h1>
-    <p>Bosh sahifa - Ilmiy-tadqiqot faoliyati</p>
-    </div>
+      <ActiveTopPage pageTitle={"Ilmiy tadqiqot"} />
     <div className='active_padd'>
     <div className='active_box'>
 <div className='active_img'>

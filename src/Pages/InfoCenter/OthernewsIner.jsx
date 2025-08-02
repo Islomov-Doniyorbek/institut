@@ -5,6 +5,7 @@ import { FiPhoneCall } from 'react-icons/fi'
 import announcement2 from '../../Images/active2.jpg'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import Newsrep from './Newsrep'
+import ContactComp from '../../components/contactComp'
 const OthernewsIner = () => {
   return (
   <div className='news_inner oter_inner'>
@@ -48,14 +49,7 @@ Viktorina savollariga eng birinchi va to‘g‘ri javob bergan ishtirokchilar vi
               </div>
             </div>
   
-            <div className='active_text_box allnews_right_text'>
-              <h1>Hurmatli foydalanuvchi!</h1>
-              <p>
-                Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga
-                xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.
-              </p>
-              <button><span><FiPhoneCall /></span>Bog'lanish</button>
-            </div>
+            <ContactComp/>
   
 <Newsrep/>
           </div>

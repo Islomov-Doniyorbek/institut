@@ -1,14 +1,13 @@
 import React from 'react'
 import { FaDownload } from 'react-icons/fa'
 import { FiPhoneCall } from 'react-icons/fi'
+import ActiveTopPage from '../../components/activeTopPage'
+import ContactComp from '../../components/contactComp'
 
-const Place = ({pageTitle}) => {
+const Place = () => {
   return (
     <div className='places'>
-            <div className='callcenter_top_text'>
-        <h1>Qabul “Call centre”</h1>
-        <p>Bosh sahifa - {pageTitle}</p>
-        </div>
+            <ActiveTopPage pageTitle={"Qabul Bakalavr"} />
         <div className='places_box'>
 <div className='places_row'>
 <div className='places_card'>
@@ -28,14 +27,7 @@ const Place = ({pageTitle}) => {
 
 </div>
 
-    <div className='active_text_box allnews_right_text places_text'>
-                  <h1>Hurmatli foydalanuvchi!</h1>
-                  <p>
-                    Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga
-                    xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.
-                  </p>
-                  <button><span><FiPhoneCall /></span>Bog'lanish</button>
-                </div>
+    <ContactComp/>
 
 
         </div>

@@ -7,6 +7,8 @@ import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrow
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { IoMenu } from 'react-icons/io5';
 import Newsrep from './Newsrep';
+import ActiveTopPage from '../../components/activeTopPage';
+import ContactComp from '../../components/contactComp';
 
 const allNews = Array.from({ length: 10 }, (_, i) => ({
   id: i + 1,
@@ -33,7 +35,7 @@ const getVisiblePages = (currentPage, totalPages) => {
   return visible;
 };
 
-const Allnews = ({pageTitle}) => {
+const Allnews = () => {
   const [showRightSidebar, setShowRightSidebar] = useState(false);
 
 
@@ -75,18 +77,15 @@ const Allnews = ({pageTitle}) => {
   return (
     <div className='allnews'>
       <div className='allnews_top'>
-        <div className='allnews_top_text'>
-        <h1>Yangiliklar</h1>
-        <p>Bosh sahifa - {pageTitle}</p>
-        </div>
+        <ActiveTopPage pageTitle={"Yangiliklar"} />
         <div className='allnews_top_menu'>
-<span onClick={() => setShowRightSidebar(!showRightSidebar)}><IoMenu /></span>
+          <span onClick={() => setShowRightSidebar(!showRightSidebar)}><IoMenu /></span>
         </div>
       </div>
 
       <div className='all_news_row'>
      <div className='allnews_center'  style={{ display: isSmallScreen && showRightSidebar ? 'none' : 'block' }}>
-<div className='allnews_card'>
+        <div className='allnews_card'>
           {currentNews.map((item) => (
             <div className='allnews_col' key={item.id}>
               <img src={item.image} alt='news' />
@@ -95,7 +94,7 @@ const Allnews = ({pageTitle}) => {
               <button onClick={handleChange}>Batafsil</button>
             </div>
           ))}
-</div>
+      </div>
 
               
  {!isSmallScreen && (
@@ -142,14 +141,7 @@ const Allnews = ({pageTitle}) => {
               <button onClick={handleNext}>E'lonlar</button>
             </div>
           </div>
-    <div className='active_text_box allnews_right_text'>
-                  <h1>Hurmatli foydalanuvchi!</h1>
-                  <p>
-                    Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga
-                    xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.
-                  </p>
-                  <button><span><FiPhoneCall /></span>Bog'lanish</button>
-                </div>
+      <ContactComp/>
 
 <Newsrep/>
         </div>

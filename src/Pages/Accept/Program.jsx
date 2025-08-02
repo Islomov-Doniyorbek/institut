@@ -1,13 +1,11 @@
 import React from 'react'
 import { FaDownload } from 'react-icons/fa'
+import ActiveTopPage from '../../components/activeTopPage'
 
-const Program = ({pageTitle}) => {
+const Program = () => {
   return (
     <div className='program'>
-        <div className='callcenter_top_text'>
-        <h1>Qabul dasturlari</h1>
-        <p>Bosh sahifa - {pageTitle}</p>
-        </div>
+        <ActiveTopPage pageTitle={"Dasturlar"} />
 
         <div className='program_box'>
             <div className='program_card'>

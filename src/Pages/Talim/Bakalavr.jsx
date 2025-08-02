@@ -242,10 +242,7 @@ const Bakalavr = () => {
 
   return (
     <Container>
-       <div className='callcenter_top_text magister_top'>
-        <h1>Qabul dasturlari</h1>
-        <p>Bosh sahifa - Qabul dasturlari</p>
-        </div>
+       <ActiveTopPage pageTitle={"Qabul dasturlari"} />
       <div
         className="bakalavr-wrapper"
         style={{ maxWidth: 1000, margin: "0 auto", padding: "2rem 0" }}

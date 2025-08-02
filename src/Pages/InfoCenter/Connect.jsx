@@ -2,16 +2,14 @@ import React from 'react'
 import { FaLocationDot } from 'react-icons/fa6'
 import { MdLocalPhone, MdOutlineMarkEmailRead } from 'react-icons/md'
 import { TbDeviceLandlinePhone } from 'react-icons/tb'
+import ActiveTopPage from '../../components/activeTopPage'
 
 
-export default function Connect({pageTitle}) {
+export default function Connect() {
 
   return (
     <div className='connect_line'>
-        <div className='allnews_top connect_top'>
-        <h1>Bog‘lanish</h1>
-        <p>Bosh sahifa - {pageTitle}</p>
-      </div>
+        <ActiveTopPage pageTitle={"Bog'lanish"} />
       <div className='connect_box'>
 <h1>Bog‘lanish ma’lumotlari</h1>
 <h2>O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti </h2>

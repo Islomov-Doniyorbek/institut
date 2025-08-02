@@ -4,8 +4,9 @@ import { FaPassport } from 'react-icons/fa';
 import { GiDiploma } from 'react-icons/gi';
 import { IoIosArrowDown } from 'react-icons/io';
 import { MdOutlineAddPhotoAlternate, MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import ActiveTopPage from '../../components/activeTopPage';
 
-const Forigns = ({pageTitle}) => {
+const Forigns = () => {
       const [selected, setSelected] = useState('');
           const [language, setLanguage] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -54,10 +55,7 @@ const Forigns = ({pageTitle}) => {
   };
   return (
     <div className='forign'>
-       <div className='callcenter_top_text'>
-        <h1>Xorijiy fuqarolar uchun qabul</h1>
-        <p>Bosh sahifa - {pageTitle}</p>
-        </div>
+       <ActiveTopPage pageTitle={"Xorijiy fuqarolar uchun qabul"} />
 <div className='forign_container'>
       <div className='forign_top'>
 <h1>Xorijiy Fuqarolar uchun Qabul</h1>

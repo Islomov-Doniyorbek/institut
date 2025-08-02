@@ -2,13 +2,12 @@ import React from 'react'
 import './Training.css'
 import { FiPhoneCall } from 'react-icons/fi'
 import { FaDownload } from 'react-icons/fa'
-const LessonTable = ({pageTitle}) => {
+import ActiveTopPage from '../../components/activeTopPage'
+import ContactComp from '../../components/contactComp'
+const LessonTable = () => {
   return (
     <div>
-       <div className='callcenter_top_text'>
-        <h1>Dars jadvali (BA & MA)</h1>
-        <p>Bosh sahifa - {pageTitle}</p>
-        </div>
+       <ActiveTopPage pageTitle={"Dars jadvali"} />
       <div className='places_box'>
      <div className='places_row'>
      <div className='places_card'>
@@ -31,14 +30,7 @@ const LessonTable = ({pageTitle}) => {
      
      </div>
      
-         <div className='active_text_box allnews_right_text places_text'>
-                       <h1>Hurmatli foydalanuvchi!</h1>
-                       <p>
-                         Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga
-                         xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.
-                       </p>
-                       <button><span><FiPhoneCall /></span>Bog'lanish</button>
-                     </div>
+         <ContactComp/>
      
      
              </div>

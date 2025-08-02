@@ -1,7 +1,8 @@
 import React from 'react'
 import './Accept.css'
 import { MdLocalPhone } from 'react-icons/md'
-const Callcenter = ({pageTitle}) => {
+import ActiveTopPage from '../../components/activeTopPage'
+const Callcenter = () => {
 
    const kafedra = [
     {
@@ -62,10 +63,7 @@ Magistratura bo‘yicha mas’ul kotib o‘rinbosari`,
 
   return (
     <div className='callcenter'>
-         <div className='callcenter_top_text'>
-        <h1>Qabul “Call centre”</h1>
-        <p>Bosh sahifa - {pageTitle}</p>
-        </div>
+        <ActiveTopPage pageTitle={"Call Centr"} />
 
         <div className='callcenter_box'>
 

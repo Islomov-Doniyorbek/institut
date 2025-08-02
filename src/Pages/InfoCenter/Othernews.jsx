@@ -6,6 +6,7 @@ import announcement2 from '../../Images/active2.jpg'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 import Newsrep from './Newsrep'
+import ContactComp from '../../components/contactComp'
 const OtherNews = () => {
 const navigate = useNavigate()
 
@@ -52,14 +53,7 @@ const handleChange=()=>{
               </div>
             </div>
   
-            <div className='active_text_box allnews_right_text'>
-              <h1>Hurmatli foydalanuvchi!</h1>
-              <p>
-                Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga
-                xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.
-              </p>
-              <button><span><FiPhoneCall /></span>Bog'lanish</button>
-            </div>
+            <ContactComp/>
   
             <Newsrep/>
           </div>
