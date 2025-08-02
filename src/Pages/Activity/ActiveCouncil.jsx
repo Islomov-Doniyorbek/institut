@@ -8,6 +8,7 @@ const ActiveCouncil = () => {
   return (
        <div className='activ'>
          <ActiveTopPage pageTitle={"Ilmiy kengashlar"} />
+
        <div className='active_padd'>
        <div className='active_box'>
    <div className='active_img council_img'>
@@ -15,7 +16,14 @@ const ActiveCouncil = () => {
    <span></span>
    <p>Botir Zokirov nomidagi Milliy estrada san’ati institutining ilmiy loyihalari haqida ma’lumot.</p>
    </div>
-   <ContactComp />
+   <div className='active_text'>
+   <button><span><FaRegFilePdf /></span>Institut taqdimoti</button>
+   <div className='active_text_box'>
+   <h1>Hurmatli foydalanuvchi!</h1>
+   <p>Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.</p>
+   </div>
+   <button className='phone_way'><span><FiPhoneCall /></span>Bog'lanish</button>
+   </div>
        </div>
 
        </div>

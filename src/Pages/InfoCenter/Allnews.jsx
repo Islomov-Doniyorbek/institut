@@ -2,71 +2,61 @@ import React, { useEffect, useState } from 'react';
 import './News.css';
 import { FaRegClock } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
-import news from '../../Images/photo_2025-07-20_14-03-41.jpg';
-import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import {
+  MdOutlineKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 import { IoMenu } from 'react-icons/io5';
 import Newsrep from './Newsrep';
 import ActiveTopPage from '../../components/activeTopPage';
 import ContactComp from '../../components/contactComp';
 
-const allNews = Array.from({ length: 10 }, (_, i) => ({
-  id: i + 1,
-  title: 'Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.',
-  date: '04/24/2025',
-  image: news
-}));
-
-// Faqat 4 ta sahifa ko‘rsatadigan dynamic page calculator
 const getVisiblePages = (currentPage, totalPages) => {
   const visible = [];
-
   let start = Math.max(1, currentPage - 1);
   let end = Math.min(totalPages, start + 3);
-
   if (end - start < 3) {
     start = Math.max(1, end - 3);
   }
-
   for (let i = start; i <= end; i++) {
     visible.push(i);
   }
-
   return visible;
 };
 
 const Allnews = () => {
-  const [showRightSidebar, setShowRightSidebar] = useState(false);
-
-
   const navigate = useNavigate();
-
   const itemsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [showRightSidebar, setShowRightSidebar] = useState(false);
+  const [newsList, setNewsList] = useState([]);
 
   useEffect(() => {
+    const storedPosts = JSON.parse(localStorage.getItem('userPosts')) || [];
+    setNewsList(storedPosts);
+
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth <= 1024);
     };
-
-    handleResize(); // ilk holat uchun
+    handleResize();
     window.addEventListener('resize', handleResize);
-
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const totalPages = Math.ceil(allNews.length / itemsPerPage);
+  const totalPages = Math.ceil(newsList.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
   const currentNews = isSmallScreen
-    ? allNews // kichik ekran — barchasini ko‘rsat
-    : allNews.slice(startIndex, endIndex); // katta ekran — sahifalab
+    ? newsList
+    : newsList.slice(startIndex, endIndex);
 
   const visiblePages = getVisiblePages(currentPage, totalPages);
 
-  const handleChange = () => {
+  const handleChange = (post) => {
+    localStorage.setItem('selectedPost', JSON.stringify(post));
     navigate('/News/Allnews/Innernews');
   };
 
@@ -77,63 +67,91 @@ const Allnews = () => {
   return (
     <div className='allnews'>
       <div className='allnews_top'>
-        <ActiveTopPage pageTitle={"Yangiliklar"} />
+        <ActiveTopPage pageTitle="Yangiliklar" />
         <div className='allnews_top_menu'>
-          <span onClick={() => setShowRightSidebar(!showRightSidebar)}><IoMenu /></span>
+          <span onClick={() => setShowRightSidebar(!showRightSidebar)}>
+            <IoMenu />
+          </span>
         </div>
       </div>
 
       <div className='all_news_row'>
-     <div className='allnews_center'  style={{ display: isSmallScreen && showRightSidebar ? 'none' : 'block' }}>
-        <div className='allnews_card'>
-          {currentNews.map((item) => (
-            <div className='allnews_col' key={item.id}>
-              <img src={item.image} alt='news' />
-              <h2>{item.title}</h2>
-              <b><span><FaRegClock /></span>{item.date}</b>
-              <button onClick={handleChange}>Batafsil</button>
+        {/* Chap qism (Yangiliklar) */}
+        <div
+          className='allnews_center'
+          style={{ display: isSmallScreen && showRightSidebar ? 'none' : 'block' }}
+        >
+          <div className='allnews_card'>
+            {currentNews.length === 0 ? (
+              <p style={{ textAlign: 'center', padding: '40px' }}>
+                Hech qanday yangilik qo‘shilmagan.
+              </p>
+            ) : (
+              currentNews.map((item, index) => (
+                <div className='allnews_col' key={index}>
+                  <div
+                    className='news_image'
+                    style={{
+                      backgroundImage: `url(${item.images?.[0]})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      height: '200px',
+                      borderRadius: '10px',
+                    }}
+                  />
+                  <h2>{item.title}</h2>
+                  <b>
+                    <span><FaRegClock /></span>
+                    {item.date}
+                  </b>
+                  <button onClick={() => handleChange(item)}>Batafsil</button>
+                </div>
+              ))
+            )}
+          </div>
+
+          {!isSmallScreen && totalPages > 1 && (
+            <div className='allnews_number' style={{ textAlign: 'center', marginTop: '20px' }}>
+              <button
+                className='btn_news'
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                disabled={currentPage === 1}
+              >
+                <MdOutlineKeyboardArrowLeft />
+              </button>
+
+              {visiblePages.map((page) => (
+                <button
+                  className='btn_text'
+                  key={page}
+                  onClick={() => setCurrentPage(page)}
+                >
+                  {page}
+                </button>
+              ))}
+
+              <button
+                className='btn_news'
+                onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                disabled={currentPage === totalPages}
+              >
+                <MdOutlineKeyboardArrowRight />
+              </button>
             </div>
-          ))}
-      </div>
-
-              
- {!isSmallScreen && (
-  <div className='allnews_number' style={{ textAlign: 'center', marginTop: '20px' }}>
-    <button
-      className='btn_news'
-      onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-      disabled={currentPage === 1}>
-      <span> <MdOutlineKeyboardArrowLeft /></span>
-    </button>
-
-    {visiblePages.map((page) => (
-      <button
-        className='btn_text'
-        key={page}
-        onClick={() => setCurrentPage(page)}>
-        {page}
-      </button>
-    ))}
-
-    <button
-      onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
-      disabled={currentPage === totalPages}
-      className='btn_news'>
-      <span> <MdOutlineKeyboardArrowRight /></span>
-    </button>
-  </div>
-)}
-
+          )}
         </div>
 
-
-
-
-
-
-        <div className='allnews_right'  style={{
-      display: isSmallScreen ? (showRightSidebar ? 'block' : 'none') : 'block',
-    }}>
+        {/* O'ng qism (Bo‘limlar + Kontakt) */}
+        <div
+          className='allnews_right'
+          style={{
+            display: isSmallScreen
+              ? showRightSidebar
+                ? 'block'
+                : 'none'
+              : 'block',
+          }}
+        >
           <div className='section'>
             <h1>Bo‘limlar</h1>
             <div className='section_row'>
@@ -141,9 +159,9 @@ const Allnews = () => {
               <button onClick={handleNext}>E'lonlar</button>
             </div>
           </div>
-      <ContactComp/>
 
-<Newsrep/>
+          <ContactComp />
+          <Newsrep />
         </div>
       </div>
 

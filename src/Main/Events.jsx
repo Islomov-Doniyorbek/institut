@@ -1,5 +1,5 @@
 import React from 'react'
-import event from '../../src/Images/events.jpg'
+
 import { FaRegCalendarAlt, FaRegClock } from 'react-icons/fa'
 import { SlLocationPin } from 'react-icons/sl'
 import Container from '../components/Container'
@@ -14,7 +14,7 @@ function Events() {
         <div className='event_row'>
 
           <div className='event_card'>
-          <img src={event}/>
+         <div className='eventt_img'></div>
           <div className='event_text'>
             <h2>“Jadidlar. Turkistonga maktublar” multimedia koʻrgazmasiga tashrif</h2>
           </div>
@@ -27,7 +27,7 @@ function Events() {
 
 
         <div className='event_card'>
-        <img src={event}/>
+           <div className='eventt_img'></div>
         <div className='event_text'>
         <h2>“Raqamli dunyoda talaba-yoshlarning psixologik salomatligi: muammolar va yechimlar” mavzusida seminar</h2>
         </div>
@@ -40,7 +40,7 @@ function Events() {
 
 
         <div className='event_card'>
-        <img src={event}/>
+         <div className='eventt_img'></div>
         <div className='event_text'>
         <h2>Milliy qadriyatlar sayli doirasida “Milliy libos – millat qiyofasi, milliy iftixor ifodasi” ko‘rik-tanlovi o‘tkaziladi</h2>
         </div>

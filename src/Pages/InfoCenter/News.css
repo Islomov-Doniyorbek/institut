@@ -1,5 +1,5 @@
 .allnews{width: auto;}
-.allnews_top{width: 100%; padding: 30px 50px; background: linear-gradient(to bottom right, #1A5950, #003d7a); color: white; display: flex; align-items: center; justify-content: space-between;}
+.allnews_top{width: 100%; padding: 40px 50px; background: linear-gradient(to bottom right, #1A5950, #003d7a); color: white; display: flex; align-items: center; justify-content: space-between;}
 .allnews_top h1{font-size: 36px; color: #FFFFFF; 
     line-height: 45px;
     font-weight: 700;

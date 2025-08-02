@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaRegClock } from 'react-icons/fa'
 import { MdKeyboardArrowRight, MdNewspaper } from 'react-icons/md'
-import photos from '../Images/photo_2025-07-20_14-03-41.jpg'
+
 function News() {
   return (
  <div className='news'>
@@ -9,7 +9,7 @@ function News() {
       <div className='news_row'> 
      <div className='news_card'> 
 <div className='news_img'>
-    <img src={photos}/>
+ 
 </div>
 <div className='news_text'>
 <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. 
@@ -23,7 +23,7 @@ function News() {
 
             <div className='news_card'> 
 <div className='news_img'>
-    <img src={photos}/>
+ 
 </div>
 <div className='news_text'>
 <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. 
@@ -38,7 +38,7 @@ function News() {
        
                  <div className='news_card'> 
 <div className='news_img'>
-    <img src={photos}/>
+ 
 </div>
 <div className='news_text'>
 <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. 
@@ -53,7 +53,7 @@ function News() {
 
               <div className='news_card'> 
 <div className='news_img'>
-    <img src={photos}/>
+ 
 </div>
 <div className='news_text'>
 <h2>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. 
