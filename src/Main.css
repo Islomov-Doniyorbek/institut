@@ -136,13 +136,15 @@
 .links_row{display: flex; width: 100%; flex-wrap: wrap; }
 .links_col{display: flex; width: 30%; align-items: center; justify-content: flex-start; padding: 20px 0px ;
    border-radius: 20px; transition: transform 0.3s ease;
-   transform-origin: center; margin: 15px; padding: 20px 0px 20px 50px;}
-.links_col:hover {
-  transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+   transform-origin: center; margin: 15px; padding: 25px 0px 25px 50px; background-color: #1a5950;}
 
+   .links_col:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); background-color: white;
+  }
+  .links_col:hover h2{color: #1a5950 !important;}
+  .links_col:hover b{color: #1a5950 !important;}
 
-}
 .link_texts{width: calc(100% - 100px);}
 
 .link_icon{ width: 80px; display: flex; justify-content: center; align-items: center;
@@ -160,6 +162,7 @@ text-align: center;
     25% 100%,
     0% 50%
   );}
+
   .link_inner{  width: 100%;
     height: 100%;
     background: white;
@@ -169,28 +172,46 @@ text-align: center;
     justify-content: center;
     font-size: 35px;
   }
-  .links_col h2{color: #1a5950; font-size: 25px; font-family:'Montserrat'; margin-bottom: 15px;}
-  .links_col b{color: rgb(37, 37, 37)!important; font-size: 18px; font-family:'Open Sans';}
+  .links_col h2{color:   white; font-size: 25px; font-family:'Montserrat'; margin-bottom: 15px;}
+  .links_col b{color: white; font-size: 18px; font-family:'Open Sans';}
 
 
 
 
 .usinfo{padding: 80px;}
-.useinfo_box{ 
-  border-radius: 20px; padding: 50px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; 
+.useinfo_box {
+  position: relative;
+  border-radius: 20px;
+  padding: 50px;
   background-image: url('../src/Images/solKaliti.jpg');
-background-position: center; background-repeat: no-repeat; background-size: cover;
-min-height: 500px; 
-/* display: flex;
-flex-direction: column; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  overflow: hidden;
 }
+
+.useinfo_box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Qoraroq qilish: 0.4 → 40% qora */
+  z-index: 1;
+}
+
+.useinfo_box > * {
+  position: relative;
+  z-index: 2;
+}
+
+
 .useinfo_row{display: flex; width: 100%; justify-content: space-between; }
 .useinfo_box h1{color: black; font-family:'Montserrat'; font-size: 40px; color: 	#FFFFFF;} 
 .useinfo_box h1 b{color: #ffeb3b; font-family:'Montserrat'; font-size: 40px;}
 .info_text{display: flex; margin-bottom: 30px;}
 .info_text span{color: #ffeb3b; font-size: 35px; margin-right: 10px; margin-top: 5px;}
 .useinfo_card h2{color: white; font-family:'Montserrat'; font-size: 40px; }
-.useinfo_card p{color: rgb(202, 202, 202); font-size: 18px; margin-top: 10px; ; font-family:'Montserrat';}
+.useinfo_card p{color: rgb(231, 231, 231); font-size: 18px; margin-top: 10px; ; font-family:'Montserrat';}
 
 
 

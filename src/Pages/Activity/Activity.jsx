@@ -19,7 +19,9 @@ const Activity = () => {
 <div className='active_img'>
 <img src={active2}/>
 </div>
+<div className='active-alw'>
 <ContactComp/>
+</div>
     </div>
 
     <div className='active_bottom'>

@@ -9,13 +9,15 @@ const Projects = () => {
        <div className='activ'>
            <ActiveTopPage pageTitle={"Ilmiy loyihalar"} />
          <div className='active_padd'>
-         <div className='active_box'>
-     <div className='active_img council_img'>
+         <div className='active_box project-box'>
+     <div className='active_img council_img project-img'>
      <h2>Ilmiy loyihalar</h2>
      <span></span>
      <p>Botir Zokirov nomidagi Milliy estrada san’ati institutining ilmiy loyihalari haqida ma’lumot.</p>
      </div>
-    <ContactComp/>
+     <div className='active-alw project-alw'>
+<ContactComp/>
+</div>
          </div>
   
          </div>

@@ -1,9 +1,13 @@
 .activ{width: auto; height: auto;  }
-.active_padd{padding: 50px 300px 100px ;}
+.active_padd{padding: 50px 200px 100px ;}
 
 .active_box{display: flex; width: 100%;}
 .active_img{ height: 410px; width: 60%; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+.project-img{width: 100% !important;}
+.project-box{width: 100% !important; display: flex;}
+.project-alw{width: 30% !important;}
 .active_img img{height: 410px; width: 100%; }
+.active-alw{width: 40% !important; margin-left: 20px;}
 .active_text{ width: 100%; margin: 10px 0; }
 .active_top {
   width: 100%;
@@ -34,11 +38,12 @@ padding: 40px 0px 40px 70px !important;
 .active_bottom_text span{margin-bottom: 20px; font-size: 17px; color: #888888;  font-family: 'Montserrat'; }
 
 .active_bottom_box{display: flex; width: 100% !important; margin-top: 50px;} 
-.active_col{width: 50% !important; display: flex; padding-right: 20px;}
-.active_text_col{ margin-left: 40px;}
-.active_text_col h2{font-size: 20px; }
-.active_text_col b{font-size: 13px; font-weight: 400; color: rgb(196, 196, 196) !important; }
+.active_col{width: 50% !important; display: flex; padding: 20px !important;}
+.active_text_col{ margin-left: 20px;}
+.active_text_col h2{font-size: 18px !important;  }
+.active_text_col b{font-size: 13px !important; font-weight: 400; color: rgb(196, 196, 196) !important; }
 .active_col_icon{margin-right: -20px; width: 90px; height: 80px; }
+.active_col_icon span{font-size: 25px!important;}
 .active_connect{width: 100%; background: linear-gradient(to bottom right, #1A5950, #003d7a); height: 80px; padding: 0px 70px; display: flex; justify-content: space-between; align-items: center;}
 .active_connect h1{color: #ffffff;font-family: 'Montserrat'; font-size: 20px; font-weight: 500;}
 .active_connect button{padding: 10px 15px;display: flex;  justify-content: center; color: #FFFFFF; background-color: #0058af; border: none; border-radius: 10px; font-family: 'Montserrat'; font-size: 18px; font-weight: 500;}

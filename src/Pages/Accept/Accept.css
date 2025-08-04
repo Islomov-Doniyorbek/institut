@@ -1,41 +1,41 @@
 .callcenter_top_text{width: 100%; padding: 30px 50px; background: linear-gradient(to bottom right, #1A5950, #003d7a); color: white; }
 .callcenter_top_text h1{font-size: 36px; color: #FFFFFF; 
-    line-height: 45px;
     font-weight: 700;
     font-style: normal; font-family: 'Montserrat';}
-.callcenter_top_text p{font-size: 13px; margin-top: 15px; color: #868686; }
+.callcenter_top_text p{font-size: 13px; line-height: 25px ; margin-top: 15px; color: #868686; }
 .callcenter_box{padding: 40px 80px;}
 
 
 .callcenter_text{padding: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; display: flex; flex-direction: column;
-align-items: center; justify-content: center; border-radius: 20px; margin-bottom: 20px;  margin: 20px 40px;}
+align-items: center; justify-content: center; text-align: center; border-radius: 20px; margin-bottom: 20px;  margin: 20px 40px;}
 
 .callcenter_text h1{font-size: 30px; color: #003d7a;  margin-bottom: 15px;
     line-height: 45px;
     font-weight: 700;
     font-style: normal; font-family: 'Montserrat';}
 .callcenter_text p{font-size: 16px; color: 	#5388b1;  margin-bottom: 15px;
-    line-height: 45px;
     font-weight: 700;
     font-style: normal; font-family: 'Montserrat';}
 
-.callcenter_row{width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+.callcenter_row{width: 100%; padding: 0px 80px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
 
-.callcenter_card{width: 30%;  height: 360px; padding: 30px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 20px; margin:  20px;}
-.callcenter_card:hover{transform: scale(1.1);}
-.callcenter_card h2{font-size: 20px; color: #003d7a;  margin-bottom:10px;
-    line-height: 45px;
+.callcenter_card{width: 45%;   transition: transform 0.3s ease;  height: auto; padding: 30px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 20px; margin:  20px;}
+.callcenter_card:hover{   transform: translateY(-5px) !important;}
+
+.callcenter_card h2{font-size: 22px; color: #003d7a !important;  margin-bottom:20px; line-height: 25px;
     font-weight: 700;
-    font-style: normal; font-family: 'Montserrat';}
+    font-style: normal; font-family: 'Montserrat'; }
 
-.callcenter_card p{font-size: 20px; color: rgb(71, 71, 71);  margin-bottom:10px; height: 190px;
-    line-height: 30px;
-    font-weight: 500;
-    font-style: normal; font-family: 'Montserrat';border-bottom: 1px solid #aaaaaa; padding-bottom: 25px;}
-
-    .callcenter_phone{display: flex; margin-top: 30px !important;}
-.callcenter_card h3{font-size: 17px; color: #1A5950; }
-.callcenter_phone span{font-size: 25px; color: #003d7a;}
+.callcenter_card p{font-size: 18px; color: rgb(94, 94, 94) !important;  margin-bottom:10px; height: 160px;
+    line-height: 30px;  padding: 10px; overflow: hidden; overflow-y: auto;
+    font-weight: 600;
+    font-style: normal; font-family: 'Montserrat'; padding-bottom: 25px;}
+    .callcenter_card p::-webkit-scrollbar {
+      display: none !important;
+    }
+    .callcenter_phone{display: flex; padding-top: 20px !important; margin-top: 15px !important; border-top: 1px solid #004080;}
+.callcenter_card h3{font-size: 18px; color: #1A5950 !important; }
+.callcenter_phone span{font-size: 25px; margin-right: 6px; color: #003d7a;}
 
 .places_box{ padding: 0px 60px; margin: 100px 0px;
     display: grid; grid-template-columns: 1fr 0.5fr; gap: 14px;  width: 100%;

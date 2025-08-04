@@ -37,7 +37,9 @@ const Article = () => {
 </div>
 
    </div>
-  <ContactComp/>
+   <div className='active-alw'>
+<ContactComp/>
+</div>
        </div>
 
        </div>
