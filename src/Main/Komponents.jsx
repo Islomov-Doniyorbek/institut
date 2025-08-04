@@ -7,7 +7,8 @@ import Links from './Links';
 import UnInfo from './UnInfo';
 import About from './About';
 import News from './News';
-import UniMap from './UniMap';
+import Yandex from './Yandex';
+
 
 
 export default function Komponents() {
@@ -21,7 +22,7 @@ export default function Komponents() {
       <Events />
       <About />
       <ForStudents />
-      <UniMap/>
+  <Yandex/>
     </>
   );
 }

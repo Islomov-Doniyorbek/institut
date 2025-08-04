@@ -8,7 +8,10 @@ const UserOwnEvents = () => {
   return (
     <div>
        <div className='user-video-post'>
-              <h1>Yangiliklar</h1>
+                <div className='own_media_top'>
+<h2>Tadbirlar bo'limi</h2>
+  </div>
+  
  <div className='event_row'>
 
           <div className='event_card own_event_card'>

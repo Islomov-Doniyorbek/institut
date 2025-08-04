@@ -4,7 +4,10 @@ import { FaPencilAlt, FaTrashAlt } from 'react-icons/fa'
 const UserOwnDocument = () => {
   return (
     <div className='own_doc'>
-        <h1>Hujjatlar</h1>
+         <div className='own_media_top'>
+<h2>Hujjatlar bo'limi</h2>
+  </div>
+  
         <div className='own-doc-row'>
  
  

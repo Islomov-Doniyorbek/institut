@@ -40,6 +40,7 @@ import Bakalavr from "./Pages/Talim/Bakalavr";
 import Magister from "./Pages/Talim/Magister";
 import LessonTable from "./Pages/Talim/LessonTable";
 import Laststudents from "./Pages/Talim/Laststudents";
+import Zoom from "./Pages/Students/Zoom";
 
 export const routes = [
   // Activity
@@ -76,6 +77,7 @@ export const routes = [
   { path: "/Students/Grand", element: <Grand /> },
   { path: "/Students/Yutuqlar", element: <Achievements /> },
   { path: "/Students/Test", element: <Test /> },
+
 
   // Qabul
   { path: "/Qabul/Callcenter", element: <Callcenter /> },

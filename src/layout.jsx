@@ -116,7 +116,6 @@ const Layout = () => {
                     {link:"Grant uchun ariza", path: '/Students/Grand'},
                     {link:"Talaba yutuqlarini jo'natish", path: '/Students/Yutuqlar'},
                     {link:"Grant uchun test", path: '/Students/Test'},
-                    {link:"Kasbiy(Ijodiy) imtihonlar translatsiyasi", path: '/Activity/Activity'},
                 ]
             ]
         },

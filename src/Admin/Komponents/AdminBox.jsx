@@ -9,7 +9,10 @@ import AddPost from './Pages/AddPost'
 import { IoPersonCircle } from 'react-icons/io5'
 import { FaRegAddressCard } from 'react-icons/fa'
 import UserPostList from './Pages/UserPostList'
-
+import brand from '../images/Images/photo_2025-08-04_12-08-19.jpg'
+import { GrDomain } from 'react-icons/gr'
+import { BsMenuButtonWide } from 'react-icons/bs'
+import Editing from './Pages/Editing'
 const AdminBox = () => {
   const navigate = useNavigate(); 
 
@@ -18,8 +21,10 @@ const AdminBox = () => {
     <div className='admin_container'>
     <div className='admin_menu'>
    
-<h1>Menu</h1> 
-
+   <div className='admin_logo'>
+<img src={brand}/>
+<h1>Admin Panel</h1> 
+</div>
 <div className='admin_menu_list'>
 
   <div onClick={() => navigate('/admin/Adminpanel/Adminqoshish')} className='admin_menu_card'>
@@ -46,6 +51,15 @@ const AdminBox = () => {
     </div>
   </div>
 
+
+    <div onClick={() => navigate('/admin/Adminpanel/EditToNav')} className='admin_menu_card'>
+    <span><BsMenuButtonWide /></span>
+    <div>
+      <h2>Navbar va footer</h2>
+      <p>Navbar va footerni tahrirlashingiz mumkin</p> 
+    </div>
+  </div>
+
 </div>
 
 
@@ -57,6 +71,7 @@ const AdminBox = () => {
         <Route path="Adminqoshish" element={<Adduser />} />
         <Route path="Postqoshish" element={<AddPost />} />
         <Route path="UserPosts" element={<UserPostList />} />
+        <Route path="EditToNav" element={<Editing />} />
       </Routes>
  </div>
  </div>

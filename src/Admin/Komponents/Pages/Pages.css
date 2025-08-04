@@ -376,9 +376,96 @@ margin-top: 20px;
 
 
 
-.userownbox{height: auto !important;}
-.userownmenu{width: 100% ; display: flex; align-items: center; justify-content: center; margin-bottom: 30px;}
-.userownmenu button{padding: 15px 20px; margin: 0px 10px; border: none;
-   font-weight: 600; font-size: 18px; border-radius: 10px; background-color: 	#1c76f3; color: white; }
-.userownmenu button:hover{background-color: white; color: #003d7a;  transform: translateY(-3px);
-  box-shadow: 0 6px 12px #1c76f3;}
+.userownbox{height: auto !important; width: 100%; height: auto; background-color: white;
+border-radius: 10px;  border: 2px solid rgb(247, 184, 12); padding: 20px 10px 10px 10px; }
+
+.userownmenu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.userownmenu button {
+  padding: 15px 20px;
+  margin: 0px 10px;
+  border: 1px solid #003264;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #1c76f3;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.userownmenu button:hover {
+  background-color: white;
+  color: #003d7a;
+  border: 1px solid #3e9fff;
+}
+
+.userownmenu button.active {
+  background-color: white;
+  color: #003d7a;
+  border: 1px solid #3e9fff;
+}
+
+
+
+
+
+
+.edit_box{
+  padding: 40px;
+}
+.edit_box h1{font-size: 30px; margin-bottom: 30px; display: flex; justify-content: center;
+color: 	#003264; padding: 15px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  border-radius: 10px;
+}
+.edit_head{width: 100%; border-radius: 10px; padding: 30px; background-color: white;   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+.edit_head h4{font-size: 23px; color:#004206; display: flex; justify-content: center; margin-bottom: 20px;
+}
+.edit_head_row{display: flex; width: 100%;}
+.edit_head_card{padding: 20px; width: 48%; border: 1px solid #004206; margin: 20px; border-radius: 10px; }
+ 
+.edit_head_card h2{font-size: 19px; color: #14407e; margin-bottom: 15px;}
+.edit_head_card p{ padding: 10px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; font-size: 15px; margin-bottom: 30px;}
+.edit_head_card input{width: 100%; padding: 15px;  font-size: 15px;
+  border: none; box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; border-radius: 10px;}
+.edit_btn{padding: 10px; width: 100%; margin-top: 20px; border-radius: 10px; border: none; background-color: #003d7a;
+color: white; font-weight: 400; font-size: 16px;}
+.edit_btn:hover{background-color: #005cdd !important;}
+
+
+
+
+
+.edit_menu{padding: 30px;  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; width: 100%; border-radius: 10px; 
+  margin-top: 80px;}
+.edit_menu h3{font-size: 23px; display: flex; justify-content: center; color: #004206; margin-bottom: 20px;}
+.edit_menu_row{display: flex !important; width: 100% !important; align-items: center;}
+.edit_menu_card{width: 40%; padding: 20px; border-radius: 20px; border: 1px solid #004206; margin: 20px;}
+.edit_menu_card p{font-size: 20px; font-weight:700; color: #003d7a;}
+.edit_menu_card2{width: 55%; padding: 30px;}
+
+.edit_menu_card2 h2{font-size: 18px; margin-top: 20px; color: #004906; margin-bottom: 15px;}
+.edit_menu_card2 input{font-size: 15px;
+  padding: 10px; width: 100%; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border: none; border-radius: 10px;
+}
+
+
+
+.edit_fott{
+  padding: 30px;  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; width: 100%; border-radius: 10px; 
+  margin-top: 80px;
+}
+.edit_fott h2{font-size: 23px; display: flex; justify-content: center; color: #004206; margin-bottom: 20px;}
+.edit_fott_row{display: flex; width: 100%;}
+.edit_fott_card{width: 48%; padding: 25px; border: 1px solid #004206; border-radius: 20px;}
+.edit_fott_card p{font-size: 20px; font-weight:700; color: #003d7a; margin-bottom: 15px;}
+.edit_fott_card textarea{width: 100%; height: 100px; padding: 10px ; border-radius: 10px; border: none;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+

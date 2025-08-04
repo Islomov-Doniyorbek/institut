@@ -49,6 +49,10 @@ const UserOwnNews = () => {
   return (
     <div>
         <div className='user-video-post'>
+       <div className='own_media_top'>
+<h2>Yangiliklar bo'limi</h2>
+  </div>
+  
       <div className='userpost_row'>
               {userPosts.map((post) => (
                 <div key={post.id} className='userpost_card'>

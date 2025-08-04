@@ -4,7 +4,10 @@ import { FaPencilAlt, FaRegClock, FaTrashAlt } from 'react-icons/fa'
 const UserOwnAnnouncement = () => {
   return (
     <div className='own-announ_con'>
-           <h1>E'lonlar</h1>
+           <div className='own_media_top'>
+<h2>E'lonlar bo'limi</h2>
+  </div>
+  
     <div className='own-announ'>
 <div className='other_news_box own-announ-box'>
 <h1>“Mening Konstitutsiyam” viktorinasida qatnashib, bilimingizni sinovdan o‘tkazing! </h1>

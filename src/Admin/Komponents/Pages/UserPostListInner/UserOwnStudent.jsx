@@ -83,7 +83,10 @@ const handleDelete = (key) => {
   ];
   return (
     <div className='own-student'>
-        <h1>Eko Talabalar</h1>
+         <div className='own_media_top'>
+<h2>Talabalar bo'limi</h2>
+  </div>
+  
         <Table className='student_table' dataSource={dataSource} columns={columns} />
     </div>
   )

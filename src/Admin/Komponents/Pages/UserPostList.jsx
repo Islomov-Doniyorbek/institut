@@ -17,14 +17,50 @@ const UserPostList = () => {
     <div className='userpost'>
       <h1>Sizning shaxsiy postlaringiz</h1>
 
-      <div className='userownmenu'>
-        <button onClick={() => setActiveSection('Yangiliklar')}>Yangiliklar</button>
-        <button onClick={() => setActiveSection('Tadbirlar')}>Tadbirlar</button>
-        <button onClick={() => setActiveSection('E\'lonlar')}>E'lonlar</button>
-        <button onClick={() => setActiveSection('Hujjatlar')}>Hujatlar</button>
-        <button onClick={() => setActiveSection('Media')}>Media</button>
-        <button onClick={() => setActiveSection('Talabalar')}>Talabalar</button>
-      </div>
+     <div className='userownmenu'>
+  <button
+    onClick={() => setActiveSection('Yangiliklar')}
+    className={activeSection === 'Yangiliklar' ? 'active' : ''}
+  >
+    Yangiliklar
+  </button>
+
+  <button
+    onClick={() => setActiveSection('Tadbirlar')}
+    className={activeSection === 'Tadbirlar' ? 'active' : ''}
+  >
+    Tadbirlar
+  </button>
+
+  <button
+    onClick={() => setActiveSection("E'lonlar")}
+    className={activeSection === "E'lonlar" ? 'active' : ''}
+  >
+    E'lonlar
+  </button>
+
+  <button
+    onClick={() => setActiveSection('Hujjatlar')}
+    className={activeSection === 'Hujjatlar' ? 'active' : ''}
+  >
+    Hujatlar
+  </button>
+
+  <button
+    onClick={() => setActiveSection('Media')}
+    className={activeSection === 'Media' ? 'active' : ''}
+  >
+    Media
+  </button>
+
+  <button
+    onClick={() => setActiveSection('Talabalar')}
+    className={activeSection === 'Talabalar' ? 'active' : ''}
+  >
+    Talabalar
+  </button>
+</div>
+
 
       <div className='userownbox'>
         {activeSection === 'Yangiliklar' && <UserOwnNews />}
