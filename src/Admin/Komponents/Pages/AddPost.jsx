@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, {  useEffect, useRef, useState } from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 import { GrDocumentPdf } from 'react-icons/gr';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -11,30 +11,24 @@ const AddPost = () => {
   const [images, setImages] = useState([]);
   const [text, setText] = useState('');
   const [title, setTitle] = useState('');
-  const [fileName, setFileName] = useState('Fayl yuklash');
-  const [selectedCategory, setSelectedCategory] = useState('Tanlang !!!');
-  const [selectedDocCategory, setSelectedDocCategory] = useState('Tanlang !!!');
-  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
-  const [isDocCategoryOpen, setIsDocCategoryOpen] = useState(false);
+const [selectedCategory, setSelectedCategory] = useState('Tanlang !!!');
+const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+
 
   const dropdownRef1 = useRef(null);
-  const dropdownRef2 = useRef(null);
 
   const postCategories = ['Yangilik', 'Tadbir', 'Elon'];
-  const fileCategories = ['Magistratura', 'Bakalavr', 'Dars Jadvali', 'Ilmiy Jurnall'];
-
-  useEffect(() => {
+ 
+           useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef1.current && !dropdownRef1.current.contains(event.target)) {
+       if (dropdownRef1.current && !dropdownRef1.current.contains(event.target)) {
         setIsCategoryOpen(false);
-      }
-      if (dropdownRef2.current && !dropdownRef2.current.contains(event.target)) {
-        setIsDocCategoryOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
 
  const handleImageChange = (e) => {
   const files = Array.from(e.target.files);
@@ -56,9 +50,7 @@ const AddPost = () => {
     setImages(images.filter((_, index) => index !== indexToDelete));
   };
 
-  const handleFileChange = (e) => {
-    setFileName(e.target.files[0]?.name || 'Fayl yuklash');
-  };
+
 
   const handleSavePost = () => {
     if (!title || !text || selectedCategory === 'Tanlang !!!' || images.length === 0) {
@@ -83,41 +75,18 @@ const AddPost = () => {
     handleClearForm();
   };
 
-  const handleSaveFile = () => {
-    if (fileName === 'Fayl yuklash' || selectedDocCategory === 'Tanlang !!!') {
-      alert("Fayl va kategoriya tanlang!");
-      return;
-    }
-
-    const newFile = {
-      id: Date.now(),
-      file: fileName,
-      category: selectedDocCategory,
-      date: new Date().toLocaleDateString(),
-    };
-
-    const storedFiles = JSON.parse(localStorage.getItem('userFiles')) || [];
-    const updatedFiles = [...storedFiles, newFile];
-    localStorage.setItem('userFiles', JSON.stringify(updatedFiles));
-
-    alert("Fayl ma'lumotlari saqlandi!");
-    setFileName('Fayl yuklash');
-    setSelectedDocCategory('Tanlang !!!');
-  };
-
   const handleClearForm = () => {
     setTitle('');
     setText('');
     setImages([]);
     setSelectedCategory('Tanlang !!!');
-    setFileName('Fayl yuklash');
-    setSelectedDocCategory('Tanlang !!!');
   };
 
   return (
     <div className='addpost'>
+      <h1 className='main-text-h1'>Axborot sahifasi uchun ma'lumotlar yuklashingiz mumkin!!!</h1>
       <div className='addpost_box'>
-        <h1>Yangilik va tadbirlar</h1>
+        <h1>Yangilik, tadbirlar, e'lonlar</h1>
         <div className='forign_photo'>
           <h3>
             <span><TiNews /></span>Yangilik va tadbirlar ma'lumotini yuklash uchun kategoriyadan tanlang !!!
@@ -177,7 +146,7 @@ const AddPost = () => {
             rows={5}
             cols={50}
           />
-          <h1>Ma'lumotlar</h1>
+          <h1>Ma'lumotlar</h1> 
           <textarea
             className='my_textarea'
             value={text}
@@ -194,57 +163,10 @@ const AddPost = () => {
         </div>
       </div>
 
-      <div className='add_files addpost_box'>
-        <h1>Dars jadvali magistratura va bakalavrga oid hujjatlar uchun !!!</h1>
-        <h3><span><GrDocumentPdf /></span>Kategoriya tanlab faylni yuklang !!!</h3>
-        <div className='upload_file'>
-          <div className="custom_select" ref={dropdownRef2}>
-            <div className="custom_select_box post_select" onClick={() => setIsDocCategoryOpen(!isDocCategoryOpen)}>
-              <span className='adduser_selected'>{selectedDocCategory}</span>
-              <p><IoIosArrowDown /></p>
-            </div>
-            {isDocCategoryOpen && (
-              <div className="custom_select_list adduser_selected post_selected">
-                {fileCategories.map((option, index) => (
-                  <p key={index} onClick={() => {
-                    setSelectedDocCategory(option);
-                    setIsDocCategoryOpen(false);
-                  }}>{option}</p>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <div className="file_gpg">
-            <label htmlFor="fileUpload" className="file_upload_label">
-              <span className="upload_icon">📁</span>
-              <span className="upload_text">{fileName}</span>
-              <input
-                type="file"
-                id="fileUpload"
-                className="file_input"
-                onChange={handleFileChange}
-              />
-            </label>
-          </div>
-
-          <button onClick={handleSaveFile}>Saqlash</button>
-        </div>
-      </div>
+  <AddVideo/>
 
 
-
-
-
-<AddVideo/>
-<AddStudent/>
-
-
-
-
-
-
-    </div>
+ </div>
   );
 };
 

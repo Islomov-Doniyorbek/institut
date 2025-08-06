@@ -469,3 +469,28 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 
+
+
+
+
+
+.main-text-h1{font-size: 30px; color: #00521b; margin: 50px 0px ; display: flex; justify-content: center; align-items: center;}
+.ilmiy-box{padding: 30px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+.ilmiy-box button{padding: 15px 40px; font-size: 16px; border-radius: 10px; border: none; background-color: #003d7a; color: white; margin-top: 30px;}
+
+.ilmiy-input input{padding: 15px; margin-top: 20px; border: none; border-radius: 10px; width: 50%; font-size: 18px; 
+border: 2px dashed #003d7a; margin-top: 20px ;}
+
+.ilmiy-box h2{font-size: 22px; color: #003d7a; }
+
+
+
+
+
+
+
+
+
+
+
+

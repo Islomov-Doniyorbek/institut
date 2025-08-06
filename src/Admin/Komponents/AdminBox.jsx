@@ -13,6 +13,15 @@ import brand from '../images/Images/photo_2025-08-04_12-08-19.jpg'
 import { GrDomain } from 'react-icons/gr'
 import { BsMenuButtonWide } from 'react-icons/bs'
 import Editing from './Pages/Editing'
+import AddPostSciene from './Pages/AddPostSciene'
+import science from '../images/Images/science_791187.png'
+import training from '../images/Images/classroom_10748263.png'
+import accept from '../images/Images/transaction_18787427.png'
+import AddPostClass from './Pages/AddPostClass'
+import { PiStudentBold } from 'react-icons/pi'
+import AddPostCall from './Pages/AddPostCall'
+
+
 const AdminBox = () => {
   const navigate = useNavigate(); 
 
@@ -35,13 +44,48 @@ const AdminBox = () => {
     </div>
   </div>
 
-  <div onClick={() => navigate('/admin/Adminpanel/Postqoshish')} className='admin_menu_card'>
+ <div onClick={() => navigate('/admin/Adminpanel/Postqoshish')} className='admin_menu_card'>
     <span><RiFileAddLine /></span>
     <div>
-      <h2>Post qo'shish</h2>
+      <h2>Axborot uchun post qo'shish</h2>
       <p>Ma'lumot qo‘shish</p>
     </div>
   </div>
+
+
+  <div onClick={() => navigate('/admin/Adminpanel/Ilmiyfaoliyatqoshish')} className='admin_menu_card'>
+    <span className='admin_science'><img src={science}/></span>
+    <div>
+      <h2>Ilmiy faoliyat uchun post</h2>
+      <p>Ma'lumot qo‘shish</p>
+    </div>
+  </div>
+
+  <div onClick={() => navigate('/admin/Adminpanel/TalimQoshish')} className='admin_menu_card'>
+    <span className='admin_science'><img src={training}/></span>
+    <div>
+      <h2>Ta'lim uchun post</h2>
+      <p>Ma'lumot qo‘shish</p>
+    </div>
+  </div>
+
+
+    <div onClick={() => navigate('/admin/Adminpanel/Qabul')} className='admin_menu_card'>
+    <span className='admin_science'><img src={accept}/></span>
+    <div>
+      <h2>Qabul post</h2>
+      <p>Ma'lumot qo‘shish</p>
+    </div>
+  </div>
+
+      <div onClick={() => navigate('/admin/Adminpanel/TalimQoshish')} className='admin_menu_card'>
+    <span><PiStudentBold /></span>
+    <div>
+      <h2>Talabalar post</h2>
+      <p>Ma'lumot qo‘shish</p>
+    </div>
+  </div>
+
 
   <div onClick={() => navigate('/admin/Adminpanel/UserPosts')} className='admin_menu_card'>
     <span><TbCategory /></span>
@@ -70,6 +114,9 @@ const AdminBox = () => {
   <Routes>
         <Route path="Adminqoshish" element={<Adduser />} />
         <Route path="Postqoshish" element={<AddPost />} />
+         <Route path="Ilmiyfaoliyatqoshish" element={<AddPostSciene />} />
+                  <Route path="TalimQoshish" element={<AddPostClass />} />
+                   <Route path="Qabul" element={<AddPostCall />} />
         <Route path="UserPosts" element={<UserPostList />} />
         <Route path="EditToNav" element={<Editing />} />
       </Routes>
