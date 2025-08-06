@@ -41,7 +41,7 @@ import Magister from "./Pages/Talim/Magister";
 import LessonTable from "./Pages/Talim/LessonTable";
 import Laststudents from "./Pages/Talim/Laststudents";
 import Zoom from "./Pages/Students/Zoom";
-
+ 
 export const routes = [
   // Activity
   { path: "Activity/Activity", element: <Activity /> },
