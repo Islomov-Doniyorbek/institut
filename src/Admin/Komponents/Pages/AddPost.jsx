@@ -1,11 +1,12 @@
 import React, {  useEffect, useRef, useState } from 'react';
-import { FaTrashAlt } from 'react-icons/fa';
+import { FaPencilAlt, FaRegClock, FaTrashAlt } from 'react-icons/fa';
 import { GrDocumentPdf } from 'react-icons/gr';
 import { IoIosArrowDown } from 'react-icons/io';
-import { MdOutlineAddPhotoAlternate } from 'react-icons/md';
+import { MdNewspaper, MdOutlineAddPhotoAlternate } from 'react-icons/md';
 import { TiNews } from 'react-icons/ti';
 import AddVideo from './AddInner/AddVideo';
 import AddStudent from './AddInner/AddStudent';
+import { Input, Modal } from 'antd';
 
 const AddPost = () => {
   const [images, setImages] = useState([]);
@@ -13,6 +14,26 @@ const AddPost = () => {
   const [title, setTitle] = useState('');
 const [selectedCategory, setSelectedCategory] = useState('Tanlang !!!');
 const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+const [isModalOpens, setIsModalOpens] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+    const handleCancell = () => {
+    setIsModalOpens(false);
+  };
+    const showModals = () => {
+    setIsModalOpens(true);
+  };
 
 
   const dropdownRef1 = useRef(null);
@@ -81,6 +102,21 @@ const [isCategoryOpen, setIsCategoryOpen] = useState(false);
     setImages([]);
     setSelectedCategory('Tanlang !!!');
   };
+
+
+
+
+
+       const [userPosts, setUserPosts] = useState([])
+      
+        useEffect(() => {
+          const storedPosts = localStorage.getItem("userPosts");
+          if (storedPosts) {
+            setUserPosts(JSON.parse(storedPosts));
+          }
+        }, []);
+
+      
 
   return (
     <div className='addpost'>
@@ -166,6 +202,74 @@ const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   <AddVideo/>
 
 
+<div className="axborot_postlar">
+<h1>Axborot bo'limiga qo'shilgan postlar</h1>
+  <div className='userpost_row'>
+              {userPosts.map((post) => (
+                <div key={post.id} className='userpost_card'>
+          
+                     <div
+  className="news_img userpost_card_img"
+  style={{ backgroundImage: `url(${post.images?.[0]})` }}
+>
+</div>
+                      <div className='news_text'>
+                        <h2>{post.title}</h2>
+                      </div>
+                      <div className='news_icons_box'>
+                        <div className='news_icons'>
+                          <p><span><MdNewspaper /></span>{post.category}</p>
+                          <p><span><FaRegClock /></span>{post.date}</p>
+                        </div>
+                        <div className='new_delete_icon'>
+                          <span className='yellow_icon' onClick={showModals}>
+                            <FaPencilAlt />
+                          </span>
+                          <span onClick={showModal}>
+                            <FaTrashAlt />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+              ))}
+            </div>
+</div>
+   <>
+      <Modal
+        closable={{ 'aria-label': 'Custom Close Button' }}
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <div className='axborot_modal'>
+   <h1>Bu yangilikni o'chirishni xohlaysizmi</h1>
+   <div className='axborot_modal_button'>
+    <button className='axborot_red'>Ha</button>
+    <button onClick={handleCancel}>Yo'q</button>
+   </div>
+   </div>
+      </Modal>
+    </>
+
+    <>
+      <Modal
+              open={isModalOpens}
+              onCancel={handleCancell}
+              footer={null}
+            >
+              <div className='modal_user'> 
+                <h3>Yangilik ma'lumotlarini tahrirlash!!!</h3>
+                <p>Sarlavha</p>
+                <Input  />
+                <p>Ma'lumot matni</p>
+                <Input.TextArea rows={4}  />
+              </div>
+              <div className='axborot_secend_modal' style={{ display: "flex", justifyContent: "flex-end", gap: "10px", marginTop: "20px" }}>
+                <button onClick={handleCancell} className="axborot_red">Bekor qilish</button>
+                <button  className="save_btn">Saqlash</button>
+              </div>
+            </Modal>
+            </>
  </div>
   );
 };

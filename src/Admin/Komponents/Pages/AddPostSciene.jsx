@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { FaRegTrashAlt } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
 
 
@@ -9,6 +10,64 @@ const AddPostSciene = () => {
     const categories = ['Ilmiy Taqiqot faoliyati', 'Ilmiy Jurnall', 'Ilmiy Kengash', 'Ilmiy Loyiha'];
     const dropdownRef = useRef(null);
   
+const data = [
+  {
+    id: 1,
+    title: "Post sarlavhasi",
+    text: "Post matni",
+    file: {
+      name: "1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf",
+      url: "/files/1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf"
+    }
+  },
+   {
+    id: 2,
+    title: "Post sarlavhasi",
+    text: "Post matni",
+    file: {
+      name: "1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf",
+      url: "/files/1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf"
+    }
+  },
+  {
+    id: 2,
+    title: "Post sarlavhasi",
+    text: "Post matni",
+    file: {
+      name: "1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf",
+      url: "/files/1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf"
+    }
+  },
+   {
+    id: 2,
+    title: "Post sarlavhasi",
+    text: "Post matni",
+    file: {
+      name: "1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf",
+      url: "/files/1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf"
+    }
+  },
+   {
+    id: 2,
+    title: "Post sarlavhasi",
+    text: "Post matni",
+    file: {
+      name: "1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf",
+      url: "/files/1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf"
+    }
+  }, 
+   {
+    id: 2,
+    title: "Post sarlavhasi",
+    text: "Post matni",
+    file: {
+      name: "1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf",
+      url: "/files/1.Mutaxassislik-fannlarni-o‘qitish-metodikasi.pdf"
+    }
+  }
+];
+
+     
     useEffect(() => {
       const handleClickOutside = (e) => {
         if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -48,9 +107,9 @@ const AddPostSciene = () => {
   
   return (
    <div className='ilmiy'>
-<h1 className='main-text-h1'>Ilmiy faoliyatlar sahifasi uchun ma'lumot yuklashingiz mumkin!!!</h1>
+<h1 className='main-text-h1'>Ilmiy faoliyat sahifasi uchun ma'lumot yuklashingiz mumkin!!!</h1>
 <div className='ilmiy-box'>
-  <h2>Ilmiy faoliay sahifasida qaysi pagega ma'lumot yuklashni tanlang</h2>
+  <h2>Ilmiy faoliyat sahifasida qaysi pagega ma'lumot yuklashni tanlang</h2>
  <div className="custom_select " ref={dropdownRef}>
             <div className="custom_select_box post_select ilmiy-select" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
               <span className='adduser_selected'>{selectedCategory}</span>
@@ -85,9 +144,96 @@ const AddPostSciene = () => {
           </div>
 
           <button onClick={handleSave}>Saqlash</button>
+</div>
+
+
+
+
+<div className='ilmiy_posts_box'>
+
+
+<div className='ilmiy_taqiqot_post'>
+<h2>Ilmiy taqiqot uchun yuklangan hujjatlar</h2>
+<div className='ilmiy-card-row'>
+{data.map((post) => (
+<div className='ilmiy-taqiqot_card'>
+   {post.file && (
+          <a href={post.file.url} target="_blank" rel="noopener noreferrer">
+            {post.file.name}
+          </a>
+        )}
+<div className='ilmiy-taqiqot_button'>
+<button><FaRegTrashAlt /></button>
+</div>
+</div>
+    ))}
+</div>
+</div>
+
+
+<div className='ilmiy_taqiqot_post ilmiy_jurnal_post'>
+<h2>Ilmiy Jurnallar</h2>
+<div className='ilmiy-card-row'>
+{data.map((post) => (
+<div className='ilmiy-taqiqot_card'>
+   {post.file && (
+          <a href={post.file.url} target="_blank" rel="noopener noreferrer">
+            {post.file.name}
+          </a>
+        )}
+<div className='ilmiy-taqiqot_button'>
+<button><FaRegTrashAlt /></button>
+</div>
+</div>
+    ))}
+</div>
+</div>
+
+
+
+
+<div className='ilmiy_taqiqot_post ilmiy_jurnal_post'>
+<h2>Ilmiy Loyihalar</h2>
+<div className='ilmiy-card-row'>
+{data.map((post) => (
+<div className='ilmiy-taqiqot_card'>
+   {post.file && (
+          <a href={post.file.url} target="_blank" rel="noopener noreferrer">
+            {post.file.name}
+          </a>
+        )}
+<div className='ilmiy-taqiqot_button'>
+<button><FaRegTrashAlt /></button>
+</div>
+</div>
+    ))}
+</div>
+</div>
+
+
+
+<div className='ilmiy_taqiqot_post ilmiy_jurnal_post'>
+<h2>Ilmiy Kengashlar</h2>
+<div className='ilmiy-card-row'>
+{data.map((post) => (
+<div className='ilmiy-taqiqot_card'>
+   {post.file && (
+          <a href={post.file.url} target="_blank" rel="noopener noreferrer">
+            {post.file.name}
+          </a>
+        )}
+<div className='ilmiy-taqiqot_button'>
+<button><FaRegTrashAlt /></button>
+</div>
+</div>
+    ))}
+</div>
+</div>
 
 
 </div>
+
+
 
    </div>
   )
