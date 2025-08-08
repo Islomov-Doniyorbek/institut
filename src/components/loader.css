@@ -9,6 +9,13 @@ section {
     justify-content: center;
     min-height: 100vh;
     background: #f9f9fe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 section .container {
     display: flex;

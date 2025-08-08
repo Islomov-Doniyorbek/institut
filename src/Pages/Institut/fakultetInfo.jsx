@@ -25,6 +25,7 @@ const FakultetInfo = () => {
                 "Fakultetlararo fortepiano ijrochiligi "
             ],
             theend: "Fakultetda 298 nafar, shundan, bakalavriat kunduzgi 284 nafar, magistratura mutaxassisliklarida 14 nafar talaba tahsil olmoqda."
+            ,path: "echif"
         },
         {
             id: 1,
@@ -43,6 +44,7 @@ const FakultetInfo = () => {
                 "O‘zbek tili, sport va ijtimoiy fanlar"
             ],
             theend: "Fakultetda 215 nafar, shundan, bakalavriat kunduzgi 189 nafar, sirtqi 10 nafar, magistratura mutaxassisliklarida 16 nafar talaba tahsil oladi. Shu bilan birga fakultetda 3 nafar xorijiy talaba ham o‘qiydi."
+           ,path: "exif"
         },
     ]
 
@@ -78,7 +80,7 @@ const FakultetInfo = () => {
     ]
 
     const {fakultet} = useParams()
-    const faculty = fakultetInfo.find(f => f.fakultet === String(fakultet));
+    const faculty = fakultetInfo.find(f => f.path === String(fakultet));
     const mamur = mamuriyat.find(f => f.id === Number(faculty.id));
 
     useTitle(faculty.fakultet)

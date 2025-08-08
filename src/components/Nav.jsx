@@ -9,8 +9,8 @@ const Nav = ({arr}) => {
         return (
             <li key={item.id} className='linkBlock'>
                                     {typeof item.linkName === 'object' ? 
-                                        <strong><Link to={item.linkName.path}>{item.linkName.link}</Link> <MdArrowDropDown/> </strong> :
-                                        <strong>{item.linkName} <MdArrowDropDown/> </strong>   
+                                        <strong><Link to={item.linkName.path}>{item.linkName.link}</Link>  </strong> :
+                                        <strong>{item.linkName}  <MdArrowDropDown/></strong>   
                                     }
                                     {
                                         item.linkList ? (

@@ -8,6 +8,7 @@ import { BsMusicNote, BsMusicNoteBeamed } from "react-icons/bs";
 
 import ActiveTopPage from '../../components/activeTopPage';
 import { Link } from 'react-router-dom';
+import { Path } from 'leaflet';
 
 const FakultetKafedra = () => {
 
@@ -22,7 +23,9 @@ const FakultetKafedra = () => {
         "Kompozitorlik va aranjirovka",
         "Orkestr dirijyorligi",
         "Fakultetlararo fortepiano ijrochiligi "
-      ]
+      ],
+      path: "echif"
+      
     },
     {
       id:1,
@@ -32,7 +35,8 @@ const FakultetKafedra = () => {
         "Musiqiy ovoz rejissorligi",
         "Musiqiy nazariy va tarixiy fanlar",
         "O‘zbek tili, sport va ijtimoiy fanlar"
-      ]
+      ],
+      path: "exf"
     },
   ]
   
@@ -55,14 +59,14 @@ const FakultetKafedra = () => {
                   return (
                     <div key={ii} className="fakultetKaf">
                       <h2>
-                        <Link to={`/Tuzilma/fakultetInfo/${item.fakultet}`}>{item.fakultet}</Link>
+                        <Link to={`/Institut/fakultetInfo/${item.path}`}>{item.fakultet}</Link>
                       </h2>
                       <p>Fakultet kafedralari</p>
                       <ul>
                         {item.kafedralar.map((kaf, i)=>{
                           return(
                             <li key={i}>
-                              <Link to={`/Tuzilma/kafedra/${kaf}`}><BsMusicNoteBeamed/> {kaf}</Link>
+                              <Link to={`/Institut/kafedra/${kaf}`}><BsMusicNoteBeamed/> {kaf}</Link>
                             </li>
                           )
                         })}
