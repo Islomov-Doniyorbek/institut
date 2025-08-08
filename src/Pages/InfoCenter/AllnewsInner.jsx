@@ -39,16 +39,7 @@ const paragraphs = text.split(/\.\s+/);
     <img src={news2}/>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-  </div>
+</div>
     <div className='allnews_right news_inner_right'>
             <div className='section'>
               <h1>Bo‘limlar</h1>

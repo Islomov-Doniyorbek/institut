@@ -547,6 +547,54 @@ height: 260px; overflow: hidden; overflow-y: auto;}
 .talim-language{color: rgb(38, 38, 255) !important; margin: 10px 0px !important ;}
 
 
+.qabul {width: 100%; height: auto;}
+.qabul h1{font-size: 30px; color: #004906; display: flex; justify-content: center; }
+.qabul-kvota-box{display: flex; width: 100%; padding: 30px !important;}
+.qabul-kvota{width: 50%;}
+.qabul-select{width: 60%;}
+.qabul-selected{width: 60% !important;}
+.qabul-dastur{width: 50%;}
+.qabul-box{padding: 30px; border: 2px solid #00366d; border-radius: 10px; margin-top: 80px; }
+.qabul-box h2{font-size: 25px; color: #004906; margin-bottom: 30px;}
+.qabul-input h3{ font-size: 20px; color: #004906; margin: 30px 0px 10px ; }
+.qabul-input input{width: 50%; padding: 15px; font-size: 18px; border: none; border-radius: 10px; border: 2px solid #003d7a;}
+.qabul-input textarea{padding: 10px; width:50%; height: 100px !important; border: 2px solid #003d7a; font-size: 18px; border-radius: 10px;}
+.qabul-box button{padding: 15px 25px; border-radius: 10px; border: none; margin-top: 30px; background-color: #003d7a;
+color: white; font-family: 600; font-size: 16px;}
+.qabul-box button:hover{background-color: #005cdd;}
+
+
+.qabul-post-box{padding: 30px; border: 2px solid #00366d; border-radius: 10px; margin-top: 80px; }
+.qabul-post-box h1{margin-bottom:40px ;}
+.qabul-post-person{padding: 30px; border: 2px solid #004906; border-radius: 10px; height: 50vh; overflow: hidden;
+overflow-y: auto;}
+.qabul-post-person::-webkit-scrollbar{display: none !important;}
+.qabul-post-person h2{font-size: 25px; color: #00521b; margin-bottom: 30px;}
+
+.qabul-post_row{width: 100%; display: flex; align-items: center; flex-wrap: wrap; }
+.qabul-post_card{width: 31%; margin: 10px; padding: 15px; border-radius: 10px; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+.qabul-post_card h2{font-size: 18px; color: #003d7a; margin-bottom: 20px;}
+.qabul-post_card p{font-size: 17px; margin-bottom: 20px !important;}
+.qabul-post_card span{font-size: 18px; width: 100%; display: flex; justify-content: space-between; align-items: center;}
+.qabul-post_card span b{padding: 10px; display: flex; justify-content: center; align-items: center;
+  color: white; font-size: 20px !important; border-radius: 50%; background-color: rgb(224, 0, 0);}
+.qabul-post_card span b:hover {background-color:rgb(83, 1, 1) !important;}
+.zoom-link{display: flex; flex-wrap: wrap; width: 100%;}
+.zoom-link-card{width: 48%; margin: 10px;}
+.zoom-link-card h2{font-size: 20px; margin: 20px 0px 10px; }
+.zoom-link-card input{padding: 15px; width: 100%; font-size: 18px; border: none; border-radius: 10px ; border: 2px solid #003d7a;}
+.zoom-link-post{padding: 30px; border: 2px solid #00366d; border-radius: 10px; margin-top: 80px; }
+.zoom-link-post h2{font-size: 25px; display: flex; justify-content: center; align-items: center; color: #004906; margin-bottom: 40px; }
+.zoom-post-card{display: flex;}
+.call-delete{width:38px; padding: 10px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background-color: rgb(224, 0, 0);
+color: white;
+}
+
+
+
+
+
+
 
 
 

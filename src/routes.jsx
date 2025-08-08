@@ -41,6 +41,7 @@ import Magister from "./Pages/Talim/Magister";
 import LessonTable from "./Pages/Talim/LessonTable";
 import Laststudents from "./Pages/Talim/Laststudents";
 import Zoom from "./Pages/Students/Zoom";
+import History from "./Pages/History/History";
  
 export const routes = [
   // Activity
@@ -90,5 +91,9 @@ export const routes = [
   { path: "/Talim/Bakalavr", element: <Bakalavr /> },
   { path: "/Talim/Magister", element: <Magister /> },
   { path: "/Talim/DarsJadvali", element: <LessonTable /> },
-  { path: "/Talim/Bitiruvchilar", element: <Laststudents /> }
+  { path: "/Talim/Bitiruvchilar", element: <Laststudents /> },
+  
+
+  //History
+    { path: "/History/History", element: <History /> }
 ];

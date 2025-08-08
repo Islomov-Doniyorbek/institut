@@ -43,6 +43,22 @@ const handleChange=()=>{
 </div>
 
 
+<div className='other_news_box'>
+<h1>“Mening Konstitutsiyam” viktorinasida qatnashib, bilimingizni sinovdan o‘tkazing! </h1>
+<div className='news_inner_info'>
+<p><span><FaRegClock /></span>04/24/2025</p>
+<h2><p>Posted by:</p> estrada-conserva</h2>
+<h2><p>Category:</p> E'lon</h2>
+</div>
+<div className='otherrr_img'>
+    <img src={announcement2}/>
+</div>
+    <div className='other_news_btn'>
+<button onClick={handleChange}>Batafsil</button>
+</div>
+</div>
+
+
   </div>
     <div className='allnews_right news_inner_right other_news_right'>
             <div className='section'>

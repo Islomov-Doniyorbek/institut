@@ -1,0 +1,66 @@
+.history{width: 100%; height: 100vh; overflow: hidden; padding: 50px; overflow-y: auto;}
+.history::-webkit-scrollbar{display: none !important;}
+.history_inputs h1{display: flex; align-items: center; justify-content: center; font-size: 25px; color: #005207;}
+.history_top{display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.history_top img{width: 100px; margin-bottom: 10px;}
+
+.tarix-inputs{display: flex; width: 100%; align-items: center; justify-content: center; margin-top: 80px;}
+.tarixiy_yil{width: 25%;}
+.tarixiy_oy{width: 25%; margin-left: 60px !important;}
+.tarixiy_soha{width: 25%; margin-left: 60px !important;}
+.tarixiy_sana{width: 25%;}
+.tarixiy_search{ margin-left: 60px;}
+.tarixiy_search button{padding: 13px 30px; margin-top: 15px; border: none; border-radius: 10px;color: #005207;
+border: 2px solid #005207; font-size: 18px; background-color: white !important; font-weight: 600;}
+.tarixiy_search button:hover{background-color: #005207 !important; color: white;}
+.tarixiy_select{width: 100%; border: 2px solid #005207 !important;}
+.tarixiy_select_list{width: 100% !important;}
+
+.tarixiy-yangilik{padding: 80px ;}
+.tarixiy-elonlar{padding: 80px ;}
+.tarixiy-tadbirlar{padding: 80px ;}
+.tarixiy_box{padding: 30px; margin-top:60px ; box-shadow:  #e2de00 0px 0px 0px 3px;
+border-radius: 10px; }
+.tarixiy_box h1{margin-bottom: 30px; font-size: 25px; padding: 15px; width: 20%;  margin: 40px 0px 60px;
+border-radius: 10px;   border: 2px dashed #005207;
+}
+.tarixiy_row{width: 100%; display: flex; flex-wrap: wrap; } 
+.tarixiy_card{display: flex; width: 47%; margin: 30px 20px; }
+.tarixiy_card_img{width: 300px; height: 120px; margin-right: 20px; border-radius: 10px; background-position: center; background-repeat: no-repeat; background-size: cover;
+     background-image: url('../../Images/photo_2025-07-20_14-03-41.jpg');}
+     .tarixiy_card_text{height: 100px;  display: flex; flex-direction: column;   justify-content: space-between;}
+.tarixiy_card_text h2{font-size: 18px; margin-bottom: 15px; color: #3a3a3a;}
+.tarixiy_card_text h2:hover{color: #005207 !important;}
+.tarixiy_card_text p{display: flex; font-size: 18px; color: #4e4e4e; font-weight: 500;}
+.tarixiy_card_text p span{font-size: 20px !important; margin-right: 6px; color: #005207; margin-top: 1px;}
+.no-result-img{width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 80px;}
+.no-result-img img{width: 250px; }
+
+
+.tarix-modal{width: 50vw !important; height: 80vh; overflow-y: auto !important; overflow: hidden; display: flex; justify-content: center;}
+.tarix-modal::-webkit-scrollbar{display: none;}
+
+
+.tarixiy-yang-mod{width: 100% !important;}
+.history_inner_text{width: 100% !important; }
+
+.history_inner_text h1{font-size: 22px;}
+.history_inner_text img{width:auto !important; height: 300px !important;}
+
+
+.sana-row{display: flex ; margin: 20px 60px 0px  !important;  border: 1px solid #005207; border-radius: 10px; padding: 40px 30px !important; align-items: center; flex-wrap: wrap; width: 100%;justify-content: center;}
+.sana-topish h4{display: flex; align-items: center; justify-content: center; margin-top: 60px; font-size: 20px; color: #003605;}
+.sana-card{width: 8%; background-color: #005207; font-size: 18px;  color: white; display: flex; justify-content: center; padding: 15px !important; border: 2px solid #005207; border-radius: 10px; margin: 10px;}
+.sana-card:hover{background-color: #00b30f;}
+.sana-info{display: flex; width: 100%; justify-content: center;}
+.sana-info-green{display: flex ; align-items: center; margin: 20px 40px;}
+.sana-info-green p{font-size: 18px !important; font-weight: 600;}
+.sana-info-green span{width: 20px; height: 20px; background-color: #005207;
+      border-radius: 50%; margin-right: 10px;}
+      .sana-info-red{display: flex ; align-items: center; margin: 20px 40px;}
+      .sana-info-red p{font-size: 18px !important; font-weight: 600;}
+.sana-info-red span{width: 20px; height: 20px; background-color: rgb(175, 0, 0);
+      border-radius: 50%; margin-right: 10px;}
+
+
+

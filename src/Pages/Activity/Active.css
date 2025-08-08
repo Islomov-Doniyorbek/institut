@@ -94,6 +94,16 @@ border-radius: 10px; color: white;}
 .conuncil_row h1{font-size: 25px; margin-bottom: 20px; color: #474747;}
 .conuncil_row p{font-size: 17px; color: #888888;}
 
+
+.kengash_box{height:auto !important;}
+
+
+
+
+
+
+
+
     @media (max-width:1024px){
 
 .active_padd{padding: 30px 40px 70px 40px;}
@@ -123,17 +133,24 @@ border-radius: 10px; color: white;}
 }
 
 @media (max-width:767px){
-    .active_top{padding: 15px 10px; height: auto;}
+  .conuncil_row{width: 100% !important;}
+  .active_contect{width: 100% !important;}
+    .active_top{padding: 40px 10px !important; }
+    .active_con{padding: 50px 20px 50px; display: flex; flex-direction: column;}
     .active_top h1{font-size: 20px !important; margin-bottom: 0px;}
     .active_top p{font-size: 8px;}
     .active_padd{padding: 20px 10px;}
     .active_img{height: 200px !important;}
     .active_img img{height: 100%;}
     .active_text{width: 100%; padding: 0px; margin-top: 30px; }
-      .active_text button{font-size: 13px; padding: 10px;}
-      .active_text button span {font-size: 16px;}
-      .active_text_box h1{font-size: 15px;}
-      .active_text_box p{font-size: 13px;}
+      .active_text button{font-size: 11px; padding: 10px; display: flex !important; }
+      .active_text button span {font-size: 14px;}
+      .active_text_box h1{font-size: 13px; margin-bottom: 20px !important;}
+      .active_text_box p{font-size: 11px; margin-bottom: 20px !important;}
+      .active_text_box{padding: 15px 20px !important;}
+      .article_text{padding: 10px;}
+.conuncil_row h1{font-size: 18px;}
+
       .active_bottom h1{font-size: 23px;}
       .active_bottom_text span {font-size: 14px !important;}
      .active_bottom_box {padding: 0px  !important;}
@@ -161,5 +178,5 @@ border-radius: 10px; color: white;}
 .download span{font-size: 9px;}
 .download button{font-size: 9px;}
 
-
+.active-alw{width: 100% !important; margin-right: 20px;}
 }

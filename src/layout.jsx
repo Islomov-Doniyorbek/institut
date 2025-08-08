@@ -124,6 +124,15 @@ const Layout = () => {
       linkName: "Syurpriz",
       linkList: null,
     },
+   {
+    id: 8,
+    linkName: "Tarix",
+   linkList: [
+                [
+                    {link:"Tarixiy yillar", path: '/History/History'},
+                ]
+            ]
+}
   ];
 
   console.log(navLinks[1].linkList[0].nestedLinks);
