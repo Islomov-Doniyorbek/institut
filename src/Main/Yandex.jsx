@@ -1,10 +1,10 @@
 import React from 'react';
-import { Map, Placemark, YMaps, ZoomControl } from 'react-yandex-maps';
+// import { Map, Placemark, YMaps, ZoomControl } from 'react-yandex-maps';
 
 const Yandex = () => {
   return (
     <div className='map_box'>
-      <YMaps query={{ lang: 'ru_RU' }}>
+      {/* <YMaps query={{ lang: 'ru_RU' }}>
         <Map
           defaultState={{
             center: [41.314264, 69.255354],
@@ -19,7 +19,7 @@ const Yandex = () => {
             <ZoomControl/>
           <Placemark geometry={[41.314264, 69.255354]} />
         </Map>
-      </YMaps>
+      </YMaps> */}
     </div>
   );
 };
