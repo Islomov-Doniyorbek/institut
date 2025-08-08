@@ -20,7 +20,7 @@ function App() {
 
     const timeOut = setTimeout(() => {
       setLoading(false)
-    }, 1500);
+    }, 900);
 
     return ()=> clearTimeout(timeOut)
   }, [location])

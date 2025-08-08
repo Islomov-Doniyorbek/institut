@@ -19,7 +19,10 @@
   --clrTxtLight: #FFFFFF;
 
 }
-
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 header {
   width: 100%;
   position: relative;

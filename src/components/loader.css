@@ -43,8 +43,8 @@ section .container .circle span::before {
     0 0 80px blue,
     0 0 100px dodgerblue;
     transform: scale(0.1);
-    animation: animate 1s linear infinite;
-    animation-delay: calc(0.025s * var(--i));
+    animation: animate 0.8s linear infinite;
+    animation-delay: calc(0.02s * var(--i));
 }
 @keyframes animate {
     0% {
@@ -58,5 +58,5 @@ section .container .circle:nth-child(2) {
     transform: rotate(-180deg);
 }
 section .container .circle:nth-child(2) span::before {
-    animation-delay: calc(-0.025s * (var(--i) - 0.1));
+    animation-delay: calc(-0.02s * (var(--i) - 0.1));
 }
