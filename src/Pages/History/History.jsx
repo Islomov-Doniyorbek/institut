@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { LuSearch } from 'react-icons/lu';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+
 import history from '../../Images/history_2201499.png';
 import HistoryNews from './History_inner/HistoryNews';
 import HistoryEvent from './History_inner/HistoryEvent';
