@@ -1,4 +1,5 @@
 .history{width: 100%; height: 100vh; overflow: hidden; padding: 50px; overflow-y: auto;}
+.history-con{width: 100%; height: 75vh; overflow: hidden; padding: 50px; overflow-y: auto;}
 .history::-webkit-scrollbar{display: none !important;}
 .history_inputs h1{display: flex; align-items: center; justify-content: center; font-size: 25px; color: #005207;}
 .history_top{display: flex; align-items: center; justify-content: center; flex-direction: column; }
@@ -15,6 +16,58 @@ border: 2px solid #005207; font-size: 18px; background-color: white !important; 
 .tarixiy_search button:hover{background-color: #005207 !important; color: white;}
 .tarixiy_select{width: 100%; border: 2px solid #005207 !important;}
 .tarixiy_select_list{width: 100% !important;}
+
+
+.yillar {padding:  80px 60px 60px  !important; }
+.yillar h2{font-size: 22px !important; color: #0058af;  display: flex; justify-content: center; align-items: center;}
+.yillar-box{padding: 20px !important; margin-top: 20px; border-radius: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;}
+
+.yillar-row {
+  display: flex;
+  flex-wrap: wrap;
+width: 100%; justify-content: center; align-items: center;
+}
+
+.yillar-card {
+  perspective: 1000px; margin: 0px 20px;
+}
+
+.yillar-card button {
+  width: 130px;
+  height: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  background: linear-gradient(135deg, #005207, #0073e6);
+  border-radius: 8px;
+}
+
+.yillar-card button .front,
+.yillar-card button .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden; /* orqa tomonni ko‘rsatmaslik */
+}
+
+.yillar-card button .back {
+  transform: rotateY(180deg);
+}
+
+.yillar-card:hover button {
+  transform: rotateY(180deg);
+}
 
 .tarixiy-yangilik{padding: 80px ;}
 .tarixiy-elonlar{padding: 80px ;}
@@ -61,6 +114,138 @@ border-radius: 10px;   border: 2px dashed #005207;
       .sana-info-red p{font-size: 18px !important; font-weight: 600;}
 .sana-info-red span{width: 20px; height: 20px; background-color: rgb(175, 0, 0);
       border-radius: 50%; margin-right: 10px;}
+.sana-row{display: flex ; margin: 20px 60px 0px  !important; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; border-radius: 10px; padding: 40px 30px !important; align-items: center; flex-wrap: wrap; width: 100%;justify-content: center;}
+.sana-topish h4{display: flex; align-items: center; justify-content: center; margin-top: 60px; font-size: 20px; color: #0058af;}
+/* Haftaning kunlari tepadagi sarlavha */
+.hafta-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 10px 60px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #0058af;
+}
+
+.hafta-kun {
+  padding: 10px 0;
+}
+
+/* Kunlar jadvali */
+.sana-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0 60px;
+  gap: 8px;
+  background: rgba(17, 17, 26, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sana-card {
+  background-color: #004105;
+  border: 2px solid #005207;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 0;
+    color: white;
+  font-size: 16px;
+}
+
+
+
+.sana-card:hover {
+  background-color: #00790a;
+}
+
+.sana-card.active {
+  background-color: #009e12;
+}
+
+.sana-card.empty {
+  background: transparent;
+  border: none;
+}
+
+.oylar-box{ padding:  60px 60px 60px  !important;}
+.oylar-box h2{ font-size: 22px; color: #0058af; display: flex; justify-content: center; margin-bottom: 20px;}
+.oylar-row{display: flex; padding: 30px 10px; display: flex; justify-content: center; flex-wrap: wrap;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,  rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; border-radius: 10px;}
+.oylar-card{padding: 20px 40px; display: flex; transition: 0.3s !important; border-radius: 10px; justify-content: center; width: 8% !important; margin: 10px;   background: linear-gradient(150deg, #0073e6 ,#005207 ); }
+.oylar-card button{border: none; background-color: transparent;   font-size: 20px;   color: #fff;   font-weight: 600;}
+.oylar-card:hover {
+  transform: translateY(-5px) !important;
+box-shadow: #005207 0px 12px 12px -8px !important;
+}
+
+@media (max-width:1024px){
+
+.history-con{padding: 20px 10px;}
+.history_inputs h1{font-size: 19px;}
+.yillar h2{font-size: 19px;}
+.yillar{padding: 30px 20px !important;}
+.yillar-card{margin: 10px}
+.oylar-box{padding: 20px !important;}
+.sana-row{margin: 15px 0px 30px 0px!important; padding: 15px !important; height: 20vh; overflow: hidden; overflow-y: auto;}
+.sana-card{width: 100%;}
+.sana-card button{font-size: 15px !important;}
+.oylar-card{padding: 10px 0px !important; width: 20% !important;}
+
+.tarixiy-yangilik{padding: 60px 20px;}
+.tarixiy_box{margin-top: 30px !important;}
+.tarixiy_box h1{width: 30%; margin: 15px 20px;}
+.tarixiy_card{width: 100% !important;}
+.tarixiy_box{padding: 10px; height: 30vh; overflow: hidden; overflow-y: auto;}
+.tarixiy-tadbirlar{padding: 20px !important;}
+.tarixiy-elonlar{padding: 40px 20px !important;}
+.yillar-box{padding: 10px !important;}
+
+}@media (max-width:767px){
+.history_inputs h1{font-size: 15px; display: flex !important; text-align: center !important; }
+.history_top img{width: 60px;}
+.yillar h2{font-size: 15px !important;  display: flex !important; text-align: center !important; }
+.yillar-card{margin: 10px !important; }
+.yillar-card span{font-size: 15px !important;}
+.oylar-box h2{font-size: 16px;}
+.sana-topish h4{font-size: 16px;}
+.oylar-row{padding: 15px 10px !important;}
+.oylar-card{width: 40% !important;}
+.oylar-card button{font-size: 15px !important;}
+.sana-row{margin: 40px 10px !important;}
+.sana-grid{margin: 0px;}
+.hafta-header{margin: 0px !important;}
+.tarixiy_box{padding: 10px !important;}
+.tarixiy_box h1{width: 50%; padding: 5px !important;}
+.tarixiy_card_img{width: 100% !important; height: 150px !important;}
+.tarixiy_card{margin: 0px !important; padding: 20px; border: 1px solid #005207;
+      display: flex; flex-direction: column; border-radius: 10px ; margin: 10px 0px !important;}
+.tarixiy_card_text h2 {font-size: 12px; margin-top: 10px;}
+.tarixiy_card_text p span{font-size: 15px !important;}
+.tarixiy_card_text p{font-size:12px !important ;}
+
+.tarixiy-yang-mod{width: 330px !important; }
+.history_inner_text{width: 100% !important; padding: 0px !important;}
+ .history_inner_text h1{font-size: 12px !important;}
+.history_inner_info{display: flex !important; }
+.history_inner_text img{height: 150px !important;}
+.history_inner_text  p{font-size: 10px !important;}
+.tarix-modal {
+     width: 100% !important;
+    height: 70vh !important;
+    margin-top: 0 !important;
+  }
+  
+  .tarixiy-yang-mod {
+    padding: 20px !important;
+  }
+  
+  .history_inner_text h1 {
+    font-size: 16px !important;
+  }
+}
+
+
+
+
 
 
 

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { FaRegClock } from 'react-icons/fa'
 import news from '../../../Images/photo_2025-07-20_14-03-41.jpg'
 import news2 from '../../../Images/photo_2025-07-20_21-19-52.jpg'
-const HistoryNews = () => {
+const HistoryNews = ({ year, month, day }) => {
          const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -22,7 +22,7 @@ const handleOpen = ()=>{
 }
   return (
     <div className='history_news'>
-    <h1>2024-yil 18 fevralda bo'lgan barcha yangiliklar.</h1>
+    <h1>{year}-yil {day} {month}da bo'lgan barcha yangiliklar.</h1>
     <div className='tarixiy_box'>
         <h1>Yangiliklar</h1>
 <div className='tarixiy_row'>
@@ -63,7 +63,7 @@ const handleOpen = ()=>{
         <div className='tarixiy-yang-mod'>
         <div className='news_inner_text  history_inner_text'> 
        <h1>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. </h1>
-       <div className='news_inner_info'>
+       <div className='news_inner_info history_inner_info'>
        <p><span><FaRegClock /></span>04/24/2025</p>
        <h2><p>Posted by:</p>Sevara Olimjonova</h2>
        <h2><p>Category:</p> Yangilik</h2>
