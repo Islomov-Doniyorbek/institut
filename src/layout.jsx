@@ -9,12 +9,27 @@ import {
   MdPhone,
 } from "react-icons/md";
 import Logo from "./assets/imgs/logo-estrada.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Nav from "./components/Nav";
+import { IoMenu } from "react-icons/io5";
+import { FaRegSun } from "react-icons/fa";
+import { ImCancelCircle } from "react-icons/im";
+import { PiSunDimLight } from "react-icons/pi";
 
 
 const Layout = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false); // Dark mode state
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
 
 
 
@@ -119,13 +134,8 @@ const Layout = () => {
                 ]
             ]
         },
-    {
-      id: 7,
-      linkName: "Syurpriz",
-      linkList: null,
-    },
    {
-    id: 8,
+    id: 7,
     linkName: "Tarix",
    linkList: [
                 [
@@ -188,8 +198,23 @@ const Layout = () => {
             <ul className="navLinks rwdNav">
               <Nav arr={navLinks} />
             </ul>
-     
           </div>
+          <div className={`nav-border ${menuOpen ? "open" : ""}`}>
+      <div className="nav-bor-menu">
+        <span onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <ImCancelCircle /> : <IoMenu />}
+        </span>
+      </div>
+
+      {menuOpen && (
+        <div className="nav-me-list">
+          <button className="sun_mode"   onClick={() => setDarkMode(!darkMode)}>
+          <p>    <PiSunDimLight /></p>
+          </button>
+          <button>UZ</button>
+        </div>
+      )}
+    </div>
         </nav>
       </header>
       <main>

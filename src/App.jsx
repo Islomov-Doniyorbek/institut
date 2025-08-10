@@ -3,6 +3,7 @@ import Komponents from "./Main/Komponents";
 import Layout from "./layout";
 import Admin from "./Admin/Admin";
 import { routes } from './routes';
+import './Dark.css'
 
 import "./App.css";
 import "./Main.css";

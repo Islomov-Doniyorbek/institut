@@ -1,0 +1,9 @@
+body.dark {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+  }
+
+  body.dark .news{
+  background-color: #0c0b0b;
+
+  }

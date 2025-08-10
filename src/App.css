@@ -4,3 +4,58 @@
   text-decoration: none;list-style: none; box-sizing: border-box; padding: 0px; margin: 0px; font-family: 'Montserrat';
 }
 
+.nav{display: flex !important; align-items: center !important;}
+.nav-border {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px !important;
+  margin-left: 40px;
+  transition: border-radius 0.3s ease; /* chiroyli o'tishi uchun */
+}
+
+/* Ochilganda past radius yo'qoladi */
+.nav-border.open {
+  border-radius: 30px 30px 0px 0px !important; /* faqat tepasi yumaloq */
+}
+
+
+.nav-bor-menu{  transition: all 0.3s ease !important;}
+.nav-bor-menu span {
+  font-size: 25px !important;
+  cursor: pointer; transition: 0.3s;
+  display: flex; justify-content: center; align-items: center;
+}
+
+/* Menyu */
+.nav-me-list {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 80%; /* nav-border pastidan boshlansin */
+  left: 0; /* chap tomondan boshlansin */
+  width: 100%; /* nav-border bilan bir xil kenglik */
+  background: white;
+  border-radius: 0px 0px 30px 30px; /* pastini yumaloqlash */
+  z-index: 999;
+  padding: 15px 0px !important;
+}
+
+.nav-me-list button {
+  font-size: 20px !important;
+  border: none;
+font-weight: 600;
+  background-color: transparent;
+}
+
+
+.sun_mode p{font-size: 32px !important;}
