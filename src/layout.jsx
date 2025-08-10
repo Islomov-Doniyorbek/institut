@@ -7,11 +7,16 @@ import {
   MdLocationOn,
   MdMenu,
   MdPhone,
+  MdRemoveCircle,
+  MdSearch,
+  MdSearchOff,
 } from "react-icons/md";
 import Logo from "./assets/imgs/logo-estrada.png";
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Nav from "./components/Nav";
+import AISearchBar from "./components/searchAi";
+import { FaSearch } from "react-icons/fa";
 
 
 const Layout = () => {
@@ -143,17 +148,25 @@ const Layout = () => {
     setMenu(bool);
   };
 
+  const [scrSearch, setScrSearch] = useState(false)
+
+
   return (
     <div className="container">
       <header>
         <div className="topBar">
           <p>
+            <span className="searchIco" onClick={()=>setScrSearch(true)}><FaSearch/></span>
+            <div className={`searchBox ${scrSearch ? "screen" : "hide"}`}>
+              <span className="searchIco" onClick={()=>setScrSearch(false)}><MdClose/></span>
+              <AISearchBar/>
+            </div>
+          </p>
+          <p>
             <span>
               <MdLocationOn />
             </span>{" "}
             Toshkent 100027, Botir Zokirov ko'chasi 1 uy
-          </p>
-          <p>
             <span>
               <MdPhone />
             </span>{" "}

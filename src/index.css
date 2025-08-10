@@ -275,6 +275,33 @@ footer {
   margin-top: 10px 0;
 }
 
+.searchForm {
+  position: relative;
+  display: flex;
+}
+.searchForm input {
+  outline: none;
+}
+.searchForm input:hover {
+  background-color: #ccc;
+}
+.searchForm button {
+  outline: none;
+  background-color: #003d7a;
+  color: #F9F9F9;
+  border: 1.8px solid navy;
+  padding: 8px 10px;
+}
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.searchIco {
+  font-size: 18px;
+}
+
 
 
 
@@ -291,6 +318,12 @@ footer {
   .menuBar .menuIcon {
     display: none;
   }
+  .searchBox {
+    position: relative;
+  }
+  .searchIco {
+    display: none;
+  }
 }
 @media (max-width: 1336px){
   nav {
@@ -300,6 +333,12 @@ footer {
     display: flex;
   }
   .menuBar .menuIcon {
+    display: none;
+  }
+  .searchBox {
+    position: relative;
+  }
+  .searchIco {
     display: none;
   }
 }
@@ -319,6 +358,12 @@ footer {
   .rwdNav {
     display: none;
   }
+  .searchBox {
+    position: relative;
+  }
+  .searchIco {
+    display: none;
+  }
 }
 @media (max-width: 664px){
   .topBar {
@@ -326,6 +371,29 @@ footer {
   }
   .topBar p {
     font-size: 14px;
+  }
+  .searchBox {
+    position: absolute;
+    top: -400px;
+  }
+  .searchIco {
+    display: block;
+  }
+  .searchBox.screen {
+    position: absolute;
+    padding: 10px;
+    background: #003d7a;
+    z-index: 40;
+    top: 10px;
+    left: 10px;
+  }
+  .searchBox.screen button {
+    border-color: azure;
+  }
+  .searchBox.hide {
+    position: absolute;
+    top: -400px;
+    left: 10px;
   }
 }
 
