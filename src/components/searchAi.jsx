@@ -18,7 +18,8 @@ export default function AISearchBar() {
       );
 
       const data = await res.json();
-
+      console.log();
+      
       if (data.found) {
         // Topilgan sahifaga o‘tadi
         navigate(data.path);
