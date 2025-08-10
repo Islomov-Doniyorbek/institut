@@ -51,7 +51,7 @@ const Anchors = () => {
       <div className='fakultet'>
       <div className="innerWrapper">
         <div className="banner">
-          <ActiveTopPage pageTitle={"Rahbariyat"} />
+          <ActiveTopPage pageTitle={"Foydali havolalar"} />
         </div>
         <Container>
           <div className="grdBox">

@@ -52,7 +52,7 @@ const Follow = () => {
 
   return (
     <div className='follow'>
-       <ActiveTopPage pageTitle={"Qabul-Call Centr"} />
+       <ActiveTopPage pageTitle={"Kasbiy imtihonlar"} />
 <div className='follow_box'>
         <div className='follow_text'>
 <h2>Oʻzbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutida kasbiy (ijodiy) imtihonlar</h2>
