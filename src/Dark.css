@@ -26,6 +26,11 @@ body.dark .main_box_bottom{background-color: #383838 !important;}
 color: #FF8038 !important;
 }
 
+body.dark nav.nav{
+background-color: #001a33;
+}
+body.dark footer{background-color: #001a33;}
+
 
 body.dark .link h1{color: #ffffff !important;}
 body.dark .links_col h2{color: #d4d4d4;}
@@ -49,9 +54,102 @@ body.dark .forstudent_box h1{color: rgb(32, 32, 255);}
 body.dark  .topBar{background-color: #0c0b0b;}
 body.dark .topBar p{color: #ffffff;}
 body.dark .topBar span{color: #FF8038 !important;}
-body.dark .active_top{background: linear-gradient(270deg, #FF7A00 0%, #FF000F 203.24%);}
+body.dark .active_top{background: linear-gradient(to bottom right, #001510, #003333);}
 body.dark .active_top p{color: #dbdbdb !important;}
-body.dark .title-heading{color:rgb(32, 32, 255) !important ;}
+body.dark .title-heading{color:rgb(38, 38, 226) !important ;}
+
+body.dark .places_card{border-top: 1px solid white; border-bottom: 1px solid white;}
+
+body.dark .places_card h1{color: #f1f1f1;}
+body.dark .places_card p{color: #bdbdbd;}
+body.dark .active_bottom_text span{color: #d4d4d4;}
+body.dark .active_connect{background: linear-gradient(to bottom right, #001510, #003333);}
+
+body.dark .conuncil_row h1{color: #ffffff;}
+body.dark .article_text h1{color: #1a1919;}
+body.dark .download span{color: #1a1919;}
+body.dark .download h3{color: #1a1919;}
+body.dark  .council_img h2{color: #ffffff;}
+
+body.dark  .allnews_col{border: 1px solid #dbdbdb;}
+body.dark  .allnews_col h2{color: #ffffff;}
+body.dark .allnews_col b{color: #c9c9c9;}
+body.dark .allnews_col b span{color: #FF8038;}
+body.dark .new_article h1{color: #f1f1f1;}
+body.dark .new_article h2{color: #bdbdbd;}
+body.dark  .connect_box h1{color:rgb(38, 38, 226) ;}
+body.dark .connect_box h2{color: #c9c9c9;}
+body.dark .connect_col_icon span{color: #dbdbdb;}
+body.dark .connect_col_text p{color: #d4d4d4;}
+body.dark .connect_send h1{color:#006b09 ;}
+body.dark .connect_send_box h2{color: #006b09;}
+body.dark .document_center_center h3{color: #c9c9c9;}
+body.dark .document_center_center h3 span{color: #FF8038;}
+body.dark .document_center_center h3 p{color: #bdbdbd;}
+body.dark .document_boxshadow{border: 1px solid #c9c9c9;}
+body.dark  .callcenter_text{border: 1px solid #d4d4d4;}
+body.dark .callcenter_text h1{color: #ffffff;}
+
+body.dark .callcenter_text p{color: #0069cc;}
+body.dark .callcenter_card{border: 1px solid #c9c9c9;}
+body.dark .callcenter_card h2{color: #007ef3 !important;}
+body.dark .callcenter_card p{color: #eeeeee !important;}
+body.dark .callcenter_phone span{color: #007ef3 ;}
+body.dark .callcenter_card h3{color:#006b09 !important; }
+
+
+
+
+
+body.dark  .forign_box h2{
+  color: #0069cc;
+}
+body.dark .forign_inputs_card h3 {color: #f1f1f1;}
+body.dark  .edu-container h3{color: #f1f1f1;}
+body.dark .edu-option{color: #f1f1f1;}
+
+body.dark  .forign_box{border: 1px solid #f1f1f1;}
+body.dark  .forign_photo h3{color: #f1f1f1;}
+body.dark .forign_photo h4{color: #c9c9c9;}
+body.dark .forign_photo h3 span{color: #0069cc;}
+body.dark .program_card h1{color: #007ef3;}
+body.dark .program_card p{color: #c9c9c9;}
+body.dark .program_download p{color: #ffffff;}
+
+
+body.dark .follow_text{border: 1px solid #f1f1f1;}
+body.dark .follow_text h2{color: #0069cc !important;}
+body.dark .follow_text p{color: #eeeeee;}
+body.dark .students_list h1{color: #007ef3 !important;}
+body.dark .history_inputs h1{color: #ffffff;}
+body.dark .yillar h2{color: #007ef3;}
+body.dark .oylar-box h2{color: #007ef3;}
+body.dark .sana-topish h4{color: #007ef3;}
+body.dark .hafta-kun{color: #0069cc;}
+body.dark .sana-grid{border: 1px solid #f1f1f1;}
+body.dark .tarixiy_card_text h2{color: #ffffff; }
+body.dark .tarixiy_card_text p span{color: #FF8038;}
+
+body.dark .tarixiy_card_text p{color: #eeeeee;}
+body.dark  .tarixiy_card{padding: 10px; border: 1px solid #ffffff; border-radius: 10px;}
+body.dark .tarixiy_box h1{border-radius: 2px dashed #006b09 !important;}
+body.dark .news_inner_text h1{color: #007ef3;}
+body.dark .news_inner_info p span{color: #FF8038 !important;}
+body.dark .news_inner_info p{color: #f1f1f1;}
+body.dark .news_inner_info h2{color: #c9c9c9;}
+
+body.dark .inner-sentence p{color: #f1f1f1 !important;}
+
+body.dark .nav-bor-menu span{color: #383838 !important;}
+body.dark .ant-table-cell{border: 1px solid #f1f1f1 !important; background-color: #001a33 !important;  color: #ffffff !important;}
+body.dark .ant-table-tbody >tr >td{background-color: #383838 !important;}
+
+
+
+
+
+
+
 
 
 

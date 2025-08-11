@@ -15,8 +15,8 @@ import Logo from "./assets/imgs/logo-estrada.png";
 import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Nav from "./components/Nav";
-import { IoMenu } from "react-icons/io5";
-import { FaRegSun } from "react-icons/fa";
+import { IoMenu, IoMoonOutline } from "react-icons/io5";
+import { FaMoon, FaRegSun } from "react-icons/fa";
 import { ImCancelCircle } from "react-icons/im";
 import { PiSunDimLight } from "react-icons/pi";
 import AISearchBar from "./components/searchAi";
@@ -221,9 +221,14 @@ const Layout = () => {
 
       {menuOpen && (
         <div className="nav-me-list">
-          <button className="sun_mode"   onClick={() => setDarkMode(!darkMode)}>
-          <p>    <PiSunDimLight /></p>
-          </button>
+         <button
+  className="sun_mode"
+  onClick={() => setDarkMode(!darkMode)}
+>
+  <p>
+    {darkMode ? <PiSunDimLight /> : <span className="moon"><IoMoonOutline /></span>}
+  </p>
+</button>
           <button>UZ</button>
         </div>
       )}
