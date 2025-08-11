@@ -143,16 +143,18 @@ body.dark .inner-sentence p{color: #f1f1f1 !important;}
 body.dark .nav-bor-menu span{color: #383838 !important;}
 body.dark .ant-table-cell{border: 1px solid #f1f1f1 !important; background-color: #001a33 !important;  color: #ffffff !important;}
 body.dark .ant-table-tbody >tr >td{background-color: #383838 !important;}
+body.dark .fakultet .title {color: #007ef3 !important;}
+body.dark .grdBox a{color: #0069cc;}
+body.dark .grdBox .fakultetKaf p{color: #f1f1f1 ;}
 
+body.dark .rahbars li .bio{color: #ffffff !important;}
 
-
-
-
-
-
-
-
-
+body.dark .nutq{background-color: #383838 ;}
+ body.dark .doc p {
+  color: #ffffff;
+}
+body.dark .doc p:last-child{color: #c9c9c9;}
+body.dark .fakultet ul li{color: #f1f1f1;}
 
 
 
