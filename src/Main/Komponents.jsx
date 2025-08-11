@@ -9,6 +9,7 @@ import About from './About';
 import News from './News';
 import Yandex from './Yandex';
 import MapComponent from '../components/map';
+import TranslateWidget from '../lang';
 
 
 
@@ -16,6 +17,7 @@ export default function Komponents() {
 const myPosition = [41.31486199711899, 69.25684069273231];
   return (
     <>
+    <TranslateWidget/>
       <Main />
       <News />
       <Links />
