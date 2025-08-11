@@ -232,7 +232,7 @@ const Layout = () => {
     </div>
         </nav>
       </header>
-      <main>
+      <main className="darkmain">
         <Outlet />
       </main>
       {/* shu childrenga Komponents keladi, avtomatik layout o'zgarmay tururadi. */}
