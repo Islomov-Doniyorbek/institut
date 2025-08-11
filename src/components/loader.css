@@ -8,7 +8,7 @@ section {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #f9f9fe;
+    background: navy;
     position: absolute;
     top: 0;
     left: 0;
@@ -41,14 +41,14 @@ section .container .circle span::before {
     top: calc(50% - 7.5px);
     width: 15px;
     height: 15px;
-    background-color: blue;
+    background-color: aqua;
     border-radius: 50%;
-    box-shadow: 0 0 10px blue,
-    0 0 20px blue,
-    0 0 40px blue,
-    0 0 60px blue,
-    0 0 80px blue,
-    0 0 100px dodgerblue;
+    box-shadow: 0 0 10px aqua,
+    0 0 20px aqua,
+    0 0 40px aqua,
+    0 0 60px aqua,
+    0 0 80px aqua,
+    0 0 100px azure;
     transform: scale(0.1);
     animation: animate 0.8s linear infinite;
     animation-delay: calc(0.02s * var(--i));
