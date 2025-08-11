@@ -21,6 +21,7 @@ import { ImCancelCircle } from "react-icons/im";
 import { PiSunDimLight } from "react-icons/pi";
 import AISearchBar from "./components/searchAi";
 import { FaSearch } from "react-icons/fa";
+import TranslateWidget from "./lang";
 
 
 const Layout = () => {
@@ -170,6 +171,7 @@ const Layout = () => {
             <div className={`searchBox ${scrSearch ? "screen" : "hide"}`}>
               <span className="searchIco" onClick={()=>setScrSearch(false)}><MdClose/></span>
               <AISearchBar/>
+              <TranslateWidget/>
             </div>
           </p>
           <p>
