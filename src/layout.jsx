@@ -171,9 +171,9 @@ const Layout = () => {
             <div className={`searchBox ${scrSearch ? "screen" : "hide"}`}>
               <span className="searchIco" onClick={()=>setScrSearch(false)}><MdClose/></span>
               <AISearchBar/>
-              <TranslateWidget/>
             </div>
           </p>
+              
           <p>
             <span>
               <MdLocationOn />
@@ -231,7 +231,7 @@ const Layout = () => {
     {darkMode ? <PiSunDimLight /> : <span className="moon"><IoMoonOutline /></span>}
   </p>
 </button>
-          <button>UZ</button>
+          <button><TranslateWidget/></button>
         </div>
       )}
     </div>

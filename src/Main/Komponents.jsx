@@ -17,7 +17,7 @@ export default function Komponents() {
 const myPosition = [41.31486199711899, 69.25684069273231];
   return (
     <>
-    <TranslateWidget/>
+    {/* <TranslateWidget/> */}
       <Main />
       <News />
       <Links />
