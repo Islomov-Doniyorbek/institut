@@ -4,41 +4,50 @@ import document from '../../Images/main_doc.jpg'
 import document2 from '../../Images/documnt1.jpg'
 import { MdOutlineLibraryMusic } from 'react-icons/md'
 import { GrLanguage } from 'react-icons/gr'
+import { useTranslation } from 'react-i18next'
 
 const Documents = () => {
-
+const {t}=useTranslation()
   return (
-    <div>
+ <div>
   <div className='allnews_top accept_top document_top'>
-        <h1>Qabul 2025-yil natijalari</h1>
-        <p>Bosh sahifa - Axborot xizmati - Qabul 2025-yil natijalari</p>
-      </div>
+    <h1>{t("admission_2025")}</h1>
+    <p>{t("breadcrumb_admission")}</p>
+  </div>
 
-      <div className='document_box'>
- 
-<div className='document_box_top'>
-<h1>Imtihon Natijalari</h1>
-<p>Botir Zokirov nomidagi Milliy estrada san’ati institutining 2025-yil 9-iyul sanasida o'tkazilgan imtihon natijalari.</p>
-</div>
+  <div className='document_box'>
+    <div className='document_box_top'>
+      <h1>{t("exam_results")}</h1>
+      <p>{t("exam_results_desc")}</p>
+    </div>
 
-<div className='document_box_center'>
-         <div className='document_boxshadow'>
-<div className='document_center_top'>
-    <img src={document}/>
-    <h2>Cholg’u ijrochiligi: estrada cholg’ulari (saksafon)</h2>
-</div>
-<div className='document_center_center'>
-<h3><span><FaCalendarAlt /></span><p>Sana:</p>2025-yil 9-iyul</h3>
-<h3><span><MdOutlineLibraryMusic /></span><p>Imtihon turi:</p>Kasbiy (ijodiy) imtihon</h3>
-<h3><span><GrLanguage /></span><p>Ta’lim tili:</p>O’zbekcha</h3>
-</div>
-<div className='document_img'>
-<img src={document2}/>
-</div>
-</div>
-      </div>
+    <div className='document_box_center'>
+      <div className='document_boxshadow'>
+        <div className='document_center_top'>
+          <img src={document}/>
+          <h2>{t("instrument_exam_title")}</h2>
+        </div>
+        <div className='document_center_center'>
+          <h3>
+            <span><FaCalendarAlt /></span>
+            <p>{t("date")}:</p> 2025-yil 9-iyul
+          </h3>
+          <h3>
+            <span><MdOutlineLibraryMusic /></span>
+            <p>{t("exam_type")}:</p> {t("exam_type_professional")}
+          </h3>
+          <h3>
+            <span><GrLanguage /></span>
+            <p>{t("language")}:</p> {t("language_uz")}
+          </h3>
+        </div>
+        <div className='document_img'>
+          <img src={document2}/>
+        </div>
       </div>
     </div>
+  </div>
+</div>
   )
 }
 

@@ -1,12 +1,14 @@
+
 import React, { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaUniversity } from 'react-icons/fa';
 
 const counters = [
-  { target: 150, label: 'Professor-o‘qituvchilar' },
-  { target: 30, label: 'Xorijiy o‘qituvchilar' },
-  { target: 25, label: 'Talabalar' },
-  { target: 20, label: 'Xorijiy talabalar' },
-  { target: 35, label: 'Ilmiy tadqiqotchilar' },
+  { target: 150, label: 'professors' },
+  { target: 30, label: 'other-stu' },
+  { target: 25, label: 'stu' },
+  { target: 20, label: 'other-stu' },
+  { target: 35, label: 'ilm_taq' },
 ];
 
 function CountUp({ target, startAnimation }) {
@@ -38,6 +40,7 @@ function CountUp({ target, startAnimation }) {
 }
 
 function UnInfo() {
+        const {t }=useTranslation()
   const [startAnim, setStartAnim] = useState(false);
   const sectionRef = useRef();
 
@@ -82,13 +85,13 @@ function UnInfo() {
       <div className='useinfo_box' ref={sectionRef}>
         <div className='info_text'>
           <span><FaUniversity /></span>
-          <h1><b>Institut</b> <br /> raqamlarda</h1>
+          <h1><b>{t("inst")}</b> <br /> {t("number")}</h1>
         </div>
         <div className='useinfo_row'>
           {counters.map((item, idx) => (
             <div className='useinfo_card' key={idx}>
               <CountUp target={item.target} startAnimation={startAnim} />
-              <p>{item.label}</p>
+              <p>{t(item.label)}</p>
             </div>
           ))}
         </div>

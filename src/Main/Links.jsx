@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { FaBook, FaRegIdCard } from 'react-icons/fa'
 // import { FaTableList } from 'react-icons/fa6'
 import { LiaUniversitySolid } from 'react-icons/lia'
@@ -7,17 +8,18 @@ import { MdOutlineMail, MdPerson } from 'react-icons/md'
 import { PiTableFill } from 'react-icons/pi'
 
 function Links() {
+     const {t }=useTranslation()
   return (
    <div className='link'> 
-<h1>Tezkor havolalar</h1>
+<h1>{t("havola")}</h1>
 <div className='links_row'>
 <div className='links_col '>
   <div className='link_icon'>
 <span className='link_inner'><LiaUniversitySolid /></span>
 </div>
 <div className='link_texts'>
-    <h2>Hemis OTM</h2>
-    <b>Batafsil</b>
+    <h2>{t("hemis-otm")}</h2>
+    <b>{t("bataf")}</b>
 </div>
 </div>
 
@@ -26,8 +28,8 @@ function Links() {
 <span className='link_inner'><FaRegIdCard /></span>
 </div>
 <div className='link_texts'>
-    <h2>Hemis Talaba</h2>
-    <b>Batafsil</b>
+    <h2>{t("hemis-stu")}</h2>
+    <b>{t("bataf")}</b>
 </div>
 </div>
 
@@ -37,8 +39,8 @@ function Links() {
 <span className='link_inner'><PiTableFill /></span>
 </div>
 <div className='link_texts'>
-    <h2>Dars jadvali</h2>
-    <b>Batafsil</b>
+    <h2>{t("les_table")}</h2>
+    <b>{t("bataf")}</b>
 </div>
 </div>
 
@@ -50,7 +52,7 @@ function Links() {
 </div>
 <div className='link_texts'>
     <h2>Ins.repozitoriy</h2>
-    <b>Batafsil</b>
+    <b>{t("bataf")}</b>
 </div>
 </div>
 
@@ -61,8 +63,8 @@ function Links() {
 <span className='link_inner'><FaBook /></span>
 </div>
 <div className='link_texts'>
-    <h2>Elektron kutubxona</h2>
-    <b>Batafsil</b>
+    <h2>{t("elk_kutu")}</h2>
+    <b>{t("bataf")}</b>
 </div>
 </div>
 
@@ -73,8 +75,8 @@ function Links() {
 <span className='link_inner'><MdOutlineMail /></span>
 </div>
 <div className='link_texts'>
-    <h2>Elektron pochta</h2>
-    <b>Batafsil</b>
+    <h2>{t("elk_email")}</h2>
+    <b>{t("bataf")}</b>
 </div>
 </div>
 

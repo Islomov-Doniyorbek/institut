@@ -4,7 +4,9 @@ import { MdEmojiEvents } from "react-icons/md";
 import { PiStudentBold } from "react-icons/pi";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import Container from "../components/Container";
+import { useTranslation } from "react-i18next";
 function ForStudents() {
+        const {t }=useTranslation()
   return (
     <Container>
       <div className="forstudent">
@@ -18,13 +20,13 @@ function ForStudents() {
                   </span>
                 </div>
                 <div className="forstudent_card_text">
-                  <p>Talabalar hayoti</p>
-                  <b>Batafsil</b>
+                  <p>{t("stu_life")}</p>
+                  <b>{t("bataf")}</b>
                 </div>
               </div>
             </div>
             <h1>
-              Talabalar hayoti{" "}
+              {t("stu_life")}{" "}
               <span>
                 <PiStudentBold />
               </span>
@@ -40,13 +42,13 @@ function ForStudents() {
                   </span>
                 </div>
                 <div className="forstudent_card_text">
-                  <p>Madaniy tadbirlar</p>
-                  <b>Batafsil</b>
+                  <p>{t("mada_tad")}</p>
+                  <b>{t("bataf")}</b>
                 </div>
               </div>
             </div>
             <h1>
-              Madaniy tadbirlar{" "}
+            {t("mada_tad")}{" "}
               <span>
                 <MdEmojiEvents />
               </span>
@@ -62,13 +64,13 @@ function ForStudents() {
                   </span>
                 </div>
                 <div className="forstudent_card_text">
-                  <p>Tanlovlar va stipendiyalar</p>
-                  <b>Batafsil</b>
+                  <p>{t("setpend")}</p>
+                  <b>{t("bataf")}</b>
                 </div>
               </div>
             </div>
             <h1>
-              Tanlovlar va stipendiyalar
+             {t("setpend")}
               <span>
                 <RiMoneyDollarCircleLine />
               </span>

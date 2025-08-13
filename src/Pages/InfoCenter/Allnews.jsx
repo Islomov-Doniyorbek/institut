@@ -11,6 +11,7 @@ import { IoMenu } from 'react-icons/io5';
 import Newsrep from './Newsrep';
 import ActiveTopPage from '../../components/activeTopPage';
 import ContactComp from '../../components/contactComp';
+import { useTranslation } from 'react-i18next';
 
 const getVisiblePages = (currentPage, totalPages) => {
   const visible = [];
@@ -26,6 +27,9 @@ const getVisiblePages = (currentPage, totalPages) => {
 };
 
 const Allnews = () => {
+
+   const {t }=useTranslation()
+
   const navigate = useNavigate();
   const itemsPerPage = 9;
   const [currentPage, setCurrentPage] = useState(1);
@@ -67,7 +71,7 @@ const Allnews = () => {
   return (
     <div className='allnews'>
       <div className='allnews_top'>
-        <ActiveTopPage pageTitle="Yangiliklar" />
+        <ActiveTopPage pageTitle={t("news")} />
         <div className='allnews_top_menu'>
           <span onClick={() => setShowRightSidebar(!showRightSidebar)}>
             <IoMenu />
@@ -153,10 +157,10 @@ const Allnews = () => {
           }}
         >
           <div className='section'>
-            <h1>Bo‘limlar</h1>
+            <h1>{t("h1_sections_uz")}</h1>
             <div className='section_row'>
-              <p>Yangiliklar</p>
-              <button onClick={handleNext}>E'lonlar</button>
+              <p>{t("p_news_uz")}</p>
+              <button onClick={handleNext}>{t("btn_announcements_uz")}</button>
             </div>
           </div>
 

@@ -22,12 +22,18 @@ import { PiSunDimLight } from "react-icons/pi";
 import AISearchBar from "./components/searchAi";
 import { FaSearch } from "react-icons/fa";
 import TranslateWidget from "./lang";
-
+import cookie from "react-cookies";
+import { useTranslation } from "react-i18next";
 
 const Layout = () => {
-
+const {t }=useTranslation()
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false); // Dark mode state
+ const { i18n } = useTranslation();
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    cookie.save("tilTanish", lang, { path: "/" }); // tanlangan tilni cookie’da saqlash
+  };
 
   useEffect(() => {
     if (darkMode) {
@@ -43,112 +49,109 @@ const Layout = () => {
   const navLinks = [
     {
       id: 0,
-      linkName: { link: "Bosh sahifa", path: "/" },
+      linkName: { link: t("home"), path: "/" },
       linkList: null,
     },
     {
       id: 1,
-      linkName: "Institut",
+      linkName: t("institute"),
 
       linkList: [
         {
-          nestedLinkName: "Tuzilma",
+          nestedLinkName:t("structure"),
           nestedLinks: [
             {
-              link: "Institut tuzilmasi",
+              link: t("institute_structure"),
               path: "/Institut/Tuzilma",
             },
             {
-              link: "Tarkibiy tuzilma",
+              link: t("faculty_structure"),
               path: "/Activity/Activity",
             },
-            { link: "Fakultetlar va kafedralar", path: "/Institut/fakultet" },
+            { link:  t("departments"), path: "/Institut/fakultet" },
           ],
         },
         [
-          { link: "Rahbariyat", path: "/Institut/Rahbariyat" },
-          { link: "Institut tarixi", path: "/Institut/Tarix" },
-          { link: "Me'yoriy-huquqiy hujjatlar", path: "/Institut/Meyoriy Huquqiy Hujjatlar" },
-          { link: "Xalqaro hamkorlik", path: "/Institut/Xalqaro hamkorlik" },
-          { link: "Foydali havolalar", path: "/Institut/Foydali havolalar" },
-          { link: "Botir Zokirov hayoti va ijodi", path: "/Institut/Botir Zokirov hayoti va ijodi" },
+          { link:  t("management"), path: "/Institut/Rahbariyat" },
+          { link: t("history"), path: "/Institut/Tarix" },
+          { link:  t("legal_documents"), path: "/Institut/Meyoriy Huquqiy Hujjatlar" },
+          { link:  t("international"), path: "/Institut/Xalqaro hamkorlik" },
+          { link: t("useful_links"), path: "/Institut/Foydali havolalar" },
+          { link:t("botir_life"), path: "/Institut/Botir Zokirov hayoti va ijodi" },
         ],
       ],
     },
-    {
-      id: 2,
-      linkName: "Ta'lim",
-      linkList: [
-        [
-          { link: "Bakalavr", path: "/Talim/Bakalavr" },
-          { link: "Magistratura", path: "/Talim/Magister" },
-          { link: "Dars jadvali", path: "/Talim/DarsJadvali" },
-          { link: "Bitiruvchilar", path: "/Talim/Bitiruvchilar" },
-        ],
-      ],
-    },
-    {
-      id: 3,
-      linkName: "Ilmiy faoliyat",
-      linkList: [
-        [
-          { link: "Ilmiy tadqiqot faoliyati", path: "/Activity/Activity" },
-          { link: "Ilmiy kengashlar", path: "/Activity/ActiveCouncil" },
-          { link: "Ilmiy jurnallar", path: "/Activity/Article" },
-          { link: "Ilmiy loyihalar", path: "/Activity/Projects" },
-        ],
-      ],
-    },
-    {
-      id: 4,
-      linkName: "Axborot xizmati",
-      linkList: [
-        [
-          { link: "Yangiliklar", path: "/News/Allnews" },
-          { link: "Tadbirlar", path: "/News/Events" },
-          { link: "Media galereyalar", path: "/News/Galery" },
-          { link: "Bog'lanish", path: "/News/Connect" },
-          { link: "Qabul 2025-natijalari", path: "/News/Documents" },
-        ],
-      ],
-    },
-    {
-      id: 5,
-      linkName: "Qabul-2025",
-      linkList: [
-        [
-          { link: 'Qabul "Call Centre"', path: "/Qabul/Callcenter" },
-          { link: "Qabul kvotalari (BA & MA)", path: "/Qabul/Qabulkvotalari" },
-          { link: "Xorijiy fuqarolar uchun qabul", path: "/Qabul/XorijiyStudentlar" },
-          { link: "Qabul dasturlari", path: "/Qabul/QabulDasturlari" },
-          {
-            link: "Kasbiy(Ijodiy) imtihonlar translatsiyasi",
-            path: "/Qabul/Kuzatuv",
-          },
-        ],
-      ],
-    },
-     {
-            id: 6,
-            linkName: "Talabalar",
-            linkList: [
-                [
-                    {link:"Ekofaol talabalar", path: '/Students/Ekostudents'},
-                    {link:"Grant uchun ariza", path: '/Students/Grand'},
-                    {link:"Talaba yutuqlarini jo'natish", path: '/Students/Yutuqlar'},
-                    {link:"Grant uchun test", path: '/Students/Test'},
-                ]
-            ]
-        },
-   {
+  {
+    id: 2,
+    linkName: t("education"),
+    linkList: [
+      [
+        { link: t("bachelor"), path: "/Talim/Bakalavr" },
+        { link: t("master"), path: "/Talim/Magister" },
+        { link: t("schedule"), path: "/Talim/DarsJadvali" },
+        { link: t("graduates"), path: "/Talim/Bitiruvchilar" }
+      ]
+    ]
+  },
+  {
+    id: 3,
+    linkName: t("scientific"),
+    linkList: [
+      [
+        { link: t("research"), path: "/Activity/Activity" },
+        { link: t("councils"), path: "/Activity/ActiveCouncil" },
+        { link: t("journals"), path: "/Activity/Article" },
+        { link: t("projects"), path: "/Activity/Projects" }
+      ]
+    ]
+  },
+  {
+    id: 4,
+    linkName: t("info_service"),
+    linkList: [
+      [
+        { link: t("news"), path: "/News/Allnews" },
+        { link: t("events"), path: "/News/Events" },
+        { link: t("media_gallery"), path: "/News/Galery" },
+        { link: t("contact"), path: "/News/Connect" },
+        { link: t("admission_results"), path: "/News/Documents" }
+      ]
+    ]
+  },
+  {
+    id: 5,
+    linkName: t("admission_2025"),
+    linkList: [
+      [
+        { link: t("call_center"), path: "/Qabul/Callcenter" },
+        { link: t("admission_quotas"), path: "/Qabul/Qabulkvotalari" },
+        { link: t("foreign_students"), path: "/Qabul/XorijiyStudentlar" },
+        { link: t("admission_programs"), path: "/Qabul/QabulDasturlari" },
+        { link: t("exam_translations"), path: "/Qabul/Kuzatuv" }
+      ]
+    ]
+  },
+  {
+    id: 6,
+    linkName: t("students"),
+    linkList: [
+      [
+        { link: t("eco_students"), path: "/Students/Ekostudents" },
+        { link: t("grant_application"), path: "/Students/Grand" },
+        { link: t("send_achievements"), path: "/Students/Yutuqlar" },
+        { link: t("grant_test"), path: "/Students/Test" }
+      ]
+    ]
+  },
+  {
     id: 7,
-    linkName: "Tarix",
-   linkList: [
-                [
-                    {link:"Tarixiy yillar", path: '/History/History'},
-                ]
-            ]
-}
+    linkName: t("history"),
+    linkList: [
+      [
+        { link: t("historical_years"), path: "/History/History" }
+      ]
+    ]
+  }
   ];
 
   console.log(navLinks[1].linkList[0].nestedLinks);
@@ -178,7 +181,7 @@ const Layout = () => {
             <span>
               <MdLocationOn />
             </span>{" "}
-            Toshkent 100027, Botir Zokirov ko'chasi 1 uy
+          {t("ins_location")}
             <span>
               <MdPhone />
             </span>{" "}
@@ -190,9 +193,9 @@ const Layout = () => {
             <div className="logo">
               <img src={Logo} alt="" />
               <h2>
-                O'zbekiston Davlat KOnservatoriyasi huzuridagi <br />
-                Botir Zokirov nomidagi <br />
-                Milliy Estrada san'ati instituti
+               {t("sentence_logo")}<br />
+               {t("sentence_logo2")} <br />
+           {t("sentence_logo3")}
               </h2>
             </div>
           </div>
@@ -214,7 +217,7 @@ const Layout = () => {
               <Nav arr={navLinks} />
             </ul>
           </div>
-          <div className={`nav-border ${menuOpen ? "open" : ""}`}>
+         <div className={`nav-border ${menuOpen ? "open" : ""}`}>
       <div className="nav-bor-menu">
         <span onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <ImCancelCircle /> : <IoMenu />}
@@ -223,15 +226,26 @@ const Layout = () => {
 
       {menuOpen && (
         <div className="nav-me-list">
-         <button
-  className="sun_mode"
-  onClick={() => setDarkMode(!darkMode)}
->
-  <p>
-    {darkMode ? <PiSunDimLight /> : <span className="moon"><IoMoonOutline /></span>}
-  </p>
-</button>
-          <button><TranslateWidget/></button>
+          {/* Dark / Light mode */}
+          <button
+            className="sun_mode"
+            onClick={() => setDarkMode(!darkMode)}
+          >
+            <p>
+              {darkMode ? (
+                <PiSunDimLight />
+              ) : (
+                <span className="moon">
+                  <IoMoonOutline />
+                </span>
+              )}
+            </p>
+          </button>
+
+          {/* Til tugmalari */}
+          <button onClick={() => {changeLanguage("uz"), setMenuOpen(!menuOpen)}}>UZ</button>
+          <button onClick={() => {changeLanguage("ru"), setMenuOpen(!menuOpen)}}>RU</button>
+          <button onClick={() => {changeLanguage("en"), setMenuOpen(!menuOpen)}}>EN</button>
         </div>
       )}
     </div>
@@ -249,3 +263,11 @@ const Layout = () => {
 };
 
 export default Layout;
+
+
+
+
+
+
+
+

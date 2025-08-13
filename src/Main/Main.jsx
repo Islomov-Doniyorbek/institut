@@ -1,19 +1,21 @@
+import { useTranslation } from 'react-i18next';
 import { IoIosArrowForward } from 'react-icons/io';
 
 
 function Main() {
+  const {t }=useTranslation()
   return (
     <div className='main_box'>
         <div className='main_box_img'>
           <div className='main_text'>
-          <h1>Botir Zokirov</h1>
-          <p>O'zbek estradasi asoschisi</p>
-          <button >Batafsil <span><IoIosArrowForward /></span></button>
+          <h1>{t("per-name")}</h1>
+          <p>{t("est-asos")}</p>
+          <button >{t("bataf")}<span><IoIosArrowForward /></span></button>
           </div>
           </div>
           <div className='main_box_bottom'>
-          <h1>Institutga qabul haqida to‘liq ma’lumot olish uchun ushbu havolani bosing</h1>
-          <button>Qabul-2025 <span><IoIosArrowForward /></span></button>
+          <h1>{t("abou_ins")}</h1>
+          <button>{t("accept")} <span><IoIosArrowForward /></span></button>
       </div>
     </div>
   )

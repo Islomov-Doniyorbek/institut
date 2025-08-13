@@ -3,91 +3,94 @@ import ActiveTopPage from '../../components/activeTopPage'
 import Container from '../../components/Container'
 import ContactComp from '../../components/contactComp'
 import { MdLink } from 'react-icons/md'
+import { useTranslation } from 'react-i18next'
 
 const Document = () => {
     const docs = [
         {
           id: 0,
-          title: "Oʻzbekiston Respublikasining “Ta’lim toʻgʻrisida” gi qonuni",
-          date: "23.09.2020 yildagi",
-          tur: "O‘RQ-637-son",
+          title: "document_0_title",
+          date:   "document_0_date",
+          tur: "document_0_number",
           pdf: ""
         },
         {
           id: 1,
-          title: "O‘zbekiston Respublikasining “Madaniy faoliyat va madaniyat tashkilotlari to‘g‘risida”gi qonuni",
-          date: "20.01.2021 yildagi",
-          tur: "O‘RQ-668-son",
+          title:  "document_1_title",
+          date: "document_1_date",
+          tur: "document_1_number",
           pdf: ""
         },
         {
           id: 2,
-          title: "O‘zbekiston Respublikasi Prezidentining “O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutini tashkil etish to‘g‘risida”gi qarori",
-          date: "16.10.2021 yildagi",
-          tur: "PQ-5261-son",
+          title:  "document_2_title",
+          date: "document_2_date",
+          tur: "document_2_number",
           pdf: ""
         },
         {
           id: 3,
-          title: "O‘zbekiston Respublikasi Vazirlar Mahkamasining “Botir Zokirov nomidagi milliy estrada mukofotini ta’sis etish to‘g‘risida”gi qarori",
-          date: "18.01.2024 yildagi",
-          tur: "32-son",
+          title: "document_3_title",
+          date: "document_3_date",
+          tur: "document_3_number",
           pdf: ""
         },
         {
           id: 4,
-          title: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti",
+          title:  "document_4_title",
           date: "",
-          tur: "Guvohnoma",
+          tur: "document_4_number",
           pdf: ""
         },
         {
           id: 5,
-          title: "O‘zbekiston Respublikasi madaniyat vaziri buyrug‘i",
+          title:  "document_5_title",
           date: "",
           tur: "",
           pdf: ""
         },
         {
           id: 6,
-          title: "O‘zbekiston Respublikasi madaniyat vaziri buyrug‘i",
+          title:  "document_6_title",
           date: "",
-          tur: "Ustavni tasdiqlash to'g'risida",
+          tur: "document_6_number",
           pdf: ""
         },
         {
           id: 7,
-          title: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti ustavi",
+          title: "document_7_title",
           date: "",
-          tur: "Ustav",
+          tur: "document_7_number",
           pdf: ""
         },
         {
           id: 8,
-          title: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti 2023-2025 yillar uchun",
+          title:  "document_8_title",
           date: "",
-          tur: "Jamoat shartnomasi",
+          tur:"document_8_number",
           pdf: ""
         },
         {
           id: 9,
-          title: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti tarkibiy tuzilmasi",
+          title:  "document_9_title",
           date: "",
-          tur: "Tarkibiy tuzilma",
+          tur: "document_9_number",
           pdf: ""
         },
       ]
+
+      const {t}=useTranslation()
   return (
        <div className='fakultet'>
       <div className="innerWrapper">
         <div className="banner">
-          <ActiveTopPage pageTitle={"Me'yoriy-huquqiy hujjatlar"} />
+          <ActiveTopPage pageTitle={t("legal_documents")} />
         </div>
         <Container>
           <div className="grdBox">
             <div className="col">
               <div className="title">
-                <h2>Me'yoriy-huquqiy hujjatlar</h2>
+                <h2>{t("legal_documents")}</h2>
               </div>
               <div className="wrapper">
                 <ul className="docs">
@@ -96,13 +99,13 @@ const Document = () => {
                             return (
                                 <li key={item.id}>
                                     <div className='doc'>
-                                        <p>{item.title}</p>
+                                      <p>{t(item.title)}</p> 
                                         <p>
-                                            {item.date} {item.tur}
+                                           {t(item.date)} {t(item.tur)}
                                         </p>
                                     </div>
                                     <button>
-                                        O'qish <MdLink />
+                                      {t("read")} <MdLink />
                                     </button>
                                 </li>
                             )

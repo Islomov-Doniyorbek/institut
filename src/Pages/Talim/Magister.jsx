@@ -2,6 +2,7 @@ import React from "react";
 import ActiveTopPage from "../../components/activeTopPage";
 import CourseItem from "../../components/CourseItem";
 import "./Training.css";
+import { useTranslation } from "react-i18next";
 
 const yoNalishlar = [
   {
@@ -124,11 +125,12 @@ const yoNalishlar = [
 ];
 
 const Magister = () => {
+    const {t}=useTranslation()
   return (
     <>
-      <ActiveTopPage pageTitle={"Magistratura"} />
+      <ActiveTopPage   pageTitle={t("master_page_title")} />
       <CourseItem
-        title={"Magistratura ta'lim yo'nalishlari uchun o'quv dasturlari"}
+       title={t("master_programs")}
         yoNalishlar={yoNalishlar}
       />
     </>

@@ -1,15 +1,17 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {  FaRegFilePdf } from 'react-icons/fa'
 import { FiPhoneCall } from 'react-icons/fi'
 const ContactComp = () => {
+  const {t} =useTranslation()
   return (
     <div className='active_text'>
-        <button><span><FaRegFilePdf /></span>Institut taqdimoti</button>
+        <button><span><FaRegFilePdf /></span>{t("institute_presentation")}</button>
         <div className='active_text_box'>
-            <h1>Hurmatli foydalanuvchi!</h1>
-            <p>Institut haqida qoʻshimcha ma’lumot olish uchun info@estrada-art.uz elektron pochta manziliga xabar yuboring yoki +998 71 200 00 00 raqamiga qoʻngʻiroq qiling.</p>
+            <h1>{t("dear_user")}</h1>
+            <p>{t("institute_contact_info")}</p>
         </div>
-        <button className='phone_way'><span><FiPhoneCall /></span>Bog'lanish</button>
+        <button className='phone_way'><span><FiPhoneCall /></span>{t("download")}</button>
     </div>
   )
 }
