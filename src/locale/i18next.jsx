@@ -16,7 +16,7 @@ i18n
   .use(initReactI18next) // react-i18next ulanishi
   .init({
     resources,
-    lng: cookie.load("tilTanish") ? cookie.load("tilTanish") : "ru", // boshlang‘ich til
+    lng: cookie.load("tilTanish") ? cookie.load("tilTanish") : "uz", // boshlang‘ich til
     fallbackLng: "ru", // agar til topilmasa
     keySeparator: false,
     interpolation: {
