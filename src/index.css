@@ -349,6 +349,9 @@ footer {
   nav .col:first-child {
     order: 4;
   }
+  nav .nav-border {
+    order: 5;
+  }
   nav .col {
     justify-content: space-between;
   }

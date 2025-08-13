@@ -174,9 +174,9 @@ const {t }=useTranslation()
             <div className={`searchBox ${scrSearch ? "screen" : "hide"}`}>
               <span className="searchIco" onClick={()=>setScrSearch(false)}><MdClose/></span>
               <AISearchBar/>
-              <TranslateWidget/>
             </div>
           </p>
+              
           <p>
             <span>
               <MdLocationOn />
@@ -243,9 +243,9 @@ const {t }=useTranslation()
           </button>
 
           {/* Til tugmalari */}
-          <button onClick={() => changeLanguage("uz")}>UZ</button>
-          <button onClick={() => changeLanguage("ru")}>RU</button>
-          <button onClick={() => changeLanguage("en")}>EN</button>
+          <button onClick={() => {changeLanguage("uz"), setMenuOpen(!menuOpen)}}>UZ</button>
+          <button onClick={() => {changeLanguage("ru"), setMenuOpen(!menuOpen)}}>RU</button>
+          <button onClick={() => {changeLanguage("en"), setMenuOpen(!menuOpen)}}>EN</button>
         </div>
       )}
     </div>

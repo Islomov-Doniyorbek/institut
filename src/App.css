@@ -3,9 +3,66 @@
 *{
   text-decoration: none;list-style: none; box-sizing: border-box; padding: 0px; margin: 0px; font-family: 'Montserrat';
 }
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-} 
+/* Tugma ko‘rinishi */
+.translate-wrapper {
+  position: relative;
+  left: -80px;
+  display: inline-block;
+  /* background-color: var(--nav-bg, #fff); */
+  color: var(--nav-text, #333);
+  /* padding: 8px 14px; */
+  border-radius: 6px;
+  /* border: 1px solid #ccc; */
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+}
+.translate-wrapper font {
+  display: none;
+}
+/* Hover */
+.translate-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Dark mode */
+.dark-mode .translate-wrapper {
+  background-color: #333;
+  color: #fff;
+  border-color: #444;
+}
+.dark-mode .translate-wrapper:hover {
+  background-color: #444;
+}
+#google_translate_element {
+  padding: 10px;
+}
+#google_translate_element .goog-te-combo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;    /* butun tugma hududi */
+  height: 100%;   /* butun tugma hududi */
+  opacity: 0;     /* ko‘rinmaydi */
+  cursor: pointer;
+}
+#google_translate_element img.goog-te-gadget-icon {
+  display: none;
+}
+#google_translate_element a {
+  padding: 10px;
+  width: 30px;
+}
+.goog-te-gadget-simple {
+  border: none;
+  /* padding: 10px; */
+  font-size: 16px !important;
+}
+.goog-te-gadget-simple span {
+  /* padding: 10px; */
+}
+
 
 .nav{display: flex !important; align-items: center !important; justify-content: space-between; }
 .nav-border {
