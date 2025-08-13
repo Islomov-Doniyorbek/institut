@@ -12,14 +12,15 @@ async function safeGetJSON(url) {
   try {
     return JSON.parse(text);
   } catch (err) {
-    throw new Error(`JSON parse failed. Got: ${text}`);
+    throw new Error(`JSON parse failed. Got: ${text} ${err}`);
   }
 }
+
 
 export default function AISearchBar() {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); 
   const navigate = useNavigate();
 
   // Datalist uchun variantlar olish (debounce 300ms)
