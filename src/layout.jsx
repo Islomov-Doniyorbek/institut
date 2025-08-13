@@ -22,12 +22,18 @@ import { PiSunDimLight } from "react-icons/pi";
 import AISearchBar from "./components/searchAi";
 import { FaSearch } from "react-icons/fa";
 import TranslateWidget from "./lang";
-
+import cookie from "react-cookies";
+import { useTranslation } from "react-i18next";
 
 const Layout = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false); // Dark mode state
+ const { i18n } = useTranslation();
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    cookie.save("tilTanish", lang, { path: "/" }); // tanlangan tilni cookie’da saqlash
+  };
 
   useEffect(() => {
     if (darkMode) {
@@ -214,7 +220,7 @@ const Layout = () => {
               <Nav arr={navLinks} />
             </ul>
           </div>
-          <div className={`nav-border ${menuOpen ? "open" : ""}`}>
+         <div className={`nav-border ${menuOpen ? "open" : ""}`}>
       <div className="nav-bor-menu">
         <span onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <ImCancelCircle /> : <IoMenu />}
@@ -223,15 +229,26 @@ const Layout = () => {
 
       {menuOpen && (
         <div className="nav-me-list">
-         <button
-  className="sun_mode"
-  onClick={() => setDarkMode(!darkMode)}
->
-  <p>
-    {darkMode ? <PiSunDimLight /> : <span className="moon"><IoMoonOutline /></span>}
-  </p>
-</button>
-          <button>UZ</button>
+          {/* Dark / Light mode */}
+          <button
+            className="sun_mode"
+            onClick={() => setDarkMode(!darkMode)}
+          >
+            <p>
+              {darkMode ? (
+                <PiSunDimLight />
+              ) : (
+                <span className="moon">
+                  <IoMoonOutline />
+                </span>
+              )}
+            </p>
+          </button>
+
+          {/* Til tugmalari */}
+          <button onClick={() => changeLanguage("uz")}>UZ</button>
+          <button onClick={() => changeLanguage("ru")}>RU</button>
+          <button onClick={() => changeLanguage("en")}>EN</button>
         </div>
       )}
     </div>
@@ -249,3 +266,11 @@ const Layout = () => {
 };
 
 export default Layout;
+
+
+
+
+
+
+
+
