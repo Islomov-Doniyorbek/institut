@@ -8,71 +8,73 @@ import R3 from '../../assets/imgs/Mirzayev_A.jpg'
 import R4 from '../../assets/imgs/Muxamedova_F.jpg'
 import R5 from '../../assets/imgs/Tursunbayev_Ilhom_K.jpg'
 import { BsCalendar, BsCalendar2Fill, BsCalendar3, BsGoogle, BsMailbox, BsPhone, BsTelephone } from 'react-icons/bs'
+import { useTranslation } from 'react-i18next'
 
 const Rahbariyat = () => {
   const rahbarlar = [
     {
       id: 0,
-      fish: "Mansurov Avaz Maksudovich",
-      lavozim: "O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti rektori",
-      unvon: "O‘zbekiston Respublikasida xizmat koʻrsatgan madaniyat xodimi, professor",
-      qabul: "Dushanba 9:00 dan 18:00 gacha",
+      fish: "faculty_fish_1",
+      lavozim: "faculty_fish_1_1",
+      unvon: "faculty_fish_1_2",
+      qabul: "faculty_fish_1_3",
       phone: "+998 71 200 00 00",
       email: "info@estrada-art.uz",
       img: R1
     },
     {
       id: 1,
-      fish: "Qurbonova Feruza Xayrullayevna",
-      lavozim: "Yoshlar masalalari va ma-naviy-ma’rifiy ishlar bo’yicha birinchi prorektor",
-      unvon: null,
-      qabul: "Dushanba 15:00 dan 17:00 gacha",
+      fish: "faculty_fish_2",
+      lavozim: "faculty_fish_2_1",
+      qabul: "faculty_fish_2_3",
       phone: "+998 71 200 00 00",
       email: "qurbonovaf@mail.ru",
       img: R2
     },
     {
       id: 2,
-      fish: "Mirzayev Akbarjon Abduraximovich",
-      lavozim: "Oʻquv ishlari boʻyicha prorektor",
-      unvon: "Dotsent",
-      qabul: "Dushanba 15:00 dan 17:00 gacha",
+      fish: "faculty_fish_3",
+      lavozim: "faculty_fish_3_1",
+      unvon: "faculty_fish_3_2",
+      qabul: "faculty_fish_3_3",
       phone: "+998 71 200 00 00",
       email: " mesiakbarjon@gmail.com",
       img: R3
     },
     {
       id: 3,
-      fish: "Muxamedova Feruza Nurmaxmatovna",
-      lavozim: "Ilmiy ishlar va innovatsiyalar boʻyicha prorektor",
-      unvon: "San’atshunoslik fanlari nomzodi (PhD)",
-      qabul: "Chorshanba 14:00 dan 16:00 gacha",
+      fish: "faculty_fish_4",
+      lavozim: "faculty_fish_4_1",
+      unvon: "faculty_fish_4_2",
+      qabul: "faculty_fish_4_3",
       phone: "+998 71 200 00 00",
       email: "feruzamuhamedova1986@gmail.com",
       img: R4
     },
     {
       id: 4,
-      fish: "Tursunbayev Ilxom Karimovich",
-      lavozim: "Ishlar boshqarmasi boshlig‘i",
-      unvon: null,
-      qabul: "Har kuni soat 10:00 dan 15:00 gacha",
+      fish: "faculty_fish_5",
+      lavozim: "faculty_fish_5_1",
+      qabul: "faculty_fish_5_3",
       phone: "+998 71 200 00 00",
       email: " info@estrada-art.uz",
       img: R5
     },
   ]
+
+
+  const {t}=useTranslation()
   return (
      <div className='fakultet'>
       <div className="innerWrapper">
         <div className="banner">
-          <ActiveTopPage pageTitle={"Rahbariyat"} />
+          <ActiveTopPage pageTitle={ t("management")} />
         </div>
         <Container>
           <div className="grdBox">
             <div className="col">
               <div className="title">
-                <h2>Rahbariyat</h2>
+                <h2>{ t("management")}</h2>
               </div>
               <div className="wrapper">
                 <ul class="rahbars">
@@ -84,12 +86,12 @@ const Rahbariyat = () => {
                                   <img src={rahbar.img} alt="rahbar"/>
                               </div>
                               <div class="bio">
-                                  <h3>{rahbar.fish}</h3>
-                                  <p>{rahbar.lavozim}</p>
-                                  <p>{rahbar.unvon}</p>
-                                  <p><BsCalendar3/> {rahbar.qabul}</p>
-                                  <p><BsTelephone /> {rahbar.phone}</p>
-                                  <p><BsGoogle/> {rahbar.email}</p>
+                                  <h3>{t(rahbar.fish)}</h3>
+                                  <p>{t(rahbar.lavozim)}</p>
+                                  <p>{t(rahbar.unvon)}</p>
+                                  <p><BsCalendar3/> {t(rahbar.qabul)}</p>
+                                  <p><BsTelephone /> {t(rahbar.phone)}</p>
+                                  <p><BsGoogle/> {t(rahbar.email)}</p>
                               </div>
                           </li>
                         )

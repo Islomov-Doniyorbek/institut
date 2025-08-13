@@ -4,34 +4,36 @@ import { FiPhoneCall } from 'react-icons/fi'
 import { HiDownload } from 'react-icons/hi'
 import ContactComp from '../../components/contactComp'
 import ActiveTopPage from '../../components/activeTopPage'
+import { useTranslation } from 'react-i18next'
 
 const Article = () => {
+  const {t}=useTranslation()
   return (
     <div className='activ'>
-         <ActiveTopPage pageTitle={"Ilmiy jurnallar"} />
+         <ActiveTopPage pageTitle={t("journals")} />
        <div className='active_padd'>
        <div className='active_box'>
    <div className='active_img council_img'>
-   <h2>Ilmiy jurnallar</h2>
- <p>Botir Zokirov nomidagi Milliy estrada san’ati institutining ilmiy jurnallari haqida ma’lumot.</p>
+   <h2>{t("journals")}</h2>
+ <p>{t("scientific_journals_info")}</p>
 <div className='article_text'>
-<h1>Eng So'nggi Ilmiy Maqolalar</h1>
+<h1>{t("latest_scientific_articles")}</h1>
 <div className='download_box'>
 <div className='download'>
 <span>1.</span>
-<h3>Botir Zokirov nomidagi MESI xabarlari</h3>
-<button><span><HiDownload /></span>Yuklab olish</button>
+<h3>{t("mesi_bulletin")}</h3>
+<button><span><HiDownload /></span>{t("download")}</button>
 </div>
 
 <div className='download'>
 <span>1.</span>
-<h3>Botir Zokirov nomidagi MESI xabarlari</h3>
-<button><span><HiDownload /></span>Yuklab olish</button>
+<h3>{t("mesi_bulletin")}</h3>
+<button><span><HiDownload /></span>{t("download")}</button>
 </div>
 <div className='download'>
 <span>1.</span>
-<h3>Botir Zokirov nomidagi MESI xabarlari</h3>
-<button><span><HiDownload /></span>Yuklab olish</button>
+<h3>{t("mesi_bulletin")}</h3>
+<button><span><HiDownload /></span>{t("download")}</button>
 </div>
 </div>
 </div>
@@ -45,8 +47,8 @@ const Article = () => {
        </div>
    
        <div className="active_connect">
-   <h1>Qo‘shimcha ma’lumot olish uchun institut matbuot xizmatiga murojaat qiling</h1>
-   <button>Bog'lanish <span><FiPhoneCall /></span></button>
+  <h1>{t("contact_for_more")}</h1>
+  <button>{t("contact_button")} <span><FiPhoneCall /></span></button>
        </div>
        </div>
   )

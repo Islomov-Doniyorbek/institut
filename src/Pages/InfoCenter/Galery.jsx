@@ -6,21 +6,22 @@ import photo1 from '../../Images/photo1.jpg'
 import photo2 from '../../Images/photo2.jpg'
 import audio from '../../Images/audio.jpg'
 import RanoMp3 from "../../Audio/Botir Zokirov - Ra'no.mp3";
+import { useTranslation } from 'react-i18next'
 export default function Galery() {
   const [activeTab, setActiveTab] = useState("photos")
-
+   const {t }=useTranslation()
   return (
     <div className='galery_box'>
 
       <div className='galery_buttons'>
         <button onClick={() => setActiveTab("photos")}>
-          <span className='photos'><IoMdPhotos /></span> Rasmlar
+          <span className='photos'><IoMdPhotos /></span> {t("galery")}
         </button>
         <button onClick={() => setActiveTab("audios")}>
-          <span><FaFileAudio /></span> Audiolar
+          <span><FaFileAudio /></span> {t("audio")}
         </button>
         <button onClick={() => setActiveTab("videos")}>
-          <span><LuVideotape /></span> Videolar
+          <span><LuVideotape /></span> {t("video")}
         </button>
       </div>
 

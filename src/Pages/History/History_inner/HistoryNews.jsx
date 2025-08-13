@@ -3,9 +3,11 @@ import React, { useState } from 'react'
 import { FaRegClock } from 'react-icons/fa'
 import news from '../../../Images/photo_2025-07-20_14-03-41.jpg'
 import news2 from '../../../Images/photo_2025-07-20_21-19-52.jpg'
+import { useTransition } from 'react';
 const HistoryNews = ({ year, month, day }) => {
          const [isModalOpen, setIsModalOpen] = useState(false);
 
+         const {t}=useTransition()
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -22,15 +24,15 @@ const handleOpen = ()=>{
 }
   return (
     <div className='history_news'>
-    <h1>{year}-yil {day} {month}da bo'lgan barcha yangiliklar.</h1>
+   <h1>{t("history_news_page_title", { year, day, month })}</h1>
     <div className='tarixiy_box'>
-        <h1>Yangiliklar</h1>
+     <h1>{t("history_news_section_title")}</h1>
 <div className='tarixiy_row'>
 <div className='tarixiy_card'>
    <div className='tarixiy_card_img'></div>
 <div className='tarixiy_card_text'>
-<h2  onClick={handleOpen}>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi.  </h2>
-<p><span><FaRegClock /></span>18.02.2024</p>
+<h2 onClick={handleOpen}>{t("history_news_card_title")}</h2>
+<p><span><FaRegClock /></span>{t("history_news_card_date")}</p>
 </div>
 </div>
 
@@ -62,21 +64,17 @@ const handleOpen = ()=>{
       >
         <div className='tarixiy-yang-mod'>
         <div className='news_inner_text  history_inner_text'> 
-       <h1>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. </h1>
+      <h1>{t("modal_news_title")}</h1>
        <div className='news_inner_info history_inner_info'>
-       <p><span><FaRegClock /></span>04/24/2025</p>
-       <h2><p>Posted by:</p>Sevara Olimjonova</h2>
-       <h2><p>Category:</p> Yangilik</h2>
+   <p><span><FaRegClock /></span>{t("modal_news_date")}</p>
+    <h2><p>{t("modal_news_posted_by")}</p></h2>
+    <h2><p>{t("modal_news_category")}</p></h2>
        </div>
        <div className='inner-sentence'>
            <div className='inner_img_box'>
            <img src={news}/>
            </div>
-           <p>Konferensiyada Botir Zokirov nomidagi Milliy estrada san’ati instituti, O’zbekiston davlat konservatoriyasi, Yunus Rajabiy nomidagi O’zbek milliy musiqa san’ati instituti, O’zbekiston Respublikasi fanlar akademiyasi, O’zbekiston davlat san’at va madaniyat instituti, Buxoro ixtisoslashtirilgan san’at maktabi, Farg’ona ixtisoslashtirilgan san’at maktabi, Farg’ona davlat universitetlaridan professor-o’qituvchilar, doktorant va mustaqil izlanuvchilar hamda ilmga izlanuvchan talaba-yoshlar ishtirok etishdi.
-
-Konferensiya davomida musiqiy estrada san’atining kelib chiqishi va rivojlanish bosqichlari, estradaning an’anaviy va zamonaviy janrlari o’rtasidagi farqlar, zamonaviy musiqiy estrada san’atida aranjirovkaning o’rni, musiqiy estrada san’atida qo’shiq matnining  ahamiyatiga oid 70 ga yaqin ilmiy ma’ruzalar bilan tanishildi.  
-
-Bahs va munozaralarga boy o’tgan konferensiya yakunida ishtirokchilarga institut tomonidan sertifikatlar topshirildi.</p> 
+          <p>{t("modal_news_text")}</p>
             <div className='inner_img_box'>
            <img src={news2}/>
            </div>

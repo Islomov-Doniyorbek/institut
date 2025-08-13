@@ -10,10 +10,12 @@ import { LuMusic4 } from 'react-icons/lu'
 import { HiMusicNote } from 'react-icons/hi'
 import ContactComp from '../../components/contactComp'
 import ActiveTopPage from '../../components/activeTopPage'
+import { useTranslation } from 'react-i18next'
 const Activity = () => {
+  const {t}=useTranslation()
   return (
     <div className='activ'>
-      <ActiveTopPage pageTitle={"Ilmiy tadqiqot"} />
+      <ActiveTopPage pageTitle={t("research")} />
     <div className='active_padd'>
     <div className='active_box'>
 <div className='active_img'>
@@ -25,11 +27,11 @@ const Activity = () => {
     </div>
 
     <div className='active_bottom'>
-<h1>Ilmiy-tadqiqot faoliyati</h1>
+  <h1>{t("research_title")}</h1>
 <p></p>
 <div className='active_bottom_text'>
-<span>Botir Zokirov nomidagi Milliy estrada san’ati instituti ilmiy-tadqiqot faoliyati haqida ma’lumot</span>
-<span>Quyidagi yoʻnalishlari ilmiy-tadqiqot ishlari olib borilmoqda:</span>
+  <span>{t("research_about")}</span>
+ <span>{t("research_directions")}</span>
 </div>
 
 
@@ -42,8 +44,8 @@ const Activity = () => {
 <span className='link_inner'><FaBook /></span>
 </div>
 <div className='link_texts active_text_col'>
-    <h2>Zamonaviy estrada cholgʻu asboblari</h2>
-    <b>Zamonaviy estrada cholgʻu asboblari</b>
+     <h2>{t("research_modern_instruments")}</h2>
+   <b>{t("research_modern_instruments")}</b>
 </div>
 </div>
 
@@ -52,8 +54,8 @@ const Activity = () => {
 <span className='link_inner'><HiMusicNote /></span>
 </div>
 <div className='link_texts active_text_col'>
-    <h2>Zamonaviy musiqa san’ati janrlari boʻyicha ilmiy tadqiqot ishlari</h2>
-    <b>Zamonaviy musiqa san’ati janrlari boʻyicha ilmiy tadqiqot ishlari</b>
+ <h2>{t("research_modern_genres")}</h2>
+ <b>{t("research_modern_genres")}</b>
 </div>
 </div>
 
@@ -63,8 +65,9 @@ const Activity = () => {
     </div>
 
     <div className="active_connect">
-<h1>Qo‘shimcha ma’lumot olish uchun institut matbuot xizmatiga murojaat qiling</h1>
-<button>Bog'lanish <span><FiPhoneCall /></span></button>
+  <h1>{t("contact_for_more")}</h1>
+  <button>{t("contact_button")} <span><FiPhoneCall /></span></button>
+
     </div>
     </div>
   )

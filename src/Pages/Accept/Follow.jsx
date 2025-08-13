@@ -1,69 +1,69 @@
 import { Table } from 'antd'
 import React from 'react'
-import ActiveTopPage from '../../components/activeTopPage';
+import ActiveTopPage from '../../components/activeTopPage'
+import { useTranslation } from 'react-i18next'
 
 const Follow = () => {
- const dataSource = [
+  const { t } = useTranslation()
+
+  const dataSource = [
     {
-      direction: ' Cholg’u ijrochiligi: estrada cholg’ulari',
-      science: '	1-fan',
-      link: 'Havola',
-      roomnumber: '220-xona',
-      description:"Qo'shimcha Izoh"
-    },  {
-      direction: '  Cholg’u ijrochiligi: estrada cholg’ulari (fortepiano)',
-      science: '	1-fan',
-      link: 'Havola',
-      roomnumber: '	108-xona',
-      description:"	Imtihon"
+      direction: t("direction_1"),
+      science: t("science_1"),
+      link: t("link_1"),
+      roomnumber: t("room_1"),
+      description: t("description_1")
+    },
+    {
+      direction: t("direction_2"),
+      science: t("science_2"),
+      link: t("link_2"),
+      roomnumber: t("room_2"),
+      description: t("description_2")
     }
-    
-    
-  ];
+  ]
 
   const columns = [
     {
-      title: "Yo'nalish",
+      title: t("column_direction"),
       dataIndex: 'direction',
       key: 'direction',
     },
     {
-      title: 'Fan',
+      title: t("column_science"),
       dataIndex: 'science',
       key: 'science',
     },
     {
-      title: 'Online Havola',
+      title: t("column_link"),
       dataIndex: 'link',
       key: 'link',
     },
-      {
-      title: "Xona Raqami",
+    {
+      title: t("column_roomnumber"),
       dataIndex: 'roomnumber',
       key: 'roomnumber',
     },
     {
-      title: "Qo'shimcha Izoh",
+      title: t("column_description"),
       dataIndex: 'description',
       key: 'description',
     },
-  ];
-
+  ]
 
   return (
     <div className='follow'>
-       <ActiveTopPage pageTitle={"Kasbiy imtihonlar"} />
-<div className='follow_box'>
+      <ActiveTopPage pageTitle={t("page_title")} />
+      <div className='follow_box'>
         <div className='follow_text'>
-<h2>Oʻzbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutida kasbiy (ijodiy) imtihonlar</h2>
-<p>Yoʻnalishlar kesimida quyidagi online havolalar orqali kuzatib borishingiz mumkin:</p>
-        
-        
-        <div className='follow_row'>
-      <Table  className='student_table follow_table' dataSource={dataSource} columns={columns} />
+          <h2>{t("follow_heading")}</h2>
+          <p>{t("follow_text")}</p>
+
+          <div className='follow_row'>
+            <Table className='student_table follow_table' dataSource={dataSource} columns={columns} />
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </div>
   )
 }

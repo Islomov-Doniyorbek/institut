@@ -8,56 +8,58 @@ import L5 from '../../assets/imgs/konserv5.png';
 import ActiveTopPage from '../../components/activeTopPage';
 import Container from '../../components/Container';
 import ContactComp from '../../components/contactComp';
+import { useTranslation } from 'react-i18next';
 
 const Anchors = () => {
-    const links = [
-        {
-            id: 0,
-            title: "O‘zbekiston respublikasi davlat ramzlari",
-            data: "O‘zbekiston respublikasi davlat ramzlari: O'zbekiston Respublikasi Konstitutsiyasi, davlat gerbi, davlat bayrog‘i, davlat madhiyasi, davlat konstutsiyasi haqida to‘liq ma’lumot.",
-            url: "https://constitution.uz/oz",
-            logo: L1
-        },
-        {
-            id: 1,
-            title: "O‘zbekiston respublikasi oliy ta’lim, fan va innovatsiyalar vazirligi",
-            data: "O‘zbekiston respublikasi oliy ta’lim, fan va innovatsiyalar vazirligi",
-            url: "https://edu.uz/uz",
-            logo: L2
-        },
-        {
-            id: 2,
-            title: "O‘zbekiston Respublikasi Madaniyat vazirligi",
-            data: "O‘zbekiston Respublikasi Madaniyat vazirligi",
-            url: "https://gov.uz/oz/madaniyat",
-            logo: L3
-        },
-        {
-            id: 3,
-            title: "O‘zbeknavo estrada birlashmasi",
-            data: "O‘zbeknavo estrada birlashmasi",
-            url: "#",
-            logo: L4
-        },
-        {
-            id: 4,
-            title: "O‘zbekiston Davlat Konservatoriyasi",
-            data: "O‘zbekiston Davlat Konservatoriyasi",
-            url: "https://konservatoriya.uz/",
-            logo: L5
-        },
-    ]
+const links = [
+  {
+    id: 0,
+    title: "link_0_title",
+    data: "link_0_data",
+    url: "https://constitution.uz/oz",
+    logo: L1
+  },
+  {
+    id: 1,
+    title: "link_1_title",
+    data: "link_1_data",
+    url: "https://edu.uz/uz",
+    logo: L2
+  },
+  {
+    id: 2,
+    title: "link_2_title",
+    data: "link_2_data",
+    url: "https://gov.uz/oz/madaniyat",
+    logo: L3
+  },
+  {
+    id: 3,
+    title: "link_3_title",
+    data: "link_3_data",
+    url: "#",
+    logo: L4
+  },
+  {
+    id: 4,
+    title: "link_4_title",
+    data: "link_4_data",
+    url: "https://konservatoriya.uz/",
+    logo: L5
+  },
+];
+        const {t}=useTranslation()
   return (
       <div className='fakultet'>
       <div className="innerWrapper">
         <div className="banner">
-          <ActiveTopPage pageTitle={"Foydali havolalar"} />
+          <ActiveTopPage pageTitle={t("useful_links")} />
         </div>
         <Container>
           <div className="grdBox">
             <div className="col">
               <div className="title">
-                <h2>Foydali havolalar</h2>
+                <h2>{t("useful_links")}</h2>
               </div>
               <div className="wrapper">
                 <ul className="rahbars anchors">
@@ -69,8 +71,8 @@ const Anchors = () => {
                                   <img src={r.logo} alt="rahbar"/>
                               </div>
                               <div className="bio anchor">
-                                  <h3><a href={r.url}>{r.title}</a></h3>
-                                  <p>{r.data}</p>
+                                  <h3><a href={r.url}> {t(r.title)}</a></h3>
+                                  <p> {t(r.data)}</p>
                               </div>
                           </li>
                         )

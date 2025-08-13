@@ -3,11 +3,13 @@ import React from 'react'
 import { FaRegCalendarAlt, FaRegClock } from 'react-icons/fa'
 import { SlLocationPin } from 'react-icons/sl'
 import Container from '../components/Container'
+import { useTranslation } from 'react-i18next'
 function Events() {
+    const {t }=useTranslation()
   return (
     <Container>
       <div className='event'>
-        <h1>Tadbirlar</h1>
+        <h1>{t("event")}</h1>
         <div className='event_line'>
           <p></p>
         </div>
@@ -16,12 +18,12 @@ function Events() {
           <div className='event_card'>
          <div className='eventt_img'></div>
           <div className='event_text'>
-            <h2>“Jadidlar. Turkistonga maktublar” multimedia koʻrgazmasiga tashrif</h2>
+            <h2>{t("jadidlar")}</h2>
           </div>
             <div className='event_icons'>
             <p><span><FaRegCalendarAlt /></span>10/14/2024</p>
             <p><span><FaRegClock /></span>15:00 to 16:00</p>
-            <p><span><SlLocationPin /></span>Toshkent, Estrada insitutiti</p>
+            <p><span><SlLocationPin /></span>{t("eve-locat")}</p>
             </div>
           </div>
 
@@ -29,12 +31,12 @@ function Events() {
         <div className='event_card'>
            <div className='eventt_img'></div>
         <div className='event_text'>
-        <h2>“Raqamli dunyoda talaba-yoshlarning psixologik salomatligi: muammolar va yechimlar” mavzusida seminar</h2>
+        <h2>{t("jadidlar")}</h2>
         </div>
         <div className='event_icons'>
         <p><span><FaRegCalendarAlt /></span>10/14/2024</p>
         <p><span><FaRegClock /></span>15:00 to 16:00</p>
-        <p><span><SlLocationPin /></span>Toshkent, Estrada insitutiti</p>
+        <p><span><SlLocationPin /></span>{t("eve-locat")}</p>
         </div>
         </div>
 
@@ -42,19 +44,19 @@ function Events() {
         <div className='event_card'>
          <div className='eventt_img'></div>
         <div className='event_text'>
-        <h2>Milliy qadriyatlar sayli doirasida “Milliy libos – millat qiyofasi, milliy iftixor ifodasi” ko‘rik-tanlovi o‘tkaziladi</h2>
+        <h2>{t("jadidlar")}</h2>
         </div>
         <div className='event_icons'>
         <p><span><FaRegCalendarAlt /></span>10/14/2024</p>
         <p><span><FaRegClock /></span>15:00 to 16:00</p>
-        <p><span><SlLocationPin /></span>Toshkent, Estrada insitutiti</p>
+        <p><span><SlLocationPin /></span>{t("eve-locat")}i</p>
         </div>
         </div>
 
 
         </div>
         <div className='news_button'>
-             <button>Barcha yangiliklar</button>
+             <button>{t("all_new")}</button>
           </div>
         </div>
     </Container>

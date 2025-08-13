@@ -7,7 +7,7 @@ import HistoryNews from './History_inner/HistoryNews';
 import HistoryEvent from './History_inner/HistoryEvent';
 import HistoryAd from './History_inner/HistoryAd';
 import './History.css';
-
+import { useTranslation } from 'react-i18next';
 const History = () => {
   const years = [2020, 2021, 2022, 2023, 2024, 2025];
   const months = [
@@ -39,12 +39,14 @@ const History = () => {
     visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
   };
 
+const {t}=useTranslation()
+
   return (
     <div className='history-con'>
       <div className='history_inputs'>
         <div className='history_top'>
           <img src={history} alt="history" />
-          <h1>Bu pageda siz institut tarixiga oid barcha ma'lumotlarni olishingiz mumkin</h1>
+          <h1>{t("history_page_title")}</h1>
         </div>
 
         <AnimatePresence mode="wait">
@@ -58,7 +60,7 @@ const History = () => {
               exit={slideUpFadeOut.exit} // ✅ obyekt sifatida berilmoqda
               className='yillar'
             >
-              <h2>2020-yildan 2025 yilgacha bo'lgan barcha ma'lumotlar</h2>
+              <h2>{t("history_page_subtitle")}</h2>
               <div className='yillar-box'>
                 <div className="yillar-row">
                   {years.map((year, index) => (
