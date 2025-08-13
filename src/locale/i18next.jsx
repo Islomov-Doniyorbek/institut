@@ -17,7 +17,7 @@ i18n
   .init({
     resources,
     lng: cookie.load("tilTanish") ? cookie.load("tilTanish") : "uz", // boshlang‘ich til
-    fallbackLng: "ru", // agar til topilmasa
+    fallbackLng: "uz", // agar til topilmasa
     keySeparator: false,
     interpolation: {
       escapeValue: false
