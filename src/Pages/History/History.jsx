@@ -92,7 +92,7 @@ const {t}=useTranslation()
               exit={slideUpFadeOut.exit}
               className='oylar-box'
             >
-              <h2>{selectedYear}-yil oylar</h2>
+              <h2>{selectedYear}-{t("year_monts")}</h2>
               <div className='oylar-row'>
                 {months.map((month, index) => (
                   <div key={index} className='oylar-card'>
@@ -121,7 +121,7 @@ const {t}=useTranslation()
               className='sana-topish'
             >
               <h4>
-                {selectedYear}-yil {months[selectedMonthIndex]} oyi kunlari
+                {selectedYear}-yil {months[selectedMonthIndex]} {t("month_numbers")}
               </h4>
 
               {/* Haftaning kunlari */}
