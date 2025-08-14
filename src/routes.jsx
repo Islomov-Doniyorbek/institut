@@ -14,6 +14,7 @@ import Document from "./Pages/Institut/document";
 import Hamkorlik from "./Pages/Institut/hamkorlik";
 import Anchors from "./Pages/Institut/anchors";
 import Biography from "./Pages/Institut/biography";
+import Tarkib from "./Pages/Institut/tarkib";
 
 import Allnews from "./Pages/InfoCenter/Allnews";
 import AllnewsInner from "./Pages/InfoCenter/AllnewsInner";
@@ -61,6 +62,7 @@ export const routes = [
   { path: "/Institut/Xalqaro hamkorlik", element: <Hamkorlik /> },
   { path: "/Institut/Foydali havolalar", element: <Anchors /> },
   { path: "/Institut/Botir Zokirov hayoti va ijodi", element: <Biography /> },
+  { path: "/Institut/Tarkibiy Tuzilma", element: <Tarkib /> },
 
   // News
   { path: "/News/Allnews", element: <Allnews /> },

@@ -66,7 +66,7 @@ const {t }=useTranslation()
             },
             {
               link: t("faculty_structure"),
-              path: "/Activity/Activity",
+              path: "/Institut/Tarkibiy Tuzilma",
             },
             { link:  t("departments"), path: "/Institut/fakultet" },
           ],
