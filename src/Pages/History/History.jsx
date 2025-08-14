@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { LuSearch } from 'react-icons/lu';
 import { AnimatePresence, motion } from 'framer-motion';
-
 import history from '../../Images/history_2201499.png';
 import HistoryNews from './History_inner/HistoryNews';
 import HistoryEvent from './History_inner/HistoryEvent';
@@ -38,7 +37,7 @@ const History = () => {
     hidden: { y: 100, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
   };
-
+console.log(motion)
 const {t}=useTranslation()
 
   return (

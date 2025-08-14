@@ -545,18 +545,16 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .antd_design button{font-size: 12px;}
 .eventt_top{padding: 15px;}
 .active_top h1{margin-top: 0px;}
-.event_inner_box{padding: 15px !important;}
-.event_inner_box h1{font-size: 20px !important;}
+.event_inner_box{padding: 15px !important; border: 1px solid #FFFFFF;}
+.event_inner_box h1{font-size: 17px !important;}
 .event_inner_img{height: 300px;}
-.event_inner_icon{padding: 10px !important; display: flex; align-items: flex-start; justify-content: flex-start; flex-direction: column;}
+.event_inner_icon{padding: 10px !important; display: flex !important; align-items: flex-start !important; justify-content: flex-start !important; background: rgba(90, 90, 90, 0.4);
+    backdrop-filter: blur(6px); }
 
-.event_inner_icon_card {
-  flex: 0 0 100%; /* 100% kenglik — faqat 1 ta card */
-}
-.event_inner_icon_card p{font-size: 14px !important;}
-.event_inner_icon_card span{font-size: 14px !important;}
-.event_innner_p{font-size: 17px !important;}
-.event_inner_box h1{font-size: 16px !important; margin-bottom: 10px !important;}
+.event_inner_icon_card p{font-size: 8.5px !important;}
+.event_inner_icon_card span{font-size: 10px !important;}
+.event_innner_p{font-size: 14px !important;}
+.event_inner_box h1{font-size: 15px !important; margin-bottom: 10px !important;}
 .event_share_icon button{font-size: 15px !important; }
 }
 

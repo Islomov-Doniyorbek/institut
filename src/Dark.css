@@ -156,7 +156,9 @@ body.dark .nutq{background-color: #383838 ;}
 body.dark .doc p:last-child{color: #c9c9c9;}
 body.dark .fakultet ul li{color: #f1f1f1;}
 
-
+body.dark .event_inner_box h1{color: #FFFFFF !important;}
+body.dark .event_innner_p{color: #FFFFFF !important;}
+body.dark .nav-border{background: white !important;}
 
 
 
