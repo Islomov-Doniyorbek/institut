@@ -9,6 +9,8 @@
 display: none;
 }
 .all_news_row{width: 100%;  display: flex; position: relative; margin-top: 100px; padding-bottom: 100px;}
+
+
 .allnews_right{width: 25%;}
 .allnews_center{width: 75%; display: flex;  flex-wrap: wrap; padding: 0px 20px;}
 .allnews_card{width: 100%; display: flex; flex-wrap: wrap; margin-bottom: 50px;}
@@ -25,6 +27,7 @@ display: none;
 .allnews_col b span{font-size: 16px; margin-right: 7px; color: #003d7a;}
 .allnews_col button{width: 100%; padding: 10px; margin-top: 20px; border: none; border-radius: 10px; font-size: 15px; font-weight: 500; background-color: #003d7a; color: white; font-family: 'Montserrat';}
 
+.yangiliklar_card_cen{width: 30% !important; height: 450px !important;}
 
 
 .allnews_right{padding: 0px 50px 0px 0px;}
@@ -71,9 +74,9 @@ display: none;
 
 
 
-.news_inner{width: 100%; display: flex; padding: 80px 100px;}
-.news_inner_text{width: 70%; margin-right: 50px;}
-.news_inner_right{width: 30%;}
+.news_inner{width: 100%; display: flex; padding: 0px 100px;}
+.news_inner_text{width: 100%; margin-right: 50px;}
+
 
 .news_inner_text h1{font-size: 35px; color: #185249; font-family: 'Montserrat'; margin-bottom: 20px;}
 .news_inner_info{display: flex; padding-top: 20px; border-top: 2px solid #003d7a; padding-bottom: 20px; border-bottom:2px solid #003d7a ; margin-bottom: 20px;}
@@ -258,6 +261,62 @@ padding: 40px 0px;   background-color: #1A5950; border-radius: 0px 0px 20px 20px
 .allnews_center::-webkit-scrollbar {
     display: none; 
     }
+
+
+
+
+.event_inner{width: 100%;}
+
+.event_inner_box{padding: 50px 80px; border-radius: 10px; border: none; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.event_inner_box h1{font-size: 27px !important; margin-bottom: 30px; color: #185249;}
+.event_inner_img {
+  position: relative; /* ichidagi absolute elementlar uchun */
+  display: flex;
+  background-image: url('../../Images/events.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+}
+
+.event_inner_icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100% !important;
+  padding: 40px 10px;
+  
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.event_inner_icon_card {
+  color: #fff;
+  flex: 0 0 calc(50% - 15px); /* 50% kenglik - gap uchun joy */
+  display: flex;
+  justify-content: center;
+
+}
+
+.event_inner_icon_card p{display: flex !important;}
+.event_inner_icon_card span {
+  margin-right: 8px;
+  font-size: 20px !important;
+  color: #dab900 !important;
+}
+
+.event_innner_p{font-size: 20px; font-weight: 600; margin-top: 35px; color: #123f38;   gap: 30px 20px !important;}
+.event_inner_share{margin-top: 40px;}
+.event_inner_share h1{font-size: 18px !important; color: #003d7a !important;}
+.event_share_icon{display: flex !important;}
+.event_share_icon button{display: flex; align-items: center; padding: 10px !important; border-radius: 10px;
+border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color: #002a55 !important;}
+
 
 
     @media (max-width:1024px){
@@ -486,6 +545,17 @@ padding: 40px 0px;   background-color: #1A5950; border-radius: 0px 0px 20px 20px
 .antd_design button{font-size: 12px;}
 .eventt_top{padding: 15px;}
 .active_top h1{margin-top: 0px;}
+.event_inner_box{padding: 15px !important; border: 1px solid #FFFFFF;}
+.event_inner_box h1{font-size: 17px !important;}
+.event_inner_img{height: 300px;}
+.event_inner_icon{padding: 10px !important; display: flex !important; align-items: flex-start !important; justify-content: flex-start !important; background: rgba(90, 90, 90, 0.4);
+    backdrop-filter: blur(6px); }
+
+.event_inner_icon_card p{font-size: 8.5px !important;}
+.event_inner_icon_card span{font-size: 10px !important;}
+.event_innner_p{font-size: 14px !important;}
+.event_inner_box h1{font-size: 15px !important; margin-bottom: 10px !important;}
+.event_share_icon button{font-size: 15px !important; }
 }
 
 

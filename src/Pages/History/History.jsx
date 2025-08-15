@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { LuSearch } from 'react-icons/lu';
 import { AnimatePresence, motion } from 'framer-motion';
-
 import history from '../../Images/history_2201499.png';
 import HistoryNews from './History_inner/HistoryNews';
 import HistoryEvent from './History_inner/HistoryEvent';
@@ -38,7 +37,7 @@ const History = () => {
     hidden: { y: 100, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
   };
-
+console.log(motion)
 const {t}=useTranslation()
 
   return (
@@ -92,7 +91,7 @@ const {t}=useTranslation()
               exit={slideUpFadeOut.exit}
               className='oylar-box'
             >
-              <h2>{selectedYear}-yil oylar</h2>
+              <h2>{selectedYear}-{t("year_monts")}</h2>
               <div className='oylar-row'>
                 {months.map((month, index) => (
                   <div key={index} className='oylar-card'>
@@ -121,7 +120,7 @@ const {t}=useTranslation()
               className='sana-topish'
             >
               <h4>
-                {selectedYear}-yil {months[selectedMonthIndex]} oyi kunlari
+                {selectedYear}-yil {months[selectedMonthIndex]} {t("month_numbers")}
               </h4>
 
               {/* Haftaning kunlari */}

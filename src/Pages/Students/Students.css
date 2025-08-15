@@ -78,17 +78,22 @@ font-size: 16px; background-color: #004992; color: white; font-weight: 600; bord
 
 } @media (max-width:767px){
 .students_list h1{font-size: 20px;}
-.students_list{padding: 10px;}
+.students_list{padding: 10px; }
 :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-thead >tr>td{
-            font-size: 10px;
+            font-size: 8px !important;
         }
 :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7t2xvq).ant-table-wrapper .ant-table-tbody >tr >td{
-    font-size: 8px; font-weight: 600;
+    font-size: 8px !important; font-weight: 600 !important;
 }
 
 :where(.css-dev-only-do-not-override-7t2xvq) a{
-   font-size: 10px; 
+   font-size: 10px !important; 
 }
+
+.ant-table-thead >tr>td{
+    font-size: 10px !important;
+}
+.ant-table-cell{padding: 10px !important;}
     }
 
 

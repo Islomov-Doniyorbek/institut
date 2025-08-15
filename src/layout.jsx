@@ -24,15 +24,28 @@ import { FaSearch } from "react-icons/fa";
 import TranslateWidget from "./lang";
 import cookie from "react-cookies";
 import { useTranslation } from "react-i18next";
+import { GrLanguage } from "react-icons/gr";
 
 const Layout = () => {
 const {t }=useTranslation()
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false); // Dark mode state
- const { i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    cookie.save("tilTanish", lang, { path: "/" }); // tanlangan tilni cookie’da saqlash
+    cookie.save("tilTanish", lang, { path: "/" });
+  };
+  
+  
+  // Tillarning navbati
+  const languages = ["uz", "ru", "en"];
+  const [currentLangIndex, setCurrentLangIndex] = useState(0);
+  
+  const handleLanguageSwitch = () => {
+    const nextIndex = (currentLangIndex + 1) % languages.length;
+    setCurrentLangIndex(nextIndex);
+    changeLanguage(languages[nextIndex]);
+    setMenuOpen(false); // menyuni yopadi
   };
 
   useEffect(() => {
@@ -220,33 +233,34 @@ const {t }=useTranslation()
          <div className={`nav-border ${menuOpen ? "open" : ""}`}>
       <div className="nav-bor-menu">
         <span onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <ImCancelCircle /> : <IoMenu />}
+          {menuOpen ? <ImCancelCircle /> :<GrLanguage />}
         </span>
       </div>
 
       {menuOpen && (
-        <div className="nav-me-list">
-          {/* Dark / Light mode */}
-          <button
-            className="sun_mode"
-            onClick={() => setDarkMode(!darkMode)}
-          >
-            <p>
-              {darkMode ? (
-                <PiSunDimLight />
-              ) : (
-                <span className="moon">
-                  <IoMoonOutline />
-                </span>
-              )}
-            </p>
-          </button>
-
-          {/* Til tugmalari */}
-          <button onClick={() => {changeLanguage("uz"), setMenuOpen(!menuOpen)}}>UZ</button>
-          <button onClick={() => {changeLanguage("ru"), setMenuOpen(!menuOpen)}}>RU</button>
-          <button onClick={() => {changeLanguage("en"), setMenuOpen(!menuOpen)}}>EN</button>
-        </div>
+   <div className="nav-me-list">
+   {/* Dark / Light mode */}
+   <button
+     className="sun_mode"
+     onClick={() => setDarkMode(!darkMode)}
+   >
+     <p>
+       {darkMode ? (
+         <PiSunDimLight />
+       ) : (
+         <span className="moon">
+           <IoMoonOutline />
+         </span>
+       )}
+     </p>
+   </button>
+ 
+   {/* Til almashuvchi bitta tugma */}
+   <button onClick={handleLanguageSwitch}>
+     {languages[currentLangIndex].toUpperCase()}
+   </button>
+ </div>
+ 
       )}
     </div>
         </nav>
