@@ -328,6 +328,8 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .all_news_row{margin-top: 20px;}
 .allnews_center{width: 100%; height: 90vw; background-color: #ebebeb; overflow: hidden; overflow-y: auto; padding: 0px 10px; display: flex; justify-content: center; align-items: center;}
 .allnews_right{width: 100%; padding: 40px 20px 20px 20px; }
+
+.yangiliklar_card_cen{width: 100% !important;}
 .allnews_col{width: 46%; margin: 10px; background-color: white;}
 .allnews_col:hover{ 
   transform: none !important;
@@ -405,9 +407,9 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .allnews_top h1{font-size: 20px !important; ;}
 .allnews_top p{font-size: 10px; margin-top: 0px;}
 .allnews_top{padding: 0px 10px 0px 0px !important;}
-.allnews_center{width: 100%; height: auto;}
-.allnews_col {width: 100%;}
-.section h1{font-size: 20px;}
+.allnews_center{width: 100% !important; height: auto; }
+.allnews_col {width: 100% !important;}
+.section h1{font-size: 20px;} 
   .section_row p{width: 200px !important; font-size: 13px !important; padding: 15px;}
  .section_row button{width: 200px !important; font-size: 13px !important;  padding: 15px;}
 
@@ -543,7 +545,7 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .othernews_inner h1{font-family: 'Montserrat'; font-size: 12px !important; color: rgb(36, 36, 36) !important;  font-weight: 600;}
 .othernews_inner p{font-family: 'Montserrat'; font-size: 12px !important; color: #003d7a !important;  font-weight: 600;}
 .event_inner{padding: 10px !important;}
-.event_inner_box{padding: 10px !important; width: 100%;}
+.event_inner_box{padding: 10px !important; width: 100% ;}
 .event_inner_text h2{font-size: 14px !important;}
 .antd_event p{font-size: 14px;}
 .antd_design h1{font-size: 18px;}
