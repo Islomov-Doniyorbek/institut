@@ -502,4 +502,8 @@
         justify-content: flex-start;
         align-items: baseline !important;
     }
+    .wrapper p{font-size: 13px !important;}
+    .gridBox .col img{width: 200px;}
+    .nutq p{font-size: 13px !important;}
+    .nutq b{font-size: 13px !important;}
 }
