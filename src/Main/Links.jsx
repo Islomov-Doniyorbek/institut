@@ -6,9 +6,14 @@ import { LiaUniversitySolid } from 'react-icons/lia'
 import { LuBookOpenText } from 'react-icons/lu'
 import { MdOutlineMail, MdPerson } from 'react-icons/md'
 import { PiTableFill } from 'react-icons/pi'
+import { useNavigate } from 'react-router-dom'
 
 function Links() {
+  const navigate = useNavigate()
      const {t }=useTranslation()
+     const handleNext=()=>{
+navigate("/Talim/DarsJadvali")
+     }
   return (
    <div className='link'> 
 <h1>{t("havola")}</h1>
@@ -39,7 +44,7 @@ function Links() {
 <span className='link_inner'><PiTableFill /></span>
 </div>
 <div className='link_texts'>
-    <h2>{t("les_table")}</h2>
+    <h2 onClick={handleNext}>{t("les_table")}</h2>
     <b>{t("bataf")}</b>
 </div>
 </div>
@@ -59,13 +64,16 @@ function Links() {
 
 
 <div className='links_col'>
-  <div className='link_icon'>
-<span className='link_inner'><FaBook /></span>
-</div>
-<div className='link_texts'>
-    <h2>{t("elk_kutu")}</h2>
-    <b>{t("bataf")}</b>
-</div>
+
+    <div className='link_icon'>
+      <span className='link_inner'><FaBook /></span>
+    </div>
+      <a href="https://dilib.myprojects.uz/" target="_blank" rel="noopener noreferrer">
+    <div className='link_texts'>
+      <h2>{t("elk_kutu")}</h2>
+      <b>{t("bataf")}</b>
+    </div>
+ </a>
 </div>
 
 

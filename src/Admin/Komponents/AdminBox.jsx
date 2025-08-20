@@ -10,7 +10,7 @@ import { IoPersonCircle } from 'react-icons/io5'
 import { FaRegAddressCard } from 'react-icons/fa'
 import UserPostList from './Pages/UserPostList'
 import brand from '../images/Images/photo_2025-08-04_12-08-19.jpg'
-import { GrDomain } from 'react-icons/gr'
+import { GrDocumentUser, GrDomain } from 'react-icons/gr'
 import { BsMenuButtonWide } from 'react-icons/bs'
 import Editing from './Pages/Editing'
 import AddPostSciene from './Pages/AddPostSciene'
@@ -18,8 +18,12 @@ import science from '../images/Images/science_791187.png'
 import training from '../images/Images/classroom_10748263.png'
 import accept from '../images/Images/transaction_18787427.png'
 import AddPostClass from './Pages/AddPostClass'
-import { PiStudentBold } from 'react-icons/pi'
+import { PiStudentBold, PiTreeStructureLight } from 'react-icons/pi'
 import AddPostCall from './Pages/AddPostCall'
+import { TfiEmail } from 'react-icons/tfi'
+import UserMessages from './Pages/UserMessages'
+import Applications from './Pages/Applications'
+import Tuzilmaqoshish from './Pages/Tuzilmaqoshish'
 
 
 const AdminBox = () => {
@@ -86,6 +90,14 @@ const AdminBox = () => {
     </div>
   </div>
 
+        <div onClick={() => navigate('/admin/Adminpanel/Sturture')} className='admin_menu_card'>
+    <span><PiTreeStructureLight /></span>
+    <div>
+      <h2>Tuzilma bo'limiga ma'lumot qo'shish</h2>
+      <p>Tuzilma bo'limiga ma'lumot qo'shish</p> 
+    </div>
+  </div>
+
 
   <div onClick={() => navigate('/admin/Adminpanel/UserPosts')} className='admin_menu_card'>
     <span><TbCategory /></span>
@@ -96,6 +108,7 @@ const AdminBox = () => {
   </div>
 
 
+
     <div onClick={() => navigate('/admin/Adminpanel/EditToNav')} className='admin_menu_card'>
     <span><BsMenuButtonWide /></span>
     <div>
@@ -103,6 +116,26 @@ const AdminBox = () => {
       <p>Navbar va footerni tahrirlashingiz mumkin</p> 
     </div>
   </div>
+
+  
+    <div onClick={() => navigate('/admin/Adminpanel/Alloffers')} className='admin_menu_card'>
+    <span><TfiEmail /></span>
+    <div>
+      <h2>Takliflar va xabarlar</h2>
+      <p>Talabalardan kelgan takliflar</p> 
+    </div>
+  </div>
+
+ 
+    <div onClick={() => navigate('/admin/Adminpanel/Application')} className='admin_menu_card'>
+    <span><GrDocumentUser /></span>
+    <div>
+      <h2>Xorijiy fuqorolardan kelgan arizalar</h2>
+      <p>Arizalar </p> 
+    </div>
+  </div>
+
+
 
 </div>
 
@@ -119,6 +152,9 @@ const AdminBox = () => {
                    <Route path="Qabul" element={<AddPostCall />} />
         <Route path="UserPosts" element={<UserPostList />} />
         <Route path="EditToNav" element={<Editing />} />
+             <Route path="Alloffers" element={<UserMessages />} />
+                   <Route path="Application" element={<Applications />} />
+                                   <Route path="Sturture" element={<Tuzilmaqoshish />} />
       </Routes>
  </div>
  </div>

@@ -20,20 +20,27 @@ const Article = () => {
 <h1>{t("latest_scientific_articles")}</h1>
 <div className='download_box'>
 <div className='download'>
-<span>1.</span>
-<h3>{t("mesi_bulletin")}</h3>
-<button><span><HiDownload /></span>{t("download")}</button>
+  <span>1.</span>
+  <h3>{t("mesi_bulletin")}</h3>
+  <a 
+    href="/files/Botir-Zokirov-nomidagi-MESI-xabarlari.pdf" 
+    download 
+    className="download-btn"
+  >
+    <span><HiDownload /></span> {t("download")}
+  </a>
 </div>
 
 <div className='download'>
-<span>1.</span>
-<h3>{t("mesi_bulletin")}</h3>
-<button><span><HiDownload /></span>{t("download")}</button>
-</div>
-<div className='download'>
-<span>1.</span>
-<h3>{t("mesi_bulletin")}</h3>
-<button><span><HiDownload /></span>{t("download")}</button>
+  <span>1.</span>
+  <h3>{t("mesi_bulletin")}</h3>
+  <a 
+    href="/files/Botir-Zokirov-nomidagi-MESI-xabarlari.pdf" 
+    download 
+    className="download-btn"
+  >
+    <span><HiDownload /></span> {t("download")}
+  </a>
 </div>
 </div>
 </div>

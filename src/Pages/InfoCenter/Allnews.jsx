@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './News.css';
 import { FaRegClock } from 'react-icons/fa';
-import { FiPhoneCall } from 'react-icons/fi';
-import {
-  MdNewspaper,
-  MdOutlineKeyboardArrowLeft,
-  MdOutlineKeyboardArrowRight,
-} from 'react-icons/md';
+import { MdNewspaper,} from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import { IoMenu } from 'react-icons/io5';
 import Newsrep from './Newsrep';
@@ -23,10 +18,7 @@ const Allnews = () => {
   const navigate = useNavigate();
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [showRightSidebar, setShowRightSidebar] = useState(false);
-  const [selectedNews, setSelectedNews] = useState(null);
-  const handleClick = (newsData) => {
-    setSelectedNews(newsData);
-  };
+
 
   useEffect(() => {
 
@@ -59,19 +51,11 @@ const Allnews = () => {
     <div className='all_news_row'>
       {/* Chap qism */}
       <div className='allnews_center'> 
-        {selectedNews ? (
-          <AllnewsInner data={selectedNews} onBack={() => setSelectedNews(null)} />
-        ) : (
-          <>
+      
             <div className='news_card yangiliklar_card_cen'> 
               <div className='news_img'></div>
               <div className='news_text'>
-                <h2 onClick={() => handleClick({
-                  title: t("yangi_text"),
-                  date: "04/24/2025",
-                  category: t("yang"),
-                  // boshqa kerakli ma'lumotlar
-                })}>
+                <h2 onClick={()=>navigate('/News/Allnews/AllmewsInner')}>
                   {t("yangi_text")}
                 </h2>
               </div>
@@ -82,8 +66,87 @@ const Allnews = () => {
             </div>
   
             {/* boshqa news_card lar ham shu usulda */}
-          </>
-        )}
+      
+
+
+
+{/*statik malumotlar ochirilishi kerak bolgan page*/}
+      <div className='news_card yangiliklar_card_cen'> 
+              <div className='news_img news_img_stat2'></div>
+              <div className='news_text'>
+                <h2 >
+                  2025/2026 o‘quv yili 2-kursi uchun qayta taqsimlanadigan ta’lim grantlari o‘rinlari e’lon qilindi!
+                </h2>
+              </div>
+              <div className='news_icons'>
+                <p><span><MdNewspaper /></span>{t("yang")}</p>
+                <p><span><FaRegClock /></span>04/24/2025</p>
+              </div>
+            </div>
+
+
+                  <div className='news_card yangiliklar_card_cen'> 
+              <div className='news_img news_img_stat3'></div>
+              <div className='news_text'>
+                <h2 >
+               “Anti- korrupsiya” bilimdoni bilimlar bellashuvi bo‘lib o‘tdi
+                </h2>
+              </div>
+              <div className='news_icons'>
+                <p><span><MdNewspaper /></span>{t("yang")}</p>
+                <p><span><FaRegClock /></span>04/24/2025</p>
+              </div>
+            </div>
+
+
+
+                  <div className='news_card yangiliklar_card_cen'> 
+              <div className='news_img news_img_stat4'></div>
+              <div className='news_text'>
+                <h2 >
+                 Hamid Olimjon tavalludining 115-yilligiga bag‘ishlangan anjuman doirasidagi konsert dasturi
+                </h2>
+              </div>
+              <div className='news_icons'>
+                <p><span><MdNewspaper /></span>{t("yang")}</p>
+                <p><span><FaRegClock /></span>04/24/2025</p>
+              </div>
+            </div>
+
+
+
+                  <div className='news_card yangiliklar_card_cen'> 
+              <div className='news_img news_img_stat5'></div>
+              <div className='news_text'>
+                <h2 >
+                  “Ma’rifat ulashib” loyihasi doirasida ijodkorlar bilan uchrashuv
+                </h2>
+              </div>
+              <div className='news_icons'>
+                <p><span><MdNewspaper /></span>{t("yang")}</p>
+                <p><span><FaRegClock /></span>04/24/2025</p>
+              </div>
+            </div>
+
+
+
+                  <div className='news_card yangiliklar_card_cen'> 
+              <div className='news_img news_img_stat6'></div>
+              <div className='news_text'>
+                <h2 >
+                 “O’zbekiston Respublikasi Konstitutsiyasi” mavzusida ochiq dars o’tkazdi
+                </h2>
+              </div>
+              <div className='news_icons'>
+                <p><span><MdNewspaper /></span>{t("yang")}</p>
+                <p><span><FaRegClock /></span>04/24/2025</p>
+              </div>
+            </div>
+{/*statik malumotlar ochirilishi kerak bolgan page*/}
+
+
+
+
       </div>
   
       {/* O‘ng qism */}

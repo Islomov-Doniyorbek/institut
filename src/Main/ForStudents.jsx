@@ -34,7 +34,7 @@ function ForStudents() {
           </div>
 
           <div className="forstudent_box">
-            <div className="forstudent_col">
+            <div className="forstudent_col forstudent_col-stat2">
               <div className="forstudent_card">
                 <div className="forstudent_card_icon">
                   <span>
@@ -56,7 +56,7 @@ function ForStudents() {
           </div>
 
           <div className="forstudent_box">
-            <div className="forstudent_col">
+            <div className="forstudent_col forstudent_col-stat3">
               <div className="forstudent_card">
                 <div className="forstudent_card_icon">
                   <span>

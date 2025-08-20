@@ -44,6 +44,9 @@ Ushbu seminarda Botir Zokirov nomidagi Milliy estrada san’ati institutining ps
 </div>
 </div>
       </div>
+
+
+      
     </div>
   )
 }

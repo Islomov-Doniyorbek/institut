@@ -4,11 +4,12 @@ import Layout from "./layout";
 import Admin from "./Admin/Admin";
 import { routes } from './routes';
 import './Dark.css'
-
 import "./App.css";
 import "./Main.css";
 import { useEffect, useState } from "react";
 import Loader from "./components/loader";
+import AllnewsInner from "./Pages/InfoCenter/AllnewsInner";
+import EventInner from "./Pages/InfoCenter/EventInner";
 
 function App() {
 
@@ -31,8 +32,9 @@ function App() {
       {loading && <Loader/>}
       <Routes>
         <Route path="/admin/*" element={<Admin />} />
-
         <Route path="/" element={<Layout />}>
+        <Route path="/News/Allnews/AllmewsInner" element={<AllnewsInner />} />
+            <Route path="/News/Events/EventsInner" element={<EventInner/>} />
           <Route index element={<Komponents />} />
 
           {routes.map(({ path, element }) => (

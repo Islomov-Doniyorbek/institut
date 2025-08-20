@@ -1,8 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { IoIosArrowForward } from 'react-icons/io';
+import { useNavigate } from 'react-router-dom';
 
 
 function Main() {
+  const navigate=useNavigate()
   const {t }=useTranslation()
   return (
     <div className='main_box'>
@@ -10,7 +12,7 @@ function Main() {
           <div className='main_text'>
           <h1>{t("per-name")}</h1>
           <p>{t("est-asos")}</p>
-          <button >{t("bataf")}<span><IoIosArrowForward /></span></button>
+          <button onClick={()=>navigate("/Institut/Botir Zokirov hayoti va ijodi")}>{t("bataf")}<span><IoIosArrowForward /></span></button>
           </div>
           </div>
           <div className='main_box_bottom'>

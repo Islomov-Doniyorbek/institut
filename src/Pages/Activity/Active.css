@@ -76,7 +76,7 @@ padding: 40px 0px 40px 70px !important;
 .download{ justify-content: space-between; display: flex; align-items: center;  padding: 20px 0px; border-top: 1px solid #1A5950;}
 .download span{font-size: 17px;}
 .download h3{font-size: 17px; font-family: 'Montserrat'; font-weight: 500;}
-.download button{padding: 5px 10px; display: flex; font-size: 15px; align-items: center; border: none; background-color: #0058af;
+.download a{padding: 5px 10px; display: flex; font-size: 15px; align-items: center; border: none; background-color: #0058af;
 border-radius: 10px; color: white;}
 .download button span{margin-right: 4px;}
 

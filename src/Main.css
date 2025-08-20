@@ -96,7 +96,7 @@
     .news h1{display: flex; justify-content: center; line-height: 60px; font-family: "Montserrat"; color: #002e5b;
     font-weight: 700;      font-size: 45px; margin-bottom: 30px;}
     .news_row{display: flex; align-items: center; width: 100%; flex-wrap: nowrap; overflow: hidden;}
-    .news_card{width: 25%; border-radius: 10px; height: auto; padding: 10px;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; margin: 10px 10px;}
+    .news_card{width: 25%; border-radius: 10px; height: auto; padding: 10px;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; margin: 10px 10px !important;}
   .news_text {
   height: 130px;
   overflow-y: scroll;
@@ -124,9 +124,9 @@
   
   .news_button button:hover{background-color: #024c96;}
   .news_img{width: 100%; height: 200px; background-image: url('../src/Images/photo_2025-07-20_14-03-41.jpg'); background-position: center; background-size: cover;}
-
-  
-    
+.news_img_stat2{background-image: url('../src/ImagesStatik/news1.jpg ') !important;}
+  .news_img_stat3{background-image: url('../src/ImagesStatik/news2.jpg ') !important;}
+    .news_img_stat4{background-image: url('../src/ImagesStatik/news3.jpg ') !important;}
 
 
 .link{width: auto; height: auto; margin-top: 0px; padding: 80px 0px 100px 60px;  background-color: #F2F2F2F2;}
@@ -144,8 +144,8 @@
   }
   .links_col:hover h2{color: #1a5950 !important;}
   .links_col:hover b{color: #1a5950 !important;}
+.links_col a{width: calc(100% - 100px);}
 
-.link_texts{width: calc(100% - 100px);}
 
 .link_icon{ width: 80px; display: flex; justify-content: center; align-items: center;
   height: 70px; margin-right: 20px; color: #1a5950;
@@ -224,7 +224,8 @@ text-align: center;
     .event_line{display: flex; justify-content: center; align-items: center;}
     .event_line p{ width: 60px; height: 8px; background-color: #002e5b;}
 .eventt_img{width: 100%; height: 220px; background-image: url('./Images/events.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 10px;}
-.event_row{margin-top: 40px; display: flex; width: 100%;} 
+.eventtt_img{ width: 100%; height: 220px;  background-image: url('./Images/events.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; border-radius: 10px;}
+.event_row{margin-top: 40px; display: flex; width: 100%; padding: 0px 100px !important;} 
 .event_card{width: 32%; margin: 0px 15px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; padding: 10px; border-radius: 10px;}
 .event_text{padding: 20px; height: 120px; overflow: hidden; overflow-y: auto;}
 .event_text h2{    color: #1a5950; font-size: 18px;  font-family:'Montserrat'; margin-bottom: 30px;}
@@ -236,8 +237,9 @@ text-align: center;
 .event_icons p {margin: 5px 0px; font-size: 16px; color: #646464; font-family:'Montserrat'; display: flex; align-items: center;}
 .event_icons p span{font-size: 18px; color: #002e5b; margin-right: 5px; }
 
+.eventt_img_stat2{background-image: url('../src/ImagesStatik/events1.jpg');}
 
-
+.eventt_img_stat3{background-image: url('../src/ImagesStatik/events2.jpg');}
 
 
 
@@ -269,6 +271,9 @@ margin-top: 50px;
 .forstudent_col{ border-radius: 20px;  position: relative; height: 280px; background-repeat: no-repeat; background-size: cover; background-image: url('../src/Images/group-students-throwing-books-air.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;  transition: all 0.3s ease;
 overflow: hidden;
 }
+
+.forstudent_col-stat2{background-image: url('../src/ImagesStatik/madaniy4.jpg') ;}
+.forstudent_col-stat3{background-image: url('../src/ImagesStatik/madaniy5.jpg') ;}
 .forstudent_box:hover{  transform: translateY(-10px);;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
 .forstudent_card {
@@ -503,7 +508,7 @@ height: 150px;
 .event{padding: 30px 20px ;}
 .event h1{font-size: 35px; margin-bottom: 10px !important;}
 .event_line p {width: 40px; height: 5px;}
-.event_row{display: flex; flex-direction: column; }
+.event_row{display: flex; flex-direction: column; padding: 0px !important;}
 .event_card{width: 100%; margin: 10px 0px;}
 .event_icons p{font-size: 13px;}
 .event_icons p span{

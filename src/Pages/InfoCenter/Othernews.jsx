@@ -2,7 +2,7 @@ import React from 'react'
 import { FaRegClock } from 'react-icons/fa'
 import { FiPhoneCall } from 'react-icons/fi'
 
-import announcement2 from '../../Images/active2.jpg'
+import announcement2 from '../../ImagesStatik/elon1.jpg'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 import Newsrep from './Newsrep'
@@ -42,7 +42,7 @@ const {t}=useTranslation()
   </div>
 
   <div className='other_news_box'>
-    <h1>{t("quiz_title")}</h1>
+    <h1>“O’zbek tili- qalbim tarjimoni” respublika ko’rik-tanlovi</h1>
     <div className='news_inner_info'>
       <p><span><FaRegClock /></span>04/24/2025</p>
       <h2><p>{t("posted_by")}:</p> estrada-conserva</h2>

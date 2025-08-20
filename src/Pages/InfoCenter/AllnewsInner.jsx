@@ -1,10 +1,7 @@
 import React from 'react'
 import { FaRegClock } from 'react-icons/fa'
-import { FiPhoneCall } from 'react-icons/fi'
 import news from '../../Images/news7.jpg'
 import news2 from '../../Images/news8.jpg'
-import Newsrep from './Newsrep'
-import ContactComp from '../../components/contactComp'
 const AllnewsInner = () => {
 const text = `Konferensiyada Botir Zokirov nomidagi Milliy estrada san’ati instituti, O’zbekiston davlat konservatoriyasi, Yunus Rajabiy nomidagi O’zbek milliy musiqa san’ati instituti, O’zbekiston Respublikasi fanlar akademiyasi, O’zbekiston davlat san’at va madaniyat instituti, Buxoro ixtisoslashtirilgan san’at maktabi, Farg’ona ixtisoslashtirilgan san’at maktabi, Farg’ona davlat universitetlaridan professor-o’qituvchilar, doktorant va mustaqil izlanuvchilar hamda ilmga izlanuvchan talaba-yoshlar ishtirok etishdi.
 
@@ -15,8 +12,8 @@ Konferensiya davomida musiqiy estrada san’atining kelib chiqishi va rivojlanis
 const paragraphs = text.split(/\.\s+/); 
 
   return (
-    <div className='news_inner'>
-  <div className='news_inner_text'> 
+    <div className='news_inner main_news_inner'>
+  <div className='news_inner_text main_news_inner_text'> 
 <h1>Botir Zokirov nomidagi Milliy estrada san’ati institutida Respublika ilmiy-amaliy anjumani o’tkazildi. </h1>
 <div className='news_inner_info'>
 <p><span><FaRegClock /></span>04/24/2025</p>
