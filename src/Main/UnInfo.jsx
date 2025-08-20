@@ -18,7 +18,7 @@ function CountUp({ target, startAnimation }) {
     if (!startAnimation) return;
 
     let start = 0;
-    const duration = 1500;
+    const duration = 800;
     const stepTime = 20;
     const totalSteps = duration / stepTime;
     const increment = target / totalSteps;
