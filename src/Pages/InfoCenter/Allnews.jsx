@@ -75,12 +75,12 @@ const Allnews = () => {
               <div className='news_img news_img_stat2'></div>
               <div className='news_text'>
                 <h2 >
-                  2025/2026 o‘quv yili 2-kursi uchun qayta taqsimlanadigan ta’lim grantlari o‘rinlari e’lon qilindi!
+                {t("stat_text_1")}
                 </h2>
               </div>
               <div className='news_icons'>
                 <p><span><MdNewspaper /></span>{t("yang")}</p>
-                <p><span><FaRegClock /></span>04/24/2025</p>
+                <p><span><FaRegClock /></span> 04/11/2025</p>
               </div>
             </div>
 
@@ -89,12 +89,12 @@ const Allnews = () => {
               <div className='news_img news_img_stat3'></div>
               <div className='news_text'>
                 <h2 >
-               “Anti- korrupsiya” bilimdoni bilimlar bellashuvi bo‘lib o‘tdi
+                 {t("stat_text_2")}
                 </h2>
               </div>
               <div className='news_icons'>
                 <p><span><MdNewspaper /></span>{t("yang")}</p>
-                <p><span><FaRegClock /></span>04/24/2025</p>
+                <p><span><FaRegClock /></span> 12/13/2024</p>
               </div>
             </div>
 
@@ -104,12 +104,12 @@ const Allnews = () => {
               <div className='news_img news_img_stat4'></div>
               <div className='news_text'>
                 <h2 >
-                 Hamid Olimjon tavalludining 115-yilligiga bag‘ishlangan anjuman doirasidagi konsert dasturi
+                   {t("stat_text_3")}
                 </h2>
               </div>
               <div className='news_icons'>
                 <p><span><MdNewspaper /></span>{t("yang")}</p>
-                <p><span><FaRegClock /></span>04/24/2025</p>
+                <p><span><FaRegClock /></span> 12/12/2024</p>
               </div>
             </div>
 
@@ -119,12 +119,12 @@ const Allnews = () => {
               <div className='news_img news_img_stat5'></div>
               <div className='news_text'>
                 <h2 >
-                  “Ma’rifat ulashib” loyihasi doirasida ijodkorlar bilan uchrashuv
+                 {t("stat_text_4")}
                 </h2>
               </div>
               <div className='news_icons'>
                 <p><span><MdNewspaper /></span>{t("yang")}</p>
-                <p><span><FaRegClock /></span>04/24/2025</p>
+                <p><span><FaRegClock /></span>12/11/2024</p>
               </div>
             </div>
 
@@ -134,12 +134,12 @@ const Allnews = () => {
               <div className='news_img news_img_stat6'></div>
               <div className='news_text'>
                 <h2 >
-                 “O’zbekiston Respublikasi Konstitutsiyasi” mavzusida ochiq dars o’tkazdi
+                   {t("stat_text_5")}
                 </h2>
               </div>
               <div className='news_icons'>
                 <p><span><MdNewspaper /></span>{t("yang")}</p>
-                <p><span><FaRegClock /></span>04/24/2025</p>
+                <p><span><FaRegClock /></span> 12/11/2024</p>
               </div>
             </div>
 {/*statik malumotlar ochirilishi kerak bolgan page*/}

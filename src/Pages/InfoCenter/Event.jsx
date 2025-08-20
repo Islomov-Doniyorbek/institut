@@ -21,11 +21,6 @@ const navigate = useNavigate()
   location: t("eve-locat"),  
 image: "/ImagesStatik/events1.jpg"
 },
-    { title: t("“Raqamli dunyoda talaba-yoshlarning psixologik salomatligi: muammolar va yechimlar” mavzusida seminar"), date: "04/25/2025", time: "10:00 to 12:00", location: t("eve-locat") },
-    { title: t("Milliy qadriyatlar sayli doirasida “Milliy libos – millat qiyofasi, milliy iftixor ifodasi” ko‘rik-tanlovi o‘tkaziladi"), date: "04/26/2025", time: "09:00 to 11:00", location: t("eve-locat") },
-    { title: t("Dirijyor Quvonch Usmonov 90-yilligi munosabati bilan madaniy tadbir"), date: "04/26/2025", time: "09:00 to 11:00", location: t("eve-locat") },
-    { title: t("Ustoz Zaitova Dilfuza Djurayevna “Faxriy professor” diplomi bilan taqdirlandi"), date: "04/26/2025", time: "09:00 to 11:00", location: t("eve-locat") },
-     { title: t("“Zamonaviy ta’lim makonida vokal, xor ijrochiligi madaniyati” mavzusidagi Respublika ilmiy-amaliy konferensiya"), date: "04/26/2025", time: "09:00 to 11:00", location: t("eve-locat") }
   ];   
   const handleChange =()=>{
 navigate("/News/Events/EventsInner")
@@ -58,6 +53,78 @@ navigate("/News/Events/EventsInner")
             </div>
           ))
         )}
+
+ <div className='news_card eventss_card' >
+              <div className='eventtt_img eventt_img_stat2' ></div>
+              <div className='news_text eventss_text'>
+                <h2>{t("stat_evenet_text")}</h2>
+              </div>
+              <div className='news_icons'>
+               <p><span><MdNewspaper /></span>10/22/2024</p>
+                <p><span><FaRegClock /></span>10:00 to 15:30</p>
+                <p><span><FaLocationDot /></span>{t("eve-locat")}</p>
+              </div>
+            </div>
+
+
+             <div className='news_card eventss_card' >
+              <div className='eventtt_img eventt_img_stat3' ></div>
+              <div className='news_text eventss_text'>
+              <h2>{t("stat_evenet_text2")}</h2>
+              </div>
+              <div className='news_icons'>
+               <p><span><MdNewspaper /></span>11/08/2024</p>
+                <p><span><FaRegClock /></span>10:00 to 00:30</p>
+                <p><span><FaLocationDot /></span>{t("eve-locat")}</p>
+              </div>
+            </div>
+
+
+
+
+ <div className='news_card eventss_card' >
+              <div className='eventtt_img eventt_img_stat4' ></div>
+              <div className='news_text eventss_text'>
+                <h2>{t("stat_evenet_text3")}</h2>
+              </div>
+              <div className='news_icons'>
+               <p><span><MdNewspaper /></span>11/26/2024</p>
+                <p><span><FaRegClock /></span>22:00 to 23:30</p>
+                <p><span><FaLocationDot /></span>{t("eve-locat")}</p>
+              </div>
+            </div>
+
+
+
+
+ <div className='news_card eventss_card' >
+              <div className='eventtt_img eventt_img_stat5' ></div>
+              <div className='news_text eventss_text'>
+               <h2>{t("stat_evenet_text4")}</h2>
+              </div>
+              <div className='news_icons'>
+               <p><span><MdNewspaper /></span>12/10/2024</p>
+                <p><span><FaRegClock /></span>22:00 to 23:30</p>
+                <p><span><FaLocationDot /></span>{t("eve-locat")}</p>
+              </div>
+            </div>
+
+
+
+
+ <div className='news_card eventss_card' >
+              <div className='eventtt_img eventt_img_stat6' ></div>
+              <div className='news_text eventss_text'>
+              <h2>{t("stat_evenet_text5")}</h2>
+              </div>
+              <div className='news_icons'>
+               <p><span><MdNewspaper /></span>12/12/2024</p>
+                <p><span><FaRegClock /></span>22:00 to 23:30</p>
+                <p><span><FaLocationDot /></span>{t("eve-locat")}</p>
+              </div>
+            </div>
+
+
       </div>
 
       {!selectedEvent && (

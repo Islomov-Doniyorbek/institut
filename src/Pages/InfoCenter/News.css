@@ -322,6 +322,17 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .main_news_inner{padding: 60px !important; width: 100%; display: flex; justify-content: center; align-items: center;}
 .main_news_inner_text{width: 70%; padding: 40px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
 
+
+
+
+
+.eventt_img_stat4{background-image: url('../../ImagesStatik/events3.jpg') !important;}
+.eventt_img_stat5{background-image: url('../../ImagesStatik/events4.jpg') !important;}
+.eventt_img_stat6{background-image: url('../../ImagesStatik/events5.jpg') !important;}
+
+
+
+
     @media (max-width:1024px){
 
 .all_news_row{display: flex; flex-direction: column;}
@@ -397,6 +408,10 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .document_box_center{padding: 40px 10px;}
 .document_img {width: 100%;  display: flex !important; justify-content: center !important; align-items: center !important;}
 .document_img img{width: 500px; height: auto;}
+
+
+
+
 
 
  }@media (max-width:767px){
