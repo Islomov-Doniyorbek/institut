@@ -2,13 +2,14 @@ import React from 'react'
 import ActiveTopPage from '../../components/activeTopPage'
 import NotFoundPage from '../../components/404'
 
-const Tuzilma = () => {
+const Tarkib = () => {
   return (
     <div>
-      <ActiveTopPage pageTitle={"Institut tuzilmasi"}/>
+      <ActiveTopPage pageTitle={"Tarkibiy tuzilma"}/>
       <NotFoundPage/>
     </div>
+  
   )
 }
 
-export default Tuzilma
+export default Tarkib
