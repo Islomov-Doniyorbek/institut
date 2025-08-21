@@ -170,7 +170,7 @@ body.dark  .other_news_box{background-color: #2c2c2c;}
 body.dark .news_inner_text h1{color: #f1f1f1 !important;}
 
 body.dark .othernews_inner p{color: #0069cc !important;}
-
+body.dark .achive_send_card h1{color: #0069cc !important;}
 
     @media (max-width:767px){
     body.dark  .allnews_center{background-color: #121212 !important;}
