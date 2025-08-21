@@ -329,8 +329,12 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .eventt_img_stat4{background-image: url('../../ImagesStatik/events3.jpg') !important;}
 .eventt_img_stat5{background-image: url('../../ImagesStatik/events4.jpg') !important;}
 .eventt_img_stat6{background-image: url('../../ImagesStatik/events5.jpg') !important;}
-
-
+.news_img_stat7{
+  background-image: url('../../ImagesStatik/news9.jpg') !important;
+}
+.news_img_stat8{
+  background-image: url('../../ImagesStatik/news10.jpg') !important;
+}
 
 
     @media (max-width:1024px){

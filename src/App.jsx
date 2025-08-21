@@ -11,6 +11,7 @@ import Loader from "./components/loader";
 import AllnewsInner from "./Pages/InfoCenter/AllnewsInner";
 import EventInner from "./Pages/InfoCenter/EventInner";
 
+
 function App() {
 
   const location = useLocation()
