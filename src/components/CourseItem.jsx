@@ -141,4 +141,5 @@ const CourseItem = ({ title, yoNalishlar }) => {
   );
 };
 
+
 export default CourseItem;

@@ -76,13 +76,12 @@
   background-color: white;
   padding: 5px !important;
   margin-left: 40px;
-  transition: border-radius 0.3s ease; /* chiroyli o'tishi uchun */
+  transition: border-radius 0.3s ease; 
 }
 
 
-/* Ochilganda past radius yo'qoladi */
 .nav-border.open {
-  border-radius: 30px 30px 0px 0px !important; /* faqat tepasi yumaloq */
+  border-radius: 30px 30px 0px 0px !important; 
 }
 
 
@@ -93,7 +92,7 @@
   display: flex; justify-content: center; align-items: center;
 }
 
-/* Menyu */
+
 .nav-me-list {
 
   flex-direction: column;
@@ -101,32 +100,27 @@
   gap: 10px;
   transition: all 0.3s ease;
   position: absolute;
-  top: 82%; /* nav-border pastidan boshlansin */
-  left: 0; /* chap tomondan boshlansin */
-  width: 100%; /* nav-border bilan bir xil kenglik */
+  top: 82%; 
+  left: 0; 
+  width: 100%;
   background: white;
-  border-radius: 0px 0px 30px 30px; /* pastini yumaloqlash */
+  border-radius: 0px 0px 30px 30px; 
   z-index: 999;
   padding: 15px 0px !important;
 }
-
 .nav-me-list button {
   font-size: 20px !important;
   border: none;
 font-weight: 600;
   background-color: transparent;
 }
-
-
 .sun_mode p{font-size: 32px !important;}
-
-
 .moon{font-size: 25px !important;}
 
 @media (max-width: 767px){
   .nav-border {
     margin-top: 25px !important;
-    position: fixed !important; /* butun ekran bo‘yicha */
+    position: fixed !important;
     top: 40px !important; 
     right: 10px !important;
     width: 40px !important;
@@ -147,7 +141,7 @@ font-weight: 600;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-    z-index: 2147483647 !important; /* eng katta z-index */
+    z-index: 2147483647 !important; 
   }
   .nav-bor-menu span{
     font-size: 17px !important;

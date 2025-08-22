@@ -28,4 +28,4 @@ const AdminLog = () => {
   )
 }
 
-export default AdminLog
+export default AdminLog;

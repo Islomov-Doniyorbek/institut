@@ -14,6 +14,10 @@ function Links() {
      const handleNext=()=>{
 navigate("/Talim/DarsJadvali")
      }
+ const handleChange=()=>{
+navigate("/Talim/DarsJadvali")
+}
+
   return (
    <div className='link'> 
 <h1>{t("havola")}</h1>
@@ -22,20 +26,24 @@ navigate("/Talim/DarsJadvali")
   <div className='link_icon'>
 <span className='link_inner'><LiaUniversitySolid /></span>
 </div>
+<a  href="https://hemis.estrada-art.uz/dashboard/login" target="_blank" rel="noopener noreferrer">
 <div className='link_texts'>
     <h2>{t("hemis-otm")}</h2>
     <b>{t("bataf")}</b>
 </div>
+</a>
 </div>
 
 <div className='links_col '>
   <div className='link_icon'>
 <span className='link_inner'><FaRegIdCard /></span>
 </div>
+<a  href="https://hemis.estrada-art.uz/dashboard/login" target="_blank" rel="noopener noreferrer">
 <div className='link_texts'>
     <h2>{t("hemis-stu")}</h2>
     <b>{t("bataf")}</b>
 </div>
+</a>
 </div>
 
 
@@ -43,7 +51,7 @@ navigate("/Talim/DarsJadvali")
   <div className='link_icon'>
 <span className='link_inner'><PiTableFill /></span>
 </div>
-<div className='link_texts'>
+<div className='link_texts' onClick={handleChange}>
     <h2 onClick={handleNext}>{t("les_table")}</h2>
     <b>{t("bataf")}</b>
 </div>
@@ -82,10 +90,12 @@ navigate("/Talim/DarsJadvali")
   <div className='link_icon'>
 <span className='link_inner'><MdOutlineMail /></span>
 </div>
+      <a href="info@estrada-art.uz" target="_blank" rel="noopener noreferrer">
 <div className='link_texts'>
     <h2>{t("elk_email")}</h2>
     <b>{t("bataf")}</b>
 </div>
+</a>
 </div>
 
 

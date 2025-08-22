@@ -40,7 +40,7 @@ const UserMessages = () => {
     },
   ];
 
-  // Sahifa yuklanganda bitta nom bilan localStorage ga saqlash
+
   useEffect(() => {
     localStorage.setItem("xabarlar", JSON.stringify(data));
   }, []);
@@ -65,3 +65,13 @@ const UserMessages = () => {
 };
 
 export default UserMessages;
+
+
+
+
+
+
+
+
+
+

@@ -3,6 +3,7 @@ import { FiPhoneCall } from 'react-icons/fi'
 import news from '../../Images/photo_2025-07-20_14-03-41.jpg';
 import { useTranslation } from 'react-i18next';
 const Newsrep = () => {
+  
 const {t}=useTranslation()
   const [allNews, setAllNews] = useState([]);
   useEffect(() => {

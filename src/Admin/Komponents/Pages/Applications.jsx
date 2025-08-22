@@ -38,7 +38,6 @@ const Applications = () => {
 <h2><p>Ariza yuborilgan sana :</p>01.01.2025</h2>
       </div>
 </div>
-
 <div className='ariza_img_box'>
 <div className='ariza_img_card'>
     <h2>FOTOSURAT 3x4:</h2>
@@ -68,3 +67,13 @@ const Applications = () => {
 }
 
 export default Applications
+
+
+
+
+
+
+
+
+
+

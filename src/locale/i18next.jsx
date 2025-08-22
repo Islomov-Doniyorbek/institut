@@ -13,11 +13,11 @@ const resources = {
 };
 
 i18n
-  .use(initReactI18next) // react-i18next ulanishi
+  .use(initReactI18next) 
   .init({
     resources,
-    lng: cookie.load("tilTanish") ? cookie.load("tilTanish") : "uz", // boshlang‘ich til
-    fallbackLng: "uz", // agar til topilmasa
+    lng: cookie.load("tilTanish") ? cookie.load("tilTanish") : "uz", 
+    fallbackLng: "uz", 
     keySeparator: false,
     interpolation: {
       escapeValue: false

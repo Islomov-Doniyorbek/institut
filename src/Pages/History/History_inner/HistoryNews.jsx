@@ -89,3 +89,14 @@ const handleOpen = ()=>{
 }
 
 export default HistoryNews
+
+
+
+
+
+
+
+
+
+
+

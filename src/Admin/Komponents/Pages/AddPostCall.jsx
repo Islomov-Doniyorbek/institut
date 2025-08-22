@@ -416,3 +416,6 @@ Qabul komissiyasi mas’ul kotibi</p>
 };
 
 export default AddPostCall;
+
+
+

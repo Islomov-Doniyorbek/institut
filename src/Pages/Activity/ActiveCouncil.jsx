@@ -14,15 +14,15 @@ const ActiveCouncil = () => {
          <ActiveTopPage pageTitle={t("councils")} />
 
        <div className='active_con'>
-<div className='conuncil_row'>
+<div className='conuncil_row  kengash_bolinma'>
  <h1>{t("scientific_councils")}</h1>
 <div className='article_text'>
   <h1>{t("about_scientific_councils")}</h1>
 <div className='download_box kengash_box'>
-  <div className='download '>
+  <div className='download kengash_yuklanma'>
 <span>1.</span>
   <h3>{t("scientific_councils_title")}</h3>
-<button>
+<button className='ilmiy_kengash'>
   <a
     href="/images/ILMIY-KENGASH.doc"
     download

@@ -99,12 +99,35 @@ border-radius: 10px; color: white;}
 
 
 
+.ilmiy_download{border: none !important; color: white;}
+.ilmiy_kengash{border: none !important; color: white;}
+.kengash_box{height: 220px !important; overflow: hidden !important; overflow-y: auto !important;}
+
+.ilmiy_download_see{border: none !important; display: flex !important; justify-content: center !important;
+align-items: center !important; color: white; border-radius: 10px ; padding: 6px; background-color: rgb(243, 198, 0) !important; }
+
+.ilmiy_download_see span{ font-size: 20px !important; display: flex !important; justify-content: center !important;
+align-items: center !important; margin-left: 5px !important; padding: 5px 0px !important;}
+.ilmiy_download_see:hover{background-color: rgb(94, 76, 0) !important;}   
+
+.ilmiy_loyiha_modal{padding: 20px !important;}
+.ilmiy_loyiha_modal h1{
+  font-size: 20px !important; padding: 10px; border: 1px solid #0058af; border-radius: 10px;
+}
+.ilmiy_loyiha_modal h2{
+  font-size: 18px !important; padding: 10px; border: 1px solid #474747; border-radius: 10px;
+}
+
+.ilmiy_loyiha_can{width: 100% !important; display: flex !important; justify-content: flex-end !important; align-items: end !important;}
+.ilmiy_loyiha_can span{font-size: 20px !important; display: flex; justify-content: center; padding: 5px; 
+  border-radius: 5px; color: white; background-color: red;}
+ 
 
 
+.kengash_bolinma{margin-right: 20px !important;}
 
 
-
-    @media (max-width:1024px){
+@media (max-width:1024px){
 
 .active_padd{padding: 30px 40px 70px 40px;}
 .active_top{padding: 20px 0px 20px 70px; height: auto !important;}
@@ -179,4 +202,15 @@ border-radius: 10px; color: white;}
 .download button{font-size: 9px;}
 
 .active-alw{width: 100% !important; margin-right: 20px;}
+
+.download a{font-size: 10px !important;}
+.ilmiy_download_see{padding: 4px !important;}
+.ilmiy_download_see span{font-size: 14px !important;}
+.ilmiy_loyiha_modal{padding: 10px !important;}
+.ilmiy_loyiha_modal h1{
+  font-size: 16px !important;
+}
+.ilmiy_loyiha_modal h2{
+  font-size: 16px !important; 
+}
 }

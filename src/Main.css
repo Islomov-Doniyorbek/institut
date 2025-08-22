@@ -195,7 +195,7 @@ text-align: center;
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Qoraroq qilish: 0.4 → 40% qora */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
