@@ -11,6 +11,15 @@ const navigate = useNavigate()
     const handleChange =()=>{
 navigate("/News/Events/EventsInner")
     }
+    const handleChanges =()=>{
+      navigate("/News/Events/EventsInner2")
+          }
+
+
+          const handleStat =()=>{
+            navigate("/News/Events/EventsInner3")
+                }
+
   return (
     <Container>
       <div className='event'>
@@ -36,7 +45,7 @@ navigate("/News/Events/EventsInner")
         <div className='event_card'>
            <div className='eventt_img eventt_img_stat2'></div>
         <div className='event_text'>
-        <h2>“Raqamli dunyoda talaba-yoshlarning psixologik salomatligi: muammolar va yechimlar” mavzusida seminar</h2>
+        <h2 onClick={handleChanges}>“Raqamli dunyoda talaba-yoshlarning psixologik salomatligi: muammolar va yechimlar” mavzusida seminar</h2>
         </div>
         <div className='event_icons'>
         <p><span><FaRegCalendarAlt /></span>10/14/2024</p>
@@ -49,7 +58,7 @@ navigate("/News/Events/EventsInner")
         <div className='event_card'>
          <div className='eventt_img eventt_img_stat3'></div>
         <div className='event_text'>
-        <h2>Milliy qadriyatlar sayli doirasida “Milliy libos – millat qiyofasi, milliy iftixor ifodasi” ko‘rik-tanlovi o‘tkaziladi</h2>
+        <h2  onClick={handleStat}>Milliy qadriyatlar sayli doirasida “Milliy libos – millat qiyofasi, milliy iftixor ifodasi” ko‘rik-tanlovi o‘tkaziladi</h2>
         </div>
         <div className='event_icons'>
         <p><span><FaRegCalendarAlt /></span>10/14/2024</p>

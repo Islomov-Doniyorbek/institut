@@ -10,6 +10,8 @@ import { useEffect, useState } from "react";
 import Loader from "./components/loader";
 import AllnewsInner from "./Pages/InfoCenter/AllnewsInner";
 import EventInner from "./Pages/InfoCenter/EventInner";
+import EventInnerr from "./Pages/InfoCenter/StatInners/EventInnerr";
+import EventsInnerrr from "./Pages/InfoCenter/StatInners/EventsInnerrr";
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
         <Route path="/" element={<Layout />}>
         <Route path="/News/Allnews/AllmewsInner" element={<AllnewsInner />} />
             <Route path="/News/Events/EventsInner" element={<EventInner/>} />
+            <Route path="/News/Events/EventsInner2" element={<EventInnerr/>} />
+            <Route path="/News/Events/EventsInner3" element={<EventsInnerrr/>} />
           <Route index element={<Komponents />} />
 
           {routes.map(({ path, element }) => (

@@ -280,7 +280,13 @@ padding: 40px 0px;   background-color: #1A5950; border-radius: 0px 0px 20px 20px
   height: 500px;
   overflow: hidden;
 }
+.event_inner_img3{
+  background-image: url("../../ImagesStatik/events1.jpg") !important;
+}
 
+.event_inner_img4{
+  background-image: url("../../ImagesStatik/events2.jpg") !important;
+}
 .event_inner_icon {
   position: absolute;
   bottom: 0;

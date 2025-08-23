@@ -26,6 +26,7 @@ image: "/ImagesStatik/events1.jpg"
 navigate("/News/Events/EventsInner")
     }
 
+
   return (
     <div className='eventss'>
       <ActiveTopPage pageTitle={t("event")} />
