@@ -11,7 +11,7 @@ const ContactComp = () => {
             <h1>{t("dear_user")}</h1>
             <p>{t("institute_contact_info")}</p>
         </div>
-        <button className='phone_way'><span><FiPhoneCall /></span>{t("download")}</button>
+        <button className='phone_way'><span><FiPhoneCall /></span>{t("connect")}</button>
     </div>
   )
 }

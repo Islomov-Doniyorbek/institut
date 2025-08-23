@@ -124,9 +124,7 @@
   
   .news_button button:hover{background-color: #024c96;}
   .news_img{width: 100%; height: 200px; background-image: url('../src/Images/photo_2025-07-20_14-03-41.jpg'); background-position: center; background-size: cover;}
-.news_img_stat2{background-image: url('../src/ImagesStatik/news1.jpg ') !important;}
-  .news_img_stat3{background-image: url('../src/ImagesStatik/news2.jpg ') !important;}
-    .news_img_stat4{background-image: url('../src/ImagesStatik/news3.jpg ') !important;}
+
 
 
 .link{width: auto; height: auto; margin-top: 0px; padding: 80px 0px 100px 60px;  background-color: #F2F2F2F2;}
@@ -316,6 +314,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8p
 
 
 .map_box{width: 100%; height: 400px; }
+
 
 
 
