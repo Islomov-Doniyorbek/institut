@@ -7,63 +7,71 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: navy;
-    position: absolute;
+    background: rgba(255, 255, 255, 0.6); /* oq, biroz shaffof */
+    backdrop-filter: blur(8px); /* orqa fonni xira qiladi */
+    -webkit-backdrop-filter: blur(8px); /* Safari uchun */
+    position: fixed; /* absolute emas */
     top: 0;
     left: 0;
-    z-index: 900;
-    width: 100%;
+    z-index: 9999;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
-section .container {
-    display: flex;
-}
 section .container .circle {
     position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 0 -7.5px;
-}
-section .container .circle span {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: inline-block;
+    border-radius: 50%;      /* aylana shakl */
+    overflow: hidden;        /* tashqariga chiqmasin */
+    width: 280px;            /* img eni */
+    height: 280px;           /* img bo‘yi */
+  }
+  
+  section .container .circle img {
     width: 100%;
     height: 100%;
-    transform: rotate(calc(18deg * var(--i)));
-}
-section .container .circle span::before {
-    content: '';
+    object-fit: cover;       /* rasmni moslashtirish */
+  }
+  
+  /* Shine effekt */
+  section .container .circle::after {
+    content: "";
     position: absolute;
-    right: 0;
-    top: calc(50% - 7.5px);
-    width: 15px;
-    height: 15px;
-    background-color: aqua;
-    border-radius: 50%;
-    box-shadow: 0 0 10px aqua,
-    0 0 20px aqua,
-    0 0 40px aqua,
-    0 0 60px aqua,
-    0 0 80px aqua,
-    0 0 100px azure;
-    transform: scale(0.1);
-    animation: animate 0.8s linear infinite;
-    animation-delay: calc(0.02s * var(--i));
-}
-@keyframes animate {
+    top: -50%;
+    left: -75%;
+    width: 15%;
+    height: 200%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-20deg);
+    animation: shine 2.5s infinite;
+  }
+  
+  @keyframes shine {
     0% {
-        transform: scale(1);
+      left: -75%;
     }
-    50%,100% {
-        transform: scale(0.1);
+    100% {
+      left: 125%;
     }
-}
+  }
 section .container .circle:nth-child(2) {
     transform: rotate(-180deg);
 }
 section .container .circle:nth-child(2) span::before {
     animation-delay: calc(-0.02s * (var(--i) - 0.1));
 }
+
+
+
+    @media (max-width:767px){
+        section .container .circle {
+            width: 150px !important; 
+            height: 150px !important;
+            margin-top: -200px !important; /* logoni tepaga ko‘taradi */
+        } 
+    }

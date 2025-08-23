@@ -1,16 +1,27 @@
-import React from 'react';
-import './loader.css'; // CSS faylni alohida yozamiz
+import React, { useEffect, useState } from 'react';
+import './loader.css';
+import loader from '../Images/main_doc-removebg-preview.png';
 
 const Loader = () => {
-  const spans = Array.from({ length: 20 }, (_, i) => (
-    <span key={i} style={{ "--i": i + 1 }}></span>
-  ));
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // 4 soniyadan keyin loaderni yo'qotamiz
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 6000);
+
+    return () => clearTimeout(timer); // cleanup
+  }, []);
+
+  if (!loading) return null; // loader o'chgandan keyin hech narsa qaytarmaydi
 
   return (
     <section>
       <div className="container">
-        <div className="circle">{spans}</div>
-        <div className="circle">{spans}</div>
+        <div className="circle">
+          <img src={loader} alt="loader" />
+        </div>
       </div>
     </section>
   );
