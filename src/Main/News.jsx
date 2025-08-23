@@ -31,7 +31,7 @@ const onChange =()=>{
       </div>
       
             <div className='news_card'> 
-<div className='news_img '>
+<div className='news_img  yangilik_stat_rasm1'>
  </div>
 <div className='news_text'>
 <h2>2025/2026 o‘quv yili 2-kursi uchun qayta taqsimlanadigan ta’lim grantlari o‘rinlari e’lon qilindi! 
@@ -45,7 +45,7 @@ const onChange =()=>{
        
        
                  <div className='news_card'> 
-<div className='news_img '>
+<div className='news_img  yangilik_stat_rasm2'>
  </div>
 <div className='news_text'>
 <h2>“Anti- korrupsiya” bilimdoni bilimlar bellashuvi bo‘lib o‘tdi
@@ -59,7 +59,7 @@ const onChange =()=>{
 
 
               <div className='news_card'> 
-<div className='news_img '>
+<div className='news_img yangilik_stat_rasm3'>
  </div>
 <div className='news_text'>
 <h2>Hamid Olimjon tavalludining 115-yilligiga bag‘ishlangan anjuman doirasidagi konsert dasturi
