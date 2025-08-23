@@ -329,6 +329,11 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .main_news_inner_text{width: 70%; padding: 40px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
 
 
+.news_img_stat2{background-image: url('../src/ImagesStatik/news1.jpg ') !important;}
+  .news_img_stat3{background-image: url('../src/ImagesStatik/news2.jpg ') !important;}
+    .news_img_stat4{background-image: url('../src/ImagesStatik/news3.jpg ') !important;}
+
+
 
 
 
