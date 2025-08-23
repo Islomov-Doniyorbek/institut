@@ -88,6 +88,11 @@ display: none;
 .inner-sentence p{ font-size: 15px; margin: 10px 0px; font-weight: 500; font-family: 'Montserrat'; color: black;}
 .inner_img_box{height: 400px; width: 100%; display: flex; justify-content: center;margin: 30px 0px;}
 .inner_img_box img{height: 100%; width: auto; }
+
+
+.yangilik_yangilik{background-image: url('../../ImagesStatik/photo_2025-08-23_18-01-56.jpg') !important;}
+.yangilik_yangilik1{background-image: url('../../ImagesStatik/photo_2025-08-23_18-02-12.jpg') !important;}
+.yangilik_yangilik2{background-image: url('../../ImagesStatik/photo_2025-08-23_18-02-16.jpg') !important;}
 .news_img_stat5{background-image: url('../../ImagesStatik/news6.jpg') !important;}
 .news_img_stat6{background-image: url('../../ImagesStatik/news7.jpg') !important;}
 
@@ -329,9 +334,6 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .main_news_inner_text{width: 70%; padding: 40px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
 
 
-.news_img_stat2{background-image: url('../src/ImagesStatik/news1.jpg ') !important;}
-  .news_img_stat3{background-image: url('../src/ImagesStatik/news2.jpg ') !important;}
-    .news_img_stat4{background-image: url('../src/ImagesStatik/news3.jpg ') !important;}
 
 
 

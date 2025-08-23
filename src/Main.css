@@ -316,9 +316,9 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8p
 .map_box{width: 100%; height: 400px; }
 
 
-.yangilik_stat_rasm1{background-image: url('../src/ImagesStatik/news1.jpg') !important;}
-.yangilik_stat_rasm2{background-image: url('../src/ImagesStatik/news2.jpg') !important;}
-.yangilik_stat_rasm3{background-image: url('../src/ImagesStatik/news3.jpg') !important;}
+.yangilik_stat_rasm1{background-image: url('../src/ImagesStatik/photo_2025-08-23_18-01-56.jpg') !important;}
+.yangilik_stat_rasm2{background-image: url('../src/ImagesStatik/photo_2025-08-23_18-02-12.jpg') !important;}
+.yangilik_stat_rasm3{background-image: url('../src/ImagesStatik/photo_2025-08-23_18-02-16.jpg') !important;}
 
 
 @media (max-width:1024px){
