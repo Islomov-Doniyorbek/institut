@@ -43,6 +43,7 @@ import LessonTable from "./Pages/Talim/LessonTable";
 import Laststudents from "./Pages/Talim/Laststudents";
 import Zoom from "./Pages/Students/Zoom";
 import History from "./Pages/History/History";
+import Chatbot from "./Pages/chatbot/chatbot";
  
 export const routes = [
   // Activity
@@ -97,5 +98,6 @@ export const routes = [
   
 
   //History
-    { path: "/History/History", element: <History /> }
+    { path: "/History/History", element: <History /> },
+    { path: "/History/chatbot", element: <Chatbot /> },
 ];
