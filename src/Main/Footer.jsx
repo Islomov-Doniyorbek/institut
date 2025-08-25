@@ -14,9 +14,32 @@ export default function Footer() {
       
       <div className='footer_icon'>
            <span className='text_line'></span>
-<p className='fo_facebook'><ImFacebook /></p>
-<p className='fo_instagram'><FaInstagram /></p>
-<p className='fo_telegram'><FaTelegram /></p>
+<a 
+  href="https://www.facebook.com/estradaart.uz" 
+  className="fo_facebook" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <ImFacebook />
+</a>
+
+<a 
+  href="https://www.instagram.com/estradaart.uz" 
+  className="fo_instagram" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <FaInstagram />
+</a>
+
+<a 
+  href="https://t.me/BZokirovnomidagiMesi" 
+  className="fo_telegram" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <FaTelegram />
+</a>
 <p className='fo_youtube'> <FaYoutube /></p>
       </div>
     </div>

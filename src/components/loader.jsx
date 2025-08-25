@@ -9,7 +9,7 @@ const Loader = () => {
     // 4 soniyadan keyin loaderni yo'qotamiz
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 8000);
 
     return () => clearTimeout(timer); // cleanup
   }, []);

@@ -100,7 +100,7 @@ border-radius: 10px; color: white;}
 
 
 .ilmiy_download{border: none !important; color: white;}
-.ilmiy_kengash{border: none !important; color: white;}
+.ilmiy_kengash{border: none !important; color: white; cursor: pointer;}
 .kengash_box{height: 220px !important; overflow: hidden !important; overflow-y: auto !important;}
 
 .ilmiy_download_see{border: none !important; display: flex !important; justify-content: center !important;

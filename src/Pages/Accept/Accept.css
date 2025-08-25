@@ -50,7 +50,7 @@ align-items: center; justify-content: center; text-align: center; border-radius:
     font-weight: 700;
  font-family: 'Montserrat';}
 
-.places_card p{ font-size: 19px ;font-family: 'Montserrat'; font-weight: 600; margin-top: 30px;}
+.places_card p{ font-size: 19px ;font-family: 'Montserrat'; font-weight: 600; margin-top: 30px; cursor: pointer;}
 .places_card p span{margin-right: 10px;}
 .places_card:hover p{ color: #006bd6;}
 
@@ -63,7 +63,7 @@ align-items: center; justify-content: center; text-align: center; border-radius:
 .program_card  p{font-size: 18px ; font-family: 'Montserrat'; margin: 10px ; color: #525252; font-weight: 600;}
 
 .program_download{width: 100%; margin-top: 20px;}
-.program_download p{padding: 15px 30px;   transition: transform 0.3s ease; display: flex; justify-content: flex-start; align-items: flex-start;  background-color: #004b96; color: white; border-radius: 10px;}
+.program_download p{padding: 15px 30px;   transition: transform 0.3s ease; cursor: pointer; display: flex; justify-content: flex-start; align-items: flex-start;  background-color: #004b96; color: white; border-radius: 10px;}
 .program_download p span{margin-right: 10px; color: rgb(252, 249, 65);}
 
 .program_download p:hover {
