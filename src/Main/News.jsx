@@ -34,7 +34,7 @@ const onChange =()=>{
 <div className='news_img  yangilik_stat_rasm1'>
  </div>
 <div className='news_text'>
-<h2>2025/2026 o‘quv yili 2-kursi uchun qayta taqsimlanadigan ta’lim grantlari o‘rinlari e’lon qilindi! 
+<h2>{t("yangi_text_stat2")}
  </h2>
 </div>
 <div className='news_icons'>
@@ -48,7 +48,7 @@ const onChange =()=>{
 <div className='news_img  yangilik_stat_rasm2'>
  </div>
 <div className='news_text'>
-<h2>“Anti- korrupsiya” bilimdoni bilimlar bellashuvi bo‘lib o‘tdi
+<h2>{t("yangi_text_stat3")}
  </h2>
 </div>
 <div className='news_icons'>
@@ -62,7 +62,7 @@ const onChange =()=>{
 <div className='news_img yangilik_stat_rasm3'>
  </div>
 <div className='news_text'>
-<h2>Hamid Olimjon tavalludining 115-yilligiga bag‘ishlangan anjuman doirasidagi konsert dasturi
+<h2>{t("yangi_text_stat4")}
  </h2>
 </div>
 <div className='news_icons'>

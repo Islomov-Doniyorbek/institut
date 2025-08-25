@@ -45,7 +45,7 @@ navigate("/News/Events/EventsInner")
         <div className='event_card'>
            <div className='eventt_img eventt_img_stat2'></div>
         <div className='event_text'>
-        <h2 onClick={handleChanges}>“Raqamli dunyoda talaba-yoshlarning psixologik salomatligi: muammolar va yechimlar” mavzusida seminar</h2>
+        <h2 onClick={handleChanges}>{t("raqamli_texnalo")}</h2>
         </div>
         <div className='event_icons'>
         <p><span><FaRegCalendarAlt /></span>10/14/2024</p>
@@ -58,7 +58,7 @@ navigate("/News/Events/EventsInner")
         <div className='event_card'>
          <div className='eventt_img eventt_img_stat3'></div>
         <div className='event_text'>
-        <h2  onClick={handleStat}>Milliy qadriyatlar sayli doirasida “Milliy libos – millat qiyofasi, milliy iftixor ifodasi” ko‘rik-tanlovi o‘tkaziladi</h2>
+        <h2  onClick={handleStat}>{t("milliy_liboslar")}</h2>
         </div>
         <div className='event_icons'>
         <p><span><FaRegCalendarAlt /></span>10/14/2024</p>

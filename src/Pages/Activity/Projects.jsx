@@ -128,6 +128,8 @@ const Projects = () => {
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
+         maskClosable={false}
+  getContainer={false}
       >
         <div className='ilmiy_loyiha_can'>
 <span onClick={handleCancel}><ImCancelCircle /></span>
