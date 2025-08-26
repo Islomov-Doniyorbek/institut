@@ -303,7 +303,38 @@ footer {
 }
 
 
-
+.chatbotBtn {
+  position: fixed;
+  border-radius: 50%;
+  background: aqua;
+  border: 1px solid rgb(8, 170, 170);
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: chatbot 4s linear infinite;
+}
+.chatbotBtn .icoBot {
+  font-size: 24px;
+  font-weight: 600;
+}
+@keyframes chatbot {
+  0% {
+    box-shadow: none;
+  }
+  70% {
+    box-shadow: 0 0 10px 3px rgba(0, 255, 255, 0.816),
+                0 0 12px 7px rgba(0, 255, 255, 0.404),
+                0 0 16px 10px rgba(0, 255, 255, 0.118);
+  }
+  100% {
+    box-shadow: 0 0 10px 3px transparent,
+                0 0 12px 7px transparent,
+                0 0 16px 10px transparent;
+  }
+}
 
 
 
@@ -324,8 +355,15 @@ footer {
   .searchIco {
     display: none;
   }
+  .chatbotBtn {
+    width: 80px;
+    height: 80px;
+  }
+  .chatbotBtn .icoBot {
+    font-size: 40px;
+  }
 }
-@media (max-width: 1336px){
+@media (max-width: 1335px){
   nav {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -340,6 +378,13 @@ footer {
   }
   .searchIco {
     display: none;
+  }
+  .chatbotBtn {
+    width: 70px;
+    height: 70px;
+  }
+  .chatbotBtn .icoBot {
+    font-size: 40px;
   }
 }
 @media (max-width: 1024px){
@@ -366,6 +411,13 @@ footer {
   }
   .searchIco {
     display: none;
+  }
+  .chatbotBtn {
+    width: 50px;
+    height: 50px;
+  }
+  .chatbotBtn .icoBot {
+    font-size: 30px;
   }
 }
 @media (max-width: 664px){
@@ -397,6 +449,13 @@ footer {
     position: absolute;
     top: -400px;
     left: 10px;
+  }
+  .chatbotBtn {
+    width: 40px;
+    height: 40px;
+  }
+  .chatbotBtn .icoBot {
+    font-size: 24px;
   }
 }
 

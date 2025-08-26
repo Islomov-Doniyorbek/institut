@@ -99,5 +99,5 @@ export const routes = [
 
   //History
     { path: "/History/History", element: <History /> },
-    { path: "/History/chatbot", element: <Chatbot /> },
+    { path: "/chatbot", element: <Chatbot /> },
 ];

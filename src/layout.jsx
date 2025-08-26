@@ -3,6 +3,7 @@ import Footer from "./Main/Footer";
 import {
   MdArrowCircleDown,
   MdArrowDropDown,
+  MdChatBubbleOutline,
   MdClose,
   MdLocationOn,
   MdMenu,
@@ -18,7 +19,7 @@ import Nav from "./components/Nav";
 import { IoMenu, IoMoonOutline } from "react-icons/io5";
 import { FaMoon, FaRegSun } from "react-icons/fa";
 import { ImCancelCircle } from "react-icons/im";
-import { PiSunDimLight } from "react-icons/pi";
+import { PiChat, PiRobot, PiSunDimLight } from "react-icons/pi";
 import AISearchBar from "./components/searchAi";
 import { FaSearch } from "react-icons/fa";
 import TranslateWidget from "./lang";
@@ -162,7 +163,6 @@ const {t }=useTranslation()
     linkList: [
       [
         { link: t("historical_years"), path: "/History/History" },
-        { link: t("chatbot"), path: "/History/Chatbot" },
       ]
     ]
   }
@@ -268,6 +268,11 @@ const {t }=useTranslation()
       </header>
       <main className="darkmain">
         <Outlet />
+        <Link to={"/chatbot"}>
+          <div className="chatbotBtn">
+            <PiRobot className="icoBot" /> 
+          </div>
+        </Link>
       </main>
       {/* shu childrenga Komponents keladi, avtomatik layout o'zgarmay tururadi. */}
       <footer className="fotter">
