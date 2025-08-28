@@ -12,6 +12,13 @@ import AllnewsInner from "./Pages/InfoCenter/AllnewsInner";
 import EventInner from "./Pages/InfoCenter/EventInner";
 import EventInnerr from "./Pages/InfoCenter/StatInners/EventInnerr";
 import EventsInnerrr from "./Pages/InfoCenter/StatInners/EventsInnerrr";
+import Institutrasm from "./Pages/Institut/Institutrasm";
+import History_doc from "./Pages/History/History_doc";
+import KengashInfo from "./Pages/Institut/Tarkib_inner/KengashInfo";
+import KenagashInfoRegi from "./Pages/Institut/Tarkib_inner/KenagashInfoRegi";
+import KengashAxborot from "./Pages/Institut/Tarkib_inner/KengashAxborot";
+import TarkibMarket from "./Pages/Institut/Tarkib_inner/TarkibMarket";
+import TarkibHamkorlik from "./Pages/Institut/Tarkib_inner/TarkibHamkorlik";
 
 
 function App() {
@@ -40,6 +47,13 @@ function App() {
             <Route path="/News/Events/EventsInner" element={<EventInner/>} />
             <Route path="/News/Events/EventsInner2" element={<EventInnerr/>} />
             <Route path="/News/Events/EventsInner3" element={<EventsInnerrr/>} />
+              <Route path="/Institut/Ichki" element={<Institutrasm/>} />
+                      <Route path="/History/History_doc" element={<History_doc/>} />
+ <Route path="/Institut/Tuzilma/Inner" element={<KengashInfo/>} />
+  <Route path="/Institut/Tuzilma/InnerReg" element={<KenagashInfoRegi/>} />
+   <Route path="/Institut/Tuzilma/AxborotTizim" element={<KengashAxborot/>} />
+    <Route path="/Institut/Tuzilma/tarkibmarketing" element={<TarkibMarket/>} />
+        <Route path="/Institut/Tuzilma/tarkibhamkorlik" element={<TarkibHamkorlik/>} />
           <Route index element={<Komponents />} />
 
           {routes.map(({ path, element }) => (

@@ -82,6 +82,10 @@ const {t }=useTranslation()
               path: "/Institut/Tarkibiy Tuzilma",
             },
             { link:  t("departments"), path: "/Institut/fakultet" },
+             {
+              link: t("faculty_ichki"),
+              path: "/Institut/Ichki",
+            },
           ],
         },
         [
@@ -161,7 +165,8 @@ const {t }=useTranslation()
     linkName: t("history"),
     linkList: [
       [
-        { link: t("historical_years"), path: "/History/History" }
+        { link: t("historical_years"), path: "/History/History" },
+         { link: t("historical_document"), path: "/History/History_doc" }
       ]
     ]
   }

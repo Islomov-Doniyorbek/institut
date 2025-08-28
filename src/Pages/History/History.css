@@ -153,6 +153,34 @@ border-radius: 10px;   border: 2px dashed #005207;
 box-shadow: #005207 0px 12px 12px -8px !important;
 }
 
+
+
+
+
+
+.tarixiy_doc{
+  padding: 100px;
+}
+.tarixiy_doc h1{display: flex; justify-content: center !important; align-items: center !important; color: #00478d; margin-bottom: 40px;}
+.tarixiy_doc h1 span{display: flex; align-items: center; margin-left: 6px;}
+.tarixiy_doc_card{padding: 30px; border: 2px solid #00478d;  border-radius: 10px; margin: 80px 0px;}
+.tarixiy_doc_card h2{font-size: 20px; color: #000;}
+.tarixiy_doc_a_row{display: flex; align-items: center; }
+.tarixiy_doc_a{margin: 20px ; width: 30%; padding: 15px; border: 1px solid #00478d; border-radius: 10px; margin-top: 50px !important;}
+.tarixiy_doc_a a h2{font-size: 18px !important ; display: flex; align-items: center; color: #1a1a1a;}
+.tarixiy_doc_a a h2 span{color: #00478d; font-size: 20px !important; margin-right: 10px;  display: flex; align-items: center;}
+.tarixiy_doc_img{margin-top: 20px; width: 100%; display: flex; align-items: center;}
+.tarixiy_doc_img_card{width: 15%; height: auto; margin: 20px; border-radius: 10px; padding: 10px; border: 1px solid #00478d;}
+.tarixiy_doc_img_card img{width: 100%; border-radius: 10px;}
+
+
+
+
+
+
+
+
+
 @media (max-width:1024px){
 
 .history-con{padding: 20px 10px;}
@@ -174,6 +202,19 @@ box-shadow: #005207 0px 12px 12px -8px !important;
 .tarixiy-tadbirlar{padding: 20px !important;}
 .tarixiy-elonlar{padding: 40px 20px !important;}
 .yillar-box{padding: 10px !important;}
+
+
+  .tarixiy_doc{padding: 20px;}
+  .tarixiy_doc h1{font-size: 30px; margin-top: 30px; padding: 10px; margin-bottom: 20px !important;}
+  .tarixiy_doc h1 span{margin-left: 0px !important;}
+.tarixiy_doc_card{margin-top: 30px !important; padding: 20px;}
+.tarixiy_doc_card h2{font-size: 20px;}
+.tarixiy_doc_a_row{display: flex; flex-wrap: wrap; margin-top: 20px;}
+.tarixiy_doc_a{margin: 10px !important; width: 45%; padding: 10px;}
+.tarixiy_doc_img{display: flex; flex-wrap: wrap;}
+.tarixiy_doc_img_card{width: 44%;}
+
+
 
 }@media (max-width:767px){
 .history_inputs h1{font-size: 15px; display: flex !important; text-align: center !important; }
@@ -217,6 +258,19 @@ box-shadow: #005207 0px 12px 12px -8px !important;
   .history_inner_text h1 {
     font-size: 16px !important;
   }
+
+
+  .tarixiy_doc{padding: 10px;}
+  .tarixiy_doc h1{font-size: 25px; margin-top: 30px; padding: 10px; margin-bottom: 20px !important;}
+  .tarixiy_doc h1 span{margin-left: 0px !important;}
+.tarixiy_doc_card{margin-top: 30px !important; padding: 20px;}
+.tarixiy_doc_card h2{font-size: 16px;}
+.tarixiy_doc_a_row{display: flex; flex-wrap: wrap; margin-top: 20px;}
+.tarixiy_doc_a{margin: 10px !important; width: 100%; padding: 10px;}
+.tarixiy_doc_a a h2{font-size: 15px !important;}
+.tarixiy_doc_a a h2 span{font-size: 16px !important;}
+.tarixiy_doc_img{display: flex; flex-wrap: wrap;}
+.tarixiy_doc_img_card{width: 100%;}
 }
 
 

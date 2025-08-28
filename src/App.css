@@ -117,7 +117,125 @@ font-weight: 600;
 .sun_mode p{font-size: 32px !important;}
 .moon{font-size: 25px !important;}
 
-@media (max-width: 767px){
+.institut_rasm{
+  padding: 100px !important;
+}
+.institut_rasm h1{font-size: 25px !important; width: 100%; color: #003f9c; display: flex;
+  text-align: center; align-items: center; justify-content: center;} 
+.rasmlar_row{display: flex; flex-wrap: wrap; width: 100%; height: auto; padding: 20px; border-radius: 10px; border: 1px solid #003f9c; margin-top: 50px !important;}
+.rasmlar_col{width: 47%; height: 400px !important; padding: 20px; margin: 20px; border: 1px solid #002D62; border-radius: 10px; }
+.rasmlar_col_center{ display: flex; justify-content: center; align-items: center;}
+
+
+.rasmlar_card{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm1.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card2{width: auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm2.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card3{width: 300px !important; height: 100% !important;  background-image: url('../src/institutinges/rasm3.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card4{width:300px !important; height: 100% !important;  background-image: url('../src/institutinges/rasm4.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card5{width: auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm6.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card6{width: auto!important; height: 100% !important;  background-image: url('../src/institutinges/rasm7.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card7{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm8.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card8{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm9.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card9{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm10.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card10{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm11.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card11{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm12.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card12{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm13.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card13{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm14.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card14{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm15.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+.rasmlar_card15{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm16.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+
+.rasmlar_card16{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm17.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+
+.rasmlar_card18{width:300px !important; height: 100% !important;  background-image: url('../src/institutinges/rasm19.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+
+.rasmlar_card17{width:auto !important; height: 100% !important;  background-image: url('../src/institutinges/rasm18.jpg'); background-repeat: no-repeat;
+background-size: cover;  background-position: center; border-radius: 10px;}
+
+
+
+.tuzilma_img{width: 100%; padding: 80px; display: flex; justify-content: center;}
+.tarkib_tuzilma{display: flex; padding: 100px;}
+.tarkib_tuzilma_box{width: 70% !important; margin-right: 30px;}
+.tarkib_tuzilma_right{width: 30% !important;}
+.tarkib_tuzilma_box h1{font-size: 27px; color: #003f9c; margin-bottom: 30px; }
+.tarkib_cards{padding: 20px; border: 2px dashed #003f9c; border-radius: 10px; margin: 40px 0px;}
+.tarkib_cards h2{font-size: 22px !important; color: rgb(0, 70, 0); cursor: pointer; margin-bottom: 20px; display: flex; align-items: center;} 
+.tarkib_cards h2 span{display: flex; align-items: center; font-size: 22px !important; }
+.tarkib_cards h3{font-size: 18px; display: flex; align-items: center; margin: 10px 0px; padding: 15px;
+  border-radius: 10px; width: 50%; cursor: pointer; border: 1px solid #003f9c;  transition: 0.3s;}
+.tarkib_cards h3 span{font-size: 20px; display: flex; align-items: center; margin-left: 5px;}
+
+.tarkib_cards h2:hover{color: rgb(18, 121, 18);}
+.tarkib_cards h3:hover{  transform: translateY(-4px) !important; 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;}
+
+
+
+  .kengashinfo{padding: 100px;}
+.kengash_info_con{padding: 40px; border: 2px solid #003f9c; border-radius: 10px;}
+.market_con{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important; border: none;
+}
+.kengash_axbo h1{display: flex; flex-direction: column ; text-align: center; justify-content: center;}
+.kengash_info_reg{padding: 80px !important;}
+.kengash_info_reg h1{display: flex !important;justify-content: center; margin-bottom: 0px !important;}
+.kengash_info_reg p{display: flex; justify-content: center; font-size: 20px; margin: 10px 0px 40px 0px;}
+.kengash_info_con h1{font-size: 32px; color: #003f9c; margin-bottom: 30px;}
+.kengashinfo_box{font-size: 18px; font-weight: 600;}
+.kengashinfo_box h2{margin: 40px 0px 10px 0px !important; font-size: 20px; color:rgb(0, 70, 0) ;}
+.kengash_reg_men{ width: 100% !important; padding: 30px 50px; display: flex !important; flex-wrap: wrap !important;}
+.kengash_reg_men_row{display: flex !important; align-items: center !important; width: 100%;}
+.kengash_reg_men_card{padding: 20px ; width: 32%; border: 2px solid #0c6800; margin: 15px; border-radius: 10px; display: flex !important; flex-direction: column !important; justify-content: center !important ; text-align: center;}
+.kengash_reg_men_card img{width: 200px; height: 220px; margin-bottom: 20px;}
+.kengash_reg_men_card h1{font-size: 20px; color: #003f9c; margin-bottom: 10px;}
+.kengash_reg_men_card  p{font-size: 18px !important; color: #000; margin-bottom: 20px;}
+.kengash_reg_men_card h2{display: flex; cursor: pointer; align-items: center; justify-content: center; font-size: 18px !important; color: #004b0a; margin: 10px 0px;}
+.kengash_reg_men_card h2 span{display: flex; align-items: center; margin-right: 5px; font-size: 20px;}
+
+.kengashinfo_images{width: 100%; display: flex; justify-content: center;}
+.kengashinfo_images img{width: 50%; height: 420px; margin-bottom: 30px;}
+
+.tarkibmarket_box h1{font-size: 20px !important; color: #2e2e2e;}
+.market_card{font-size: 18px; color: #2e2e2e; font-weight: 600; margin: 25px 0px;}
+.market_card span{margin-right: 10px; }
+.market_man_card{display: flex;}
+.market_man_card span{font-size: 15px; margin-right: 5px; color: #444444;}
+.market_man_card h1{font-size: 16px; font-weight: 500; display: flex; color: #444444; font-weight: 600;}
+.market_man_card p{ color: #5c5c5c; font-weight: 500 !important; margin-left: 5px;}
+.hamkorlik_box h2{font-size: 20px !important; color: #003f9c ;}
+
+@media (max-width: 1024px){
+.tarkib_tuzilma_box{width: 100% !important;}
+.tarkib_tuzilma_right{display: none !important;}
+.tarkib_tuzilma{padding: 40px !important;}
+.tarkib_cards h3{width: 100% !important;}
+.kengashinfo{padding: 50px;}
+.kengash_info_reg{padding: 20px !important;}
+.kengash_reg_men{padding: 20px !important; }
+.kengash_reg_men_row{display: flex !important; flex-wrap: wrap !important; justify-content: center}
+.kengash_reg_men_card{width: 45% !important; padding: 10px !important; height: 380px !important;}
+.kengash_reg_men_card img{height: 150px; width: 150px;}
+.kengash_reg_men_card h1{font-size: 16px !important;}
+.kengash_reg_men_card p{font-size: 15px !important;}
+.kengash_reg_men_card h2{font-size: 16px !important;}
+.kengashinfo_images img{width: 100%;}
+}@media (max-width: 767px){
   .nav-border {
     margin-top: 25px !important;
     position: fixed !important;
@@ -157,4 +275,31 @@ font-size: 22px !important;
 
   }
 
+  
+  .institut_rasm{padding: 10px !important;}
+  .tarkib_tuzilma_box{margin-right: 0px !important;}
+.institut_rasm h1{font-size: 15px !important; margin-top: 40px; margin-bottom: 20px;}
+.rasmlar_row{margin-top: 10px !important; padding: 0px; border: none;}
+.rasmlar_col{width: 100%; height: 300px !important; padding: 10px ;}
+.tuzilma_img{padding: 10px ; height: 60vh; display: flex; align-items: center;}
+.tuzilma_img img{width: 340px !important; height: 300px;}
+.tarkib_tuzilma{padding: 20px !important;}
+.tarkib_cards h3{width: 100% !important; font-size: 14px !important;}
+.tarkib_tuzilma_box h1{font-size: 20px;}
+.tarkib_cards h2{font-size: 17px !important;}
+.tarkib_cards{padding: 15px;}
+.kengashinfo{padding: 15px;}
+.kengash_info_con{padding: 15px;}
+.kengash_info_con h1{font-size: 18px !important; display: flex; justify-content: center; align-items: center; text-align: center;}
+.kengashinfo_box{font-size: 16px !important;}
+.kengash_info_reg p{font-size: 18px; display: flex; justify-content: center; text-align: center;}
+.kengashinfo_box h2{font-size: 17px !important;}
+.kengash_reg_men{padding: 10px;}
+.kengash_reg_men_card{width: 100% !important;}
+.kengashinfo_images img{width: 100%; height: 200px;}
+.market_card{font-size: 14px !important;}
+.market_man_card h1{font-size: 10px !important;}
+.market_man_card p{margin-left: 0px !important;}
+.market_man_card span{margin-right: 2px; font-size: 11px !important;}
+.hamkorlik_box h2{font-size: 15px !important;}
 }

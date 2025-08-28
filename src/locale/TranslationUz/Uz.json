@@ -412,10 +412,67 @@
 "yangi_text_stat3":"“Anti- korrupsiya” bilimdoni bilimlar bellashuvi bo‘lib o‘tdi",
 "yangi_text_stat4":"Hamid Olimjon tavalludining 115-yilligiga bag‘ishlangan anjuman doirasidagi konsert dasturi",
 "raqamli_texnalo":"“Raqamli dunyoda talaba-yoshlarning psixologik salomatligi: muammolar va yechimlar” mavzusida seminar",
-"milliy_liboslar":"Milliy qadriyatlar sayli doirasida “Milliy libos – millat qiyofasi, milliy iftixor ifodasi” ko‘rik-tanlovi o‘tkaziladi"
+"milliy_liboslar":"Milliy qadriyatlar sayli doirasida “Milliy libos – millat qiyofasi, milliy iftixor ifodasi” ko‘rik-tanlovi o‘tkaziladi",
+"faculty_ichki":"Institut rasmlari",
+"institu_rasmlar":"Oʻzbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada sanʼati institutining tashqi va kirish qismi hamda ichki koʻrinishi",
+"historical_document":"Tarixiy hujjatlar",
+"history_doc_title":"Institut tarixiga oid barcha hujjatlar ",
+"history_doc_sub":"Oʻzbekiston Respublikasi Prezidentining 2021-yil 16-oktabrdagi “Oʻzbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada sanʼati institutini tashkil etish toʻgʻrisida”gi PQ-2561-son qarori asosida 2022-yil 13-yanvar kuni institut tashkil etildi (guvohnoma).",
+"history_doc_sub2": "Oʻzbekiston Respublikasi Vazirlar Mahkamasining 2022-yil 31-martdagi 143-son Qarori va Madaniyat vazirligining 2022-yil 1-apreldagi buyrugʻi asosida Mansurov Avaz Maqsudovich rektor lavozimiga tayinlandi.",
+"history_doc_sub3": "Oʻzbekiston Respublikasi Prezidentining PQ-2561-son qarori asosida Botir Zokirov nomidagi Milliy estrada sanʼati instituti 2024-2025 oʻquv yilini 2024 yil 4 sentabrda konservatoriya hududida yangi qurilgan binoga koʻchib oʻtib faoliyatini davom ettirdi (foto lavhalar).",
 
+ "structure_title": "Tarkibiy tuzilma",
 
+  "rector": "Rektor",
+ "mesi_council": "OʻzDK huzuridagi MESI kengashi",
+  "trustees_council": "Vasiylik kengashi",
+ "advisory_council": "Rektor maslahat kengashi",
 
+  "youth_prorector": "Yoshlar masalalari va ma’naviy-ma’rifiy ishlar bo’yicha birinchi prorektor",
+  "youth_department": "Yoshlar bilan ishlash, ma’naviyat va ma’rifat boʻlimi",
+  "tutors": "Tyutorlar",
+  "museum": "Botir Zokirov muzeyi",
+  "concert_department": "Konsert-tijorat va reklama boʻlimi",
+  "community_orgs": "Jamoatchilik tashkilotlari va kengashlari",
+
+  "study_prorector": "Oʻquv ishlari boʻyicha prorektor",
+  "faculties": "Fakultetlar va kafedralar",
+  "teaching_department": "Oʻquv-uslubiy boshqarma",
+  "registrar": "Registrator Office",
+ " assistants": "Oʻquv yordamchi xodimlar",
+  "library": "Axborot-resurs markazi",
+ " marketing": "Marketing va talabalar amaliyoti boʻlimi",
+  "video_phonetics": "Video-fonetika boʻlimi",
+  "recording": "Ovoz yozish studiyasi",
+  "distance": "Sirtqi boʻlim",
+
+ "science_prorector": "Ilmiy ishlar va innovatsiyalar boʻyicha prorektor",
+ "research_sector": "Ilmiy-tadqiqotlar, innovatsiyalar va ilmiy-pedagogik kadrlar tayyorlash sektori",
+  "talented_students": "Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish sektori",
+  "magistracy": "Magistratura boʻlimi",
+  "publishing": "Tahririy nashriyot boʻlimi",
+  "commercialization": "Ilmiy-innovatsion ishlanmalarni tijoratlashtirish boʻlimi",
+
+  "manager": "Ishlar boshqarmasi boshligʻi",
+  "finance": "Reja moliya sektori",
+  "accounting": "Buxgalteriya",
+  "engineer": "Bosh muhandis",
+  "digital_center": "Raqamli ta’lim texnologiyalari markazi",
+  "technical": "Texnik foydalanish va xoʻjalik boʻlimi",
+  "equipment": "Oʻqitishni texnik vositalari boʻlimi",
+  "safety": "Fuqaro va mehnat muhofazasi boʻlimi",
+  "nurse": "Tibbiy xodim (hamshira)",
+
+  "other_departments": "Boshqa boʻlimlar",
+ "quality": "Ta’lim sifatini nazorat qilish boʻlimi",
+  "appeals": "Jismoniy va yuridik shaxslarning murojaatlari bilan ishlash, nazorat va monitoring sektori",
+  "archive": "Devonxona va arxiv",
+  "international": "Xalqaro hamkorlik boʻlimi",
+  "lawyer": "Yuriskonsult",
+  "secretary": "OTM kengashi kotibi",
+  "advisor": "Rektor maslahatchisi",
+  "press": "Matbuot kotibi",
+  "psychologist": "Psixolog"
 }
 
 

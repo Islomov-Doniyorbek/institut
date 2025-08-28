@@ -336,6 +336,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes nota {
     0% {
         left: -30px;
@@ -506,4 +526,6 @@
     .gridBox .col img{width: 200px;}
     .nutq p{font-size: 13px !important;}
     .nutq b{font-size: 13px !important;}
+
+    
 }

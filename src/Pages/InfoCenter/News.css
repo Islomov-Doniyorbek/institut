@@ -47,7 +47,7 @@ display: none;
 
 .new_article{ border-top: 2px solid #003d7a; padding-top: 30px; margin-top: 30px;}
 .new_article h1{font-size: 25px;  font-family: 'Montserrat'; color: #003d7a; margin-bottom: 20px;}
-.new_article h2{font-size: 14px; color: #1A5950; margin: 20px 0px;}
+.new_article h2{font-size: 14px; color: #1A5950; margin: 20px 0px; cursor: pointer ;}
 .new_article h2:hover{color: rgb(134, 134, 134);}
 
 

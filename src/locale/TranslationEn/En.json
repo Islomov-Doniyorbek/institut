@@ -425,6 +425,67 @@
 "yangi_text_stat3":"The 'Anti-Corruption' knowledge competition was held.",
 "yangi_text_stat4":"Concert program within the framework of the conference dedicated to the 115th anniversary of Hamid Olimjon's birth.",
 "raqamli_texnalo":"Seminar on the topic: 'Psychological health of students and youth in the digital world: problems and solutions'",
-"milliy_liboslar":"Within the framework of the Festival of National Values, the contest 'National Costume – the Image of the Nation, the Expression of National Pride' will be held."
+"milliy_liboslar":"Within the framework of the Festival of National Values, the contest 'National Costume – the Image of the Nation, the Expression of National Pride' will be held.",
+"faculty_ichki":"Photos of the institute",
+"institu_rasmlar": "The exterior, entrance area and interior of the Botir Zakirov National Institute of Variety Art under the State Conservatory of Uzbekistan",
+"historical_document": "Historical documents",
+"history_doc_title":"All documents related to the history of the institute",
+"history_doc_sub":"The institute was established on January 13, 2022, based on the Resolution of the President of the Republic of Uzbekistan No. PQ-2561 of October 16, 2021, 'On the establishment of the Botir Zakirov National Institute of Pop Art under the State Conservatory of Uzbekistan' (certificate).",
+"history_doc_sub2": "Based on the Resolution of the Cabinet of Ministers of the Republic of Uzbekistan No.143 dated March 31, 2022, and the order of the Ministry of Culture dated April 1, 2022, Avaz Maqsudovich Mansurov was appointed as rector.",
+"history_doc_sub3": "Based on the Resolution of the President of the Republic of Uzbekistan No. PQ-2561, the National Institute of Pop Art named after Botir Zakirov commenced the 2024–2025 academic year on September 4, 2024, continuing its activities in a newly constructed building located on the conservatory campus (photo materials).",
+
+" structure_title": "Organizational Structure",
+
+  "rector": "Rector",
+ "mesi_council": "MESI Council under UzDC",
+ "trustees_council": "Board of Trustees",
+ "advisory_council": "Rector's Advisory Council",
+
+  "youth_prorector": "First Vice-Rector for Youth Affairs and Spiritual-Educational Work",
+  "youth_department": "Department of Youth, Spirituality and Enlightenment",
+"tutors": "Tutors",
+  "museum": "Botir Zakirov Museum",
+  "concert_department": "Concert, Commercial and Advertising Department",
+  "community_orgs": "Public Organizations and Councils",
+
+  "study_prorector": "Vice-Rector for Academic Affairs",
+  "faculties": "Faculties and Departments",
+  "teaching_department": "Educational-Methodological Department",
+  "registrar": "Registrar Office",
+  "assistants": "Academic Assistants",
+  "library": "Information Resource Center",
+  "marketing": "Marketing and Student Internship Department",
+  "video_phonetics": "Video-Phonetics Department",
+  "recording": "Recording Studio",
+  "distance": "Distance Learning Department",
+
+  "science_prorector": "Vice-Rector for Research and Innovation",
+  "research_sector": "Sector for Research, Innovation and Training of Scientific-Pedagogical Staff",
+ "talented_students": "Sector for Organizing Research Activities of Talented Students",
+  "magistracy": "Master's Department",
+  "publishing": "Editorial and Publishing Department",
+  "commercialization": "Department of Commercialization of Scientific-Innovative Developments",
+
+  "manager": "Head of Administration",
+ "finance": "Planning and Finance Sector",
+  "accounting": "Accounting",
+  "engineer": "Chief Engineer",
+  "digital_center": "Center for Digital Educational Technologies",
+  "technical": "Technical Maintenance and Facilities Department",
+  "equipment": "Department of Educational Technical Equipment",
+  "safety": "Civil Protection and Labor Safety Department",
+  "nurse": "Medical Staff (Nurse)",
+
+  "other_departments": "Other Departments",
+  "quality": "Department of Education Quality Control",
+  "appeals": "Sector for Working with Appeals of Individuals and Legal Entities, Control and Monitoring",
+  "archive": "Office and Archive",
+  "international": "Department of International Cooperation",
+  "lawyer": "Legal Advisor",
+  "secretary": "University Council Secretary",
+  "advisor": "Rector’s Advisor",
+  "press": "Press Secretary",
+  "psychologist": "Psychologist"
+
 
 }
