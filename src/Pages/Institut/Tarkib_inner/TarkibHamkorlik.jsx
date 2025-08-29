@@ -16,44 +16,43 @@ const TarkibHamkorlik = () => {
       <div className='market_man'>
       <div className='market_man_card'>
 <span><BsPersonCircle /></span>
-<h1>Boʻlimi boshlig‘i:<p>Abdullaeva Suraya Abdulaxadovna</p></h1>
+<h1>{t("hamkorlik_bog")}:<p>Abdullaeva Suraya Abdulaxadovna</p></h1>
       </div>
         <div className='market_man_card'>
 <span><FaPhone /></span>
-<h1>Tel:<p>+998 97 741 16 32</p></h1>
+<h1>{t("tel")}:<p>+998 97 741 16 32</p></h1>
       </div>
         <div className='market_man_card'>
 <span><MdOutlineAlternateEmail /></span>
-<h1>E-mail:<p>abdullaeva1954@mail.ru</p></h1>
+<h1>{t("email")}:<p>abdullaeva1954@mail.ru</p></h1>
       </div>
       </div>
       <div className='kengashinfo_box hamkorlik_box'>
-<h2>Boʻlim faoliyatining asosiy maqsadi institutning ta’lim dasturlari sifatini oshirishga qaratilgan xalqaro hamkorlik dasturlarida ishtirokini tashkil etish va muvofiqlashtirishdir.
-<br/>
-Xalqaro boʻlimning asosiy vazifalari quyidagilardan iborat:</h2>
+<h2> { t("t1") }<br/>
+{ t("t2") }</h2>
 <div className='market_card'>
     <span><FaHandPointRight /></span>
-institut va xorijiy ta’lim muassasalari va xalqaro tashkilotlar bilan hamkorlik shartnomalari loyihalarini tayrlash;
+{ t("t3") }
 </div>
 <div className='market_card'>
     <span><FaHandPointRight /></span>
-xalqaro hamkorlik dasturlarini shakllantirish;
+{ t("t4") }
 </div>
 <div className='market_card'>
     <span><FaHandPointRight /></span>
-xorijiy va xalqaro ijodiy loyihalar, tanlovlar, festivallar axborotni toʻplash va tizimlashtirish;
+{ t("t5") }
 </div>
 <div className='market_card'>
     <span><FaHandPointRight /></span>
-institut professor-oʻqituvchilarini xalqaro ta’lim va ijodiy faoliyatda ishtirok etishga jalb qilish;
+{ t("t6") }
 </div>
 <div className='market_card'>
     <span><FaHandPointRight /></span>
-institutning xalqaro faoliyati doirasida xodimlar, magistrantlar va talabalar uchun stajirovkalarni tashkil etish;
+{ t("t7") }
 </div>
 <div className='market_card'>
     <span><FaHandPointRight /></span>
-institutda xorijiy professor-oʻqituvchilari ta’lim va ijodiy faoliyatni tashkil etish;
+{ t("t8") }
 </div>
 
   </div>

@@ -439,9 +439,9 @@
   "faculties": "Fakultetlar va kafedralar",
   "teaching_department": "Oʻquv-uslubiy boshqarma",
   "registrar": "Registrator Office",
- " assistants": "Oʻquv yordamchi xodimlar",
+ "assistants": "Oʻquv yordamchi xodimlar",
   "library": "Axborot-resurs markazi",
- " marketing": "Marketing va talabalar amaliyoti boʻlimi",
+ "marketing": "Marketing va talabalar amaliyoti boʻlimi",
   "video_phonetics": "Video-fonetika boʻlimi",
   "recording": "Ovoz yozish studiyasi",
   "distance": "Sirtqi boʻlim",
@@ -472,7 +472,64 @@
   "secretary": "OTM kengashi kotibi",
   "advisor": "Rektor maslahatchisi",
   "press": "Matbuot kotibi",
-  "psychologist": "Psixolog"
+  "psychologist": "Psixolog",
+
+  "market_title":"Boʻlim quyidagi ishlarni amalga oshiradi:",
+  "market_title2":"Oʻzbekiston Respublikasi Oliy va oʻrta maxsus ta’lim vazirligi buyruqlari Hay’atining qarorlari, shuningdek, universitet buyruqlari va Kengash qarorlarining boʻlimda belgilangan muddatda ijrosini ta’minlash, nazorat qilish va tegishli chora tadbirlarni belgilash;",
+  "market_title3":"Dekanlar va kafedra mudirlari bilan hamkorlikda “Kadrlarni davlat granti asosida maqsadli tayyorlash tartibi toʻgʻrisidagi Nizom”ga muvofiq institut bitiruvchilar taqsimotini tashkil etish va amalga oshirish;",
+  "market_title4":"Oliy taʼlim muassasasida tayyorlanayotgan oliy ma’lumotli kadrlarga korxona, muassasa va tashkilotlarning ehtiyojini oʻrganish asosida maʼlumotlar bazasini shakllantirish;",
+  "market_title5":"Oliy taʼlim muassasalari bitiruvchilarini ishga joylashish jarayonlarini tizimli tahlil qiladi va baholaydi, Oliy taʼlim muassasasi joylashgan hududdagi muassasa, korxona va tashkilotlarning kadrlarga boʻlgan real ehtiyojlari qondirilishiga oliy taʼlim muassasasi faoliyatini yoʻnaltirish;",
+  "market_title6":"Oliy taʼlim tizimida marketing xizmati jarayonlarining tez oʻzgaruvchanligi va mehnat bozori rivojlanish dinamikasi bilan oʻzaro bogʻliqligini hisobga olgan holda potensial ish beruvchilar (isteʼmolchilar) bilan hamkorlikda respublika iqtisodiyoti tarmoqlari va sohalarining oliy maʼlumotli yosh mutaxassislarga boʻlgan ehtiyojini hududlar boʻyicha oʻrganish;",
+  "market_title7":"Oliy taʼlim tizimida kadrlar tayyorlash yoʻnalishlari va taʼlim xizmatlari bozori borasidagi boshqaruv qarorlarini tayyorlash, qabul qilish va amaliyotga tatbiq etish jarayonlarida ishtirok etadi. Raqobatbardosh kadrlar tayyorlashni taʼminlash boʻyicha amaliy takliflar ishlab chiqish va tegishli chora-tadbirlarni amalga oshirish;",
+  "market_title8":"Kadrlar tayyorlash jarayonida buyurtmachilarning kadrlar sifatiga doir talablarini oliy taʼlim muassasasi kengashida muhokama qilish, televediniya, radio, gazeta va boshqa ommaviy axborot vositalari orqali bitiruvchilar reklamasini tashkil etish;",
+  "market_title9":"Mehnat bozori konyunkturasini oʻrganish, qabul parametrlariga takliflarni isteʼmolchilarning bitiruvchilarga boʻlgan buyurtmalari asosida shakllantirish, qabul, talabalar kontingenti, bitiruvchilarni ishga yoʻnaltirish toʻgʻrisidagi oliy taʼlim muassasasining maʼlumotlar bazasini tashkil etishga doir hujjatlarni oʻz vaqtida Oliy va oʻrta maxsus taʼlim vazirligiga taqdim etib borish;",
+  "hamkorlik_bog":"Boʻlimi boshlig‘i",
+  "tel":"Tel",
+  "t1":"Boʻlim faoliyatining asosiy maqsadi institutning ta’lim dasturlari sifatini oshirishga qaratilgan xalqaro hamkorlik dasturlarida ishtirokini tashkil etish va muvofiqlashtirishdir.",
+  "t2":"Xalqaro boʻlimning asosiy vazifalari quyidagilardan iborat:",
+  "t3":"institut va xorijiy ta’lim muassasalari va xalqaro tashkilotlar bilan hamkorlik shartnomalari loyihalarini tayrlash;",
+  "t4":"xalqaro hamkorlik dasturlarini shakllantirish;",
+  "t5":"xorijiy va xalqaro ijodiy loyihalar, tanlovlar, festivallar axborotni toʻplash va tizimlashtirish;",
+  "t6":"institut professor-oʻqituvchilarini xalqaro ta’lim va ijodiy faoliyatda ishtirok etishga jalb qilish;",
+  "t7":"institutning xalqaro faoliyati doirasida xodimlar, magistrantlar va talabalar uchun stajirovkalarni tashkil etish;",
+  "t8":"institutda xorijiy professor-oʻqituvchilari ta’lim va ijodiy faoliyatni tashkil etish;",
+  "mesi_council_text1":"OʻzDK huzuridagi MESI kengashi institutning oliy kollegial organ bo‘lib, barcha yo‘nalishdagi faoliyatini muvofiqlashtirib boradi. Dolzarb vazifalarni tezkor va sifatli hal qilish bo‘yicha qarorlar qabul qiladi. Institut rektori Kengash raisi sanaladi. Kengash tarkibida prorektorlar, dekanlar, universitetning yetuk professor-o‘qituvchilari, jamoat tashklotlari yetakchilari faoliyat ko‘rsatadi.",
+  "mesi_council_text2":"Institut Kengashi o‘z faoliyatini O‘zbekiston Respublikasi Oliy va o‘rta maxsus ta’lim vazirligining 1998-yil 9-dekabrdagi 345-sonli buyrug‘i bilan tasdiqlangan “Oliy o‘quv yurtining kengashi to‘g‘risida”gi 2011-yil 3-dekabrdagi 487-sonli buyrug‘i asosida tasdiqlangan nizom asosida shakllantirilib, Milliy Estrada san’ati institutining 2022-yil 31-avgustdagi 1-sonli Kengashi yig‘ilishi qarori asosida ma’qullangan.",
+  "mesi_council_text3":"Institut jamoasining Kadrlar tayyorlash Milliy dasturini amalga oshirish, zamonaviy pedagogik texnologiyalarini keng joriy qilish asosida yuqori malakali, raqobatbardosh kadrlar tayyorlashni ta’minlash, ilmiy tadqiqotlarni yanada rivojlantirish, yoshlarda vatanparvarlik, fuqarolik, o‘z Vatani bilan faxrlanish kabi ma’naviy-ma’rifiy va madaniy fazilatlarni shakllantirish kabi vazifalarni hal qilishga qaratilgan sa’y-harakatlarini muvofiqlashtirish institut Kengashining asosiy vazifasi hisoblanadi.",
+  "mesi_council_text4":"Institut Kengashi nafaqat institut hayoti, balki respublikamiz pedagogika fani, ta’lim va tarbiya tizimining rivoji bilan bog‘liq dolzarb masalalarni muhokama qilib, muammolar yechimiga qaratilgan tavsiyalar ishlab chiqish bilan shug‘ullanib keladi. Institut rektori va ayni paytda Kengash raisi sifatida 2022-yildan professor, O‘zbekiston kompozitorlari va bastakorlari uyushmasi a’zosi, kompozitor A.M.Mansurov faoliyat yuritib kelmoqda.",
+  "mesi_council_text5":"Kengashi kotibi sifatida D.L.Umarova faoliyat olib bormoqda. Bugungi kunda Kengash tarkibi 21 kishidan iborat bo‘lib, unda 1 nafar fan doktori, 2 nafar fan nomzodi, 4 nafar professor, 6 nafar dotsent va 8 nafar ilmiy daraja va unvonga ega bo‘lmagan xodim faoliyat ko‘rsatmoqda.",
+  "mesi_council_text6":"Institut jamoasiga rahbarlik nuqtai nazaridan Kengash tarkibi quyidagicha: rektor, prorektorlar, dekanlar, institut professor-o‘qituvchilar kasaba uyushmasi raisi, kafedra mudirlari, boshqa xodimlar faoliyat ko‘rsatmoqda.",
+  "mesi_council_text7":"Kengash ish rejasiga O‘zbekiston Respublikasi Prezidentining farmonlari, qarorlari, Vazirlar Mahkamasi qarorlari, O‘zbekiston Respublikasi oliy ta’lim, fan va innovatsiyalar vazirligi Hay’at qarorlari va buyruqlarining institutdagi ijrosi, o‘quv-tarbiyaviy, ilmiy-tadqiqot ishlarining samaradorligini oshirish, talabalar bilan ma’naviy-ma’rifiy ishlarni tashkil etish, ularni har tomonlama kamolga yetgan, barkamol insonlar qilib tarbiyalashdan iborat bo‘lgan dolzarb masalalar kiritiladi. Kengash yig‘ilishi har oyda bir marta o‘tkaziladi.",
+  "mesi_council_text8":"Bugungi kunda Kengash kotibiyati O‘zbekiston Respublikasi oliy ta’lim, fan va innovatsiyalar vazirligi Hay’ati qarorlari, institut Kengashi qarorlarini ijro etish sifati va samaradorligini yaxshilash, institutda chop etilayotgan o‘quv va ilmiy adabiyotlarni sifatli taqrizlash va ekspertizadan o‘tkazish, Kengash yig‘ilishlari kun tartibiga kiritilgan masalalarni har tomonlama puxta o‘rganilishiga erishish maqsadida turli tashkiliy choralarni ishlab chiqib, amaliyotga tatbiq qilmoqda.",
+"library_text1":"Oʻzbekiston Respublikasi Prezidenti Sh.M.Mirziyoev tomonidan 2021-yil 16-oktabrdagi “Oʻzbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati institutini tashkil etish toʻgʻrisida”gi PQ-5261-sonli qarorning 9.4-bandi asosida tashkil topgan. Oʻzbekiston Respublikasi madaniyat vazirining 2012-yil 10-dekabrdagi 498-sonli buyrugʻi asosida Oʻzbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti Tuzilmasi va Ustavi tasdiqlandi. Ustav 2022-yil 18-yanvar kuni oʻrnatilgan tartibda Davlat roʻyxatidan oʻtkazilib, oʻz faoliyatini boshladi.  Oʻzbekiston Respublikasi Prezidentining 2006-yil 20-iyundagi «Respublika aholisini axborot-kutubxona bilan taʼminlashni tashkil etish toʻgʻrisida»gi PQ-381 sonli qaroriga asosan kutubxonalar Аxborot resurs markazlari (АRM)ga aylantirildi. АRMning asosiy maqsadi professor-oʻqituvchilar tarkibiga talaba-yoshlar uchun ta’lim berishda oʻquv-uslubiy adabiyotlar bilan taʻminlash, mavjud musiqiy, ilmiy-oʻquv, oʻquv-uslubiy, badiiy va yordamchi adabiyotlarni tizimlashtirishga yordam berishdan iborat boʻladi.",
+"library_text2":"АRMda musiqiy yoʻnalishdagi akademik xonanda, estrada va ijrochilik mahorati, sanʼatshunoslik va badiiy adabiyotlar mavjud.",
+"library_text3":"Botir Zokirov nomidagi Milliy estrada san’ati institutida Estrada va ijrochilik mahorati, Estrada ijrochiligi pedagoglarni tayyorlash, Umumiy fortepiano, Texnogen sanʼati, Kompozitorlik va Aranjirovka, Musiqashunoslik, Estrada orkestri dirijyorligi, Ovoz rejesyorligi, Oʻzbek tili va ijtimoiy fanlar, Musiqiy nazariy va tarixiy fanlar kafedralari mavjud.",
+"library_text4":"Аxborot resurs markazining umumiy maydoni 175kv.m, 4-ta xona va 40-oʻrindiqlardan iborat.",
+"library_text5":"Аxborot resurs markazining umumiy fondi 4306 dan ortdi. Foydalanuvchilarga tezkor vasifatli axborot-kutubxona xizmatini koʻrsatishda Telegramm ijtimoiy tarmogʼida https://t.me/MESI_kutubxona sayti faoliyat olib boradi. Elektron darslik va oʻquv qoʼllanmalar 2204 tadan ortdi. Professor-oʼqituvchilar va talabalar ushbu saytdan foydalanishadi.",
+"library_text6":"Oliy taʼlim, fan va innovatsiyalar vazirligi tomonidan yaratilgan https://unilibary.uz elektron kutubxona platformasiga kitoblar elektron variantlari yuklab borilmoqda, ularning soni hozirda 37404 dan ortdi.",
+"library_text7":"Аxborot resurs markaziga professor-oʻqituvchilar tomonidan darslik, oʻquv qoʻllanma, monagrafiyalar taqdim qilinadi va oʻquvchilar tomonidan unumli foydalaniladi. Kafedralar tomonidan fan dasturida koʻrsatilgan adabiyotlar hamda yangi nashr etilgan qoʻshimcha adabiyotlar elektron nusxalari Аxborot resurs markaziga topshiriladi.",
+"library_text8":"Аxborot resurs markazi oʻquv-zallari yangi stol-stul, javonlar, sovutish vositalari kompyuter, skaner hamda boshqa qurilmalar bilan jihozlangan unda talaba-oʻquvchilar (kitobxonlar) uchun qulay sharoitlar yaratilgan boʻlib, ularga keng qamrovli va sifatli xizmatlar koʻrsatiladi.",
+  "institute_name": "Botir Zokirov nomidagi Milliy estrada san’ati instituti",
+  "office_desc": "Registrator ofisi talabalarga akademik va boshqa ma’lumotnomalarni taqdim etadi, diplom chop qiladi, axborot tizimlarini boshqaradi va boshqa xizmatlarni ko‘rsatadi.",
+  "office_activity": "Ofis faoliyati",
+  "office_head": "Ofis boshlig‘i",
+  "front_office": "Xizmat koʻrsatish boʻlimi (Front office)",
+  "front_office_desc": "Talabalarga elektron platformalarda yordam berish, maslahatlar berish, HEMIS va LMS tizimlaridan foydalanish va boshqa vazifalar.",
+  "back_office": "Ma’lumotlar bazasi boʻlimi (Back office)",
+  "back_office_desc": "Talabalarning statistik ma’lumotlarini yuritish, HEMIS va LMS tizimlarini boshqarish, talaba harakatlarini tahlil qilish.",
+  "start_date": "Registrator ofisi 2025-yil 3-yanvardan faoliyat yuritmoqda",
+  "service_stats": "Hozirda 53 xizmat turi bo‘yicha 500 dan ortiq talabalar va ularning ota-onalariga xizmat ko‘rsatmoqda",
+  "staff": "Xodimlar"
+
+
+
+
+
+
+
+
+
+
 }
 
 
