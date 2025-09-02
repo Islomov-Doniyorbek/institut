@@ -322,6 +322,18 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8p
 .yangilik_stat_rasm3{background-image: url('../src/ImagesStatik/photo_2025-08-23_18-02-16.jpg') !important;}
 
 
+
+
+
+
+.students_life{padding: 70px;}
+.students_life h1{font-size: 30px; color: #014080; display: flex; justify-content: center; margin-bottom: 20px;}
+.stud_life_box{padding: 30px; width: 100%; display: flex; flex-wrap: wrap;   border: 2px solid #024180; border-radius: 20px 0px 20px 0px;}
+.stud_life_card{display: flex; height: auto; justify-content: center; align-items: center; width: 47%; flex-direction: column; margin: 20px;  padding: 20px; background-color: white !important;  border-radius: 10px; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+.stud_life_card_img{display: flex;}
+.stud_life_card_img img{width: 300px; height: auto; margin: 0px 15px; border-radius: 10px;}
+.stud_life_text h2{font-size: 20px ; margin-top: 30px; color: #016111; padding: 15px; border-radius: 20px; border: 1px solid #024180;}
+
 @media (max-width:1024px){
 
 .navDetails{display: none !important;}
@@ -434,6 +446,12 @@ height: 150px;
 .news_text{height: 120px;}
 
 
+.students_life{padding: 30px;}
+.stud_life_card_img{width: 100%; display: flex; justify-content: center; margin-bottom: 20px;}
+.stud_life_card_img img{width: 35%;}
+.stud_life_box{padding: 10px !important;}
+.stud_life_card{ margin: 20px 0px; display: flex; flex-direction: column;}
+.stud_life_text h2{font-size: 14px !important;}
 }
 
 
@@ -578,5 +596,17 @@ height: 150px;
   .footer_icon p {width: 20px; height: 20px; font-size: 10px;}
   .text_line{height: 20px; width: 8px; background-color: rgb(19, 168, 253); margin-right: 10px; margin-top: 3px;}
   .footer_icon span{width: 5px; margin-left: 5px; margin-top: 0px;}
+
+
+
+
+
+  .students_life{padding: 10px;}
+.stud_life_card_img{width: 100%; display: flex; justify-content: center; margin-bottom: 20px;}
+.stud_life_card_img img{width: 42%; }
+.stud_life_card{padding: 10px !important; width: 100%;}
+.stud_life_text h2{font-size: 9px !important; padding: 10px; margin-top: 0px !important;}
+.students_life h1{font-size: 15px;}
+
 
 }

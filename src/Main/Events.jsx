@@ -68,6 +68,9 @@ navigate("/News/Events/EventsInner")
         </div>
 
 
+    
+
+
         </div>
         <div className='news_button'>
              <button onClick={()=>navigate("/News/Events")}>{t("all_events")}</button>

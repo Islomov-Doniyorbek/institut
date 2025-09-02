@@ -213,6 +213,9 @@ body.dark .kengash_reg_men_card h2{color: #006b09;}
 body.dark .market_card{color: #d1cfcf !important;}
 body.dark .market_man_card p{color: #d4d4d4 !important;}
 body.dark .market_man_card span{color: #d4d4d4 !important;}
+body.dark .students_life h1{color: #0069cc;}
+body.dark .stud_life_card {background-color: transparent !important; border: 1px solid #bdbdbd;}
+body.dark .stud_life_text h2{color: #c9c9c9;}
 
 
     @media (max-width:767px){

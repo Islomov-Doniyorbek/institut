@@ -44,6 +44,8 @@ import Laststudents from "./Pages/Talim/Laststudents";
 import Zoom from "./Pages/Students/Zoom";
 import History from "./Pages/History/History";
 import Chatbot from "./Pages/chatbot/chatbot";
+import OthernewsIner1 from "./Pages/InfoCenter/StatInners/OterNewsInner1";
+import OtherNewsInner2 from "./Pages/InfoCenter/StatInners/OtherNewsInner2";
  
 export const routes = [
   // Activity
@@ -69,7 +71,10 @@ export const routes = [
   { path: "/News/Allnews", element: <Allnews /> },
   { path: "/News/Allnews/Innernews", element: <AllnewsInner /> },
   { path: "/News/Allnews/Othernews", element: <OtherNews /> },
+
   { path: "/News/Allnews/OthernewsInner", element: <OthernewsIner /> },
+    { path: "/News/Allnews/OthernewsInner1", element: <OthernewsIner1 /> },
+      { path: "/News/Allnews/OthernewsInner2", element: <OtherNewsInner2 /> },
   { path: "/News/Allnews/EventInner", element: <EventInner /> },
   { path: "/News/Events", element: <Event /> },
   { path: "/News/Galery", element: <Galery /> },

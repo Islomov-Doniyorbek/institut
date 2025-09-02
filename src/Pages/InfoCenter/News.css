@@ -97,8 +97,8 @@ display: none;
 .news_img_stat6{background-image: url('../../ImagesStatik/news7.jpg') !important;}
 
 
-.otherrr_img img{width: 100%; height: 100%;}
-.otherrr_img{width: 100%; height: 500px;}
+.otherrr_img{width: 100% !important; height: 500px; display: flex; justify-content: center;}
+.elon_img{width: 60%; height: 100%;  background-size: cover; background-repeat: no-repeat; background-position: center;}
 .other_news_box{width: 100%; display: flex;  flex-direction: column; margin-top: 50px; background-color: #ebebeb; padding: 20px;}
 .other_news_box button{padding: 15px  30px; background-color: #1A5950; display: flex; justify-content: flex-start; align-items: flex-start; font-size: 15px; display: flex ; font-family: 'Montserrat';  color: white; border-radius: 10px; border: none;}
 .oter_inner{padding: 100px 100px;}
@@ -348,6 +348,10 @@ border: none; font-size: 25px; margin: 0px 5px; border: 1px solid #004386; color
 .news_img_stat8{
   background-image: url('../../ImagesStatik/news10.jpg') !important;
 }
+.news_img_stat9{
+  background-image: url('../../ImagesStatik/dolzarb.jpg') !important;
+}
+
 
 
     @media (max-width:1024px){

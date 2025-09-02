@@ -19,6 +19,14 @@ import KenagashInfoRegi from "./Pages/Institut/Tarkib_inner/KenagashInfoRegi";
 import KengashAxborot from "./Pages/Institut/Tarkib_inner/KengashAxborot";
 import TarkibMarket from "./Pages/Institut/Tarkib_inner/TarkibMarket";
 import TarkibHamkorlik from "./Pages/Institut/Tarkib_inner/TarkibHamkorlik";
+import OthernewsIner1 from "./Pages/InfoCenter/StatInners/OterNewsInner1";
+import OtherNewsInner2 from "./Pages/InfoCenter/StatInners/OtherNewsInner2";
+import OtherNewsInner3 from "./Pages/InfoCenter/StatInners/OtherNewsInner3";
+import OtherNewsInner4 from "./Pages/InfoCenter/StatInners/OtherNewsInner4";
+import OtherNewsInner5 from "./Pages/InfoCenter/StatInners/OtherNewsInner5";
+import Studentslife from "./Main/Talabalr/Studentslife";
+import MadaniyTadbir from "./Main/Talabalr/MadaniyTadbir";
+import Stependiyalar from "./Main/Talabalr/Stependiyalar";
 
 
 function App() {
@@ -43,10 +51,21 @@ function App() {
       <Routes>
         <Route path="/admin/*" element={<Admin />} />
         <Route path="/" element={<Layout />}>
+
+
+      <Route path="/studentslife" element={<Studentslife />} />
+ <Route path="/madaniytadbir" element={<MadaniyTadbir />} />
+ <Route path="/stipendiya" element={<Stependiyalar />} />
+
         <Route path="/News/Allnews/AllmewsInner" element={<AllnewsInner />} />
             <Route path="/News/Events/EventsInner" element={<EventInner/>} />
             <Route path="/News/Events/EventsInner2" element={<EventInnerr/>} />
             <Route path="/News/Events/EventsInner3" element={<EventsInnerrr/>} />
+               <Route path="/News/Allnews/OthernewsInner1" element={<OthernewsIner1/>} />
+                  <Route path="/News/Allnews/OthernewsInner2" element={<OtherNewsInner2/>} />
+                               <Route path="/News/Allnews/OthernewsInner3" element={<OtherNewsInner3/>} />
+                                            <Route path="/News/Allnews/OthernewsInner4" element={<OtherNewsInner4/>} />
+                                                         <Route path="/News/Allnews/OthernewsInner5" element={<OtherNewsInner5/>} />
               <Route path="/Institut/Ichki" element={<Institutrasm/>} />
                       <Route path="/History/History_doc" element={<History_doc/>} />
  <Route path="/Institut/Tuzilma/Inner" element={<KengashInfo/>} />
