@@ -6,7 +6,6 @@ const HistoryEvent = () => {
     const {t}=useTranslation()
   return (
      <div className='history_news'>
-        <h1>{t("history_news_page_title")}</h1>
         <div className='tarixiy_box'>
             <h1>{t("events")}</h1>
     <div className='tarixiy_row'>

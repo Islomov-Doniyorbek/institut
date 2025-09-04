@@ -305,6 +305,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8p
 .footer_text{display: flex; padding: 20px;}
 .footer_text h1{color: #FFFFFF99; font-size: 14px;  font-family:'Open Sans'; margin-bottom: 20px;}
 .footer_text p{color: #FFFFFF99; font-size: 14px;  font-family:'Open Sans'; }
+
 .footer_icon a{width: 40px; height: 40px; border-radius: 50%; font-size: 20px; margin: 0px 10px; background-color: white; display: flex; justify-content: center; color: #002e5b; align-items: center;} 
 .footer_icon{display: flex; justify-content: flex-end; width: 100%; padding: 20px 60px 0px 20px; }
 .footer_icon p{width: 40px; height: 40px; border-radius: 50%; font-size: 20px; margin: 0px 10px; background-color: white; display: flex; justify-content: center; color: #002e5b; align-items: center;} 
@@ -593,7 +594,8 @@ height: 150px;
   .footer_icon{display: flex; justify-content: flex-start; padding: 0px 0px 20px 15px; }
     .footer_text{display: flex !important; flex-direction: none !important;}
   .footer_text h1{font-size: 8px;}
-  .footer_icon p {width: 20px; height: 20px; font-size: 10px;}
+  .footer_icon a {width: 20px; height: 20px; font-size: 10px;}
+    .footer_icon p {width: 20px; height: 20px; font-size: 10px;}
   .text_line{height: 20px; width: 8px; background-color: rgb(19, 168, 253); margin-right: 10px; margin-top: 3px;}
   .footer_icon span{width: 5px; margin-left: 5px; margin-top: 0px;}
 

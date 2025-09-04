@@ -16,7 +16,7 @@ const HistoryAd = () => {
 
     return (
         <div className='history_news'>
-            <h1>{t("history_ads_page_title")}</h1>
+    
             <div className='tarixiy_box'>
                 <h1>{t("history_ads_section_title")}</h1>
                 <div className='tarixiy_row'>

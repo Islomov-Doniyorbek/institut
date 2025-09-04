@@ -216,6 +216,12 @@ body.dark .market_man_card span{color: #d4d4d4 !important;}
 body.dark .students_life h1{color: #0069cc;}
 body.dark .stud_life_card {background-color: transparent !important; border: 1px solid #bdbdbd;}
 body.dark .stud_life_text h2{color: #c9c9c9;}
+body.dark .calendar{border: 2px solid #f1f1f1;}
+body.dark .calendar h4{color: #0069cc;}
+body.dark .hafta-kun{color: white;}
+body.dark .sana-grid{border: none !important;}
+body.dark .details-section h4{color: #006b09 !important;}
+
 
 
     @media (max-width:767px){
