@@ -13,7 +13,6 @@ import EventInner from "./Pages/InfoCenter/EventInner";
 import EventInnerr from "./Pages/InfoCenter/StatInners/EventInnerr";
 import EventsInnerrr from "./Pages/InfoCenter/StatInners/EventsInnerrr";
 import Institutrasm from "./Pages/Institut/Institutrasm";
-import History_doc from "./Pages/History/History_doc";
 import KengashInfo from "./Pages/Institut/Tarkib_inner/KengashInfo";
 import KenagashInfoRegi from "./Pages/Institut/Tarkib_inner/KenagashInfoRegi";
 import KengashAxborot from "./Pages/Institut/Tarkib_inner/KengashAxborot";
@@ -67,7 +66,6 @@ function App() {
                                             <Route path="/News/Allnews/OthernewsInner4" element={<OtherNewsInner4/>} />
                                                          <Route path="/News/Allnews/OthernewsInner5" element={<OtherNewsInner5/>} />
               <Route path="/Institut/Ichki" element={<Institutrasm/>} />
-                      <Route path="/History/History_doc" element={<History_doc/>} />
  <Route path="/Institut/Tuzilma/Inner" element={<KengashInfo/>} />
   <Route path="/Institut/Tuzilma/InnerReg" element={<KenagashInfoRegi/>} />
    <Route path="/Institut/Tuzilma/AxborotTizim" element={<KengashAxborot/>} />

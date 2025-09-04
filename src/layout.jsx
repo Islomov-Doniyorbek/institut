@@ -166,8 +166,7 @@ const {t }=useTranslation()
     linkName: t("history"),
     linkList: [
       [
-        { link: t("historical_years"), path: "/History/History" },
-         { link: t("historical_document"), path: "/History/History_doc" }
+        { link: t("historical_years"), path: "/History/History" }
       ]
     ]
   }

@@ -16,6 +16,7 @@ import { IoBarChartOutline } from "react-icons/io5";
 import HistoryAd from "./History_inner/HistoryAd";
 import HistoryEvent from "./History_inner/HistoryEvent";
 import HistoryNews from "./History_inner/HistoryNews";
+import History_doc from "./History_doc";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -232,6 +233,7 @@ const History = () => {
               <HistoryAd />
               <HistoryEvent />
               <HistoryNews />
+              <History_doc/>
             </div>
           )}
         </div>

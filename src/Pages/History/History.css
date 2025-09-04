@@ -141,7 +141,12 @@ box-shadow: #005207 0px 12px 12px -8px !important;
 
 
 .tarixiy_doc{
-  padding: 100px;
+  border-radius: 20px; border: 2px solid #e2de00; margin-top: 100px;
+  padding: 50px;
+  height: 70vh; overflow: hidden; overflow-y: auto;
+}
+.tarixiy_doc::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari uchun */
 }
 .tarixiy_doc h1{display: flex; justify-content: center !important; align-items: center !important; color: #00478d; margin-bottom: 40px;}
 .tarixiy_doc h1 span{display: flex; align-items: center; margin-left: 6px;}
@@ -186,7 +191,7 @@ box-shadow: #005207 0px 12px 12px -8px !important;
 .yillar-box{padding: 10px !important;}
 
 
-  .tarixiy_doc{padding: 20px;}
+  .tarixiy_doc{padding: 20px; }
   .tarixiy_doc h1{font-size: 30px; margin-top: 30px; padding: 10px; margin-bottom: 20px !important;}
   .tarixiy_doc h1 span{margin-left: 0px !important;}
 .tarixiy_doc_card{margin-top: 30px !important; padding: 20px;}
