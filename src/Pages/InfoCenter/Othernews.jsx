@@ -41,7 +41,7 @@ const announcementsData = [
     postedBy: "estrada-conserva",
     category: "announcement",
     img: announcement2,
-    link: "/News/Allnews/OthernewsInner1",
+
   },
   {
     title: "“Vatanni madh etib” nomli eng yaxshi videoroliklar tanlovi o’tkaziladi.",
@@ -49,7 +49,7 @@ const announcementsData = [
     postedBy: "estrada-conserva",
     category: "announcement",
     img: vatan,
-    link: "/News/Allnews/OthernewsInner2",
+
   },
   {
     title: "📍“Rektor stipendiyasi” sohibi bo‘lish uchun nomzodlar quyidagi mezonlarni bajarishlari shart:",
@@ -57,7 +57,7 @@ const announcementsData = [
     postedBy: "estrada-conserva",
     category: "announcement",
     img: stependiya,
-    link: "/News/Allnews/OthernewsInner3",
+  
   },
   {
     title: "“Mahmudxo’ja Behbudiy saboqlari” mavzusida insholar tanlovi o’tkaziladi;",
@@ -65,7 +65,7 @@ const announcementsData = [
     postedBy: "estrada-conserva",
     category: "announcement",
     img: behbudiy,
-    link: "/News/Allnews/OthernewsInner4",
+
   },
   {
     title: "“Mirzo Ulug’bek vorislari” Respublika tanlovi o’tkaziladi:",
@@ -73,7 +73,6 @@ const announcementsData = [
     postedBy: "estrada-conserva",
     category: "announcement",
     img: mirzo,
-    link: "/News/Allnews/OthernewsInner5",
   },
 ];
 

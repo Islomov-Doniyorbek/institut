@@ -1,6 +1,21 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import rahbar from '../../../Images/rahvar.jpg'
+import { FaRegTrashCan } from 'react-icons/fa6'
+import { Modal } from 'antd';
 const Tuzilmaqoshish = () => {
+ const [isModalOpen, setIsModalOpen] = useState(false);
+   const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className='tuzilma'>
       <h1>Rahbar kiriting</h1>
@@ -38,6 +53,64 @@ const Tuzilmaqoshish = () => {
 <input type='text' placeholder='admin@gmail.com'/>
 </div>
       </div>
+
+
+<div className='delete_boss'>
+<h3>Rahbarni o'chirish</h3>
+<div className='delete_bos_row'>
+<div className='delete_bos_card'>
+    <div className='boss_delete_icon'>
+<span onClick={()=>showModal()}><FaRegTrashCan /></span>
+  </div>
+  <div className='delete_bos_img'>
+  <img src={rahbar}/>
+  </div>
+  <h3>Mirzayev Akbarjon Abdurahimovich</h3>
+  <p>O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti rektori</p>
+  <p>O‘zbekiston Respublikasida xizmat koʻrsatgan madaniyat xodimi, professor</p>
+<div className='rahbar_vaxifasi'>
+  <span> Dushanba 9:00 dan 18:00 gacha</span>
+  <span> +998 71 200 00 00</span>
+  <span> info@estrada-art.uz</span>
+  </div>
+</div>
+
+
+<div className='delete_bos_card'>
+  <div className='boss_delete_icon'>
+<span  onClick={()=>showModal()}><FaRegTrashCan /></span>
+  </div>
+  <div className='delete_bos_img'>
+  <img src={rahbar}/>
+  </div>
+  <h3>Mirzayev Akbarjon Abdurahimovich</h3>
+  <p>O‘zbekiston davlat konservatoriyasi huzuridagi Botir Zokirov nomidagi Milliy estrada san’ati instituti rektori</p>
+  <p>O‘zbekiston Respublikasida xizmat koʻrsatgan madaniyat xodimi, professor</p>
+<div className='rahbar_vaxifasi'>
+  <span> Dushanba 9:00 dan 18:00 gacha</span>
+  <span> +998 71 200 00 00</span>
+  <span> info@estrada-art.uz</span>
+  </div>
+</div>
+</div>
+
+</div>
+   <>
+      <Modal
+        closable={{ 'aria-label': 'Custom Close Button' }}
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <div className='axborot_modal'>
+   <h1>Bu rahbarni o'chirishni xohlaysizmi!!!</h1>
+   <div className='axborot_modal_button'>
+    <button className='axborot_red'>Ha</button>
+    <button onClick={handleCancel}>Yo'q</button>
+   </div>
+   </div>
+      </Modal>
+    </>
 
     </div>
   )

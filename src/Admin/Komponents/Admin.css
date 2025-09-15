@@ -1,6 +1,6 @@
 
 
-.adminpanel{
+.adminpanel{   
   width: auto !important; background-color: white; height: 100vh !important; display: flex; justify-content: center; align-items: center !important; 
 }
 .adminpanel_box{padding:50px; width: 25%; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border-radius: 10px; background-color:transparent ; }
@@ -13,7 +13,7 @@
 .admin_button{font-size: 15px !important; margin-top: 50px !important; padding: 10px 0px; border-radius: 10px; color: white; border: none; width: 100% !important; background-color: rgb(59, 59, 255); } 
 .admin_button:hover{background-color: rgb(47, 47, 172);}
 
-.admin_container{width:auto!important; height: 100vh; display: flex; overflow: hidden;}
+.admin_container{width:auto!important; height: 100vh; display: flex; overflow: hidden; position: relative;}
 
 .admin_menu{width: 30vw !important; padding: 40px 50px; background-color: #f2f6fc;
   height: 100vh;}
@@ -39,6 +39,21 @@ border: 2px solid #0056ac ; }
 
 .admin_science{width: 50px; height: 50px;}
 .admin_science img{width: 25px;}
+.media_tugma{display: flex !important; }
+.admin_jsx{display: none !important;}
+
+
+.adminpanel_box_top img{width: 80px; height: 80px;}
+
+
+
+
+
+
+
+
+
+
 
 
 

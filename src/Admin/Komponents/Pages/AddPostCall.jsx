@@ -305,19 +305,19 @@ Qabul komissiyasi mas’ul kotibi</p>
 <h2>Dilmurotov Mirzobek O‘tkir o‘g‘li</h2>
 <p>O‘quv-uslubiy boshqarma boshlig‘i,
 Qabul komissiyasi mas’ul kotibi</p>
-<span>+998 91 003 36 55 <b><FaRegTrashAlt /></b></span>
+<span>+998 91 003 36 55 <b onClick={showModal}><FaRegTrashAlt /></b></span>
 </div>
 <div className='qabul-post_card'>
 <h2>Dilmurotov Mirzobek O‘tkir o‘g‘li</h2>
 <p>O‘quv-uslubiy boshqarma boshlig‘i,
 Qabul komissiyasi mas’ul kotibi</p>
-<span>+998 91 003 36 55 <b><FaRegTrashAlt /></b></span>
+<span>+998 91 003 36 55 <b onClick={showModal}><FaRegTrashAlt /></b></span>
 </div>
 <div className='qabul-post_card'>
 <h2>Dilmurotov Mirzobek O‘tkir o‘g‘li</h2>
 <p>O‘quv-uslubiy boshqarma boshlig‘i,
 Qabul komissiyasi mas’ul kotibi</p>
-<span>+998 91 003 36 55 <b><FaRegTrashAlt /></b></span>
+<span>+998 91 003 36 55 <b onClick={showModal}><FaRegTrashAlt /></b></span>
 </div>
 </div>
 </div>
@@ -337,7 +337,7 @@ Qabul komissiyasi mas’ul kotibi</p>
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={showModal}><FaRegTrashAlt /></button>
 </div>
 </div>
 </div>
@@ -358,7 +358,7 @@ Qabul komissiyasi mas’ul kotibi</p>
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={showModal}><FaRegTrashAlt /></button>
 </div>
 </div>
 </div>
@@ -379,7 +379,7 @@ Qabul komissiyasi mas’ul kotibi</p>
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={showModal}><FaRegTrashAlt /></button>
 </div>
 </div>
 </div>
@@ -403,7 +403,7 @@ Qabul komissiyasi mas’ul kotibi</p>
         onCancel={handleCancel}
       >
         <div className='axborot_modal'>
-   <h1>Bu yangilikni o'chirishni xohlaysizmi</h1>
+   <h1>Bu ma'lumotni o'chirishni xohlaysizmi!!!</h1>
    <div className='axborot_modal_button'>
     <button className='axborot_red'>Ha</button>
     <button onClick={handleCancel}>Yo'q</button>

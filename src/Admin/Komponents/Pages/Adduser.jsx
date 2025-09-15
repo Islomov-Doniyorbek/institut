@@ -71,6 +71,8 @@ const Adduser = () => {
 <div className='ny-admin'>
           <h2>Parol</h2>
       <input type='text' placeholder='email'/>
+  <h2>Login</h2>
+      <input type='text' placeholder='login'/>
 
       <div className='forign_select forign_inputs_card'>
         <h2>Rol</h2>
