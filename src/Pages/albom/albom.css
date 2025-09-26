@@ -1,0 +1,51 @@
+.albom {
+    position: relative;
+    padding: 10px;
+}
+.list {
+    position: relative;
+    width: 100%;
+    padding: 8px 10px;
+}
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ol li {
+    position: relative;
+    background: cornsilk;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+ol li p {
+    font-size: 22px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.musics {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.musics audio {
+    padding: 8px 10px;
+    background-color: rgb(21, 21, 194);
+}
+.ico {
+    cursor: pointer;
+}
+.scr {
+    display: inline-block;
+}
+.hide {
+    display: none;
+}

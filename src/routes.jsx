@@ -44,6 +44,7 @@ import Laststudents from "./Pages/Talim/Laststudents";
 import Zoom from "./Pages/Students/Zoom";
 import History from "./Pages/History/History";
 import Chatbot from "./Pages/chatbot/chatbot";
+import Albom from "./Pages/albom/albom";
  
 export const routes = [
   // Activity
@@ -63,6 +64,7 @@ export const routes = [
   { path: "/Institut/Xalqaro hamkorlik", element: <Hamkorlik /> },
   { path: "/Institut/Foydali havolalar", element: <Anchors /> },
   { path: "/Institut/Botir Zokirov hayoti va ijodi", element: <Biography /> },
+  { path: "/Institut/Albomlar", element: <Albom /> },
   { path: "/Institut/Tarkibiy Tuzilma", element: <Tarkib /> },
 
   // News

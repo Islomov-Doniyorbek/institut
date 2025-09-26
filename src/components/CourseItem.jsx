@@ -43,6 +43,7 @@ const CourseItem = ({ title, yoNalishlar }) => {
               onClick={() => handleToggle(idx)}
               style={{
                 width: "100%",
+                marginLeft: 0,
                 textAlign: "left",
                 background: "#FFF8E1",
                 color: "#15396A",

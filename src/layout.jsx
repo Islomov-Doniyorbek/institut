@@ -92,6 +92,7 @@ const {t }=useTranslation()
           { link:  t("international"), path: "/Institut/Xalqaro hamkorlik" },
           { link: t("useful_links"), path: "/Institut/Foydali havolalar" },
           { link:t("botir_life"), path: "/Institut/Botir Zokirov hayoti va ijodi" },
+          { link:"Albom", path: "/Institut/Albomlar" },
         ],
       ],
     },
