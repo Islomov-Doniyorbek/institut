@@ -132,7 +132,7 @@
   line-height: 60px;
   font-weight: 700; margin-bottom: 40px;}
 .links_row{display: flex; width: 100%; flex-wrap: wrap; }
-.links_col{display: flex; width: auto; align-items: center; justify-content: flex-start; padding: 20px 0px ;
+.links_col{display: flex; width: 30%; align-items: center; justify-content: flex-start; padding: 20px 0px ;
    border-radius: 20px; transition: transform 0.3s ease; cursor: pointer;
    transform-origin: center; margin: 15px; padding: 25px 0px 25px 50px; background-color: #1a5950;}
 
@@ -145,13 +145,13 @@
   .links_col:hover h2{color: #1a5950 !important;}
   .links_col:hover b{color: #1a5950 !important;}
 .links_col a{width: calc(100% - 100px);}
-
+  .links_col:hover .link_inner{color: white !important; background-color: #1a5950; }
 
 .link_icon{ width: 80px; display: flex; justify-content: center; align-items: center;
   height: 70px; margin-right: 20px; color: #1a5950;
 background-color: #1a5950;
   padding: 3px;
-  font-size: 50px;
+  font-size: 60px !important;
 text-align: center;
   line-height: 55px;
 }
@@ -164,6 +164,16 @@ text-align: center;
     align-items: center;
     justify-content: center;
     font-size: 35px;
+    color: #1a5950 !important;
+    background-color: white;
+  clip-path: polygon(
+    25% 0%,
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    25% 100%,
+    0% 50%
+  );
   }
   .links_col h2{color:   white; font-size: 25px; font-family:'Montserrat'; margin-bottom: 15px;}
   .links_col b{color: white; font-size: 18px; font-family:'Open Sans';}
@@ -545,12 +555,10 @@ height: 150px;
   height: 500px !important;
   border-radius: 0;
   padding: 0;
-  background: none !important; /* asosiy fonni olib tashlaymiz */
+  background: none !important; 
   overflow: hidden;
   z-index: 1;
 }
-
-/* blur + qoraroq effekt */
 .about::before {
   content: "";
   position: absolute;
@@ -569,20 +577,11 @@ height: 150px;
 .about_text p{font-size: 15px; color: #036ad1;}
  .about_text span{font-size: 12px; color: rgb(223, 223, 223);}
  .about_text span b {font-size: 17px;}
- 
- 
- 
- 
- 
- .forstudent{padding: 10px; margin: 20px;}
+.forstudent{padding: 10px; margin: 20px;}
  .forstudent_row{display: flex; flex-direction: column;}
  .forstudent_box{width: 100%; margin: 10px 0px;}
  .forstudent_box h1{font-size: 18px;}
-  .forstudent_col {
-    background-size: contain;   /* kichik ekranda kesilmasdan ko‘rinadi */
-background-position: center;
-height: 150px;
-  }
+  .forstudent_col {background-size: contain;   background-position: center;height: 150px;}
   .forstudent_card_text p{font-size: 18px; }
   .forstudent_card_text b{font-size: 15px;}
   .footer{display: flex; flex-direction: column;}
@@ -593,12 +592,7 @@ height: 150px;
     .footer_icon p {width: 20px; height: 20px; font-size: 10px;}
   .text_line{height: 20px; width: 8px; background-color: rgb(19, 168, 253); margin-right: 10px; margin-top: 3px;}
   .footer_icon span{width: 5px; margin-left: 5px; margin-top: 0px;}
-
-
-
-
-
-  .students_life{padding: 10px;}
+.students_life{padding: 10px;}
 .stud_life_card_img{width: 100%; display: flex; justify-content: center; margin-bottom: 20px;}
 .stud_life_card_img img{width: 42%; }
 .stud_life_card{padding: 10px !important; width: 100%;}

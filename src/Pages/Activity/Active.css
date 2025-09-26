@@ -53,7 +53,9 @@ padding: 40px 0px 40px 70px !important;
 
 
 
-
+:where(.css-dev-only-do-not-override-1vjf2v5).ant-modal .ant-modal-close-x{
+  display: none;
+} 
 
 .council_img{box-shadow: none;}
 
