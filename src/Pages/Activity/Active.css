@@ -20,7 +20,7 @@ padding: 40px 0px 40px 70px !important;
     font-weight: 700;
     font-style: normal; font-family: 'Montserrat'; margin-bottom: 20px;}
     .active_top p{font-size: 13px; color: #888888;}
-.active_text button{padding: 15px; width: 100%;  font-weight: 700; display: flex; justify-content: center;  transition: 0.3s;
+.active_text button{padding: 15px 0px; margin-left: 0px !important;  width: 100%;  font-weight: 700; display: flex; justify-content: center;  transition: 0.3s;
   background: linear-gradient(to bottom right, #1A5950 0%, #003d7a 40%); border: none; border-radius: 10px; font-size: 16px; color: #FFFFFF; font-family: 'Montserrat';}
   .active_text button:hover{background: rgb(236, 236, 236) !important; color: #003d7a;}
 

@@ -99,13 +99,13 @@ flex-direction: column; align-items: center; justify-content: center;}
 .forign_box h2{ font-family: 'Montserrat'; font-size: 35px; font-weight: 700; color: #004b96; margin-bottom: 40px; display: flex; flex-direction: column;
 justify-content: center; align-items: center;}
 .forign_inputs_card{margin: 0px 0px;}
-.forign_inputs_card h3{font-family: 'Montserrat'; font-size: 16px; font-weight: 500; color: rgb(58, 58, 58);}
+.forign_inputs_card h3{font-family: 'Montserrat' ; margin-top: 20px; font-size: 16px; font-weight: 500; color: rgb(58, 58, 58);}
 .forign_inputs_card input{padding: 15px ; font-family: 'Montserrat'; font-size: 15px; width: 100%; border: none; border-radius: 10px; margin-top: 10px ; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;} 
 
 .forign_inputs_card input:active{border: none !important;}
 
 
-.edu-container h3{font-family: 'Montserrat'; font-size: 16px; font-weight: 500; color: rgb(58, 58, 58);}
+.edu-container h3{font-family: 'Montserrat'; font-size: 16px; font-weight: 500; color: rgb(58, 58, 58); margin-top: 20px;}
 .edu-container {
   display: flex;
   flex-direction: column;
