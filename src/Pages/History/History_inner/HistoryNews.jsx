@@ -53,6 +53,14 @@ const handleOpen = ()=>{
 </div>
 </div>
 
+<div className='tarixiy_card'>
+   <div className='tarixiy_card_img'></div>
+<div className='tarixiy_card_text'>
+<h2 onClick={handleOpen}>{t("history_news_card_title")}</h2>
+<p><span><FaRegClock /></span>{t("history_news_card_date")}</p>
+</div>
+</div>
+
 </div>
     </div>
                 <>

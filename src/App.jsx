@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Komponents from "./Main/Komponents";
 import Layout from "./layout";
-import Admin from "./Admin/Admin";
+
 import { routes } from './routes';
 import './Dark.css'
 import "./App.css";
@@ -42,7 +42,6 @@ function App() {
     <>
       {loading && <Loader/>}
       <Routes>
-        <Route path="/admin/*" element={<Admin />} />
         <Route path="/" element={<Layout />}>
 
 
