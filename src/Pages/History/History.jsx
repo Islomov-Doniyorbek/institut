@@ -1,150 +1,218 @@
-import React, { useState } from 'react';
-import { LuSearch } from 'react-icons/lu';
-import { AnimatePresence, motion } from 'framer-motion';
-import history from '../../Images/history_2201499.png';
-import HistoryNews from './History_inner/HistoryNews';
-import HistoryEvent from './History_inner/HistoryEvent';
-import HistoryAd from './History_inner/HistoryAd';
-import './History.css';
-import { useTranslation } from 'react-i18next';
+import React, { useState } from "react";
+import history from "../../Images/history_2201499.png";
+import "./History.css";
+import { useTranslation } from "react-i18next";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
+import { IoBarChartOutline } from "react-icons/io5";
+import HistoryAd from "./History_inner/HistoryAd";
+import HistoryEvent from "./History_inner/HistoryEvent";
+import HistoryNews from "./History_inner/HistoryNews";
+import History_doc from "./History_doc";
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+
 const History = () => {
-  const years = [2020, 2021, 2022, 2023, 2024, 2025];
+  const { t } = useTranslation();
+
   const months = [
-    'Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'Iyun',
-    'Iyul', 'Avgust', 'Sentabr', 'Oktabr', 'Noyabr', 'Dekabr'
+    "Yanvar",
+    "Fevral",
+    "Mart",
+    "Aprel",
+    "May",
+    "Iyun",
+    "Iyul",
+    "Avgust",
+    "Sentabr",
+    "Oktabr",
+    "Noyabr",
+    "Dekabr",
   ];
 
+  // view = years | months | days | details
+  const [view, setView] = useState("years");
   const [selectedYear, setSelectedYear] = useState(null);
   const [selectedMonthIndex, setSelectedMonthIndex] = useState(null);
   const [selectedDay, setSelectedDay] = useState(null);
 
-  const getDaysForMonth = (year, monthIndex) => {
-    const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
-    return Array.from({ length: daysInMonth }, (_, i) => i + 1);
+  // Yil → Oyga o‘tish
+  const handleYearClick = (year) => {
+    setSelectedYear(year);
+    setView("months");
   };
 
-  const slideUpFadeOut = {
-    hidden: { y: 0, opacity: 1 },
-    exit: { y: -80, opacity: 0, transition: { duration: 0.5 } }
+  // Oy → Kunlarga o‘tish
+  const handleMonthClick = (monthIndex) => {
+    setSelectedMonthIndex(monthIndex);
+    setSelectedDay(null);
+    setView("days");
   };
 
-  const slideUpFadeIn = {
-    hidden: { y: 80, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } }
+  // Kun bosilganda → Detallar
+  const handleDayClick = (day) => {
+    setSelectedDay(day);
+    setView("details");
   };
 
-  const fadeUpSlow = {
-    hidden: { y: 100, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
+  // Chart ma’lumotlari
+  const data = {
+    labels: ["2020", "2021", "2022", "2023", "2024", "2025"],
+    datasets: [
+      {
+        label: "Yangiliklar",
+        data: [100, 100, 70, 90, 130, 80],
+        backgroundColor: "rgba(0, 62, 119, 1)",
+      },
+      {
+        label: "Tadbirlar",
+        data: [80, 150, 105, 50, 65, 120],
+        backgroundColor: "rgba(201, 197, 0, 1)",
+      },
+    ],
   };
-console.log(motion)
-const {t}=useTranslation()
+
+  const datas = {
+    labels: months,
+    datasets: [
+      {
+        label: "Yangiliklar",
+        data: [10, 20, 14, 6, 19, 9, 13, 16, 5, 11, 13, 17],
+        backgroundColor: "rgba(0, 62, 119, 1)",
+      },
+      {
+        label: "Tadbirlar",
+        data: [12, 18, 10, 7, 15, 8, 20, 11, 9, 14, 10, 16],
+        backgroundColor: "rgba(201, 197, 0, 1)",
+      },
+    ],
+  };
+
+  // Yillar charti
+  const options = {
+    responsive: true,
+    plugins: { legend: { display: false }, title: { display: false } },
+    scales: { x: { grid: { display: false } }, y: { grid: { display: true } } },
+    onClick: (event, elements) => {
+      if (elements.length > 0) {
+        const index = elements[0].index;
+        const year = data.labels[index];
+        handleYearClick(Number(year));
+      }
+    },
+  };
+
+  // Oylar charti
+  const optionses = {
+    responsive: true,
+    plugins: { legend: { display: false }, title: { display: false } },
+    scales: { x: { grid: { display: false } }, y: { grid: { display: true } } },
+    onClick: (event, elements) => {
+      if (elements.length > 0) {
+        const index = elements[0].index;
+        handleMonthClick(index);
+      }
+    },
+  };
 
   return (
-    <div className='history-con'>
-      <div className='history_inputs'>
-        <div className='history_top'>
+    <div className="history-con">
+      <div className="history_inputs">
+        <div className="history_top">
           <img src={history} alt="history" />
           <h1>{t("history_page_title")}</h1>
         </div>
 
-        <AnimatePresence mode="wait">
-          {/* YIL TANLASH */}
-          {!selectedYear && (
-            <motion.div
-              key="years"
-              variants={slideUpFadeIn}
-              initial="hidden"
-              animate="visible"
-              exit={slideUpFadeOut.exit} // ✅ obyekt sifatida berilmoqda
-              className='yillar'
-            >
-              <h2>{t("history_page_subtitle")}</h2>
-              <div className='yillar-box'>
-                <div className="yillar-row">
-                  {years.map((year, index) => (
-                    <div key={index} className='yillar-card'>
-                      <button
-                        onClick={() => {
-                          setSelectedYear(year);
-                          setSelectedMonthIndex(null);
-                          setSelectedDay(null);
-                        }}
-                      >
-                        <span className="front">{year}</span>
-                        <span className="back"><LuSearch /></span>
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
+        <div className="bar_chart_box">
+          <div className="bar_chart_title">
+            <div className="bar_chart_text">
+              <h1>
+                {view === "years" &&
+                  "Yillar bo'yicha ma'lumotlar grafikasi 2020 - 2025"}
+                {view === "months" &&
+                  `${selectedYear}-yil Oylar bo'yicha ma'lumotlar grafikasi`}
+                {view === "days" &&
+                  `${selectedYear}-yil ${months[selectedMonthIndex]} oyi kalendari`}
+                {view === "details" &&
+                  `${selectedYear}-yil ${months[selectedMonthIndex]} ${selectedDay}-kun tafsilotlari`}
+              </h1>
+              <span>
+                <IoBarChartOutline />
+              </span>
+            </div>
+          </div>
+
+          {/* Yillar */}
+          {view === "years" && (
+            <div className="bar_chart">
+              <Bar data={data} options={options} />
+            </div>
           )}
 
-          {/* OY TANLASH */}
-          {selectedYear && selectedMonthIndex === null && (
-            <motion.div
-              key="months"
-              variants={slideUpFadeIn}
-              initial="hidden"
-              animate="visible"
-              exit={slideUpFadeOut.exit}
-              className='oylar-box'
-            >
-              <h2>{selectedYear}-{t("year_monts")}</h2>
-              <div className='oylar-row'>
-                {months.map((month, index) => (
-                  <div key={index} className='oylar-card'>
-                    <button
-                      onClick={() => {
-                        setSelectedMonthIndex(index);
-                        setSelectedDay(null);
-                      }}
-                    >
-                      <span className="front">{month}</span>
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+          {/* Oylarga */}
+          {view === "months" && (
+            <div className="bar_chart bar_chart2">
+              <Bar data={datas} options={optionses} />
+            </div>
           )}
 
-          {/* KUN TANLASH */}
-          {selectedMonthIndex !== null && selectedDay === null && (
-            <motion.div
-              key="days"
-              variants={slideUpFadeIn}
-              initial="hidden"
-              animate="visible"
-              exit={slideUpFadeOut.exit}
-              className='sana-topish'
-            >
+          {/* Kunlarga (calendar) */}
+          {view === "days" && (
+            <div className="calendar">
               <h4>
-                {selectedYear}-yil {months[selectedMonthIndex]} {t("month_numbers")}
+                {selectedYear}-yil {months[selectedMonthIndex]}{" "}
+                {t("month_numbers")}
               </h4>
 
               {/* Haftaning kunlari */}
               <div className="hafta-header">
-                {['Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh', 'Ya'].map((kun, i) => (
-                  <div key={i} className="hafta-kun">{kun}</div>
+                {["Du", "Se", "Ch", "Pa", "Ju", "Sh", "Ya"].map((kun, i) => (
+                  <div key={i} className="hafta-kun">
+                    {kun}
+                  </div>
                 ))}
               </div>
 
               {/* Kunlar jadvali */}
-              <div className='sana-grid'>
+              <div className="sana-grid">
                 {(() => {
-                  const daysInMonth = getDaysForMonth(selectedYear, selectedMonthIndex);
-                  const firstDay = new Date(selectedYear, selectedMonthIndex, 1).getDay();
-                  const startOffset = (firstDay === 0 ? 6 : firstDay - 1);
+                  const daysInMonth = new Date(
+                    selectedYear,
+                    selectedMonthIndex + 1,
+                    0
+                  ).getDate();
+                  const firstDay = new Date(
+                    selectedYear,
+                    selectedMonthIndex,
+                    1
+                  ).getDay();
+                  const startOffset = firstDay === 0 ? 6 : firstDay - 1;
+
                   const blanks = Array.from({ length: startOffset }, (_, i) => (
-                    <div key={`b${i}`} className="sana-card empty"></div>
+                    <div
+                      key={`blank-${i}`}
+                      className="sana-card empty"
+                    ></div>
                   ));
 
-                  const dayCells = daysInMonth.map((day) => (
+                  const dayCells = Array.from(
+                    { length: daysInMonth },
+                    (_, i) => i + 1
+                  ).map((day) => (
                     <div
                       key={day}
-                      className={`sana-card ${selectedDay === day ? 'active' : ''}`}
-                      onClick={() => setSelectedDay(day)}
+                      className={`sana-card ${
+                        selectedDay === day ? "active" : ""
+                      }`}
+                      onClick={() => handleDayClick(day)}
                     >
                       {day}
                     </div>
@@ -153,44 +221,22 @@ const {t}=useTranslation()
                   return [...blanks, ...dayCells];
                 })()}
               </div>
-            </motion.div>
+            </div>
           )}
-        </AnimatePresence>
 
-        {/* TARIXIY MA'LUMOTLAR */}
-        <AnimatePresence>
-          {selectedDay !== null && (
-            <motion.div
-              key="history-data"
-              variants={fadeUpSlow}
-              initial="hidden"
-              animate="visible"
-              exit={{ opacity: 0 }}
-            >
-              <div className='tarixiy-yangilik'>
-                <HistoryNews
-                  year={selectedYear}
-                  month={months[selectedMonthIndex]}
-                  day={selectedDay}
-                />
-              </div>
-              <div className='tarixiy-tadbirlar'>
-                <HistoryEvent
-                  year={selectedYear}
-                  month={months[selectedMonthIndex]}
-                  day={selectedDay}
-                />
-              </div>
-              <div className='tarixiy-elonlar'>
-                <HistoryAd
-                  year={selectedYear}
-                  month={months[selectedMonthIndex]}
-                  day={selectedDay}
-                />
-              </div>
-            </motion.div>
+          {/* Kun tanlangandan keyin detallar */}
+          {view === "details" && (
+            <div className="details-section">
+              <h4>
+                {selectedYear}-yil {months[selectedMonthIndex]} {selectedDay}-kun
+              </h4>
+              <HistoryAd />
+              <HistoryEvent />
+              <HistoryNews />
+              <History_doc/>
+            </div>
           )}
-        </AnimatePresence>
+        </div>
       </div>
     </div>
   );

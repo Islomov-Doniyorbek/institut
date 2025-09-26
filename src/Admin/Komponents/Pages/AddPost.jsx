@@ -15,7 +15,6 @@ const AddPost = () => {
 const [selectedCategory, setSelectedCategory] = useState('Tanlang !!!');
 const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-const [isModalOpens, setIsModalOpens] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -26,13 +25,6 @@ const [isModalOpens, setIsModalOpens] = useState(false);
 
   const handleCancel = () => {
     setIsModalOpen(false);
-  };
-
-    const handleCancell = () => {
-    setIsModalOpens(false);
-  };
-    const showModals = () => {
-    setIsModalOpens(true);
   };
 
 
@@ -222,9 +214,6 @@ const [isModalOpens, setIsModalOpens] = useState(false);
                           <p><span><FaRegClock /></span>{post.date}</p>
                         </div>
                         <div className='new_delete_icon'>
-                          <span className='yellow_icon' onClick={showModals}>
-                            <FaPencilAlt />
-                          </span>
                           <span onClick={showModal}>
                             <FaTrashAlt />
                           </span>
@@ -251,25 +240,7 @@ const [isModalOpens, setIsModalOpens] = useState(false);
       </Modal>
     </>
 
-    <>
-      <Modal
-              open={isModalOpens}
-              onCancel={handleCancell}
-              footer={null}
-            >
-              <div className='modal_user'> 
-                <h3>Yangilik ma'lumotlarini tahrirlash!!!</h3>
-                <p>Sarlavha</p>
-                <Input  />
-                <p>Ma'lumot matni</p>
-                <Input.TextArea rows={4}  />
-              </div>
-              <div className='axborot_secend_modal' style={{ display: "flex", justifyContent: "flex-end", gap: "10px", marginTop: "20px" }}>
-                <button onClick={handleCancell} className="axborot_red">Bekor qilish</button>
-                <button  className="save_btn">Saqlash</button>
-              </div>
-            </Modal>
-            </>
+
  </div>
   );
 };

@@ -523,7 +523,7 @@ border: 1px solid #003d7a; border-radius: 10px; margin: 10px;}
 
 .talim-selected{width: 100%;  border: 1px solid #00366d !important;}
 .talim_select_list{width: 100% !important;}
-.custom_select{margin: 10px !important;}
+.custom_select{margin: 0px !important;}
 .talim_list_h2{font-size: 20px; color: #004906;}
 
 .talim_posts{padding: 20px; border: 2px solid #00366d; border-radius: 10px; margin-top: 80px;}
@@ -634,11 +634,228 @@ color: white;
 .rahbariyat_card{margin: 30px 0px;}
 .rahbariyat_card h2{font-size: 20px; color: #003264; margin-bottom: 10px;}
 .rahbariyat_card input{width: 50%; padding: 15px; border: 1px solid #00366d; border-radius: 10px; font-size: 16px;}
+.delete_boss{    padding: 25px;
+    border: 2px solid #003d7a;
+    border-radius: 10px;
+    margin-top: 50px;}
+.delete_boss h3{font-size: 25px !important; display: flex; align-items: center; justify-content: center;
+margin-bottom: 30px ; color: #004ab1;}
+.delete_bos_row{display: flex; width: 100%; flex-wrap: wrap !important;}
+.delete_bos_card{width: 48% !important; margin: 10px ; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; padding: 20px ; border-radius: 15px ;  display: flex; flex-direction: column; text-align: center;}
+.delete_bos_card img{width: 250px;}
+.delete_bos_card h3{font-size: 20px !important; margin-top: 20px ; margin-bottom: 10px ; color: #00521b;}
+.delete_bos_card p{font-size: 16px !important; color: #464545 ; font-weight: 600; }
+.rahbar_vaxifasi{display: flex; flex-direction: column; margin-top: 10px;}
+.rahbar_vaxifasi span{color: #000; font-weight: 600; }
+.boss_delete_icon{width: 100% !important; display: flex; justify-content: flex-end; align-items: end;
+}
+.boss_delete_icon span{font-size: 20px !important; display: flex; align-items: center; justify-content: center;
+  color: white;  border-radius: 50%; background-color: red; width: 40px; height: 40px;}
+.boss_delete_icon span:hover{background-color: #7B7A7A !important; color: white !important;}
 
 
 
 
 
+
+
+
+
+
+
+
+@media (max-width:1024px){
+.admin_box{width: 100vw !important;}
+.admin_menu{ position: fixed; padding: 20px; padding: 10px 5px 5px 5px !important;   z-index: 1000;
+  transition: width 0.3s ease; 
+  overflow: hidden;}
+  .admin_menu.closed{  position: relative !important; width: 12vw !important;   overflow: hidden;}
+  .admin_menu.closed .none_media{display: none !important;}
+.admin_menu.open{width: 40vw !important; padding: 10px 20px 20px 20px !important;}
+.admin_menu.open .admin_jsx{margin-right: 15px !important; }
+.admin_menu.closed .admin_menu_list{height: 85vh !important;}
+.admin_menu.open .admin_menu_list{height: 85vh !important;}
+.admin_menu.closed  .admin_menu_card{height: 40px !important; padding: 0px !important; display: flex; justify-content: center; } 
+
+.admin_menu.closed  .admin_menu_card span{margin-right: 0px !important;}
+.admin_logo{padding: 5px !important;}
+.admin_menu_list{padding: 10px;}
+.admin_jsx{display: flex !important; height: 50px !important; width: 50px !important; margin-right: 30px;}
+.admin_jsx button{ height: 100% !important; width: 100%; background-color: white !important; border: 2px solid #0056ac !important; color: black !important;
+font-size: 20px !important; display: flex; justify-content: center; align-items: center;}
+.admin_logo img{width: 35px !important;}
+.admin_logo h1{font-size: 17px;}
+.admin_menu_card h2{font-size: 14px !important; display: flex ;}
+.admin_menu_card p{font-size: 10px; display: flex ;}
+.admin_menu_card{padding: 14px !important; height: 80px;}
+.admin_menu_card span{ margin-right: 5px !important;  font-size: 20px !important; width: 45px !important; border: none !important; height: 45px !important;}
+.adduser_box h1{font-size: 20px !important; margin-bottom: 10px !important;}
+.adduser_box{padding: 20px !important;}
+.adduser_box h2{font-size: 17px !important;}
+.adduser_box button{padding: 10px 30px !important;}
+.admins_list h1{font-size: 20px !important;}
+.admin_table th{padding: 10px 0px !important; font-size: 15px !important;}
+.admin_table td{font-size: 10px !important; padding: 10px 0px !important; color: black !important;} 
+.add_media h3{font-size: 17px !important;}
+
+.addpost_box h1{font-size: 18px !important;}
+.custom_select_list{height: auto !important;}
+.custom_select_list p{color: #000 !important;}
+.main-text-h1{margin: 20px 0px !important; font-size: 20px !important;}
+.addpost_box{padding: 20px !important;}
+.forign_photo h3{font-size: 14px !important;}
+.post_select{width: 50% !important; }
+.post_selected{width: 50% !important;}
+.post_select span{font-size: 16px !important;}
+.post_selected p{font-size: 16px !important;}
+.forign_photo_box{height: 150px !important;}
+.preview-img2{height: 140px !important;}
+.addpost_textarea h1{font-size: 17px;}
+.first_textarea{width: 70% !important; height: 120px !important;}
+.add_btn_box{display: flex;}
+.btn_add{padding: 10px 20px !important ; font-size: 15px !important;}
+.upload_button{width: 150px !important; margin-top: 20px !important; padding: 10px 0px !important;}
+.axborot_postlar{margin-top: 70px !important; padding: 30px 10px !important;}
+.axborot_postlar h1{font-size: 20px !important;}
+.adminpanel_box{width: 70% !important;}
+.delete_boss h3{font-size: 20px !important;}
+.delete_bos_card{width: 100% !important;}
+.edit_box{padding: 0px !important;}
+.edit_box h1{font-size: 21px !important;}
+.edit_head h4{font-size: 18px !important;}
+.edit_head{padding: 15px !important;}
+.edit_head_row{display: flex; flex-wrap: wrap;}
+.edit_head_card{width: 100% !important;}
+.edit_menu_row{display: flex; flex-wrap: wrap;}
+.edit_menu_card{width: 100% !important;}
+.edit_menu h3{font-size: 20px;}
+.edit_fott h2{font-size: 20px;}
+.edit_fott_card{width: 100% !important;}
+.xabarlar_box h2{font-size: 21px;}
+.xabarlar_card{margin-top: 0px;}
+.ariza_card{width:100% !important;}
+.ariza_img_card{width: 100% !important;}
+.ariza_img_box{padding: 0px 40px !important;}
+.userpost h1{font-size: 21px !important;}
+.userownmenu button{padding: 10px 15px; width: 20% !important; font-size: 16px; margin: 10px !important;}
+.userownmenu{display: flex; flex-wrap: wrap; align-items: center;}
+.own_media_top h2{font-size: 20px !important; padding: 10px !important;}
+.own-img-col{width: 43.5% !important;}
+.own_event_card{width: 100% !important;}
+
+
+
+}@media(max-width:767px){
+
+
+.admin_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.admin_menu.closed {
+  width: 0 !important;
+}
+
+.admin_menu.open {
+  width: 70vw !important;
+}
+
+.admin_jsx {
+  position: fixed;
+  top: 10px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  height: 40px !important;
+}
+
+.admin_jsx button {
+  font-size: 15px !important;
+  border-radius: 0px 8px 8px 0px !important;
+  padding: 0px !important;
+  margin-left: -1px !important;
+}
+
+.admin_menu.closed button{margin-left: 5px !important;}
+
+
+.admin_menu.closed   .admin_logo{
+display: none !important;
+}
+.admin_menu.closed   .admin_menu_list{
+display: none !important;
+}
+.admin_jsx.open {
+  left: 70vw;
+}
+
+.admin_menu_card{
+  padding: 5px !important; height: 50px !important;
+}
+.admin_menu_card h2{font-size: 9px !important;}
+  .admin_menu_card p{font-size: 8px !important;}
+.admin_menu_card span{font-size: 15px !important;}
+.admin_logo h1{font-size: 13px !important;}
+.admin_logo img{width: 25px !important;}
+
+.admins_list{margin-top: 20px !important;}
+
+.adduser_box h1{font-size: 14px !important; display: flex; justify-content: center;}
+.admin_box{padding: 10px !important;}
+.adduser_box{padding: 30px 5px 5px 5px !important; background-color: white !important;}
+.adduser_box h2{font-size: 13px !important;}
+.head_admin{display: flex; flex-direction: column;}
+.ny-admin input{width: 300px !important;}
+.custom_select{width: 300px !important;}
+.adduser_box button{font-size: 12px !important; margin: 20px ; width: 200px;}
+.admins_list h1{font-size: 14px !important;}
+.admin_table th{font-size: 10px !important; font-weight: 500;}
+.user_deletes button{padding: 6px !important; font-size: 10px !important;}
+.main-text-h1{font-size: 14px !important; padding-top: 20px !important; display: flex !important; justify-content: center !important; align-items: center !important;}
+.addpost_box{border: 1px solid #004906 !important; padding: 10px !important;}
+.addpost_box h1{font-size: 13px !important;}
+.forign_photo h3{margin-top: 20px !important; font-size: 12px !important;}
+.post_select{width: 100% !important; }
+.post_selected{width: 100% !important;}
+.addpost_cont{display: flex; flex-direction: column;}
+.add_post_boxx{width: 200px !important; height: 150px !important;}
+.addpost_img{width: 100% !important; margin-left: 0px !important; height: 164px !important; overflow: hidden; overflow-y: auto; }
+.my_textarea{font-size: 15px !important; height: 200px !important;}
+.first_textarea{height: 100px !important; width: 100% !important;}
+.btn_add{font-size: 12px !important; padding: 10px !important;}
+.addpost_box h3{font-size: 12px !important;}
+.upload_button{font-size: 12px !important;}
+.axborot_postlar h1{font-size: 14px !important;}
+.axborot_postlar{width: 100% !important; border: 1px solid #004906 !important;}
+.post_selected p{font-size: 13px !important;}
+.axborot_modal h1{font-size: 16px !important;}
+
+.axborot_modal_button button{font-size: 13px !important;}
+.ilmiy-box{padding: 10px !important;}
+.add_files {margin-top: 20px !important;}
+
+
+.qabul-input input{padding: 10px !important; font-size: 13px !important;}
+.qabul-input textarea{height: 70px !important; font-size: 13px !important;}
+
+
+.adminpanel_box_top h1{width: 100% !important; display: flex !important; text-align: center; justify-content: center !important; align-items: center !important;}
+
+.adminpanel_box{width: 100% !important; margin: 20px !important; padding: 20px !important;}
+
+.admin_button{margin-left: 0px !important;}
+
+
+
+
+
+
+
+}
 
 
 

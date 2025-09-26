@@ -2,7 +2,7 @@ import React from 'react'
 import { FaRegClock } from 'react-icons/fa'
 import { FiPhoneCall } from 'react-icons/fi'
 
-import announcement2 from '../../Images/active2.jpg'
+import announcement2 from '../../ImagesStatik/konstitutsiya.jpg'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import Newsrep from './Newsrep'
 import ContactComp from '../../components/contactComp'

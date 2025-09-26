@@ -28,26 +28,30 @@ import { useTranslation } from "react-i18next";
 import { GrLanguage } from "react-icons/gr";
 
 const Layout = () => {
-const {t }=useTranslation()
+  const { t, i18n } = useTranslation();
+
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false); // Dark mode state
-  const { i18n } = useTranslation();
+  const [darkMode, setDarkMode] = useState(() => {
+
+    return localStorage.getItem("darkMode") === "true";
+  });
+
+
+  const languages = ["uz", "ru", "en"];
+  const [currentLangIndex, setCurrentLangIndex] = useState(0);
+
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     cookie.save("tilTanish", lang, { path: "/" });
   };
-  
-  
-  // Tillarning navbati
-  const languages = ["uz", "ru", "en"];
-  const [currentLangIndex, setCurrentLangIndex] = useState(0);
-  
+
   const handleLanguageSwitch = () => {
     const nextIndex = (currentLangIndex + 1) % languages.length;
     setCurrentLangIndex(nextIndex);
     changeLanguage(languages[nextIndex]);
-    setMenuOpen(false); // menyuni yopadi
+    setMenuOpen(false);
   };
+
 
   useEffect(() => {
     if (darkMode) {
@@ -55,6 +59,7 @@ const {t }=useTranslation()
     } else {
       document.body.classList.remove("dark");
     }
+    localStorage.setItem("darkMode", darkMode); // saqlash
   }, [darkMode]);
 
 
@@ -83,6 +88,10 @@ const {t }=useTranslation()
               path: "/Institut/Tarkibiy Tuzilma",
             },
             { link:  t("departments"), path: "/Institut/fakultet" },
+             {
+              link: t("faculty_ichki"),
+              path: "/Institut/Ichki",
+            },
           ],
         },
         [
@@ -163,7 +172,7 @@ const {t }=useTranslation()
     linkName: t("history"),
     linkList: [
       [
-        { link: t("historical_years"), path: "/History/History" },
+        { link: t("historical_years"), path: "/History/History" }
       ]
     ]
   }

@@ -1,3 +1,4 @@
+import { Modal } from 'antd';
 import React, { useEffect, useRef, useState } from 'react';
 import { FaRegTrashAlt } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -9,7 +10,19 @@ const AddPostSciene = () => {
     const [fileName, setFileName] = useState('Fayl yuklash');
     const categories = ['Ilmiy Taqiqot faoliyati', 'Ilmiy Jurnall', 'Ilmiy Kengash', 'Ilmiy Loyiha'];
     const dropdownRef = useRef(null);
-  
+   const [isModalOpen, setIsModalOpen] = useState(false);
+     const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
 const data = [
   {
     id: 1,
@@ -163,7 +176,7 @@ const data = [
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={()=>showModal()}><FaRegTrashAlt /></button>
 </div>
 </div>
     ))}
@@ -182,7 +195,7 @@ const data = [
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={()=>showModal()}><FaRegTrashAlt /></button>
 </div>
 </div>
     ))}
@@ -203,7 +216,7 @@ const data = [
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={()=>showModal()}><FaRegTrashAlt /></button>
 </div>
 </div>
     ))}
@@ -223,7 +236,7 @@ const data = [
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={()=>showModal()}><FaRegTrashAlt /></button>
 </div>
 </div>
     ))}
@@ -232,7 +245,22 @@ const data = [
 
 
 </div>
-
+   <>
+      <Modal
+        closable={{ 'aria-label': 'Custom Close Button' }}
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <div className='axborot_modal'>
+   <h1>Bu hujjatni o'chirishni xohlaysizmi</h1>
+   <div className='axborot_modal_button'>
+    <button className='axborot_red'>Ha</button>
+    <button onClick={handleCancel}>Yo'q</button>
+   </div>
+   </div>
+      </Modal>
+    </>
 
 
    </div>

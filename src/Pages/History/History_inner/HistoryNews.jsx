@@ -5,7 +5,7 @@ import news from '../../../Images/photo_2025-07-20_14-03-41.jpg'
 import news2 from '../../../Images/photo_2025-07-20_21-19-52.jpg'
 import { useTranslation } from 'react-i18next';
 
-const HistoryNews = ({ year, month, day }) => {
+const HistoryNews = () => {
          const [isModalOpen, setIsModalOpen] = useState(false);
 
          const {t}=useTranslation()
@@ -25,10 +25,18 @@ const handleOpen = ()=>{
 }
   return (
     <div className='history_news'>
-   <h1>{t("history_news_page_title", { year, day, month })}</h1>
+
     <div className='tarixiy_box'>
      <h1>{t("history_news_section_title")}</h1>
 <div className='tarixiy_row'>
+<div className='tarixiy_card'>
+   <div className='tarixiy_card_img'></div>
+<div className='tarixiy_card_text'>
+<h2 onClick={handleOpen}>{t("history_news_card_title")}</h2>
+<p><span><FaRegClock /></span>{t("history_news_card_date")}</p>
+</div>
+</div>
+
 <div className='tarixiy_card'>
    <div className='tarixiy_card_img'></div>
 <div className='tarixiy_card_text'>

@@ -11,14 +11,6 @@ const navigate = useNavigate()
     const handleChange =()=>{
 navigate("/News/Events/EventsInner")
     }
-    const handleChanges =()=>{
-      navigate("/News/Events/EventsInner2")
-          }
-
-
-          const handleStat =()=>{
-            navigate("/News/Events/EventsInner3")
-                }
 
   return (
     <Container>
@@ -45,7 +37,7 @@ navigate("/News/Events/EventsInner")
         <div className='event_card'>
            <div className='eventt_img eventt_img_stat2'></div>
         <div className='event_text'>
-        <h2 onClick={handleChanges}>{t("raqamli_texnalo")}</h2>
+        <h2 >{t("raqamli_texnalo")}</h2>
         </div>
         <div className='event_icons'>
         <p><span><FaRegCalendarAlt /></span>10/14/2024</p>
@@ -58,7 +50,7 @@ navigate("/News/Events/EventsInner")
         <div className='event_card'>
          <div className='eventt_img eventt_img_stat3'></div>
         <div className='event_text'>
-        <h2  onClick={handleStat}>{t("milliy_liboslar")}</h2>
+        <h2  >{t("milliy_liboslar")}</h2>
         </div>
         <div className='event_icons'>
         <p><span><FaRegCalendarAlt /></span>10/14/2024</p>
@@ -66,6 +58,9 @@ navigate("/News/Events/EventsInner")
         <p><span><SlLocationPin /></span>{t("eve-locat")}i</p>
         </div>
         </div>
+
+
+    
 
 
         </div>

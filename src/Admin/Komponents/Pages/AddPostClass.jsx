@@ -1,3 +1,4 @@
+import { Modal } from 'antd';
 import React, { useEffect, useRef, useState } from 'react'
 import { FaRegTrashAlt } from 'react-icons/fa';
 import { GrDocumentPdf } from 'react-icons/gr';
@@ -17,6 +18,18 @@ const AddPostClass = () => {
   const dropdownRef = useRef(null);
   const dropdownRef2 = useRef(null); // 🔴
   const dropdownRef3 = useRef(null); // 🔴
+ const [isModalOpen, setIsModalOpen] = useState(false);
+   const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
 const data = [
   {
@@ -300,7 +313,7 @@ language:"Rus tili guruhlari uchun",
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={()=>{showModal()}}><FaRegTrashAlt /></button>
 </div>
 </div>
 </div>
@@ -322,7 +335,7 @@ language:"Rus tili guruhlari uchun",
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={()=>{showModal()}}><FaRegTrashAlt /></button>
 </div>
 </div>
 </div>
@@ -345,7 +358,7 @@ language:"Rus tili guruhlari uchun",
           </a>
         )}
 <div className='ilmiy-taqiqot_button'>
-<button><FaRegTrashAlt /></button>
+<button onClick={() => {showModal()}}><FaRegTrashAlt /></button>
 </div>
 </div>
 </div>
@@ -358,6 +371,24 @@ language:"Rus tili guruhlari uchun",
       
       
       </div>
+
+   <>
+      <Modal
+        closable={{ 'aria-label': 'Custom Close Button' }}
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <div className='axborot_modal'>
+   <h1>Bu hujjatni o'chirishni xohlaysizmi!!!</h1>
+   <div className='axborot_modal_button'>
+    <button className='axborot_red'>Ha</button>
+    <button onClick={handleCancel}>Yo'q</button>
+   </div>
+   </div>
+      </Modal>
+    </>
+
     </div>
   )
 }

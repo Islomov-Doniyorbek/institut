@@ -2,6 +2,7 @@ import React from 'react'
 import { FaTrashAlt } from 'react-icons/fa'
 import audio from '../../../images/Images/audio.jpg'
 import RanoMp3 from "../../../images/Audio/Botir Zokirov - Ra'no.mp3"
+import { FaRegTrashCan } from 'react-icons/fa6'
 const UserOwnMedia = () => {
   return (
     <div className='own_media'>
@@ -50,6 +51,9 @@ const UserOwnMedia = () => {
 
 <div className='own_audio'>
   <div className='audios_box own_audio_box'>
+      <div className='boss_delete_icon'>
+    <span><FaRegTrashCan /></span>
+      </div>
 <div className='audio_img'>
      <img src={audio}/>
           </div>
@@ -59,11 +63,6 @@ const UserOwnMedia = () => {
    <source src={RanoMp3} type="audio/mpeg" />
       Sizning brauzeringiz audio elementni qo‘llab-quvvatlamaydi.
     </audio>
-         <div className='own-doc-icon own_audio_icon'>
-                                          <span >
-                                            <FaTrashAlt />
-                                          </span>
-                                        </div>
   </div>
 </div>
 </div>
@@ -72,6 +71,9 @@ const UserOwnMedia = () => {
 
 <div className='own_audio'>
   <div className='audios_box own_audio_box'>
+      <div className='boss_delete_icon'>
+    <span><FaRegTrashCan /></span>
+      </div>
 <div className='audio_img'>
      <img src={audio}/>
           </div>
@@ -81,11 +83,7 @@ const UserOwnMedia = () => {
    <source src={RanoMp3} type="audio/mpeg" />
       Sizning brauzeringiz audio elementni qo‘llab-quvvatlamaydi.
     </audio>
-         <div className=' own-doc-icon own_audio_icon'>
-                                          <span >
-                                            <FaTrashAlt />
-                                          </span>
-                                        </div>
+ 
   </div>
 </div>
 </div>
@@ -93,6 +91,9 @@ const UserOwnMedia = () => {
 
 <div className='own_audio'>
   <div className='audios_box own_audio_box'>
+      <div className='boss_delete_icon'>
+    <span><FaRegTrashCan /></span>
+      </div>
 <div className='audio_img'>
      <img src={audio}/>
           </div>
@@ -102,11 +103,7 @@ const UserOwnMedia = () => {
    <source src={RanoMp3} type="audio/mpeg" />
       Sizning brauzeringiz audio elementni qo‘llab-quvvatlamaydi.
     </audio>
-         <div className=' own-doc-icon own_audio_icon'>
-                                          <span >
-                                            <FaTrashAlt />
-                                          </span>
-                                        </div>
+  
   </div>
 </div>
 </div>

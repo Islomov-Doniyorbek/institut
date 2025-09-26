@@ -88,6 +88,13 @@ const newsData = [
     category: t("yang"),
     date: "12/05/2024",
   },
+   {
+    id: 8,
+    imgClass: "news_img news_img_stat9",
+    title:   "“Dolzarb 90 kun”",
+    category: t("yang"),
+    date: "00/00/2024",
+  },
 ];
 
 

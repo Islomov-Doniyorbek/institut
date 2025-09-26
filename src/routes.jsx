@@ -46,6 +46,7 @@ import History from "./Pages/History/History";
 import Chatbot from "./Pages/chatbot/chatbot";
 import Albom from "./Pages/albom/albom";
  
+
 export const routes = [
   // Activity
   { path: "Activity/Activity", element: <Activity /> },
@@ -71,7 +72,11 @@ export const routes = [
   { path: "/News/Allnews", element: <Allnews /> },
   { path: "/News/Allnews/Innernews", element: <AllnewsInner /> },
   { path: "/News/Allnews/Othernews", element: <OtherNews /> },
+
   { path: "/News/Allnews/OthernewsInner", element: <OthernewsIner /> },
+
+  
+  
   { path: "/News/Allnews/EventInner", element: <EventInner /> },
   { path: "/News/Events", element: <Event /> },
   { path: "/News/Galery", element: <Galery /> },

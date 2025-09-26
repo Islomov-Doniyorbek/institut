@@ -1,12 +1,14 @@
 import React from 'react'
 import ActiveTopPage from '../../components/activeTopPage'
-import NotFoundPage from '../../components/404'
+import tuzilma from '../../institutinges/photo_2025-08-28_15-11-50.jpg'
 
 const Tuzilma = () => {
   return (
     <div>
       <ActiveTopPage pageTitle={"Institut tuzilmasi"}/>
-      <NotFoundPage/>
+    <div className='tuzilma_img'>
+<img src={tuzilma}/>
+    </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
-.history-con{width: 100%; height: 75vh; overflow: hidden; padding: 50px; overflow-y: auto;}
+.history-con{width: 100%; height: 90vh; overflow: hidden; padding: 50px; overflow-y: auto;}
 .history::-webkit-scrollbar{display: none !important;}
+.history-con::-webkit-scrollbar{display: none !important;}
 .history_inputs h1{display: flex; align-items: center; justify-content: center; font-size: 25px; color: #005207;}
 .history_top{display: flex; align-items: center; justify-content: center; flex-direction: column; }
 .history_top img{width: 100px; margin-bottom: 10px;}
@@ -7,73 +8,118 @@
 .tarix-inputs{display: flex; width: 100%; align-items: center; justify-content: center; margin-top: 80px;}
 
 
-.yillar {padding:  80px 60px 60px  !important; }
-.yillar h2{font-size: 22px !important; color: #0058af;  display: flex; justify-content: center; align-items: center;}
-.yillar-box{padding: 20px !important; margin-top: 20px; border-radius: 10px; 
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;}
 
-.yillar-row {
-  display: flex;
-  flex-wrap: wrap;
-width: 100%; justify-content: center; align-items: center;
+
+.bar_chart_box{width: 100%;  margin-top: 50px;  display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.bar_chart{width: 50%; background-color: white !important; padding: 20px; }
+.bar_chart_title{display: flex; align-items: center; flex-direction: column; margin-bottom: 20px;}
+.bar_chart_text{display: flex;}
+.bar_chart_title span{font-size: 25px; color: #00478d; }
+.bar_chart_title h1{color: #00478d; font-size: 22px; margin-right: 6px !important; }
+.bar_chart_icon{display: flex; margin: 40px 0px; width: 100%; display: flex; justify-content: center;}
+.bar_chart_icon1{display: flex; align-items: center; margin-right: 30px !important;}
+.bar_chart_icon2{display: flex; align-items: center;}
+.bar_chart_icon1 span{width: 50px; height: 15px; margin-right: 7px !important; background-color: #00478d;}
+.bar_chart_icon2 span{background-color: rgba(201, 197, 0, 1) !important;}
+.bar_chart_icon1 p{font-size: 15px; color: #005207; font-weight: 600;}
+
+
+
+.calendar{padding: 30px 60px; border-radius: 10px !important; 
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+.calendar h4{font-size: 20px !important; color: #00478d; width: 100%; display: flex; justify-content: center;
+margin-bottom: 20px;}
+
+.hafta-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
-.yillar-card {
-  perspective: 1000px; margin: 0px 20px;
-}
-
-.yillar-card button {
-  width: 130px;
-  height: 50px;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-  font-size: 20px;
-  color: #fff;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-  background: linear-gradient(135deg, #005207, #0073e6);
+.hafta-kun {
+  padding: 15px;
   border-radius: 8px;
+color: white;
+  font-size: 20px;
+  background-color: #0058af;
 }
 
-.yillar-card button .front,
-.yillar-card button .back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backface-visibility: hidden; /* orqa tomonni ko‘rsatmaslik */
+.sana-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
 }
 
-.yillar-card button .back {
-  transform: rotateY(180deg);
+.sana-card {
+  padding: 12px;
+  text-align: center;
+  font-size: 20px !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: #005207;
+  color: white;
 }
 
-.yillar-card:hover button {
-  transform: rotateY(180deg);
+.sana-card:hover {
+  background: #e6f0ff;
+  color: #000 !important;
 }
+
+.sana-card.active {
+  background: #003e77;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sana-card.empty {
+  background: transparent;
+  box-shadow: none;
+  cursor: default;
+}
+
+.details-section h4{
+  font-size: 20px; color: #005207; display: flex; justify-content: center; margin-top: 20px; padding: 20px; 
+  border: 1px solid #005207; border-radius: 10px;
+}
+
+
+
 
 .tarixiy-yangilik{padding: 80px ;}
 .tarixiy-elonlar{padding: 80px ;}
 .tarixiy-tadbirlar{padding: 80px ;}
 .tarixiy_box{padding: 30px; margin-top:60px ; box-shadow:  #e2de00 0px 0px 0px 3px;
 border-radius: 10px; }
-.tarixiy_box h1{margin-bottom: 30px; font-size: 25px; padding: 15px; width: 20%;  margin: 40px 0px 60px;
-border-radius: 10px;   border: 2px dashed #005207;
+.tarixiy_box h1{margin-bottom: 30px; font-size: 25px; padding: 15px;   margin: 40px 0px 60px;
+border-radius: 10px;   border: 2px dashed #005207;width: 100%;
 }
 .tarixiy_row{width: 100%; display: flex; flex-wrap: wrap; } 
-.tarixiy_card{display: flex; width: 47%; margin: 30px 20px; }
-.tarixiy_card_img{width: 300px; height: 120px; margin-right: 20px; border-radius: 10px; background-position: center; background-repeat: no-repeat; background-size: cover;
-     background-image: url('../../Images/photo_2025-07-20_14-03-41.jpg');}
+.tarixiy_card{display: flex; flex-direction: column;  width: 30%; height: 48vh; margin: 30px 20px; padding: 20px !important;box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;}
+.tarixiy_card_img {
+  width: 100%;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../Images/photo_2025-07-20_14-03-41.jpg');
+  transition: transform 0.6s ease; 
+}
+
+
+.tarixiy_card_img:hover {
+  transform: scale(1.02); 
+}
      .tarixiy_card_text{height: 100px;  display: flex; flex-direction: column;   justify-content: space-between;}
-.tarixiy_card_text h2{font-size: 18px; margin-bottom: 15px; color: #3a3a3a;}
-.tarixiy_card_text h2:hover{color: #005207 !important;}
-.tarixiy_card_text p{display: flex; font-size: 18px; color: #4e4e4e; font-weight: 500;}
+.tarixiy_card_text h2{font-size: 18px; margin-bottom: 30px; color: #3a3a3a; margin-top: 30px;}
+
+.tarixiy_card_text p{display: flex; font-size: 18px; color: #4e4e4e; font-weight: 500; width: 100%; display: flex; justify-content: flex-end; }
 .tarixiy_card_text p span{font-size: 20px !important; margin-right: 6px; color: #005207; margin-top: 1px;}
 .no-result-img{width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 80px;}
 .no-result-img img{width: 250px; }
@@ -92,55 +138,6 @@ border-radius: 10px;   border: 2px dashed #005207;
 
 .sana-row{display: flex ; margin: 20px 60px 0px  !important; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; border-radius: 10px; padding: 40px 30px !important; align-items: center; flex-wrap: wrap; width: 100%;justify-content: center;}
 .sana-topish h4{display: flex; align-items: center; justify-content: center; margin-top: 60px; font-size: 20px; color: #0058af;}
-/* Haftaning kunlari tepadagi sarlavha */
-.hafta-header {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  margin: 10px 60px 0;
-  text-align: center;
-  font-weight: bold;
-  color: #0058af;
-}
-
-.hafta-kun {
-  padding: 10px 0;
-}
-
-/* Kunlar jadvali */
-.sana-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  margin: 0 60px;
-  gap: 8px;
-  background: rgba(17, 17, 26, 0.05);
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.sana-card {
-  background-color: #004105;
-  border: 2px solid #005207;
-  border-radius: 6px;
-  text-align: center;
-  padding: 10px 0;
-    color: white;
-  font-size: 16px;
-}
-
-
-
-.sana-card:hover {
-  background-color: #00790a;
-}
-
-.sana-card.active {
-  background-color: #009e12;
-}
-
-.sana-card.empty {
-  background: transparent;
-  border: none;
-}
 
 .oylar-box{ padding:  60px 60px 60px  !important;}
 .oylar-box h2{ font-size: 22px; color: #0058af; display: flex; justify-content: center; margin-bottom: 20px;}
@@ -152,6 +149,39 @@ border-radius: 10px;   border: 2px dashed #005207;
   transform: translateY(-5px) !important;
 box-shadow: #005207 0px 12px 12px -8px !important;
 }
+
+
+
+
+
+
+.tarixiy_doc{
+  border-radius: 20px; border: 2px solid #e2de00; margin-top: 100px;
+  padding: 50px;
+  height: 70vh; overflow: hidden; overflow-y: auto;
+}
+.tarixiy_doc::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari uchun */
+}
+.tarixiy_doc h1{display: flex; justify-content: center !important; align-items: center !important; color: #00478d; margin-bottom: 40px;}
+.tarixiy_doc h1 span{display: flex; align-items: center; margin-left: 6px;}
+.tarixiy_doc_card{padding: 30px; border: 2px solid #00478d;  border-radius: 10px; margin: 80px 0px;}
+.tarixiy_doc_card h2{font-size: 20px; color: #000;}
+.tarixiy_doc_a_row{display: flex; align-items: center; }
+.tarixiy_doc_a{margin: 20px ; width: 30%; padding: 15px; border: 1px solid #00478d; border-radius: 10px; margin-top: 50px !important;}
+.tarixiy_doc_a a h2{font-size: 18px !important ; display: flex; align-items: center; color: #1a1a1a;}
+.tarixiy_doc_a a h2 span{color: #00478d; font-size: 20px !important; margin-right: 10px;  display: flex; align-items: center;}
+.tarixiy_doc_img{margin-top: 20px; width: 100%; display: flex; align-items: center;}
+.tarixiy_doc_img_card{width: 15%; height: auto; margin: 20px; border-radius: 10px; padding: 10px; border: 1px solid #00478d;}
+.tarixiy_doc_img_card img{width: 100%; border-radius: 10px;}
+
+
+
+
+
+
+
+
 
 @media (max-width:1024px){
 
@@ -175,8 +205,23 @@ box-shadow: #005207 0px 12px 12px -8px !important;
 .tarixiy-elonlar{padding: 40px 20px !important;}
 .yillar-box{padding: 10px !important;}
 
+
+  .tarixiy_doc{padding: 20px; }
+  .tarixiy_doc h1{font-size: 30px; margin-top: 30px; padding: 10px; margin-bottom: 20px !important;}
+  .tarixiy_doc h1 span{margin-left: 0px !important;}
+.tarixiy_doc_card{margin-top: 30px !important; padding: 20px;}
+.tarixiy_doc_card h2{font-size: 20px;}
+.tarixiy_doc_a_row{display: flex; flex-wrap: wrap; margin-top: 20px;}
+.tarixiy_doc_a{margin: 10px !important; width: 45%; padding: 10px;}
+.tarixiy_doc_img{display: flex; flex-wrap: wrap;}
+.tarixiy_doc_img_card{width: 44%;}
+
+.bar_chart_box{width: 100%;  padding: 40px; }
+.bar_chart{width: 100%;}
+
 }@media (max-width:767px){
-.history_inputs h1{font-size: 15px; display: flex !important; text-align: center !important; }
+  .history-con{height: 80vh !important;}
+.history_inputs h1{font-size: 15px; display: flex !important; text-align: center !important; width: auto !important;}
 .history_top img{width: 60px;}
 .yillar h2{font-size: 15px !important;  display: flex !important; text-align: center !important; }
 .yillar-card{margin: 10px !important; }
@@ -189,10 +234,10 @@ box-shadow: #005207 0px 12px 12px -8px !important;
 .sana-row{margin: 40px 10px !important;}
 .sana-grid{margin: 0px;}
 .hafta-header{margin: 0px !important;}
-.tarixiy_box{padding: 10px !important;}
+.tarixiy_box{padding: 10px !important; height: 50vh !important;}
 .tarixiy_box h1{width: 50%; padding: 5px !important;}
 .tarixiy_card_img{width: 100% !important; height: 150px !important;}
-.tarixiy_card{margin: 0px !important; padding: 20px; border: 1px solid #005207;
+.tarixiy_card{margin: 0px !important; padding: 20px; border: 1px solid #005207; height: 35vh;
       display: flex; flex-direction: column; border-radius: 10px ; margin: 10px 0px !important;}
 .tarixiy_card_text h2 {font-size: 12px; margin-top: 10px;}
 .tarixiy_card_text p span{font-size: 15px !important;}
@@ -217,6 +262,29 @@ box-shadow: #005207 0px 12px 12px -8px !important;
   .history_inner_text h1 {
     font-size: 16px !important;
   }
+
+
+  .tarixiy_doc{padding: 10px;}
+  .tarixiy_doc h1{font-size: 25px; margin-top: 30px; padding: 10px; margin-bottom: 20px !important;}
+  .tarixiy_doc h1 span{margin-left: 0px !important;}
+.tarixiy_doc_card{margin-top: 30px !important; padding: 20px;}
+.tarixiy_doc_card h2{font-size: 16px;}
+.tarixiy_doc_a_row{display: flex; flex-wrap: wrap; margin-top: 20px;}
+.tarixiy_doc_a{margin: 10px !important; width: 100%; padding: 10px;}
+.tarixiy_doc_a a h2{font-size: 15px !important;}
+.tarixiy_doc_a a h2 span{font-size: 16px !important;}
+.tarixiy_doc_img{display: flex; flex-wrap: wrap;}
+.tarixiy_doc_img_card{width: 100%;}
+
+.bar_chart{padding: 10px !important;}
+.bar_chart_box{margin-top: 0px !important; padding: 60px 0px 0px 0px !important;}
+.bar_chart_text h1{font-size: 13px !important;}
+.bar_chart_title span{font-size: 15px !important;}
+.calendar{padding: 10px;}
+.hafta-kun{padding: 10px !important; font-size: 13px !important; margin-bottom: 15px;}
+.sana-card{padding: 10px !important; font-size: 13px !important;}
+.calendar h4{font-size: 15px !important;}
+.details-section h4{font-size: 15px; padding: 10px;}
 }
 
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Admin.css'
 import { useNavigate } from 'react-router-dom';
-
+import log_admin from '../../Images/logo.jpg'
 const AdminLog = () => {
   const navigate = useNavigate(); 
   const handleChange = () => {
@@ -13,7 +13,7 @@ const AdminLog = () => {
     <div className='adminpanel'>
       <div className='adminpanel_box'>
            <div className='adminpanel_box_top'>
-       
+       <img src={log_admin}/>
         <h1>Email va parolingizni kiriting !!!</h1>
         </div>
 <h2>Email</h2>

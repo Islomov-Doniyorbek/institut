@@ -196,11 +196,34 @@ body.dark .loyihalar_jamlanma h3{color: #FFFFFF !important;}
 body.dark .download_box{background-color:#383838 !important ;}
 body.dark .download_box h3{color: #FFFFFF !important;}
 body.dark .download_box span{color: #FFFFFF !important;}
+body.dark  .institut_rasm h1{color: #0069cc;}
+body.dark  .rasmlar_col{border: 1px solid #0069cc;}
+body.dark  .tarixiy_doc h1{color: #0069cc;}
+body.dark .tarixiy_doc_card h2{color: white !important;}
+body.dark .tarixiy_doc_a a h2{color: white !important;}
+body.dark .tarixiy_doc_img_card{border: 1px solid #0069cc !important;}
+body.dark .tarkib_tuzilma_box h1{color: #0069cc;}
+body.dark .tarkib_cards h2{color: #006b09;}
+body.dark .tarkib_cards{border: 2px dashed #0069cc;}
+body.dark .kengash_info_con h1{color: #0069cc;}
+body.dark  .kengashinfo_box h2{color: #006b09;}
+body.dark  .kengash_reg_men_card h1{color: #0069cc;}
+body.dark  .kengash_reg_men_card p{color: white;}
+body.dark .kengash_reg_men_card h2{color: #006b09;}
+body.dark .market_card{color: #d1cfcf !important;}
+body.dark .market_man_card p{color: #d4d4d4 !important;}
+body.dark .market_man_card span{color: #d4d4d4 !important;}
+body.dark .students_life h1{color: #0069cc;}
+body.dark .stud_life_card {background-color: transparent !important; border: 1px solid #bdbdbd;}
+body.dark .stud_life_text h2{color: #c9c9c9;}
+body.dark .calendar{border: 2px solid #f1f1f1;}
+body.dark .calendar h4{color: #0069cc;}
+body.dark .hafta-kun{color: white;}
+body.dark .sana-grid{border: none !important;}
+body.dark .details-section h4{color: #006b09 !important;}
 
-
-
-
+body.dark .bar_chart{background-color: #2e2d2d !important;}
 
     @media (max-width:767px){
-    body.dark  .allnews_center{background-color: #121212 !important;}
+    body.dark  .allnews_center{background-color: #121212 !important;} 
     }

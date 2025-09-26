@@ -5,13 +5,17 @@ import { PiStudentBold } from "react-icons/pi";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import Container from "../components/Container";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 function ForStudents() {
         const {t }=useTranslation()
+
+   const navigate = useNavigate()
+
   return (
     <Container>
       <div className="forstudent">
         <div className="forstudent_row">
-          <div className="forstudent_box">
+          <div className="forstudent_box" onClick={() => navigate('/studentslife')}>
             <div className="forstudent_col">
               <div className="forstudent_card">
                 <div className="forstudent_card_icon">
@@ -33,7 +37,7 @@ function ForStudents() {
             </h1>
           </div>
 
-          <div className="forstudent_box">
+          <div className="forstudent_box" onClick={() => navigate('/madaniytadbir')}>
             <div className="forstudent_col forstudent_col-stat2">
               <div className="forstudent_card">
                 <div className="forstudent_card_icon">
@@ -55,7 +59,7 @@ function ForStudents() {
             </h1>
           </div>
 
-          <div className="forstudent_box">
+          <div className="forstudent_box" onClick={() => navigate('/stipendiya')}>
             <div className="forstudent_col forstudent_col-stat3">
               <div className="forstudent_card">
                 <div className="forstudent_card_icon">
