@@ -1,83 +1,150 @@
-// import { t } from 'i18next'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './albom.css'
 import ActiveTopPage from '../../components/activeTopPage'
 import BZ1 from "../../Audio/Botir Zokirov - Maftun Bo ldim.mp3"
-import { BsArrowDownCircle, BsArrowDownUp, BsArrowRightCircle, BsPlusCircle } from 'react-icons/bs'
-const Albom = () => {
+import { BsArrowRightCircle, BsArrowDownCircle, BsPlayCircle, BsPauseCircle } from 'react-icons/bs'
 
+const Albom = () => {
   const albomlar = [
     {
-      id:0,
+      id: 0,
       sanatkor: "Botir Zokirov",
       asarlar: [
-        {
-          id: 0,
-          title: "Maftun bo'ldim",
-          path: BZ1
-        },
-        {
-          id: 1,
-          title: "Majnuntol",
-          path: BZ1
-        },
-        {
-          id: 2,
-          title: "Bir oqshom",
-          path: BZ1
-        },
-      ]
+        { id: 0, title: "Maftun bo'ldim", path: BZ1 },
+        { id: 1, title: "Majnuntol", path: BZ1 },
+        { id: 2, title: "Bir oqshom", path: BZ1 },
+      ],
     },
     {
-      id:1,
+      id: 1,
       sanatkor: "Ozodbek Nazarbekov",
       asarlar: [
-        {
-          id: 0,
-          title: "Hur o'g'lim",
-          path: BZ1
-        }
-      ]
+        { id: 0, title: "Hur o‘g‘lim", path: BZ1 },
+        { id: 1, title: "Kechir meni", path: BZ1 },
+      ],
     },
   ]
 
+  const [openId, setOpenId] = useState(null)
+  const [playingId, setPlayingId] = useState(null)
+  const audioRefs = useRef({})
+  const [progress, setProgress] = useState({})
+  const [durations, setDurations] = useState({})
+  const [currentTimes, setCurrentTimes] = useState({})
 
-
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggleRow = (id) => {
-    
+  const toggleArtist = (id) => {
+    setOpenId(prev => (prev === id ? null : id))
   }
+
+  const handlePlayPause = (artistId, songId) => {
+    const key = `${artistId}-${songId}`
+    const audio = audioRefs.current[key]
+    if (!audio) return
+    Object.entries(audioRefs.current).forEach(([k, a]) => {
+      if (k !== key && a) a.pause()
+    })
+
+    if (audio.paused) {
+      audio.play()
+      setPlayingId(key)
+    } else {
+      audio.pause()
+      setPlayingId(null)
+    }
+  }
+
+  const handleTimeUpdate = (artistId, songId) => {
+    const key = `${artistId}-${songId}`
+    const audio = audioRefs.current[key]
+    if (!audio) return
+    const percent = (audio.currentTime / audio.duration) * 100
+    setProgress(prev => ({ ...prev, [key]: percent }))
+    setCurrentTimes(prev => ({ ...prev, [key]: audio.currentTime }))
+  }
+
+  const handleLoadedMetadata = (artistId, songId) => {
+    const key = `${artistId}-${songId}`
+    const audio = audioRefs.current[key]
+    if (audio?.duration) {
+      setDurations(prev => ({ ...prev, [key]: audio.duration }))
+    }
+  }
+
+  const formatTime = (time) => {
+    if (!time || isNaN(time)) return "00:00"
+    const minutes = Math.floor(time / 60)
+    const seconds = Math.floor(time % 60)
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`
+  }
+
   return (
     <div>
       <ActiveTopPage pageTitle={"Sevimli Estrada Asarlari"} />
       <div className="albom">
-        
         <ol>
-          {
-            albomlar.map(item=>{
-              return (
-                <li>
-                  <p className=''>
-                    <span>{item.sanatkor}</span>
-                    <span>
-                      <BsArrowDownCircle className={`${isOpen ? "scr" : "hide"} ico`} onClick={()=>setIsOpen(prev=>!prev)} />
-                      <BsArrowRightCircle className={`${isOpen ? "hide" : "scr"} ico`} onClick={()=>setIsOpen(prev=>!prev)} />
-                    </span>
-                  </p>
-                  <div className="musics">
-                    {
-                      item.asarlar.map(m=>{
-                        return (
-                          <audio controls src={m.path}></audio>
-                        )
-                      })
-                    }
-                  </div>
-                </li>
-              )
-            })
-          }
+          {albomlar.map((artist) => (
+            <li key={artist.id}>
+              <div className="artist-header">
+                <span className="artist-name">{artist.sanatkor}</span>
+                {openId === artist.id ? (
+                  <BsArrowDownCircle
+                    className="ico"
+                    onClick={() => toggleArtist(artist.id)}
+                  />
+                ) : (
+                  <BsArrowRightCircle
+                    className="ico"
+                    onClick={() => toggleArtist(artist.id)}
+                  />
+                )}
+              </div>
+
+              {openId === artist.id && (
+                <div className="music-list">
+                  {artist.asarlar.map((song) => {
+                    const key = `${artist.id}-${song.id}`
+                    return (
+                      <div
+                        className={`music-item ${playingId === key ? 'playing' : ''}`}
+                        key={song.id}
+                      >
+                        <audio
+                          ref={(el) => (audioRefs.current[key] = el)}
+                          src={song.path}
+                          onTimeUpdate={() => handleTimeUpdate(artist.id, song.id)}
+                          onLoadedMetadata={() => handleLoadedMetadata(artist.id, song.id)}
+                          onEnded={() => setPlayingId(null)}
+                        />
+
+                        <button
+                          className="play-btn"
+                          onClick={() => handlePlayPause(artist.id, song.id)}
+                        >
+                          {playingId === key ? <BsPauseCircle /> : <BsPlayCircle />}
+                        </button>
+
+                        <div className="song-info">
+                          <p>{song.title}</p>
+                          <div className="progress-bar">
+                            <div
+                              className="progress"
+                              style={{ width: `${progress[key] || 0}%` }}
+                            ></div>
+                          </div>
+
+                          <div className="time-info">
+                            <span>{formatTime(currentTimes[key])}</span>
+                            <span>{formatTime(durations[key])}</span>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    )
+                  })}
+                </div>
+              )}
+            </li>
+          ))}
         </ol>
       </div>
     </div>

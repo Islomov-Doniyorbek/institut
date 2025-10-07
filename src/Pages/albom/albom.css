@@ -1,51 +1,134 @@
 .albom {
-    position: relative;
-    padding: 10px;
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  font-family: 'Poppins', sans-serif;
 }
-.list {
-    position: relative;
-    width: 100%;
-    padding: 8px 10px;
+
+.artist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f3f6;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: 0.3s;
+  cursor: pointer;
 }
-ol {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+.artist-header:hover {
+  background: #e9eef3;
 }
-ol li {
-    position: relative;
-    background: cornsilk;
-    width: 100%;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    
+
+.artist-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
 }
-ol li p {
-    font-size: 22px;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-.musics {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.musics audio {
-    padding: 8px 10px;
-    background-color: rgb(21, 21, 194);
-}
+
 .ico {
-    cursor: pointer;
+  font-size: 1.4rem;
+  color: #555;
+  transition: transform 0.2s ease;
 }
-.scr {
-    display: inline-block;
+.ico:hover {
+  color: #222;
+  transform: scale(1.1);
 }
-.hide {
-    display: none;
+
+.music-list {
+  margin-left: 15px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #ddd;
+}
+
+.music-item {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 12px 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.3s;
+}
+
+.music-item.playing {
+  background: #e8ecf7;
+  box-shadow: 0 0 3px 2px #0d19ff inset;
+}
+
+.play-btn {
+  border: none;
+  background: none;
+  font-size: 2rem;
+  color: #4e4caf;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  color: #2e7d32;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.song-info p {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4c5eaf, #6670bb);
+  width: 0%;
+  transition: width 0.2s linear;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+}
+
+
+@media (max-width: 600px) {
+  .albom {
+    padding: 20px;
+  }
+
+  .artist-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .play-btn {
+    font-size: 1.8rem;
+  }
+
+  .song-info p {
+    font-size: 0.9rem;
+  }
 }
