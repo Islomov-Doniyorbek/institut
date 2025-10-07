@@ -2,6 +2,13 @@ import React, { useState, useRef } from 'react'
 import './albom.css'
 import ActiveTopPage from '../../components/activeTopPage'
 import BZ1 from "../../Audio/Botir Zokirov - Maftun Bo ldim.mp3"
+import BZ2 from "../../Audio/Botir Zokirov - Majnuntol (matni bilan).mp3"
+import BZ3 from "../../Audio/Botir Zokirov - Bir oqshom.mp3"
+import BZ4 from "../../Audio/Botir Zokirov - Ra'no.mp3"
+import BZ5 from "../../Audio/Botir Zokirov - Yarog' etma.mp3"
+
+import OZ1 from "../../Audio/new_muz_15110_dodasicom.mp3"
+import OZ2 from "../../Audio/new_muz_7225_nbkuz.mp3"
 import { BsArrowRightCircle, BsArrowDownCircle, BsPlayCircle, BsPauseCircle } from 'react-icons/bs'
 
 const Albom = () => {
@@ -11,16 +18,18 @@ const Albom = () => {
       sanatkor: "Botir Zokirov",
       asarlar: [
         { id: 0, title: "Maftun bo'ldim", path: BZ1 },
-        { id: 1, title: "Majnuntol", path: BZ1 },
-        { id: 2, title: "Bir oqshom", path: BZ1 },
+        { id: 1, title: "Majnuntol", path: BZ2 },
+        { id: 2, title: "Bir oqshom", path: BZ3 },
+        { id: 3, title: "Ra'no", path: BZ4 },
+        { id: 4, title: "Yarog' etma", path: BZ5 },
       ],
     },
     {
       id: 1,
       sanatkor: "Ozodbek Nazarbekov",
       asarlar: [
-        { id: 0, title: "Hur o‘g‘lim", path: BZ1 },
-        { id: 1, title: "Kechir meni", path: BZ1 },
+        { id: 0, title: "Hur o‘g‘lim", path: OZ1 },
+        { id: 1, title: "Kechir meni", path: OZ2 },
       ],
     },
   ]
